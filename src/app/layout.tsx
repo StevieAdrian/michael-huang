@@ -4,6 +4,8 @@ import "./globals.css";
 import { seoConfig, generateOGMetadata, generateTwitterMetadata } from "@/config/seo-config";
 import { generateOrganizationSchema, generateWebsiteSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
+import { Navbar } from "@/shared/components/navbar";
+import { Footer } from "@/shared/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -111,7 +113,11 @@ export default function RootLayout({
         {/* Google Search Console verification */}
         {/* <meta name="google-site-verification" content="your-verification-code" /> */}
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
