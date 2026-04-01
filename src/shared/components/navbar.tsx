@@ -58,7 +58,7 @@ export function Navbar() {
                 M
               </div>
               <span className="font-display font-bold text-xl tracking-widest hidden sm:block">
-                MICHAEL<span className="text-gold">.COM</span>
+                MICHAELHUANG<span className="text-gold">.ID</span>
               </span>
             </Link>
 

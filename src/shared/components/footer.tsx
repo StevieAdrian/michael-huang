@@ -73,7 +73,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border/50 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Michael.com. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} michaelhuang.id. All rights reserved.</p>
           <p className="text-gold/70 font-display tracking-wider text-xs">
             THE GOLD STANDARD
           </p>

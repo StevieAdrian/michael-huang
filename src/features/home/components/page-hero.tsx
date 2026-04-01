@@ -54,7 +54,7 @@ export function PageHero({
             }
           >
             <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-            MICHAEL.COM ECOSYSTEM
+            MICHAELHUANG.ID ECOSYSTEM
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6">

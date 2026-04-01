@@ -13,7 +13,7 @@ export function LocationSection() {
               <MapPin className="w-3.5 h-3.5" /> Temukan Kami
             </div>
             <h2 className="text-2xl md:text-4xl font-display font-bold mb-4 md:mb-6">
-              Kantor Pusat Michael.com
+              Kantor Pusat michaelhuang.id
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed">
               Kami berlokasi di jantung bisnis Jakarta. Kunjungi kami untuk
@@ -75,7 +75,7 @@ export function LocationSection() {
                 <MapPin className="w-4 h-4" /> Buka di Google Maps
               </a>
               <a
-                href="https://wa.me/6281234567890?text=Halo, saya ingin berkonsultasi dengan Michael.com"
+                href="https://wa.me/6281234567890?text=Halo, saya ingin berkonsultasi dengan michaelhuang.id"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-background border border-border hover:border-gold/50 text-foreground font-semibold rounded-xl transition-all text-sm"
