@@ -65,7 +65,7 @@ export function Footer() {
                   <MapPin className="w-4 h-4" />
                 </div>
                 <span className="text-sm">
-                  Jl. Jend. Sudirman No. 1, Karet Tengsin, Jakarta Pusat 10220
+                  Michael, S.H., S.T., M.Kn., Komplek Mall, Perum Ruko Mutiara Taman Palem Blok C8. 23 Jalan Outer Ring Road, Sebarisan Hotel Aston Cengkareng, Taman Palem Jakarta Barat DKI Jakarta 11730 ID, Jl. Kamal Raya Belakang, Cengkareng Tim.
                 </span>
               </li>
             </ul>

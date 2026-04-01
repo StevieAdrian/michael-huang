@@ -29,7 +29,7 @@ export function LocationSection() {
                     Alamat
                   </p>
                   <p className="text-muted-foreground text-sm mt-0.5">
-                    Jl. Jend. Sudirman No. 1, Karet Tengsin, Jakarta Pusat 10220
+                    Michael, S.H., S.T., M.Kn., Komplek Mall, Perum Ruko Mutiara Taman Palem Blok C8. 23 Jalan Outer Ring Road, Sebarisan Hotel Aston Cengkareng, Taman Palem Jakarta Barat DKI Jakarta 11730 ID, Jl. Kamal Raya Belakang, Cengkareng Tim.
                   </p>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export function LocationSection() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="https://maps.google.com/?q=Jl.+Sudirman+Jakarta"
+                href="https://maps.google.com/?q=Michael,+S.H.,+S.T.,+M.Kn.,+Komplek+Mall,+Perum+Ruko+Mutiara+Taman+Palem+Blok+C8.+23+Jalan+Outer+Ring+Road,+Sebarisan+Hotel+Aston+Cengkareng,+Taman+Palem+Jakarta+Barat+DKI+Jakarta+11730+ID,+Jl.+Kamal+Raya+Belakang,+Cengkareng+Tim."
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-gold text-primary-foreground font-bold rounded-xl hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all text-sm"
@@ -89,7 +89,7 @@ export function LocationSection() {
           <div className="rounded-2xl overflow-hidden border border-border/50 shadow-2xl h-[300px] md:h-[420px] relative group">
             <div className="absolute inset-0 bg-foreground/5 group-hover:bg-transparent transition-colors pointer-events-none z-10" />
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.81532607507515!3d-6.201900993790556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sJl.%20Jend.%20Sudirman%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+              src="https://www.google.com/maps?q=Michael,+S.H.,+S.T.,+M.Kn.,+Komplek+Mall,+Perum+Ruko+Mutiara+Taman+Palem+Blok+C8.+23+Jalan+Outer+Ring+Road,+Sebarisan+Hotel+Aston+Cengkareng,+Taman+Palem+Jakarta+Barat+DKI+Jakarta+11730+ID,+Jl.+Kamal+Raya+Belakang,+Cengkareng+Tim.&output=embed"
               width="100%"
               height="100%"
               style={{

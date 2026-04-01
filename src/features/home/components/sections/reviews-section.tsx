@@ -36,14 +36,14 @@ export function ReviewsSection() {
                   />
                 ))}
               </div>
-              <span className="text-2xl font-bold text-foreground">4.9</span>
+              <span className="text-2xl font-bold text-foreground">5.0</span>
               <span className="text-muted-foreground text-sm">
-                · 312 ulasan di Google
+                · 691 ulasan di Google
               </span>
             </div>
           </div>
           <a
-            href="https://maps.google.com/?q=Michael.com+Jakarta"
+            href="https://maps.google.com/?q=Michael,+S.H.,+S.T.,+M.Kn.,+Komplek+Mall,+Perum+Ruko+Mutiara+Taman+Palem+Blok+C8.+23+Jalan+Outer+Ring+Road,+Sebarisan+Hotel+Aston+Cengkareng,+Taman+Palem+Jakarta+Barat+DKI+Jakarta+11730+ID,+Jl.+Kamal+Raya+Belakang,+Cengkareng+Tim."
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:underline underline-offset-4 shrink-0"
@@ -110,7 +110,7 @@ export function ReviewsSection() {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 py-8 px-6 bg-card border border-border/50 rounded-2xl">
           <div className="text-center">
             <div className="text-5xl font-display font-bold text-gradient-gold">
-              4.9
+              5.0
             </div>
             <div className="flex gap-1 justify-center my-2">
               {[...Array(5)].map((_, i) => (
@@ -120,14 +120,14 @@ export function ReviewsSection() {
                 />
               ))}
             </div>
-            <p className="text-xs text-muted-foreground">312 ulasan</p>
+            <p className="text-xs text-muted-foreground">691 ulasan</p>
           </div>
           <div className="w-px h-16 bg-border hidden sm:block" />
           <div className="space-y-2 flex-1 max-w-xs w-full">
             {[
-              { label: "5 ★", pct: 92 },
-              { label: "4 ★", pct: 6 },
-              { label: "3 ★", pct: 2 },
+              { label: "5 ★", pct: 100 },
+              { label: "4 ★", pct: 0 },
+              { label: "3 ★", pct: 0 },
               { label: "2 ★", pct: 0 },
               { label: "1 ★", pct: 0 },
             ].map(({ label, pct }) => (
