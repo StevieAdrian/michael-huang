@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div className="pb-24">
       <PageHero
-        title="One Name, Every Solution"
-        subtitle="The unified digital gateway for all Michael.com premium business units. Experience the gold standard across industries."
+        title="michaelhuang.id"
+        subtitle="Various business of Michael Huang"
       />
 
       <ServicesSection />
