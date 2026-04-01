@@ -45,7 +45,7 @@ export function LocationSection() {
                     rel="noreferrer"
                     className="text-muted-foreground text-sm mt-0.5 hover:text-gold transition-colors"
                   >
-                    +62 812 3456 7890
+                    +62 812 2179 370
                   </a>
                 </div>
               </div>
