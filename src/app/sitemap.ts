@@ -16,6 +16,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 1.0,
     },
+    {
+      url: `${baseUrl}/podcast`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
     // Add more routes here as your site grows
     // {
     //   url: `${baseUrl}/about`,
