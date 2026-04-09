@@ -5,9 +5,10 @@ import {
   Coffee,
   Heart,
   FileText,
-  FileSignature,
-  Music,
-  Layers,
+  Landmark,
+  BookOpen,
+  Mic2,
+  Mic,
 } from "lucide-react";
 
 export const services = [
@@ -19,6 +20,7 @@ export const services = [
     href: "/law-firm",
     color: "from-blue-900/50 to-slate-900/50",
     border: "group-hover:border-blue-500/50",
+    tag: "Hukum",
   },
   {
     title: "Notaris",
@@ -27,25 +29,28 @@ export const services = [
     icon: FileText,
     href: "/notaris",
     color: "from-indigo-900/50 to-slate-900/50",
+    tag: "Hukum",
     border: "group-hover:border-indigo-500/50",
   },
   {
     title: "PPAT",
     description:
       "Akta jual beli tanah, balik nama sertifikat, hibah, dan seluruh transaksi hak atas tanah resmi.",
-    icon: FileSignature,
+    icon: Landmark,
     href: "/ppat",
     color: "from-violet-900/50 to-slate-900/50",
     border: "group-hover:border-violet-500/50",
+    tag: "Hukum",
   },
   {
     title: "Konsultasi Hukum",
     description:
       "Advisory hukum bisnis, legal due diligence, penyusunan kontrak, dan kepatuhan regulasi korporat.",
-    icon: FileText,
+    icon: BookOpen,
     href: "/law-consulting",
     color: "from-purple-900/50 to-slate-900/50",
     border: "group-hover:border-purple-500/50",
+    tag: "Hukum",
   },
   {
     title: "Konsultasi Bisnis",
@@ -55,6 +60,7 @@ export const services = [
     href: "/consulting",
     color: "from-emerald-900/50 to-slate-900/50",
     border: "group-hover:border-emerald-500/50",
+    tag: "Bisnis",
   },
   {
     title: "Kost Premium",
@@ -64,6 +70,7 @@ export const services = [
     href: "/kost",
     color: "from-orange-900/50 to-slate-900/50",
     border: "group-hover:border-orange-500/50",
+    tag: "Properti",
   },
   {
     title: "Warteg Gemini",
@@ -73,6 +80,7 @@ export const services = [
     href: "/warteg",
     color: "from-red-900/50 to-slate-900/50",
     border: "group-hover:border-red-500/50",
+    tag: "Kuliner",
   },
   {
     title: "Glory Ministry Church",
@@ -82,23 +90,26 @@ export const services = [
     href: "/gereja",
     color: "from-rose-900/50 to-slate-900/50",
     border: "group-hover:border-rose-500/50",
+    tag: "Ibadah",
   },
   {
     title: "Musik Production",
     description:
       "Studio rekaman profesional, aransemen, mixing & mastering untuk artis, korporat, dan gereja.",
-    icon: Music,
+    icon: Mic2,
     href: "/musik",
     color: "from-yellow-900/50 to-slate-900/50",
     border: "group-hover:border-yellow-500/50",
+    tag: "Seni",
   },
   {
     title: "Podcast",
     description:
       "Obrolan mendalam tentang iman, bisnis, dan kehidupan. Baru setiap Senin dan Kamis.",
-    icon: Layers,
+    icon: Mic,
     href: "/podcast",
     color: "from-teal-900/50 to-slate-900/50",
     border: "group-hover:border-teal-500/50",
+    tag: "Konten",
   },
 ];
