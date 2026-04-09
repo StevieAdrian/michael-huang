@@ -6,6 +6,8 @@ export const GOOGLE_PODCASTS_URL = "#";
 export const WHATSAPP_PHONE = "6281234567890";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}`;
 export const WHATSAPP_CONSULTATION_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin berkonsultasi dengan michaelhuang.id`;
+export const WARTEG_CATERING_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo,%20saya%20ingin%20order%20catering%20Warteg%20Gemini`;
+export const WARTEG_ORDER_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo,%20saya%20mau%20pesan%20makanan%20Warteg%20Gemini`;
 
 export const EMAIL_ADDRESS = "info@michael.com";
 export const EMAIL_CARE = "care@gloryministry.com";
