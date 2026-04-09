@@ -11,6 +11,7 @@ export const WARTEG_ORDER_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo,%20sa
 export const MUSIC_BOOKING_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin booking sesi rekaman di Michael Music Studio`;
 export const LAW_CONSULTING_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konsultasi hukum bisnis`;
 export const PPAT_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konsultasi layanan PPAT`;
+export const NOTARIS_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konsultasi layanan Notaris`;
 
 export const EMAIL_ADDRESS = "info@michael.com";
 export const EMAIL_CARE = "care@gloryministry.com";
