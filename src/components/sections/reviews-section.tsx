@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Star, ExternalLink } from "lucide-react";
 import { googleReviews } from "@/app/constants/reviews";
+import { GOOGLE_MAPS_SEARCH_URL } from "@/app/constants/links";
 
 export function ReviewsSection() {
   return (
@@ -43,7 +44,7 @@ export function ReviewsSection() {
             </div>
           </div>
           <a
-            href="https://maps.google.com/?q=Michael,+S.H.,+S.T.,+M.Kn.,+Komplek+Mall,+Perum+Ruko+Mutiara+Taman+Palem+Blok+C8.+23+Jalan+Outer+Ring+Road,+Sebarisan+Hotel+Aston+Cengkareng,+Taman+Palem+Jakarta+Barat+DKI+Jakarta+11730+ID,+Jl.+Kamal+Raya+Belakang,+Cengkareng+Tim."
+            href={GOOGLE_MAPS_SEARCH_URL}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:underline underline-offset-4 shrink-0"

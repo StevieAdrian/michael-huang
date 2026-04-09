@@ -1,6 +1,14 @@
 "use client";
 
 import { MapPin, Phone, Mail } from "lucide-react";
+import {
+  WHATSAPP_URL,
+  WHATSAPP_CONSULTATION_URL,
+  EMAIL_ADDRESS,
+  LOCATION_ADDRESS,
+  GOOGLE_MAPS_SEARCH_URL,
+  GOOGLE_MAPS_EMBED_URL,
+} from "@/app/constants/links";
 
 export function LocationSection() {
   return (
@@ -29,7 +37,7 @@ export function LocationSection() {
                     Alamat
                   </p>
                   <p className="text-muted-foreground text-sm mt-0.5">
-                    Komplek Mall, Perum Ruko Mutiara Taman Palem Blok C8. 23 Jalan Outer Ring Road, Sebarisan Hotel Aston Cengkareng, Taman Palem Jakarta Barat DKI Jakarta 11730 ID, Jl. Kamal Raya Belakang, Cengkareng Tim.
+                    {LOCATION_ADDRESS}
                   </p>
                 </div>
               </div>
@@ -40,7 +48,7 @@ export function LocationSection() {
                     Telepon / WhatsApp
                   </p>
                   <a
-                    href="https://wa.me/6281234567890"
+                    href={WHATSAPP_URL}
                     target="_blank"
                     rel="noreferrer"
                     className="text-muted-foreground text-sm mt-0.5 hover:text-gold transition-colors"
@@ -56,10 +64,10 @@ export function LocationSection() {
                     Email
                   </p>
                   <a
-                    href="mailto:info@michael.com"
+                    href={`mailto:${EMAIL_ADDRESS}`}
                     className="text-muted-foreground text-sm mt-0.5 hover:text-gold transition-colors"
                   >
-                    info@michael.com
+                    {EMAIL_ADDRESS}
                   </a>
                 </div>
               </div>
@@ -67,7 +75,7 @@ export function LocationSection() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="https://maps.google.com/?q=Michael,+S.H.,+S.T.,+M.Kn.,+Komplek+Mall,+Perum+Ruko+Mutiara+Taman+Palem+Blok+C8.+23+Jalan+Outer+Ring+Road,+Sebarisan+Hotel+Aston+Cengkareng,+Taman+Palem+Jakarta+Barat+DKI+Jakarta+11730+ID,+Jl.+Kamal+Raya+Belakang,+Cengkareng+Tim."
+                href={GOOGLE_MAPS_SEARCH_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-gold text-primary-foreground font-bold rounded-xl hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all text-sm"
@@ -75,7 +83,7 @@ export function LocationSection() {
                 <MapPin className="w-4 h-4" /> Buka di Google Maps
               </a>
               <a
-                href="https://wa.me/6281234567890?text=Halo, saya ingin berkonsultasi dengan michaelhuang.id"
+                href={WHATSAPP_CONSULTATION_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-background border border-border hover:border-gold/50 text-foreground font-semibold rounded-xl transition-all text-sm"
@@ -89,7 +97,7 @@ export function LocationSection() {
           <div className="rounded-2xl overflow-hidden border border-border/50 shadow-2xl h-[300px] md:h-[420px] relative group">
             <div className="absolute inset-0 bg-foreground/5 group-hover:bg-transparent transition-colors pointer-events-none z-10" />
             <iframe
-              src="https://www.google.com/maps?q=Michael,+S.H.,+S.T.,+M.Kn.,+Komplek+Mall,+Perum+Ruko+Mutiara+Taman+Palem+Blok+C8.+23+Jalan+Outer+Ring+Road,+Sebarisan+Hotel+Aston+Cengkareng,+Taman+Palem+Jakarta+Barat+DKI+Jakarta+11730+ID,+Jl.+Kamal+Raya+Belakang,+Cengkareng+Tim.&output=embed"
+              src={GOOGLE_MAPS_EMBED_URL}
               width="100%"
               height="100%"
               style={{

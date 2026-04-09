@@ -1,3 +1,5 @@
+import { YOUTUBE_CHANNEL_URL, SPOTIFY_URL, APPLE_PODCASTS_URL, GOOGLE_PODCASTS_URL } from "./links";
+
 export interface PodcastEpisode {
   number: string;
   title: string;
@@ -61,11 +63,11 @@ export const podcastEpisodes: PodcastEpisode[] = [
 export const podcastPlatforms: PodcastPlatform[] = [
   {
     name: "YouTube",
-    url: "https://www.youtube.com/@michaelhuangofficial2022",
+    url: YOUTUBE_CHANNEL_URL,
     color: "bg-red-600",
     icon: ">",
   },
-  { name: "Spotify", url: "#", color: "bg-emerald-600", icon: "S" },
-  { name: "Apple Podcasts", url: "#", color: "bg-indigo-600", icon: "A" },
-  { name: "Google Podcasts", url: "#", color: "bg-blue-600", icon: "G" },
+  { name: "Spotify", url: SPOTIFY_URL, color: "bg-emerald-600", icon: "S" },
+  { name: "Apple Podcasts", url: APPLE_PODCASTS_URL, color: "bg-indigo-600", icon: "A" },
+  { name: "Google Podcasts", url: GOOGLE_PODCASTS_URL, color: "bg-blue-600", icon: "G" },
 ];
