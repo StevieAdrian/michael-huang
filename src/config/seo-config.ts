@@ -20,7 +20,7 @@ export const seoConfig = {
   // Author/Organization
   author: {
     name: "Your Name",
-    email: "contact@example.com",
+    email: "contact@michaelhuang.id",
   },
 
   // JSON-LD Organization Schema

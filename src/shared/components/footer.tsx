@@ -78,7 +78,7 @@ export function Footer() {
                 <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-gold shrink-0">
                   <MessageCircle className="w-4 h-4" />
                 </div>
-                info@michael.com
+                contact@michaelhuang.id
               </li>
               <li className="flex items-start gap-3 mt-2">
                 <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-gold shrink-0">

@@ -14,10 +14,16 @@ import {
   Phone,
   QrCode,
   Users,
+  Target,
+  Compass,
+  FileSpreadsheet,
+  X,
+  Youtube,
+  ZoomIn,
+  ZoomOut
 } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { ArticleCards } from "@/shared/components/article-cards";
-import { YoutubeSection } from "@/shared/components/youtube-section";
 import {
   churchArticles,
   churchAnnouncements,
@@ -25,11 +31,22 @@ import {
   churchDonationItems,
   churchSchedules,
   churchUpcomingEvents,
-  churchWeeklyPhotoLabels,
+  churchWeeklyPhotos,
   churchYoutubeVideos,
+  churchTitheData,
+  churchPastors,
+  churchVisionMission,
+  churchMonthlyThemes,
+  ChurchTitheMonth
 } from "@/app/constants/church";
 
-export function ChurchClientPage() {
+interface ChurchClientPageProps {
+  initialTitheData?: ChurchTitheMonth[];
+}
+
+export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
+  const titheData = initialTitheData && initialTitheData.length > 0 ? initialTitheData : churchTitheData;
+  const [selectedTheme, setSelectedTheme] = useState<typeof churchMonthlyThemes[0] | null>(null);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -37,6 +54,10 @@ export function ChurchClientPage() {
     seconds: 0,
   });
   const [openDonation, setOpenDonation] = useState<string | null>("perpuluhan");
+  const [selectedTitheMonth, setSelectedTitheMonth] = useState(titheData[0]?.month || "");
+  const [selectedPhoto, setSelectedPhoto] = useState<typeof churchWeeklyPhotos[0] | null>(null);
+  const [isZoomed, setIsZoomed] = useState(false);
+  const currentMonth = new Date().getMonth() + 1; // 1-12
 
   useEffect(() => {
     const calculateTimeLeft = () => {
@@ -71,7 +92,7 @@ export function ChurchClientPage() {
         align="left"
       />
 
-      <section className="bg-gradient-gold py-12 relative z-20">
+      <section id="jadwal" className="bg-gradient-gold py-12 relative z-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h3 className="text-primary-foreground font-semibold uppercase tracking-widest mb-6 text-sm">
             Ibadah Minggu Berikutnya
@@ -85,6 +106,182 @@ export function ChurchClientPage() {
                 <span className="text-primary-foreground/80 text-xs md:text-sm uppercase tracking-wider mt-2 font-medium">
                   {unit}
                 </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Vision and Mission Section */}
+      <section id="visi-misi" className="py-12 md:py-20 bg-background border-b border-border/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl md:text-4xl font-display font-bold mb-8 text-gold">Visi & Misi</h2>
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 text-left">
+            <div className="bg-card border border-border/50 p-8 rounded-2xl">
+              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <Target className="w-5 h-5 text-gold"/> Visi
+              </h3>
+              <p className="text-muted-foreground">{churchVisionMission.vision}</p>
+            </div>
+            <div className="bg-card border border-border/50 p-8 rounded-2xl">
+              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <Compass className="w-5 h-5 text-gold"/> Misi
+              </h3>
+              <ul className="space-y-3">
+                {churchVisionMission.mission.map((m, i) => (
+                  <li key={i} className="flex gap-3 text-muted-foreground">
+                    <span className="text-gold font-bold">{i+1}.</span>
+                    <span>{m}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership / Pastors Section */}
+      <section id="gembala" className="py-20 md:py-32 bg-card border-b border-border/50 relative overflow-hidden">
+        {/* Subtle Background Decoration */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/5 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16 md:mb-24">
+            <h2 className="text-sm font-bold text-gold uppercase tracking-[0.3em] mb-4">Spiritual Leaders</h2>
+            <h3 className="text-3xl md:text-5xl font-display font-bold mb-6">Tim Gembala</h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
+              Kami dilayani oleh hamba-hamba Tuhan yang mendedikasikan hidupnya untuk menuntun dan melayani jemaat dengan hati yang tulus.
+            </p>
+          </div>
+          
+          {/* Main Pastor - Premium Card */}
+          <div className="flex justify-center mb-24 md:mb-32">
+            {churchPastors.filter(p => p.isMain).map(pastor => (
+              <div key={pastor.name} className="relative group max-w-4xl w-full">
+                <div className="absolute -inset-1 bg-gradient-to-r from-gold/20 via-gold/40 to-gold/20 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <div className="relative bg-background border border-gold/20 rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col md:flex-row items-center cursor-default">
+                  {/* Photo Part */}
+                  <div className="w-full md:w-2/5 aspect-[4/5] md:aspect-square overflow-hidden border-b md:border-b-0 md:border-r border-gold/10">
+                    <img 
+                      src={pastor.image} 
+                      alt={pastor.name} 
+                      className="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" 
+                    />
+                  </div>
+                  {/* Content Part */}
+                  <div className="w-full md:w-3/5 p-8 md:p-12 text-center md:text-left flex flex-col justify-center">
+                    <div className="w-12 h-1 bg-gold mb-6 mx-auto md:mx-0"></div>
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-4 leading-tight">
+                      {pastor.name}
+                    </h3>
+                    <p className="text-gold font-bold uppercase tracking-widest text-sm mb-6">
+                      {pastor.role}
+                    </p>
+                    <p className="text-muted-foreground italic text-sm md:text-base mb-0 leading-relaxed">
+                      "Melayani dengan segenap hati untuk kemuliaan Tuhan."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mb-12">
+            <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-[0.2em] mb-8 relative inline-block">
+              Associate Pastors
+              <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-8 h-px bg-border"></span>
+            </h4>
+          </div>
+
+          {/* Associate Pastors - Refined Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {churchPastors.filter(p => !p.isMain).map(pastor => (
+              <div key={pastor.name} className="group flex flex-col items-center">
+                <div className="relative w-40 h-40 md:w-48 md:h-48 mb-6">
+                  {/* Outer Ring */}
+                  <div className="absolute -inset-2 bg-gold/5 rounded-full border border-gold/10 group-hover:border-gold/30 transition-colors duration-500"></div>
+                  {/* Image Container */}
+                  <div className="relative w-full h-full bg-muted rounded-full overflow-hidden border-2 border-transparent group-hover:border-gold/50 shadow-xl transition-all duration-500">
+                    <img 
+                      src={pastor.image} 
+                      alt={pastor.name} 
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" 
+                    />
+                  </div>
+                </div>
+                <h3 className="text-lg font-bold font-display group-hover:text-gold transition-colors duration-300">
+                  {pastor.name}
+                </h3>
+                <p className="text-muted-foreground text-xs uppercase tracking-widest font-semibold mt-1">
+                  {pastor.role}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Monthly Theme Carousel Section */}
+      <section id="tema-bulanan" className="py-16 md:py-24 bg-background border-y border-border/50 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gold/5 blur-[120px] rounded-full pointer-events-none" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">Tema Bulanan {new Date().getFullYear()}</h2>
+              <p className="text-muted-foreground md:text-lg">Kumpulan renungan firman Tuhan yang menuntun langkah kita bertumbuh di sepanjang tahun ini.</p>
+            </div>
+            <div className="hidden md:flex gap-2 text-muted-foreground mr-4 text-sm mt-auto items-center">
+              Geser untuk melihat <span className="text-gold">&rarr;</span>
+            </div>
+          </div>
+
+          <div className="flex overflow-x-auto gap-5 md:gap-8 pb-10 pt-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] pl-4 lg:pl-0 pr-4">
+            {churchMonthlyThemes.filter(t => t.monthId <= currentMonth).reverse().map(theme => (
+              <div 
+                key={theme.monthId} 
+                onClick={() => setSelectedTheme(theme)}
+                tabIndex={0}
+                role="button"
+                className="group relative w-[85vw] sm:w-[300px] md:w-[400px] h-[420px] md:h-[500px] rounded-[2rem] overflow-hidden snap-center shrink-0 flex flex-col cursor-pointer hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(212,175,55,0.3)] transition-all duration-500 border border-border/20 bg-muted text-left"
+              >
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                  <img 
+                    src={theme.picture} 
+                    alt={theme.monthName} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" 
+                  />
+                  {/* Premium Dark Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 z-10" />
+                </div>
+                
+                {/* Top Badge */}
+                <div className="absolute top-6 left-6 z-20">
+                  <div className="bg-background/20 backdrop-blur-md border border-white/20 text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase shadow-lg">
+                    {theme.monthName}
+                  </div>
+                </div>
+
+                {/* Content at Bottom */}
+                <div className="relative z-20 mt-auto p-6 md:p-8 flex flex-col translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                  <p className="text-gold font-medium mb-3 text-sm tracking-wide bg-black/40 w-fit px-3 py-1 rounded-md backdrop-blur-sm border border-gold/20 shadow-md">
+                    {theme.bibleVerse}
+                  </p>
+                  <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-2 leading-tight drop-shadow-md">
+                    {theme.themeText}
+                  </h3>
+                  
+                  {/* Fading text description */}
+                  <p className="text-white/70 text-sm md:text-base line-clamp-2 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 h-0 group-hover:h-auto">
+                    {theme.description}
+                  </p>
+                  
+                  {/* Interactive Button */}
+                  <div className="flex items-center gap-2 text-gold text-sm font-bold uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-x-4 group-hover:translate-x-0">
+                    Baca Renungan <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -160,15 +357,34 @@ export function ChurchClientPage() {
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-            {churchWeeklyPhotoLabels.map((label) => (
+            {churchWeeklyPhotos.map((item) => (
               <div
-                key={label}
-                className="aspect-square rounded-xl md:rounded-2xl bg-card border border-border/50 flex flex-col items-center justify-center gap-2 hover:border-gold/30 transition-colors group overflow-hidden"
+                key={item.label}
+                onClick={() => item.image && setSelectedPhoto(item)}
+                className={`group relative aspect-square rounded-xl md:rounded-2xl bg-card border border-border/50 overflow-hidden transition-all duration-300 shadow-sm ${
+                  item.image ? "cursor-pointer hover:border-gold/50" : "cursor-default"
+                }`}
               >
-                <Image className="w-8 h-8 text-muted-foreground/40 group-hover:text-gold/50 transition-colors" />
-                <span className="text-xs text-muted-foreground/50 font-medium">
-                  {label}
-                </span>
+                {item.image ? (
+                  <>
+                    <img 
+                      src={item.image} 
+                      alt={item.label}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 md:p-4">
+                      <span className="text-white text-[10px] md:text-sm font-bold uppercase tracking-wider">{item.label}</span>
+                      <span className="text-gold/80 text-[8px] md:text-[10px] font-medium uppercase tracking-widest mt-0.5">Klik untuk memperbesar</span>
+                    </div>
+                  </>
+                ) : (
+                  <div className="w-full h-full flex flex-col items-center justify-center gap-2 opacity-40 group-hover:opacity-60 transition-opacity">
+                    <Image className="w-8 h-8 text-muted-foreground" />
+                    <span className="text-[10px] md:text-xs text-muted-foreground font-medium uppercase tracking-tighter">
+                      {item.label}
+                    </span>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -178,11 +394,50 @@ export function ChurchClientPage() {
         </div>
       </section>
 
-      <YoutubeSection
-        title="Tonton Khotbah di YouTube"
-        subtitle="Seluruh ibadah dan khotbah tersedia di channel YouTube kami. Nonton kapan saja, di mana saja."
-        videos={churchYoutubeVideos}
-      />
+      <section className="py-12 md:py-20 bg-card border-y border-border/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 md:mb-12">
+            <div>
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-red-600 flex items-center justify-center">
+                  <Youtube className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-muted-foreground uppercase tracking-widest">
+                  YouTube
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-4xl font-display font-bold">Terbaru di YouTube</h2>
+              <p className="text-muted-foreground mt-2 text-sm md:text-base">Tonton rekaman ibadah dan khotbah terbaru kami.</p>
+            </div>
+            <a
+              href="https://www.youtube.com/@michaelhuangofficial2022"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-colors text-sm shrink-0"
+            >
+              <Youtube className="w-4 h-4" /> Subscribe Channel
+            </a>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="relative aspect-video rounded-3xl overflow-hidden border border-border/50 shadow-2xl bg-black">
+              <iframe
+                src="https://www.youtube.com/embed/iWonkzOLS7w"
+                title="Church Video"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="mt-6 text-center">
+              <h3 className="text-xl font-bold mb-2">Ibadah Hari Minggu - Glory Ministry Church</h3>
+              <p className="text-muted-foreground text-sm max-w-2xl mx-auto">
+                Mari bersekutu dan dikuatkan oleh Firman Tuhan dalam ibadah online kami. Bagikan pesan ini kepada keluarga dan kerabat Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="py-12 md:py-20 bg-background border-b border-border/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -231,17 +486,16 @@ export function ChurchClientPage() {
                           <p className="text-sm font-semibold text-muted-foreground mb-3">
                             Scan QRIS
                           </p>
-                          <div className="w-40 h-40 md:w-48 md:h-48 bg-muted border-2 border-dashed border-border rounded-2xl flex flex-col items-center justify-center gap-2 hover:border-gold/40 transition-colors">
-                            <QrCode className="w-12 h-12 text-muted-foreground/40" />
-                            <span className="text-xs text-muted-foreground/60 text-center px-3">
-                              QR Code QRIS
-                              <br />
-                              akan tampil di sini
-                            </span>
+                          <div className="w-56 h-56 md:w-64 md:h-64 bg-white rounded-2xl border border-border/50 shadow-sm overflow-hidden flex items-center justify-center relative">
+                            <img 
+                              src="/images/qris-church.png" 
+                              alt="QRIS Glory Ministry Church" 
+                              className="w-full h-full object-cover scale-[1.1] origin-center"
+                            />
                           </div>
-                          <p className="text-xs text-muted-foreground mt-2">
+                          {/*<p className="text-xs text-muted-foreground mt-2">
                             Berlaku untuk semua bank & e-wallet
-                          </p>
+                          </p>*/}
                         </div>
 
                         <div>
@@ -276,7 +530,7 @@ export function ChurchClientPage() {
 
           <div className="mt-6 text-center">
             <a
-              href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20konfirmasi%20persembahan"
+              href="https://wa.me/628122179370?partnertoken=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJodHRwczovL3dhLm1lLzYyODEyMjE3OTM3MCIsImV4cCI6MTc3NTc1ODA1NywiaWF0IjoxNzc1NzU3NzU3LCJpc3MiOiJHb29nbGUifQ.P8gbZY4BLiXWbQafor8IgWS8lfY5CflUO-x9OAiDmqF2WxdXRxW_ZMpjRp2kQY22iSKhFggqBhXAM7J2GyQxkw"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-sm transition-colors"
@@ -287,7 +541,82 @@ export function ChurchClientPage() {
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-card border-b border-border/50">
+      <section id="laporan-perpuluhan" className="py-12 md:py-20 bg-card border-b border-border/50 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-4xl font-display font-bold mb-3 flex items-center justify-center gap-3">
+              <FileSpreadsheet className="text-emerald-500 w-8 h-8" />
+              Laporan Persembahan
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
+              Transparansi adalah komitmen kami. Berikut adalah laporan penerimaan berdasarkan data yang masuk setiap bulannya.
+            </p>
+          </div>
+
+          <div className="bg-background rounded-2xl border border-border/50 overflow-hidden shadow-xl max-w-5xl mx-auto">
+            {/* Toolbar/Header */}
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 border-b border-border/50 bg-muted/30">
+              <div className="flex gap-2 w-full sm:w-auto overflow-x-auto pb-2 sm:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                {titheData.map(data => (
+                  <button 
+                    key={data.month}
+                    onClick={() => setSelectedTitheMonth(data.month)}
+                    className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
+                      selectedTitheMonth === data.month 
+                        ? "bg-emerald-600 text-white" 
+                        : "bg-background border border-border/50 text-muted-foreground hover:bg-card"
+                    }`}
+                  >
+                    Bulan {data.month}
+                  </button>
+                ))}
+              </div>
+              <div className="mt-4 sm:mt-0 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-lg text-emerald-600 dark:text-emerald-400 font-bold text-sm">
+                Total: Rp {(titheData.find(d => d.month === selectedTitheMonth)?.total || 0).toLocaleString('id-ID')}
+              </div>
+            </div>
+
+            {/* Spreadsheet View */}
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-muted text-muted-foreground uppercase font-medium text-xs">
+                  <tr>
+                    <th className="px-6 py-4 border-b border-border/10">Tanggal</th>
+                    <th className="px-6 py-4 border-b border-border/10">Nama / Keterangan</th>
+                    <th className="px-6 py-4 border-b border-border/10">Metode</th>
+                    <th className="px-6 py-4 border-b border-border/10 text-right">Nominal (Rp)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {titheData.find(d => d.month === selectedTitheMonth)?.rows.map((row, idx) => (
+                    <tr key={idx} className="border-b border-border/10 hover:bg-muted/30 transition-colors">
+                      <td className="px-6 py-4 whitespace-nowrap font-mono text-muted-foreground">{row.date}</td>
+                      <td className="px-6 py-4 font-medium">{row.name}</td>
+                      <td className="px-6 py-4 text-muted-foreground">{row.paymentType}</td>
+                      <td className="px-6 py-4 text-right font-mono font-medium text-emerald-600 dark:text-emerald-400">
+                        {row.amount.toLocaleString('id-ID')}
+                      </td>
+                    </tr>
+                  ))}
+                  {(!churchTitheData.find(d => d.month === selectedTitheMonth)?.rows || churchTitheData.find(d => d.month === selectedTitheMonth)!.rows.length === 0) && (
+                    <tr>
+                      <td colSpan={4} className="px-6 py-12 text-center text-muted-foreground">Belum ada data untuk bulan ini.</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div className="text-center mt-6">
+             <a href="https://docs.google.com/spreadsheets/d/1uBBirkqnagjrPbek7apzioWaeEHyDAFmc8EbQcO1j3E/edit?gid=1988151645#gid=1988151645" target="_blank" rel="noreferrer" className="text-sm text-gold hover:underline font-medium inline-flex items-center gap-1">
+               <FileSpreadsheet className="w-4 h-4" /> Buka Laporan Lengkap (Google Sheets)
+             </a>
+          </div>
+        </div>
+      </section>
+
+      {/*<section className="py-12 md:py-20 bg-card border-b border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-4xl font-display font-bold mb-3">
@@ -295,7 +624,7 @@ export function ChurchClientPage() {
             </h2>
           </div>
         </div>
-      </section>
+      </section>*/} 
 
       <section className="py-12 md:py-20 bg-background border-b border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -322,7 +651,7 @@ export function ChurchClientPage() {
                 </div>
               </div>
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/628122179370?partnertoken=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJodHRwczovL3dhLm1lLzYyODEyMjE3OTM3MCIsImV4cCI6MTc3NTc1ODA1NywiaWF0IjoxNzc1NzU3NzU3LCJpc3MiOiJHb29nbGUifQ.P8gbZY4BLiXWbQafor8IgWS8lfY5CflUO-x9OAiDmqF2WxdXRxW_ZMpjRp2kQY22iSKhFggqBhXAM7J2GyQxkw"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-sm transition-colors"
@@ -331,22 +660,33 @@ export function ChurchClientPage() {
               </a>
             </div>
 
-            <div className="h-[300px] md:h-[380px] rounded-2xl overflow-hidden border border-border/50 shadow-xl">
-              <iframe
-                src={churchContactInfo.mapsEmbedUrl}
-                width="100%"
-                height="100%"
-                style={{ border: 0, filter: "grayscale(0.3)" }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+            <div className="space-y-4">
+              <div className="h-[300px] md:h-[380px] rounded-2xl overflow-hidden border border-border/50 shadow-xl">
+                <iframe
+                  src={churchContactInfo.mapsEmbedUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, filter: "grayscale(0.3)" }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+              <a 
+                href={churchContactInfo.mapsUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-center gap-2 w-full py-3 bg-white hover:bg-muted text-foreground font-semibold rounded-xl border border-border transition-all shadow-sm"
+              >
+                <MapPin className="w-4 h-4 text-black" />
+                Dapatkan Rute di Google Maps
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-card border-b border-border/50">
+      {/*<section className="py-12 md:py-20 bg-card border-b border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-4xl font-display font-bold mb-3">
@@ -354,13 +694,128 @@ export function ChurchClientPage() {
             </h2>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       <ArticleCards
         articles={churchArticles}
         basePath="/gereja"
         title="Artikel & Renungan"
       />
+
+      {/* Lightbox Foto Jemaat */}
+      {selectedPhoto && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10 animate-in fade-in duration-300">
+          {/* Backdrop */}
+          <div 
+            className="absolute inset-0 bg-black/95 backdrop-blur-sm"
+            onClick={() => {
+              setSelectedPhoto(null);
+              setIsZoomed(false);
+            }}
+          />
+          
+          {/* Controls Container */}
+          <div className="absolute top-4 right-4 md:top-8 md:right-8 flex gap-2 md:gap-4 z-[110]">
+            <button 
+              onClick={() => setIsZoomed(!isZoomed)}
+              className="p-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-md transition-all border border-white/10"
+              title={isZoomed ? "Zoom Out" : "Zoom In"}
+            >
+              {isZoomed ? <ZoomOut className="w-6 h-6" /> : <ZoomIn className="w-6 h-6" />}
+            </button>
+            <button 
+              onClick={() => {
+                setSelectedPhoto(null);
+                setIsZoomed(false);
+              }}
+              className="p-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-md transition-all border border-white/10"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+
+          <div className="absolute top-6 left-1/2 -translate-x-1/2 z-[110] text-center">
+            <span className="bg-gold/20 text-gold px-4 py-1.5 rounded-full text-xs font-bold tracking-[0.2em] uppercase border border-gold/30">
+              {selectedPhoto.label}
+            </span>
+          </div>
+
+          {/* Image Wrapper */}
+          <div 
+            className={`relative max-w-full max-h-full transition-all duration-500 ease-out select-none ${
+              isZoomed ? "scale-150 cursor-zoom-out" : "scale-100 cursor-zoom-in"
+            }`}
+            onClick={() => setIsZoomed(!isZoomed)}
+          >
+            <img 
+              src={selectedPhoto.image} 
+              alt={selectedPhoto.label} 
+              className="max-w-full max-h-[85vh] md:max-h-[90vh] object-contain rounded-lg shadow-2xl"
+              draggable={false}
+            />
+          </div>
+          
+          <p className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-xs font-medium tracking-wide z-[110] hidden md:block">
+            {isZoomed ? "Tarik atau klik untuk mengecilkan" : "Klik gambar untuk memperbesar"}
+          </p>
+        </div>
+      )}
+
+      {/* Modal Tema Bulanan */}
+      {selectedTheme && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          {/* Backdrop */}
+          <div 
+            className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"
+            onClick={() => setSelectedTheme(null)}
+          />
+          {/* Modal Card */}
+          <div className="relative bg-card border border-border/50 rounded-3xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl animate-in fade-in zoom-in-95 duration-200">
+            {/* Image Header */}
+            <div className="relative h-56 md:h-72 w-full">
+              <img src={selectedTheme.picture} alt={selectedTheme.themeText} className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-card via-background/40 to-black/20" />
+              
+              {/* Close Button */}
+              <button 
+                onClick={() => setSelectedTheme(null)}
+                className="absolute top-4 right-4 p-2 bg-black/30 hover:bg-black/60 text-white rounded-full backdrop-blur-md transition-colors border border-white/10"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            
+            {/* Modal Content */}
+            <div className="p-6 md:p-8 -mt-10 relative z-10">
+              <div className="flex flex-wrap items-center gap-2 mb-5">
+                <span className="bg-gold/20 text-gold px-3 mb-1 py-1 text-xs font-bold rounded-full uppercase tracking-widest border border-gold/30 shadow-sm">
+                  {selectedTheme.monthName}
+                </span>
+                <span className="text-xs md:text-sm font-semibold text-muted-foreground bg-muted border border-border/50 px-3 py-1 mb-1 rounded-full shadow-sm">
+                  {selectedTheme.bibleVerse}
+                </span>
+              </div>
+              
+              <h3 className="text-2xl md:text-4xl font-display font-bold mb-4 leading-tight">
+                {selectedTheme.themeText}
+              </h3>
+              
+              <div className="prose prose-sm md:prose-base dark:prose-invert text-muted-foreground pb-4">
+                <p className="leading-relaxed text-foreground/90">
+                  {selectedTheme.description}
+                </p>
+                <div className="h-px w-full bg-border/50 my-6"></div>
+                <h4 className="text-foreground font-bold mb-2">Aplikasi Praktis:</h4>
+                <ul className="space-y-2 list-disc pl-5">
+                  <li>Membaca rutinitas Alkitab setiap hari dengan fokus pada <strong>{selectedTheme.bibleVerse}</strong>.</li>
+                  <li>Membagikan renungan ini kepada 2-3 orang terdekat di waktu luang minggu ini.</li>
+                  <li>Menjelmakan tema "{selectedTheme.themeText}" ke dalam langkah-langkah konkrit di dunia pekerjaan/pelayanan Anda.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
