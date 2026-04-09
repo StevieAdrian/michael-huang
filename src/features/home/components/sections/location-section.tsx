@@ -29,7 +29,7 @@ export function LocationSection() {
                     Alamat
                   </p>
                   <p className="text-muted-foreground text-sm mt-0.5">
-                    Michael, S.H., S.T., M.Kn., Komplek Mall, Perum Ruko Mutiara Taman Palem Blok C8. 23 Jalan Outer Ring Road, Sebarisan Hotel Aston Cengkareng, Taman Palem Jakarta Barat DKI Jakarta 11730 ID, Jl. Kamal Raya Belakang, Cengkareng Tim.
+                    Komplek Mall, Perum Ruko Mutiara Taman Palem Blok C8. 23 Jalan Outer Ring Road, Sebarisan Hotel Aston Cengkareng, Taman Palem Jakarta Barat DKI Jakarta 11730 ID, Jl. Kamal Raya Belakang, Cengkareng Tim.
                   </p>
                 </div>
               </div>

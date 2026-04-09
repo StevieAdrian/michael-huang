@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div className="pb-24">
       <PageHero
-        title="michaelhuang.id"
-        subtitle="Various business of Michael Huang"
+        title="Satu Nama, Semua Solusi"
+        subtitle="Pintu masuk digital terpadu untuk semua unit bisnis premium Michael.com. Standar terbaik di setiap layanan."
       />
 
       <ServicesSection />

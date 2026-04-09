@@ -25,7 +25,7 @@ export function ReviewsSection() {
               </span>
             </div>
             <h2 className="text-2xl md:text-4xl font-display font-bold mb-2">
-              What Our Clients Say
+              Apa Kata Klien Kami
             </h2>
             <div className="flex items-center gap-3 mt-3">
               <div className="flex gap-1">

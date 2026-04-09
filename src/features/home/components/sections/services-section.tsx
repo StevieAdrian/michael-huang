@@ -10,10 +10,10 @@ export function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
           <h2 className="text-2xl md:text-4xl font-display font-bold mb-4">
-            Our Ecosystem
+            Ekosistem Kami
           </h2>
           <p className="text-muted-foreground">
-            Select a business unit below to explore our specialized services.
+            Pilih unit bisnis di bawah ini untuk mengeksplorasi layanan kami.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export function ServicesSection() {
                       {service.description}
                     </p>
                     <div className="flex items-center text-sm font-semibold text-gold mt-auto pt-4 border-t border-border/50">
-                      Explore Unit{" "}
+                      Jelajahi{" "}
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
                     </div>
                   </div>

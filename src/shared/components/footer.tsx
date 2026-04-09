@@ -20,14 +20,13 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              One Name, Every Solution. The gold standard unified digital
-              ecosystem for all your business and lifestyle needs.
+              Satu Nama, Semua Solusi. Standar emas ekosistem digital terpadu untuk semua kebutuhan bisnis dan gaya hidup Anda.
             </p>
           </div>
 
           <div>
             <h4 className="font-display font-semibold mb-6 text-foreground">
-              Our Services
+              Layanan Kami
             </h4>
             <ul className="space-y-3">
               {navItems.map((item) => (
@@ -45,7 +44,7 @@ export function Footer() {
 
           <div>
             <h4 className="font-display font-semibold mb-6 text-foreground">
-              Contact
+              Kontak
             </h4>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-center gap-3">

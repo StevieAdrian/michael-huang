@@ -12,84 +12,93 @@ import {
 
 export const services = [
   {
-    title: "Notaris",
-    description:
-      "Professional notarial services for documents, contracts, and legal certifications with trusted precision.",
-    icon: FileText,
-    href: "/notaris",
-    color: "from-slate-900/50 to-blue-900/50",
-    border: "group-hover:border-blue-500/50",
-  },
-  {
-    title: "PPAT",
-    description:
-      "Land deed and property transfer specialists managing registration, certification, and transaction compliance.",
-    icon: FileSignature,
-    href: "/ppat",
-    color: "from-emerald-900/50 to-slate-900/50",
-    border: "group-hover:border-emerald-500/50",
-  },
-  {
-    title: "MH Consulting",
-    description:
-      "Business strategy and financial advisory services tailored to help your company grow with confidence.",
-    icon: TrendingUp,
-    href: "/mh-consulting",
-    color: "from-cyan-900/50 to-slate-900/50",
-    border: "group-hover:border-cyan-500/50",
-  },
-  {
     title: "Law Firm",
     description:
-      "Authoritative legal counsel, corporate structuring, and litigation with a gold standard approach.",
+      "Konsultasi hukum korporat, litigasi, dan pendampingan hukum strategis untuk individu dan perusahaan.",
     icon: Scale,
     href: "/law-firm",
     color: "from-blue-900/50 to-slate-900/50",
     border: "group-hover:border-blue-500/50",
   },
   {
-    title: "Warteg Gemini",
+    title: "Notaris",
     description:
-      "Authentic local dining with a modern twist, serving comfort food for families and business guests.",
-    icon: Coffee,
-    href: "/warteg-gemini",
-    color: "from-red-900/50 to-slate-900/50",
-    border: "group-hover:border-red-500/50",
+      "Pembuatan akta autentik, legalisasi dokumen, dan layanan notarisasi resmi berstandar hukum Indonesia.",
+    icon: FileText,
+    href: "/notaris",
+    color: "from-indigo-900/50 to-slate-900/50",
+    border: "group-hover:border-indigo-500/50",
   },
   {
-    title: "Kos Nyaman Gemini",
+    title: "PPAT",
     description:
-      "Premium boarding options designed for comfort, safety, and a convenient Jakarta lifestyle.",
-    icon: HomeIcon,
-    href: "/kos-nyaman-gemini",
-    color: "from-orange-900/50 to-slate-900/50",
-    border: "group-hover:border-orange-500/50",
+      "Akta jual beli tanah, balik nama sertifikat, hibah, dan seluruh transaksi hak atas tanah resmi.",
+    icon: FileSignature,
+    href: "/ppat",
+    color: "from-violet-900/50 to-slate-900/50",
+    border: "group-hover:border-violet-500/50",
   },
   {
-    title: "Glory Ministry Church",
+    title: "Konsultasi Hukum",
     description:
-      "A welcoming community hub for worship, fellowship, and outreach activities in Jakarta Barat.",
-    icon: Heart,
-    href: "/glory-ministry-church",
+      "Advisory hukum bisnis, legal due diligence, penyusunan kontrak, dan kepatuhan regulasi korporat.",
+    icon: FileText,
+    href: "/law-consulting",
     color: "from-purple-900/50 to-slate-900/50",
     border: "group-hover:border-purple-500/50",
   },
   {
-    title: "MH Music Production",
+    title: "Konsultasi Bisnis",
     description:
-      "Creative music production and media services for artists, events, and corporate campaigns.",
-    icon: Music,
-    href: "/mh-music-production",
-    color: "from-fuchsia-900/50 to-slate-900/50",
-    border: "group-hover:border-fuchsia-500/50",
+      "Strategi bisnis, audit keuangan, dan advisory eksekutif berbasis data untuk pemimpin pasar.",
+    icon: TrendingUp,
+    href: "/consulting",
+    color: "from-emerald-900/50 to-slate-900/50",
+    border: "group-hover:border-emerald-500/50",
   },
   {
-    title: "DLL",
+    title: "Kost Premium",
     description:
-      "Additional business services and support across our ecosystem to meet evolving client needs.",
+      "Dua lokasi hunian premium di Jakarta — kamar modern, fasilitas lengkap, lingkungan aman dan nyaman.",
+    icon: HomeIcon,
+    href: "/kost",
+    color: "from-orange-900/50 to-slate-900/50",
+    border: "group-hover:border-orange-500/50",
+  },
+  {
+    title: "Warteg Gemini",
+    description:
+      "Masakan lokal autentik yang diangkat dengan bahan premium dan presentasi modern. Catering tersedia.",
+    icon: Coffee,
+    href: "/warteg",
+    color: "from-red-900/50 to-slate-900/50",
+    border: "group-hover:border-red-500/50",
+  },
+  {
+    title: "Glory Ministry Church",
+    description:
+      "Komunitas iman yang penuh kasih. Jadwal ibadah, kegiatan, dan persembahan online tersedia.",
+    icon: Heart,
+    href: "/gereja",
+    color: "from-rose-900/50 to-slate-900/50",
+    border: "group-hover:border-rose-500/50",
+  },
+  {
+    title: "Musik Production",
+    description:
+      "Studio rekaman profesional, aransemen, mixing & mastering untuk artis, korporat, dan gereja.",
+    icon: Music,
+    href: "/musik",
+    color: "from-yellow-900/50 to-slate-900/50",
+    border: "group-hover:border-yellow-500/50",
+  },
+  {
+    title: "Podcast",
+    description:
+      "Obrolan mendalam tentang iman, bisnis, dan kehidupan. Baru setiap Senin dan Kamis.",
     icon: Layers,
-    href: "/dll",
-    color: "from-slate-700/50 to-slate-900/50",
-    border: "group-hover:border-slate-500/50",
+    href: "/podcast",
+    color: "from-teal-900/50 to-slate-900/50",
+    border: "group-hover:border-teal-500/50",
   },
 ];
