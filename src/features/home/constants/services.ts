@@ -1,6 +1,5 @@
 import {
   Scale,
-  TrendingUp,
   Home as HomeIcon,
   Coffee,
   Heart,
@@ -51,16 +50,6 @@ export const services = [
     color: "from-purple-900/50 to-slate-900/50",
     border: "group-hover:border-purple-500/50",
     tag: "Hukum",
-  },
-  {
-    title: "Konsultasi Bisnis",
-    description:
-      "Strategi bisnis, audit keuangan, dan advisory eksekutif berbasis data untuk pemimpin pasar.",
-    icon: TrendingUp,
-    href: "/consulting",
-    color: "from-emerald-900/50 to-slate-900/50",
-    border: "group-hover:border-emerald-500/50",
-    tag: "Bisnis",
   },
   {
     title: "Kost Premium",

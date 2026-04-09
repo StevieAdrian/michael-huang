@@ -7,7 +7,6 @@ export const legalNavItems = [
 
 export const navItems = [
   { name: "Hub", path: "/" },
-  { name: "Konsultasi Bisnis", path: "/consulting" },
   { name: "Kost", path: "/kost" },
   { name: "Warteg", path: "/warteg" },
   { name: "Gereja", path: "/gereja" },
