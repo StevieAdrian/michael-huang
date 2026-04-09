@@ -11,10 +11,11 @@ import {
   wartegTestimonials,
 } from "@/app/constants/warteg";
 import {
-  CHURCH_MAPS_EMBED_URL,
-  GOOGLE_MAPS_SEARCH_URL,
+  GOOGLE_MAPS_EMBED_URL,
   WARTEG_CATERING_URL,
   WARTEG_ORDER_URL,
+  WARTEG_MAPS_URL,
+  WARTEG_MAPS_EMBED_URL,
 } from "@/app/constants/links";
 
 function formatCurrency(value: number) {
@@ -77,7 +78,7 @@ export function WartegClientPage() {
           <div className="h-10 w-px bg-border hidden md:block" />
 
           <a
-            href={GOOGLE_MAPS_SEARCH_URL}
+            href={WARTEG_MAPS_URL}
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 hover:text-gold transition-colors text-muted-foreground text-sm md:text-base"
@@ -188,10 +189,10 @@ export function WartegClientPage() {
         </div>
         <div className="w-full h-[300px] md:h-[400px]">
           <iframe
-            src={CHURCH_MAPS_EMBED_URL}
+            src={WARTEG_MAPS_EMBED_URL}
             width="100%"
             height="100%"
-            style={{ border: 0, filter: "grayscale(1) contrast(1.2) opacity(0.8)" }}
+            style={{ border: 0 }}
             allowFullScreen={false}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

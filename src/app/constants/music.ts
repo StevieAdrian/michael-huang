@@ -43,19 +43,22 @@ export const musicServices = [
 
 export const musicYoutubeVideos: YoutubeVideoItem[] = [
   {
-    title: "Behind The Studio: Sesi Rekaman Eksklusif",
-    description:
-      "Saksikan proses rekaman di Michael Music Studio. Dari tracking vokal hingga mixing akhir.",
+    title: "Official Music Video - Michael Huang",
+    description: "Tonton karya terbaru dari Michael Huang di channel YouTube resmi kami.",
+    thumbnail: "https://img.youtube.com/vi/9f_YB-WJ0EQ/maxresdefault.jpg",
+    url: "https://youtu.be/9f_YB-WJ0EQ?si=GpxGm1FjpFbxbLIM",
   },
   {
-    title: "Original Composition - 'Fajar Kemuliaan'",
-    description:
-      "Karya original terbaru dari Michael Huang. Aransemen orkestra dan paduan suara kontemporer.",
+    title: "Live Performance Eksklusif",
+    description: "Penampilan live dan karya komposer dengan aransemen orkestra terbaik.",
+    thumbnail: "https://img.youtube.com/vi/JiYRcEX8PIQ/maxresdefault.jpg",
+    url: "https://youtu.be/JiYRcEX8PIQ?si=PdG0M-0WOpoIv3xG",
   },
   {
-    title: "Tips Produksi Musik untuk Pemula",
-    description:
-      "Panduan langkah demi langkah cara memulai produksi musik dari rumah dengan peralatan minimal.",
+    title: "Behind The Scenes & Highlight",
+    description: "Momen di balik layar produksi musik dan proses kreatif studio kami.",
+    thumbnail: "https://img.youtube.com/vi/H0vsJVXMp_I/maxresdefault.jpg",
+    url: "https://youtu.be/H0vsJVXMp_I?si=k4oCUAIEKKoB-J1R",
   },
 ];
 

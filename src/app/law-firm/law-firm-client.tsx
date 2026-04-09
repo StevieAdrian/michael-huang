@@ -24,11 +24,26 @@ import {
   lawFirmFAQs,
   lawFirmReviews,
   lawFirmTestimonials,
+  lawFirmMapEmbedUrl,
 } from "@/app/constants/law-firm";
-import { LAW_FIRM_URL } from "@/app/constants/links";
+import { LAW_FIRM_FORM_WHATSAPP_URL, WHATSAPP_PHONE } from "@/app/constants/links";
+import { Gallery } from "@/shared/components/gallery";
 
 export function LawFirmClientPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    issueType: "Hukum Korporasi",
+  });
+
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const message = `Halo, saya ${formData.name} ingin konsultasi mengenai ${formData.issueType}.`;
+    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
     <div className="pb-24">
@@ -44,15 +59,13 @@ export function LawFirmClientPage() {
           <div className="bg-card border border-border/50 rounded-3xl p-6 md:p-12 flex flex-col md:flex-row gap-8 items-center shadow-lg">
             <div className="flex-1 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 text-gold text-sm font-bold uppercase tracking-wider">
-                <Award className="w-4 h-4" /> Established 2010
+                <Award className="w-4 h-4" /> Berdiri Sejak 2010
               </div>
               <h2 className="text-3xl md:text-5xl font-display font-bold">
-                Unwavering Commitment to Justice
+                Komitmen Teguh untuk Keadilan
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                We provide elite legal representation for high-net-worth
-                individuals and corporate entities, ensuring your legacy and
-                interests are impeccably protected.
+                Kami menyediakan representasi hukum elit untuk individu kelas atas dan entitas korporasi, memastikan warisan dan kepentingan Anda terlindungi dengan sempurna.
               </p>
             </div>
             <div className="flex-1 w-full grid grid-cols-1 gap-4">
@@ -75,15 +88,14 @@ export function LawFirmClientPage() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                Practice Areas
+                Bidang Keahlian
               </h2>
               <p className="text-muted-foreground">
-                Comprehensive legal solutions tailored to high-net-worth
-                individuals and corporate entities.
+                Solusi hukum komprehensif yang disesuaikan untuk kebutuhan bisnis dan personal Anda.
               </p>
             </div>
             <button className="text-gold font-semibold flex items-center gap-2 hover:gap-4 transition-all">
-              View All Areas <ChevronRight className="w-4 h-4" />
+              Lihat Semua Bidang <ChevronRight className="w-4 h-4" />
             </button>
           </div>
 
@@ -117,18 +129,17 @@ export function LawFirmClientPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
-                Schedule a Confidential Consultation
+                Jadwalkan Konsultasi Rahasia
               </h2>
               <p className="text-muted-foreground mb-8">
-                Take the first step towards resolving your legal matters. Our
-                partners are ready to review your case.
+                Ambil langkah pertama untuk menyelesaikan masalah hukum Anda. Partner kami siap meninjau kasus Anda.
               </p>
 
               <ul className="space-y-4 mb-8">
                 {[
-                  "Strict confidentiality guaranteed",
-                  "Initial case assessment",
-                  "Clear fee structures",
+                  "Kerahasiaan ketat terjamin",
+                  "Penilaian kasus awal",
+                  "Struktur biaya yang transparan",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-foreground">
                     <CheckCircle2 className="w-5 h-5 text-gold" /> {item}
@@ -137,47 +148,53 @@ export function LawFirmClientPage() {
               </ul>
 
               <a
-                href={LAW_FIRM_URL}
+                href={LAW_FIRM_FORM_WHATSAPP_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-gold text-primary-foreground font-bold rounded-xl hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all"
               >
-                Request Appointment <ArrowRight className="w-5 h-5" />
+                Buat Janji Temu <ArrowRight className="w-5 h-5" />
               </a>
             </div>
 
             <div className="glass-panel-gold rounded-3xl p-6 md:p-10">
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-muted-foreground">
-                      First Name
-                    </label>
-                    <input className="w-full bg-background/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-muted-foreground">
-                      Last Name
-                    </label>
-                    <input className="w-full bg-background/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors" />
-                  </div>
+              <form className="space-y-4" onSubmit={handleFormSubmit}>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-muted-foreground">
+                    Nama
+                  </label>
+                  <input
+                    required
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
+                    placeholder="Masukkan Nama Anda"
+                    className="w-full bg-background/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors"
+                  />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
-                    Matter Type
+                    Jenis Masalah
                   </label>
-                  <select className="w-full bg-background/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors appearance-none text-foreground">
-                    <option>Corporate Law</option>
-                    <option>Litigation</option>
-                    <option>Family Law</option>
-                    <option>Other</option>
+                  <select
+                    value={formData.issueType}
+                    onChange={(e) =>
+                      setFormData({ ...formData, issueType: e.target.value })
+                    }
+                    className="w-full bg-background/50 border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors appearance-none text-foreground"
+                  >
+                    <option>Hukum Korporasi</option>
+                    <option>Litigasi</option>
+                    <option>Hukum Keluarga</option>
+                    <option>Lainnya</option>
                   </select>
                 </div>
                 <button
                   type="submit"
                   className="w-full mt-4 bg-gradient-gold text-primary-foreground font-bold py-4 rounded-xl hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all active:scale-[0.98]"
                 >
-                  Request Appointment
+                  Buat Janji Temu
                 </button>
               </form>
             </div>
@@ -188,11 +205,10 @@ export function LawFirmClientPage() {
       <section className="py-12 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-            Our Partners
+            Partner Kami
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-12">
-            Distinguished legal minds with decades of combined experience in
-            high-stakes environments.
+            Pakar hukum terkemuka dengan pengalaman gabungan puluhan tahun dalam menangani kasus-kasus berisiko tinggi.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -222,36 +238,18 @@ export function LawFirmClientPage() {
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-card border-y border-border/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-              Firm Gallery
-            </h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {lawFirmGalleryImages.map((src, i) => (
-              <div
-                key={i}
-                className="relative aspect-square md:aspect-auto md:h-64 overflow-hidden rounded-xl group"
-              >
-                <img
-                  src={src}
-                  alt="Gallery"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Gallery 
+        images={lawFirmGalleryImages} 
+        title="Galeri Firma"
+        subtitle="Elegansi dan profesionalisme dalam setiap sudut kantor kami."
+      />
 
       <section className="py-12 md:py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/3 text-center md:text-left">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                Client Feedback
+                Feedback Client
               </h2>
               <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
                 <span className="text-5xl font-bold text-foreground">4.9</span>
@@ -265,7 +263,7 @@ export function LawFirmClientPage() {
                     ))}
                   </div>
                   <span className="text-muted-foreground text-sm">
-                    Based on 248 reviews
+                    Berdasarkan 248 ulasan
                   </span>
                 </div>
               </div>
@@ -296,10 +294,10 @@ export function LawFirmClientPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-end mb-12">
             <h2 className="text-3xl md:text-5xl font-display font-bold">
-              Latest Insights
+              Wawasan Terbaru
             </h2>
             <button className="hidden md:flex text-gold font-semibold items-center gap-2 hover:gap-4 transition-all">
-              All Articles <ChevronRight className="w-4 h-4" />
+              Semua Artikel <ChevronRight className="w-4 h-4" />
             </button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -314,7 +312,7 @@ export function LawFirmClientPage() {
                 <h3 className="text-xl font-bold mb-3">{article.title}</h3>
                 <p className="text-muted-foreground mb-6">{article.excerpt}</p>
                 <button className="text-foreground font-semibold flex items-center gap-2 hover:text-gold transition-colors">
-                  Read More <ArrowRight className="w-4 h-4" />
+                  Baca Selengkapnya <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             ))}
@@ -325,7 +323,7 @@ export function LawFirmClientPage() {
       <section className="py-12 md:py-20 bg-background">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-center mb-12">
-            Frequently Asked Questions
+            Pertanyaan yang Sering Diajukan
           </h2>
           <div className="space-y-3">
             {lawFirmFAQs.map((faq, i) => (
@@ -354,10 +352,10 @@ export function LawFirmClientPage() {
 
       <section className="h-[400px] w-full">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.24036128033!2d106.74411136453664!3d-6.229740118836511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x100c5e82dd4b820!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          src={lawFirmMapEmbedUrl}
           width="100%"
           height="100%"
-          style={{ border: 0, filter: "grayscale(1) contrast(1.2) opacity(0.8)" }}
+          style={{ border: 0 }}
           allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
@@ -368,7 +366,7 @@ export function LawFirmClientPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-              Client Success
+              Kesuksesan Klien
             </h2>
           </div>
           <Testimonials items={lawFirmTestimonials} />

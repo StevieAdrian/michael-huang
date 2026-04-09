@@ -17,7 +17,7 @@ export default function Home() {
 
       <ServicesSection />
       <ClientLogos />
-      <SearchSection />
+      {/* <SearchSection /> */}
       <ReviewsSection />
       <LocationSection />
     </div>

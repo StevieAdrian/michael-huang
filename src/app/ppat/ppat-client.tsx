@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Landmark, ArrowRight } from "lucide-react";
+import { Landmark, ArrowRight, Star } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { ArticleCards } from "@/shared/components/article-cards";
 import {
@@ -11,8 +11,11 @@ import {
   ppatArticles,
   ppatContacts,
   ppatMapEmbedUrl,
+  ppatReviews,
+  ppatGalleryImages,
 } from "@/app/constants/ppat";
-import { PPAT_URL } from "@/app/constants/links";
+import { PPAT_WHATSAPP_URL } from "@/app/constants/links";
+import { Gallery } from "@/shared/components/gallery";
 
 export function PPATClientPage() {
   return (
@@ -86,6 +89,54 @@ export function PPATClientPage() {
           </div>
         </div>
       </section>
+      <Gallery 
+        images={ppatGalleryImages} 
+        title="Galeri Proyek & Kantor"
+        subtitle="Dokumentasi penandatanganan akta dan suasana kantor kami."
+      />
+
+      <section className="py-12 md:py-24 bg-card border-y border-border/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="md:w-1/3 text-center md:text-left">
+              <h2 className="text-2xl md:text-4xl font-display font-bold mb-4" id="feedback">
+                Feedback Client
+              </h2>
+              <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
+                <span className="text-5xl font-bold text-foreground">5.0</span>
+                <div className="flex flex-col items-start">
+                  <div className="flex text-gold">
+                    {[1, 2, 3, 4, 5].map((i) => (
+                      <Star key={i} className="w-5 h-5 fill-current" />
+                    ))}
+                  </div>
+                  <span className="text-muted-foreground text-sm">
+                    Berdasarkan kepuasan klien
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {ppatReviews.map((review, i) => (
+                <div
+                  key={i}
+                  className="p-6 bg-background border border-border/50 rounded-2xl shadow-sm"
+                >
+                  <div className="flex gap-1 text-gold mb-3">
+                    {[...Array(review.stars)].map((_, j) => (
+                      <Star key={j} className="w-4 h-4 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mb-4 line-clamp-3 italic">
+                    "{review.text}"
+                  </p>
+                  <p className="font-semibold text-sm">— {review.author}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="py-12 md:py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -107,7 +158,7 @@ export function PPATClientPage() {
                 ))}
               </div>
               <a
-                href={PPAT_URL}
+                href={PPAT_WHATSAPP_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-gold text-primary-foreground font-bold rounded-xl text-sm hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all"
@@ -120,7 +171,7 @@ export function PPATClientPage() {
                 src={ppatMapEmbedUrl}
                 width="100%"
                 height="100%"
-                style={{ border: 0, filter: "grayscale(0.2)" }}
+                style={{ border: 0 }}
                 allowFullScreen={false}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

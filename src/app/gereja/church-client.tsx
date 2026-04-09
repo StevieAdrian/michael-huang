@@ -23,6 +23,7 @@ import {
   ZoomOut
 } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
+import { CHURCH_WHATSAPP_URL, YOUTUBE_CHANNEL_URL, CHURCH_MAPS_URL } from "@/app/constants/links";
 import { ArticleCards } from "@/shared/components/article-cards";
 import {
   churchArticles,
@@ -55,8 +56,11 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
   });
   const [openDonation, setOpenDonation] = useState<string | null>("perpuluhan");
   const [selectedTitheMonth, setSelectedTitheMonth] = useState(titheData[0]?.month || "");
-  const [selectedPhoto, setSelectedPhoto] = useState<typeof churchWeeklyPhotos[0] | null>(null);
+  const [selectedPhotoIndex, setSelectedPhotoIndex] = useState<number | null>(null);
   const [isZoomed, setIsZoomed] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const [panOffset, setPanOffset] = useState({ x: 0, y: 0 });
+  const [isDragging, setIsDragging] = useState(false);
   const currentMonth = new Date().getMonth() + 1; // 1-12
 
   useEffect(() => {
@@ -83,6 +87,59 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
     const timer = setInterval(calculateTimeLeft, 1000);
     return () => clearInterval(timer);
   }, []);
+
+  const photosWithImages = churchWeeklyPhotos.filter(p => p.image);
+  const selectedPhoto = selectedPhotoIndex !== null ? photosWithImages[selectedPhotoIndex] : null;
+
+  const handleNextPhoto = () => {
+    if (selectedPhotoIndex !== null) {
+      setSelectedPhotoIndex((selectedPhotoIndex + 1) % photosWithImages.length);
+      setIsZoomed(false);
+      setPanOffset({ x: 0, y: 0 });
+    }
+  };
+
+  const handlePrevPhoto = () => {
+    if (selectedPhotoIndex !== null) {
+      setSelectedPhotoIndex((selectedPhotoIndex - 1 + photosWithImages.length) % photosWithImages.length);
+      setIsZoomed(false);
+      setPanOffset({ x: 0, y: 0 });
+    }
+  };
+
+  const onDragStart = (e: React.MouseEvent | React.TouchEvent) => {
+    if (!isZoomed) return;
+    setIsDragging(true);
+    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+    const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+    setDragStart({ x: clientX - panOffset.x, y: clientY - panOffset.y });
+  };
+
+  const onDragMove = (e: React.MouseEvent | React.TouchEvent) => {
+    if (!isDragging || !isZoomed) return;
+    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+    const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+    setPanOffset({
+      x: clientX - dragStart.x,
+      y: clientY - dragStart.y
+    });
+  };
+
+  const onDragEnd = () => setIsDragging(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!selectedPhoto) return;
+      if (e.key === "Escape") {
+        setSelectedPhotoIndex(null);
+        setIsZoomed(false);
+      }
+      if (e.key === "ArrowRight") handleNextPhoto();
+      if (e.key === "ArrowLeft") handlePrevPhoto();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedPhoto, selectedPhotoIndex]);
 
   return (
     <div className="pb-24">
@@ -360,7 +417,12 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
             {churchWeeklyPhotos.map((item) => (
               <div
                 key={item.label}
-                onClick={() => item.image && setSelectedPhoto(item)}
+                onClick={() => {
+                  if (item.image) {
+                    const idx = photosWithImages.findIndex(p => p.image === item.image);
+                    setSelectedPhotoIndex(idx);
+                  }
+                }}
                 className={`group relative aspect-square rounded-xl md:rounded-2xl bg-card border border-border/50 overflow-hidden transition-all duration-300 shadow-sm ${
                   item.image ? "cursor-pointer hover:border-gold/50" : "cursor-default"
                 }`}
@@ -410,7 +472,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
               <p className="text-muted-foreground mt-2 text-sm md:text-base">Tonton rekaman ibadah dan khotbah terbaru kami.</p>
             </div>
             <a
-              href="https://www.youtube.com/@michaelhuangofficial2022"
+              href={YOUTUBE_CHANNEL_URL}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-colors text-sm shrink-0"
@@ -530,7 +592,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
 
           <div className="mt-6 text-center">
             <a
-              href="https://wa.me/628122179370?partnertoken=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJodHRwczovL3dhLm1lLzYyODEyMjE3OTM3MCIsImV4cCI6MTc3NTc1ODA1NywiaWF0IjoxNzc1NzU3NzU3LCJpc3MiOiJHb29nbGUifQ.P8gbZY4BLiXWbQafor8IgWS8lfY5CflUO-x9OAiDmqF2WxdXRxW_ZMpjRp2kQY22iSKhFggqBhXAM7J2GyQxkw"
+              href={CHURCH_WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-sm transition-colors"
@@ -651,7 +713,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
                 </div>
               </div>
               <a
-                href="https://wa.me/628122179370?partnertoken=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJodHRwczovL3dhLm1lLzYyODEyMjE3OTM3MCIsImV4cCI6MTc3NTc1ODA1NywiaWF0IjoxNzc1NzU3NzU3LCJpc3MiOiJHb29nbGUifQ.P8gbZY4BLiXWbQafor8IgWS8lfY5CflUO-x9OAiDmqF2WxdXRxW_ZMpjRp2kQY22iSKhFggqBhXAM7J2GyQxkw"
+                href={CHURCH_WHATSAPP_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-sm transition-colors"
@@ -666,7 +728,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
                   src={churchContactInfo.mapsEmbedUrl}
                   width="100%"
                   height="100%"
-                  style={{ border: 0, filter: "grayscale(0.3)" }}
+                  style={{ border: 0 }}
                   allowFullScreen={false}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -704,60 +766,113 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
 
       {/* Lightbox Foto Jemaat */}
       {selectedPhoto && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10 animate-in fade-in duration-300">
+        <div 
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10 animate-in fade-in duration-300 overflow-hidden"
+          onMouseMove={onDragMove}
+          onMouseUp={onDragEnd}
+          onTouchMove={onDragMove}
+          onTouchEnd={onDragEnd}
+        >
           {/* Backdrop */}
           <div 
-            className="absolute inset-0 bg-black/95 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/95 backdrop-blur-md"
             onClick={() => {
-              setSelectedPhoto(null);
+              setSelectedPhotoIndex(null);
               setIsZoomed(false);
+              setPanOffset({ x: 0, y: 0 });
             }}
           />
           
           {/* Controls Container */}
-          <div className="absolute top-4 right-4 md:top-8 md:right-8 flex gap-2 md:gap-4 z-[110]">
+          <div className="absolute top-4 right-4 md:top-8 md:right-8 flex items-center gap-2 md:gap-4 z-[110]">
+            <div className="hidden md:flex items-center gap-2 mr-4 bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
+              <span className="text-white/60 text-xs font-bold uppercase tracking-widest">
+                {selectedPhotoIndex! + 1} / {photosWithImages.length}
+              </span>
+            </div>
+            
             <button 
-              onClick={() => setIsZoomed(!isZoomed)}
-              className="p-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-md transition-all border border-white/10"
+              onClick={() => {
+                setIsZoomed(!isZoomed);
+                if (!isZoomed) setPanOffset({ x: 0, y: 0 });
+              }}
+              className="p-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-md transition-all border border-white/10 shadow-lg"
               title={isZoomed ? "Zoom Out" : "Zoom In"}
             >
               {isZoomed ? <ZoomOut className="w-6 h-6" /> : <ZoomIn className="w-6 h-6" />}
             </button>
             <button 
               onClick={() => {
-                setSelectedPhoto(null);
+                setSelectedPhotoIndex(null);
                 setIsZoomed(false);
+                setPanOffset({ x: 0, y: 0 });
               }}
-              className="p-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-md transition-all border border-white/10"
+              className="p-3 bg-red-500/20 hover:bg-red-500/40 text-white rounded-full backdrop-blur-md transition-all border border-red-500/20 shadow-lg"
             >
               <X className="w-6 h-6" />
             </button>
           </div>
 
-          <div className="absolute top-6 left-1/2 -translate-x-1/2 z-[110] text-center">
-            <span className="bg-gold/20 text-gold px-4 py-1.5 rounded-full text-xs font-bold tracking-[0.2em] uppercase border border-gold/30">
+          {/* Navigation Arrows */}
+          {!isZoomed && (
+            <>
+              <button 
+                onClick={handlePrevPhoto}
+                className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-4 bg-white/5 hover:bg-white/10 text-white rounded-full backdrop-blur-md transition-all border border-white/10 z-[110] group"
+              >
+                <ChevronDown className="w-8 h-8 rotate-90 group-hover:-translate-x-1 transition-transform" />
+              </button>
+              <button 
+                onClick={handleNextPhoto}
+                className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-4 bg-white/5 hover:bg-white/10 text-white rounded-full backdrop-blur-md transition-all border border-white/10 z-[110] group"
+              >
+                <ChevronDown className="w-8 h-8 -rotate-90 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </>
+          )}
+
+          <div className="absolute top-6 left-1/2 -translate-x-1/2 z-[110] text-center hidden md:block">
+            <span className="bg-gold/20 text-gold px-6 py-2 rounded-full text-xs font-bold tracking-[0.3em] uppercase border border-gold/30 backdrop-blur-md shadow-lg">
               {selectedPhoto.label}
             </span>
           </div>
 
           {/* Image Wrapper */}
           <div 
-            className={`relative max-w-full max-h-full transition-all duration-500 ease-out select-none ${
-              isZoomed ? "scale-150 cursor-zoom-out" : "scale-100 cursor-zoom-in"
+            className={`relative transition-transform duration-500 ease-out select-none flex items-center justify-center ${
+              isZoomed ? "cursor-grab active:cursor-grabbing" : "cursor-zoom-in"
             }`}
-            onClick={() => setIsZoomed(!isZoomed)}
+            style={{
+              transform: isZoomed 
+                ? `scale(2.5) translate(${panOffset.x / 2.5}px, ${panOffset.y / 2.5}px)` 
+                : 'scale(1)',
+              transition: isDragging ? 'none' : 'transform 0.5s cubic-bezier(0.2, 0, 0, 1)'
+            }}
+            onMouseDown={onDragStart}
+            onTouchStart={onDragStart}
+            onClick={(e) => {
+              if (!isDragging && Math.abs(panOffset.x) < 5 && Math.abs(panOffset.y) < 5) {
+                // If not dragging, toggle zoom
+                // But wait, if we are zoomed, clicking the image should zoom out
+                if (isZoomed) setIsZoomed(false);
+              }
+            }}
           >
             <img 
               src={selectedPhoto.image} 
               alt={selectedPhoto.label} 
-              className="max-w-full max-h-[85vh] md:max-h-[90vh] object-contain rounded-lg shadow-2xl"
+              className="max-w-[90vw] max-h-[80vh] md:max-h-[85vh] object-contain rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
               draggable={false}
             />
           </div>
           
-          <p className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-xs font-medium tracking-wide z-[110] hidden md:block">
-            {isZoomed ? "Tarik atau klik untuk mengecilkan" : "Klik gambar untuk memperbesar"}
-          </p>
+          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-[110]">
+            <p className="text-white/50 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase bg-black/40 px-4 py-2 rounded-full backdrop-blur-md border border-white/5 shadow-xl">
+              {isZoomed 
+                ? "Gunakan mouse/sentuh untuk menggeser" 
+                : "Klik gambar untuk zoom • Gunakan panah untuk navigasi"}
+            </p>
+          </div>
         </div>
       )}
 

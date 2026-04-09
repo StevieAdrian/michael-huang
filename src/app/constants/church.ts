@@ -1,4 +1,4 @@
-import { YOUTUBE_CHANNEL_URL, CHURCH_MAPS_EMBED_URL, CHURCH_MAPS_URL } from "./links";
+import { YOUTUBE_CHANNEL_URL, CHURCH_MAPS_EMBED_URL, CHURCH_MAPS_URL, CHURCH_WHATSAPP_URL } from "./links";
 
 export interface ChurchSchedule {
   name: string;

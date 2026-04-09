@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Star, ExternalLink } from "lucide-react";
 import { googleReviews } from "@/app/constants/reviews";
-import { GOOGLE_MAPS_SEARCH_URL } from "@/app/constants/links";
+import { GENERAL_MAPS_URL } from "@/app/constants/links";
 
 export function ReviewsSection() {
   return (
@@ -44,7 +44,7 @@ export function ReviewsSection() {
             </div>
           </div>
           <a
-            href={GOOGLE_MAPS_SEARCH_URL}
+            href={GENERAL_MAPS_URL}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:underline underline-offset-4 shrink-0"

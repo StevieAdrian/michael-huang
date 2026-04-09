@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { seoConfig, generateOGMetadata, generateTwitterMetadata } from "@/config/seo-config";
@@ -6,6 +6,7 @@ import { generateOrganizationSchema, generateWebsiteSchema } from "@/lib/structu
 import { StructuredData } from "@/shared/components/StructuredData";
 import { Navbar } from "@/shared/components/navbar";
 import { Footer } from "@/shared/components/footer";
+import { WhatsAppButton } from "@/shared/components/whatsapp-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -66,13 +67,6 @@ export const metadata: Metadata = {
     },
   },
 
-  // Mobile & Responsive
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
-
   // Icons
   icons: {
     icon: "/favicon.ico",
@@ -88,6 +82,12 @@ export const metadata: Metadata = {
       // "es-ES": `${seoConfig.siteUrl}/es`,
     },
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -117,6 +117,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

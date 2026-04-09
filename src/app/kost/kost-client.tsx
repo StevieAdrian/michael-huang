@@ -128,19 +128,19 @@ export function KostClientPage() {
                     src={kost.mapSrc}
                     width="100%"
                     height="100%"
-                    style={{ border: 0, filter: "grayscale(0.2)" }}
+                    style={{ border: 0 }}
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   />
                 </div>
-                <div className="mt-4 p-4 bg-card border border-border/50 rounded-xl flex items-center gap-3">
+                {/* <div className="mt-4 p-4 bg-card border border-border/50 rounded-xl flex items-center gap-3">
                   <Phone className="w-5 h-5 text-gold shrink-0" />
                   <div>
                     <p className="text-xs text-muted-foreground">Hubungi pengelola</p>
                     <p className="font-semibold text-sm">+62 812 3456 7890</p>
                   </div>
-                </div>
+                </div> */}
               </motion.div>
             </div>
           </div>
