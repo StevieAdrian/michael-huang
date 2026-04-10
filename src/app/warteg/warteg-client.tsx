@@ -52,7 +52,7 @@ export function WartegClientPage() {
   return (
     <div className="pb-24">
       <PageHero
-        title="Warteg Modern"
+        title="Warteg Gemini"
         subtitle="Authentic local flavors elevated with premium ingredients and impeccable hygiene."
         imageSrc={wartegHero.imageSrc}
       />

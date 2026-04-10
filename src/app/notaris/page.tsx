@@ -1,12 +1,34 @@
 import type { Metadata } from "next";
 import { NotarisClientPage } from "./notaris-client";
+import { generateOGMetadata, seoConfig } from "@/config/seo-config";
+import { generateLegalServiceSchema } from "@/lib/structured-data";
+import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "Notaris | Michael Huang",
   description:
     "Pembuatan akta autentik yang sah, cepat, dan terpercaya. Melayani individu dan korporasi di seluruh Indonesia.",
+  openGraph: generateOGMetadata(
+    "Notaris | Michael Huang",
+    "Pembuatan akta autentik yang sah, cepat, dan terpercaya. Melayani individu dan korporasi di seluruh Indonesia.",
+    `${seoConfig.siteUrl}/images/notaris-og.png`
+  ),
+  alternates: {
+    canonical: `${seoConfig.siteUrl}/notaris`,
+  },
 };
 
 export default function NotarisPage() {
-  return <NotarisClientPage />;
+  const schema = generateLegalServiceSchema({
+    name: "Notaris Michael Huang",
+    description: "Layanan Notaris profesional di Jakarta Barat.",
+    url: `${seoConfig.siteUrl}/notaris`,
+  });
+
+  return (
+    <>
+      <StructuredData data={schema} />
+      <NotarisClientPage />
+    </>
+  );
 }

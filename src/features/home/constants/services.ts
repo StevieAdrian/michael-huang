@@ -62,7 +62,7 @@ export const services = [
     tag: "Properti",
   },
   {
-    title: "Warteg Gemini",
+    title: "Warteg",
     description:
       "Masakan lokal autentik yang diangkat dengan bahan premium dan presentasi modern. Catering tersedia.",
     icon: Coffee,

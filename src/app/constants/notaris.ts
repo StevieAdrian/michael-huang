@@ -114,26 +114,26 @@ export const notarisReviews = [
 export const notarisGalleryImages = [
   {
     url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200",
-    title: "Keadilan & Hukum",
+    title: "Kantor Notaris Michael Huang - Keadilan & Hukum",
   },
   {
     url: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1200",
-    title: "Tim Profesional",
+    title: "Tim Profesional Notaris Jakarta Michael Huang",
   },
   {
     url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200",
-    title: "Konsultasi Strategis",
+    title: "Konsultasi Strategis Notaris Jakarta Barat",
   },
   {
     url: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80&w=1200",
-    title: "Kemitraan Terpercaya",
+    title: "Kemitraan Terpercaya Layanan Akta Notaris",
   },
   {
     url: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
-    title: "Fasilitas Kantor",
+    title: "Fasilitas Kantor Michael Huang Jakarta",
   },
   {
     url: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80&w=1200",
-    title: "Arsip & Legalitas",
+    title: "Arsip & Legalitas Dokumen Notaris",
   },
 ];

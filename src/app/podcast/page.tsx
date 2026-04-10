@@ -4,16 +4,29 @@ import { ArrowRight, ExternalLink, Play } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { YOUTUBE_CHANNEL_URL } from "@/app/constants/links";
 import { podcastEpisodes, podcastPlatforms } from "@/app/constants/podcast";
+import { generateOGMetadata, seoConfig } from "@/config/seo-config";
+import { generatePodcastSchema } from "@/lib/structured-data";
+import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "Podcast | Michael Huang",
   description:
     "Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan bersama narasumber terpilih.",
+  openGraph: generateOGMetadata(
+    "Podcast | Michael Huang",
+    "Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan bersama narasumber terpilih.",
+    `${seoConfig.siteUrl}/images/podcast-og.png`
+  ),
+  alternates: {
+    canonical: `${seoConfig.siteUrl}/podcast`,
+  },
 };
 
 export default function PodcastPage() {
   return (
-    <div className="pb-24">
+    <>
+      <StructuredData data={generatePodcastSchema()} />
+      <div className="pb-24">
       <PageHero
         title="Michael Huang Podcast"
         subtitle="Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan. Episode baru hadir setiap minggu."
@@ -127,6 +140,6 @@ export default function PodcastPage() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

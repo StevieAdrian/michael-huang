@@ -8,7 +8,7 @@ export const seoConfig = {
   siteName: "Michael Huang ID",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://michaelhuang.id",
   description:
-    "Official website of Michael Huang. Discover Glory Ministry Church, legal consulting, music, and more ventures by Michael Huang.",
+    "Official website of Michael Huang. Specialist in Notaris, PPAT, Legal Consulting, and social ministries through Glory Ministry Church.",
 
   // Social Media
   social: {
@@ -45,7 +45,6 @@ export const seoConfig = {
     "Pengacara Jakarta",
     "Law Firm Jakarta",
     "Law Consulting Jakarta",
-    "Warteg Bahagia",
     "Warteg Gemini",
     "Kos Gemini",
     "Kos Jakarta",
@@ -54,9 +53,22 @@ export const seoConfig = {
     "Kos Taman Palem",
     "Warteg Taman Palem",
     "Warteg Enak Jakarta",
+    "Jasa Notaris Jakarta Barat",
+    "Notaris Online Terdekat",
+    "PPAT Jakarta Barat",
+    "Balik Nama Sertifikat",
+    "Akta Jual Beli Tanah",
     "Christian Ministry",
     "Michael Huang Podcast"
   ] as const,
+
+  // Verification codes
+  verification: {
+    google: "iyBFpyUPLalkQuyv8chODEcQTA2eWa-gZcV1Hph5UVc",
+  },
+
+  // Tag Manager
+  gtmId: "GTM-5FKJ4C6J",
 
   // For structured data
   type: "Person", // The main website is a personal brand/hub
