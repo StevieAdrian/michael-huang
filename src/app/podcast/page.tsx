@@ -140,6 +140,7 @@ export default function PodcastPage() {
           </div>
         </div>
       </section>
-    </>
-  );
+    </div>
+  </>
+);
 }
