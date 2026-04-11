@@ -10,11 +10,10 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
-      // Add your external image domains here
-      // {
-      //   protocol: "https",
-      //   hostname: "cdn.example.com",
-      // },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
     ],
     minimumCacheTTL: 60,
   },

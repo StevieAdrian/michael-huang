@@ -1,4 +1,4 @@
-import { YOUTUBE_CHANNEL_URL, CHURCH_MAPS_EMBED_URL } from "./links";
+import { YOUTUBE_CHANNEL_URL, CHURCH_MAPS_EMBED_URL, CHURCH_MAPS_URL, CHURCH_WHATSAPP_URL } from "./links";
 
 export interface ChurchSchedule {
   name: string;
@@ -44,6 +44,7 @@ export interface ChurchContactInfo {
   email: string;
   address: string;
   mapsEmbedUrl: string;
+  mapsUrl: string;
 }
 
 export interface ChurchTestimonial {
@@ -54,6 +55,7 @@ export interface ChurchTestimonial {
   rating: number;
   avatarInitials: string;
 }
+
 
 export const churchSchedules: ChurchSchedule[] = [
   { name: "Ibadah Umum", time: "Minggu 08:00 & 10:00 WIB" },
@@ -83,35 +85,23 @@ export const churchAnnouncements: ChurchAnnouncement[] = [
   },
 ];
 
-export const churchWeeklyPhotoLabels = [
-  "Minggu ke-1",
-  "Minggu ke-2",
-  "Minggu ke-3",
-  "Minggu ke-4",
-  "Minggu ke-5",
-  "Minggu ke-6",
-  "Minggu ke-7",
-  "Minggu ke-8",
+export const churchWeeklyPhotos: ChurchWeeklyPhoto[] = [
+  { label: "Minggu ke-1", image: "/images/weekly-church-pic1.jpg" },
+  { label: "Minggu ke-2", image: "/images/weekly-church-pic2.jpg" },
+  { label: "Minggu ke-3" },
+  { label: "Minggu ke-4" },
+  { label: "Minggu ke-5" },
+  { label: "Minggu ke-6" },
+  { label: "Minggu ke-7" },
+  { label: "Minggu ke-8" },
 ];
 
 export const churchYoutubeVideos: ChurchYoutubeVideo[] = [
   {
-    title: "Khotbah Minggu: Menemukan Tujuan di Tengah Proses",
+    title: "Ibadah Hari Minggu - Glory Ministry Church",
     description:
-      "Pdt. Michael - Ibadah Umum minggu lalu. Pesan penuh kuasa tentang iman di masa sukar.",
-    href: YOUTUBE_CHANNEL_URL,
-  },
-  {
-    title: "Ibadah Pujian dan Penyembahan Bersama",
-    description:
-      "Sesi pujian spesial dari ibadah bulan ini. Suasana yang mengharukan dan penuh semangat.",
-    href: YOUTUBE_CHANNEL_URL,
-  },
-  {
-    title: "Malam Doa Syafaat - Kebangunan Rohani 2025",
-    description:
-      "Rekaman lengkap malam doa bersama seluruh jemaat. Hadir dan rasakan hadirat-Nya.",
-    href: YOUTUBE_CHANNEL_URL,
+      "Tonton rekaman ibadah lengkap kami. Mari bersekutu dan dikuatkan oleh Firman Tuhan.",
+    href: "https://www.youtube.com/watch?v=iWonkzOLS7w",
   },
 ];
 
@@ -121,12 +111,12 @@ export const churchDonationItems: ChurchDonationItem[] = [
     title: "Perpuluhan (Tithe)",
     subtitle: "10% dari penghasilan sebagai bentuk ketaatan iman",
     accounts: [
-      { bank: "BCA", no: "1234 5678 90", name: "Glory Ministry Church" },
-      { bank: "Mandiri", no: "9876 5432 10", name: "Glory Ministry Church" },
-      { bank: "BNI", no: "4567 8901 23", name: "Glory Ministry Church" },
+      { bank: "BTN", no: "12101880000973", name: "Michael" },
+      //{ bank: "Mandiri", no: "9876 5432 10", name: "Glory Ministry Church" },
+      //{ bank: "BNI", no: "4567 8901 23", name: "Glory Ministry Church" },
     ],
-  },
-  {
+  }
+  /*{
     key: "persembahan",
     title: "Persembahan Umum",
     subtitle: "Persembahan sukarela untuk mendukung pelayanan gereja",
@@ -142,7 +132,7 @@ export const churchDonationItems: ChurchDonationItem[] = [
     accounts: [
       { bank: "BCA", no: "1111 2222 33", name: "Glory Ministry - Dana Misi" },
     ],
-  },
+  },*/
 ];
 
 export const churchUpcomingEvents: ChurchEvent[] = [
@@ -171,9 +161,10 @@ export const churchUpcomingEvents: ChurchEvent[] = [
 
 export const churchContactInfo: ChurchContactInfo = {
   phone: "+62 812 2179 370",
-  email: "care@gloryministry.com",
-  address: "Jl. Jend. Sudirman No. 1, Jakarta Pusat",
+  email: "contact@michaelhuang.id",
+  address: "Perum Ruko Mutiara Taman Palem, Jl. Kamal Raya Outer Ring Road Jl. Kamal Raya No.23-25 Blok C8, Cengkareng Tim., Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11730",
   mapsEmbedUrl: CHURCH_MAPS_EMBED_URL,
+  mapsUrl: CHURCH_MAPS_URL,
 };
 
 export const churchTestimonials: ChurchTestimonial[] = [

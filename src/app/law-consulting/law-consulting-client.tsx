@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, Star } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { ArticleCards } from "@/shared/components/article-cards";
 import { ClientLogos } from "@/components/client-logos";
@@ -13,8 +13,11 @@ import {
   lawConsultingArticles,
   lawConsultingContacts,
   lawConsultingMapEmbedUrl,
+  lawConsultingReviews,
+  lawConsultingGalleryImages,
 } from "@/app/constants/law-consulting";
-import { LAW_CONSULTING_URL } from "@/app/constants/links";
+import { LAW_CONSULTING_WHATSAPP_URL } from "@/app/constants/links";
+import { Gallery } from "@/shared/components/gallery";
 
 export function LawConsultingClientPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -94,6 +97,54 @@ export function LawConsultingClientPage() {
           </div>
         </div>
       </section>
+      <Gallery 
+        images={lawConsultingGalleryImages} 
+        title="Galeri Kegiatan & Advisory"
+        subtitle="Momen kolaborasi strategis dan suasana diskusi tim ahli kami."
+      />
+
+      <section className="py-12 md:py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="md:w-1/3 text-center md:text-left">
+              <h2 className="text-2xl md:text-4xl font-display font-bold mb-4">
+                Feedback Client
+              </h2>
+              <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
+                <span className="text-5xl font-bold text-foreground">5.0</span>
+                <div className="flex flex-col items-start">
+                  <div className="flex text-gold">
+                    {[1, 2, 3, 4, 5].map((i) => (
+                      <Star key={i} className="w-5 h-5 fill-current" />
+                    ))}
+                  </div>
+                  <span className="text-muted-foreground text-sm">
+                    Berdasarkan klien korporasi
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {lawConsultingReviews.map((review, i) => (
+                <div
+                  key={i}
+                  className="p-6 bg-card border border-border/50 rounded-2xl shadow-sm"
+                >
+                  <div className="flex gap-1 text-gold mb-3">
+                    {[...Array(review.stars)].map((_, j) => (
+                      <Star key={j} className="w-4 h-4 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mb-4 line-clamp-3 italic">
+                    "{review.text}"
+                  </p>
+                  <p className="font-semibold text-sm">— {review.author}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="py-12 bg-card border-y border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -115,7 +166,7 @@ export function LawConsultingClientPage() {
                 ))}
               </div>
               <a
-                href={LAW_CONSULTING_URL}
+                href={LAW_CONSULTING_WHATSAPP_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-gold text-primary-foreground font-bold rounded-xl text-sm hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all"

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { seoConfig, generateOGMetadata, generateTwitterMetadata } from "@/config/seo-config";
@@ -6,6 +6,7 @@ import { generateOrganizationSchema, generateWebsiteSchema } from "@/lib/structu
 import { StructuredData } from "@/shared/components/StructuredData";
 import { Navbar } from "@/shared/components/navbar";
 import { Footer } from "@/shared/components/footer";
+import { WhatsAppButton } from "@/shared/components/whatsapp-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,11 +48,10 @@ export const metadata: Metadata = {
     address: true,
   },
 
-  // Verification (add your verification codes here)
-  // verification: {
-  //   google: "your-google-verification-code",
-  //   yandex: "your-yandex-code",
-  // },
+  // Verification
+  verification: {
+    google: seoConfig.verification.google,
+  },
 
   // Robots
   robots: {
@@ -66,13 +66,6 @@ export const metadata: Metadata = {
     },
   },
 
-  // Mobile & Responsive
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
-
   // Icons
   icons: {
     icon: "/favicon.ico",
@@ -83,11 +76,21 @@ export const metadata: Metadata = {
   alternates: {
     canonical: seoConfig.siteUrl,
     languages: {
-      "en-US": seoConfig.siteUrl,
-      // Add more languages as needed
-      // "es-ES": `${seoConfig.siteUrl}/es`,
+      "id-ID": seoConfig.siteUrl,
     },
   },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: seoConfig.siteName,
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -97,10 +100,22 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="id"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','${seoConfig.gtmId}');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
+        
         {/* Structured Data - Organization Schema */}
         <StructuredData data={generateOrganizationSchema()} />
         {/* Structured Data - Website Schema */}
@@ -110,13 +125,23 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
-        {/* Google Search Console verification */}
-        {/* <meta name="google-site-verification" content="your-verification-code" /> */}
+        <meta name="theme-color" content="#d4af37" />
       </head>
       <body className="min-h-full flex flex-col">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${seoConfig.gtmId}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

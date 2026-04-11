@@ -1,5 +1,6 @@
 import { FileText, Shield, CheckCircle, Clock, Users, Phone, Mail, MapPin } from "lucide-react";
 import type { Article } from "@/shared/components/article-cards";
+import { NOTARIS_MAPS_EMBED_URL, WHATSAPP_PHONE, EMAIL_ADDRESS, LOCATION_ADDRESS } from "@/app/constants/links";
 
 export const notarisHero = {
   title: "Jasa Notaris Profesional",
@@ -89,11 +90,50 @@ export const notarisArticles: Article[] = [
 ];
 
 export const notarisContacts = [
-  { icon: Phone, text: "+62 812 3456 7890" },
-  { icon: Mail, text: "notaris@michael.com" },
-  { icon: MapPin, text: "Jl. Jend. Sudirman No. 1, Jakarta Pusat" },
+  { icon: Phone, text: `+${WHATSAPP_PHONE}` },
+  { icon: Mail, text: EMAIL_ADDRESS },
+  { icon: MapPin, text: LOCATION_ADDRESS },
   { icon: Clock, text: "Senin-Jumat, 08:00-17:00 WIB" },
 ];
 
-export const notarisMapEmbedUrl =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.81532607507515!3d-6.201900993790556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sJl.%20Jend.%20Sudirman%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid";
+export const notarisMapEmbedUrl = NOTARIS_MAPS_EMBED_URL;
+
+export const notarisReviews = [
+  {
+    stars: 5,
+    text: "Proses pembuatan akta jual beli sangat cepat dan transparan. Staf sangat membantu menjelaskan setiap detailnya.",
+    author: "Hendra W.",
+  },
+  {
+    stars: 5,
+    text: "Layanan notaris yang sangat profesional. Tempatnya nyaman dan protokol kerjanya sangat rapi.",
+    author: "Siska Amelia",
+  },
+];
+
+export const notarisGalleryImages = [
+  {
+    url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200",
+    title: "Kantor Notaris Michael Huang - Keadilan & Hukum",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1200",
+    title: "Tim Profesional Notaris Jakarta Michael Huang",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200",
+    title: "Konsultasi Strategis Notaris Jakarta Barat",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80&w=1200",
+    title: "Kemitraan Terpercaya Layanan Akta Notaris",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
+    title: "Fasilitas Kantor Michael Huang Jakarta",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80&w=1200",
+    title: "Arsip & Legalitas Dokumen Notaris",
+  },
+];

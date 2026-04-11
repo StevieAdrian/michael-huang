@@ -2,6 +2,7 @@ export interface YoutubeVideoItem {
   title: string;
   description: string;
   thumbnail?: string;
+  url?: string;
 }
 
 export const defaultYoutubeVideos: YoutubeVideoItem[] = [

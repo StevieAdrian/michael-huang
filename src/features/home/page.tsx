@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <div className="pb-24">
       <PageHero
-        title="Satu Nama, Semua Solusi"
-        subtitle="Pintu masuk digital terpadu untuk semua unit bisnis premium Michael.com. Standar terbaik di setiap layanan."
+        title="#Michael Huang"
+        subtitle=""
       />
 
       <ServicesSection />
       <ClientLogos />
-      <SearchSection />
+      {/* <SearchSection /> */}
       <ReviewsSection />
       <LocationSection />
     </div>

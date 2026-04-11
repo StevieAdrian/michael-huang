@@ -6,7 +6,7 @@ import {
   WHATSAPP_CONSULTATION_URL,
   EMAIL_ADDRESS,
   LOCATION_ADDRESS,
-  GOOGLE_MAPS_SEARCH_URL,
+  GENERAL_MAPS_URL,
   GOOGLE_MAPS_EMBED_URL,
 } from "@/app/constants/links";
 
@@ -75,7 +75,7 @@ export function LocationSection() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href={GOOGLE_MAPS_SEARCH_URL}
+                href={GENERAL_MAPS_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-gold text-primary-foreground font-bold rounded-xl hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all text-sm"

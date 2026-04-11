@@ -22,6 +22,18 @@ export function generateOrganizationSchema() {
   };
 }
 
+export function generatePersonSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: seoConfig.author.name,
+    url: seoConfig.siteUrl,
+    jobTitle: "Notaris, PPAT, Legal Consultant",
+    sameAs: seoConfig.organization.sameAs,
+    email: seoConfig.author.email,
+  };
+}
+
 export function generateWebsiteSchema() {
   return {
     "@context": "https://schema.org",
@@ -95,6 +107,7 @@ export function generateLocalBusinessSchema(metadata: {
   phone: string;
   openingHours?: string[];
   image?: string;
+  url?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -107,6 +120,112 @@ export function generateLocalBusinessSchema(metadata: {
     telephone: metadata.phone,
     openingHoursSpecification: metadata.openingHours,
     image: metadata.image,
-    url: seoConfig.siteUrl,
+    url: metadata.url || seoConfig.siteUrl,
   };
 }
+
+export function generateLegalServiceSchema(metadata: {
+  name: string;
+  description: string;
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    name: metadata.name,
+    description: metadata.description,
+    url: metadata.url,
+    priceRange: "$$",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Taman Palem Lestari",
+      addressLocality: "Jakarta Barat",
+      addressRegion: "DKI Jakarta",
+      addressCountry: "ID",
+    },
+  };
+}
+
+export function generateChurchSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Church",
+    name: "Glory Ministry Church",
+    url: `${seoConfig.siteUrl}/gereja`,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Taman Palem Lestari",
+      addressLocality: "Jakarta Barat",
+    },
+  };
+}
+
+export function generateFAQSchema(faqs: Array<{ q: string; a: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  };
+}
+
+export function generatePodcastSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    name: "Michael Huang Podcast",
+    url: `${seoConfig.siteUrl}/podcast`,
+    description: "Obrolan mendalam tentang iman, bisnis, hukum, and kehidupan.",
+    author: {
+      "@type": "Person",
+      name: "Michael Huang",
+    },
+  };
+}
+
+export function generateLodgingSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    name: "Gemini Kost",
+    url: `${seoConfig.siteUrl}/kost`,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Taman Palem Lestari",
+      addressLocality: "Jakarta Barat",
+    },
+    description: "Kost nyaman dan strategis di Jakarta Barat.",
+  };
+}
+
+export function generateFoodEstablishmentSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    name: "Warteg Gemini",
+    url: `${seoConfig.siteUrl}/warteg`,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Taman Palem Lestari",
+      addressLocality: "Jakarta Barat",
+    },
+    description: "Warteg dengan rasa premium dan harga terjangkau.",
+  };
+}
+
+export function generateMusicGroupSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    name: "Glory Worship",
+    url: `${seoConfig.siteUrl}/musik`,
+    description: "Layanan pujian dan penyembahan dari Glory Ministry Church.",
+  };
+}
+

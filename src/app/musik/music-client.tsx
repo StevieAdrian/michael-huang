@@ -13,7 +13,7 @@ import {
   musicYoutubeVideos,
 } from "@/app/constants/music";
 import {
-  MUSIC_BOOKING_URL,
+  MUSIC_BOOKING_WHATSAPP_URL,
   YOUTUBE_CHANNEL_URL,
 } from "@/app/constants/links";
 
@@ -117,7 +117,7 @@ export function MusicClientPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href={MUSIC_BOOKING_URL}
+              href={MUSIC_BOOKING_WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-gold text-primary-foreground font-bold rounded-xl text-sm hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all"

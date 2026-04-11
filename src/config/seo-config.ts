@@ -5,37 +5,73 @@
 
 export const seoConfig = {
   // Site-wide information
-  siteName: "Your Website Name",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://yourwebsite.com",
+  siteName: "Michael Huang ID",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://michaelhuang.id",
   description:
-    "A compelling description of your website - this appears in search results",
+    "Official website of Michael Huang. Specialist in Notaris, PPAT, Legal Consulting, and social ministries through Glory Ministry Church.",
 
   // Social Media
   social: {
-    twitter: "@yourhandle",
-    linkedIn: "https://linkedin.com/company/yourcompany",
-    facebook: "https://facebook.com/yourpage",
+    twitter: "@michaelhuang",
+    linkedIn: "https://www.linkedin.com/in/michaelshstmkn/",
+    facebook: "https://facebook.com/michaelhuangofficial",
+    youtube: "https://www.youtube.com/@michaelhuangofficial2022"
   },
 
   // Author/Organization
   author: {
-    name: "Your Name",
-    email: "contact@example.com",
+    name: "Michael Huang",
+    email: "contact@michaelhuang.id",
   },
 
   // JSON-LD Organization Schema
   organization: {
-    name: "Your Company Name",
-    logo: "https://yourwebsite.com/logo.png",
-    url: "https://yourwebsite.com",
-    sameAs: ["https://www.linkedin.com/company/yourcompany"],
+    name: "Michael Huang",
+    logo: "https://michaelhuang.id/logo.png",
+    url: "https://michaelhuang.id",
+    sameAs: [
+      "https://facebook.com/michaelhuangofficial",
+      "https://www.youtube.com/@michaelhuangofficial2022"
+    ],
   },
 
   // Keywords & Topics (for your content strategy)
-  primaryKeywords: ["keyword1", "keyword2", "keyword3"] as const,
+  primaryKeywords: [
+    "Michael Huang",
+    "Glory Ministry Church",
+    "Legal Consultant Jakarta",
+    "Notaris Jakarta Barat",
+    "PPAT Jakarta",
+    "Pengacara Jakarta",
+    "Law Firm Jakarta",
+    "Law Consulting Jakarta",
+    "Warteg Gemini",
+    "Kos Gemini",
+    "Kos Jakarta",
+    "Kos Jakarta Barat",
+    "Kos Terbaik Jakarta Barat",
+    "Kos Taman Palem",
+    "Warteg Taman Palem",
+    "Warteg Enak Jakarta",
+    "Jasa Notaris Jakarta Barat",
+    "Notaris Online Terdekat",
+    "PPAT Jakarta Barat",
+    "Balik Nama Sertifikat",
+    "Akta Jual Beli Tanah",
+    "Christian Ministry",
+    "Michael Huang Podcast"
+  ] as const,
+
+  // Verification codes
+  verification: {
+    google: "iyBFpyUPLalkQuyv8chODEcQTA2eWa-gZcV1Hph5UVc",
+  },
+
+  // Tag Manager
+  gtmId: "GTM-5FKJ4C6J",
 
   // For structured data
-  type: "Organization", // Organization, LocalBusiness, Product, etc.
+  type: "Person", // The main website is a personal brand/hub
 } as const;
 
 /**

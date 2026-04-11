@@ -1,5 +1,6 @@
 import { Landmark, Phone, Mail, MapPin, Clock } from "lucide-react";
 import type { Article } from "@/shared/components/article-cards";
+import { PPAT_MAPS_EMBED_URL, WHATSAPP_PHONE, EMAIL_ADDRESS, LOCATION_ADDRESS } from "@/app/constants/links";
 
 export const ppatHero = {
   title: "PPAT — Pejabat Pembuat Akta Tanah",
@@ -89,11 +90,50 @@ export const ppatArticles: Article[] = [
 ];
 
 export const ppatContacts = [
-  { icon: Phone, text: "+62 812 3456 7890" },
-  { icon: Mail, text: "ppat@michael.com" },
-  { icon: MapPin, text: "Jl. Jend. Sudirman No. 1, Jakarta Pusat" },
+  { icon: Phone, text: `+${WHATSAPP_PHONE}` },
+  { icon: Mail, text: EMAIL_ADDRESS },
+  { icon: MapPin, text: LOCATION_ADDRESS },
   { icon: Clock, text: "Senin-Jumat, 08:00-17:00 WIB" },
 ];
 
-export const ppatMapEmbedUrl =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.81532607507515!3d-6.201900993790556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sJl.%20Jend.%20Sudirman%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid";
+export const ppatMapEmbedUrl = PPAT_MAPS_EMBED_URL;
+
+export const ppatReviews = [
+  {
+    stars: 5,
+    text: "Penyelesaian sertifikat tanah saya sangat lancar. Komunikasi tim PPAT sangat proaktif dan informatif.",
+    author: "Bambang J.",
+  },
+  {
+    stars: 5,
+    text: "Sangat terbantu dengan jasa pengecekan sertifikatnya. Cepat dan memberikan rasa aman dalam transaksi.",
+    author: "Dewi Lestari",
+  },
+];
+
+export const ppatGalleryImages = [
+  {
+    url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200",
+    title: "Kantor PPAT Jakarta Michael Huang - Layanan Sertifikat Tanah",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1200",
+    title: "Tim Profesional PPAT Jakarta Michael Huang",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200",
+    title: "Konsultasi Hukum Pertanahan & Agraria PPAT",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80&w=1200",
+    title: "Legalitas Akta Jual Beli (AJB) Tanah & Bangunan",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
+    title: "Suasana Kantor PPAT Michael Huang",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80&w=1200",
+    title: "Pengurusan Balik Nama Sertifikat Tanah BPN",
+  },
+];

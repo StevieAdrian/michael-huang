@@ -2,17 +2,31 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ExternalLink, Play } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
+import { YOUTUBE_CHANNEL_URL } from "@/app/constants/links";
 import { podcastEpisodes, podcastPlatforms } from "@/app/constants/podcast";
+import { generateOGMetadata, seoConfig } from "@/config/seo-config";
+import { generatePodcastSchema } from "@/lib/structured-data";
+import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "Podcast | Michael Huang",
   description:
     "Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan bersama narasumber terpilih.",
+  openGraph: generateOGMetadata(
+    "Podcast | Michael Huang",
+    "Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan bersama narasumber terpilih.",
+    `${seoConfig.siteUrl}/images/podcast-og.png`
+  ),
+  alternates: {
+    canonical: `${seoConfig.siteUrl}/podcast`,
+  },
 };
 
 export default function PodcastPage() {
   return (
-    <div className="pb-24">
+    <>
+      <StructuredData data={generatePodcastSchema()} />
+      <div className="pb-24">
       <PageHero
         title="Michael Huang Podcast"
         subtitle="Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan. Episode baru hadir setiap minggu."
@@ -52,7 +66,7 @@ export default function PodcastPage() {
               </p>
             </div>
             <a
-              href="https://www.youtube.com/@michaelhuangofficial2022"
+              href={YOUTUBE_CHANNEL_URL}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:underline underline-offset-4 shrink-0"
@@ -65,7 +79,7 @@ export default function PodcastPage() {
             {podcastEpisodes.map((episode) => (
               <a
                 key={episode.number}
-                href="https://www.youtube.com/@michaelhuangofficial2022"
+                href={YOUTUBE_CHANNEL_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="group bg-card border border-border rounded-2xl p-5 md:p-6 flex gap-4 items-start hover:border-gold/30 hover:shadow-lg transition-all duration-300"
@@ -109,7 +123,7 @@ export default function PodcastPage() {
             pertama dengar episode terbaru.
           </p>
           <a
-            href="https://www.youtube.com/@michaelhuangofficial2022"
+            href={YOUTUBE_CHANNEL_URL}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-colors text-base"
@@ -127,5 +141,6 @@ export default function PodcastPage() {
         </div>
       </section>
     </div>
-  );
+  </>
+);
 }
