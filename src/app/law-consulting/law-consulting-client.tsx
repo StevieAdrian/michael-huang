@@ -10,12 +10,12 @@ import {
   lawConsultingHero,
   lawConsultingServices,
   lawConsultingFaqs,
-  lawConsultingArticles,
   lawConsultingContacts,
   lawConsultingMapEmbedUrl,
   lawConsultingReviews,
   lawConsultingGalleryImages,
 } from "@/app/constants/law-consulting";
+import { lawConsultingArticles } from "@/app/constants/law-consulting-articles";
 import { LAW_CONSULTING_WHATSAPP_URL } from "@/app/constants/links";
 import { Gallery } from "@/shared/components/gallery";
 

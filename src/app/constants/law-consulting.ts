@@ -10,7 +10,6 @@ import {
   MapPin,
   Clock,
 } from "lucide-react";
-import type { Article } from "@/shared/components/article-cards";
 import { LAW_FIRM_MAPS_EMBED_URL, WHATSAPP_PHONE, EMAIL_ADDRESS, LOCATION_ADDRESS } from "@/app/constants/links";
 
 export const lawConsultingHero = {
@@ -69,36 +68,6 @@ export const lawConsultingFaqs = [
   {
     q: "Bagaimana menghitung biaya jasa konsultan hukum?",
     a: "Kami menawarkan model retainer bulanan untuk perusahaan, project-based fee untuk transaksi spesifik, dan hourly rate untuk konsultasi ad-hoc. Hubungi kami untuk penawaran yang disesuaikan.",
-  },
-];
-
-export const lawConsultingArticles: Article[] = [
-  {
-    id: "1",
-    title: "Pentingnya Legal Due Diligence Sebelum Akuisisi Bisnis",
-    excerpt:
-      "LDD yang komprehensif dapat mengungkap risiko tersembunyi yang berpotensi menggagalkan transaksi Anda. Pelajari apa saja yang diperiksa dalam proses ini.",
-    date: "20 Maret 2025",
-    category: "M&A",
-    slug: "legal-due-diligence-akuisisi",
-  },
-  {
-    id: "2",
-    title: "5 Klausul Penting yang Wajib Ada dalam Kontrak Bisnis",
-    excerpt:
-      "Kontrak yang lemah bisa menjadi sumber sengketa di kemudian hari. Pastikan kontrak Anda memuat klausul-klausul perlindungan berikut ini.",
-    date: "1 Mar 2025",
-    category: "Kontrak",
-    slug: "klausul-penting-kontrak-bisnis",
-  },
-  {
-    id: "3",
-    title: "Kepatuhan Hukum untuk Startup: Dari Awal Hingga Skalabilitas",
-    excerpt:
-      "Banyak startup mengabaikan aspek hukum di fase awal. Artikel ini menjelaskan fondasi legalitas yang perlu dibangun sejak hari pertama.",
-    date: "14 Jan 2025",
-    category: "Startup",
-    slug: "kepatuhan-hukum-startup",
   },
 ];
 
