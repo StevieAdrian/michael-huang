@@ -6,12 +6,12 @@ import { PageHero } from "@/features/home/components/page-hero";
 import { YoutubeSection } from "@/shared/components/youtube-section";
 import { ArticleCards } from "@/shared/components/article-cards";
 import {
-  musicArticles,
   musicHero,
   musicServices,
   musicTestimonials,
   musicYoutubeVideos,
 } from "@/app/constants/music";
+import { musicArticles } from "@/app/constants/music-articles";
 import {
   MUSIC_BOOKING_WHATSAPP_URL,
   YOUTUBE_CHANNEL_URL,

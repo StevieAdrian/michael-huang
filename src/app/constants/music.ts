@@ -4,7 +4,6 @@ import {
   Headphones,
   Radio,
 } from "lucide-react";
-import type { Article } from "@/shared/components/article-cards";
 import type { YoutubeVideoItem } from "@/app/constants/youtube";
 
 export const musicHero = {
@@ -83,32 +82,3 @@ export const musicTestimonials = [
   },
 ];
 
-export const musicArticles: Article[] = [
-  {
-    id: "1",
-    title: "Proses Rekaman Studio: Dari Konsep Hingga Master",
-    excerpt:
-      "Rekaman profesional bukan hanya soal memasang mikrofon. Pelajari tahapan lengkap produksi musik dari pre-production hingga mastering.",
-    date: "12 April 2025",
-    category: "Studio",
-    slug: "proses-rekaman-studio",
-  },
-  {
-    id: "2",
-    title: "Mixing vs Mastering: Apa Bedanya?",
-    excerpt:
-      "Banyak musisi bingung membedakan mixing dan mastering. Artikel ini menjelaskan peran masing-masing dalam rantai produksi audio.",
-    date: "5 Maret 2025",
-    category: "Teknis",
-    slug: "mixing-vs-mastering",
-  },
-  {
-    id: "3",
-    title: "Cara Mendistribusikan Musik ke Spotify dan Apple Music",
-    excerpt:
-      "Setelah rekaman selesai, langkah berikutnya adalah distribusi digital. Pelajari cara mendaftarkan musik Anda ke platform streaming.",
-    date: "20 Feb 2025",
-    category: "Distribusi",
-    slug: "distribusi-musik-streaming",
-  },
-];
