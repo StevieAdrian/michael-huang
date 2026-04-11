@@ -1,5 +1,4 @@
 import { Landmark, Phone, Mail, MapPin, Clock } from "lucide-react";
-import type { Article } from "@/shared/components/article-cards";
 import { PPAT_MAPS_EMBED_URL, WHATSAPP_PHONE, EMAIL_ADDRESS, LOCATION_ADDRESS } from "@/app/constants/links";
 
 export const ppatHero = {
@@ -56,36 +55,6 @@ export const ppatProcess = [
     step: "04",
     title: "Pendaftaran ke BPN",
     desc: "Kami mengurus pendaftaran balik nama sertifikat di Badan Pertanahan Nasional.",
-  },
-];
-
-export const ppatArticles: Article[] = [
-  {
-    id: "1",
-    title: "Cara Balik Nama Sertifikat Tanah Setelah Jual Beli",
-    excerpt:
-      "Balik nama sertifikat adalah langkah wajib setelah transaksi jual beli tanah. Pelajari prosedur lengkapnya bersama PPAT kami.",
-    date: "15 Maret 2025",
-    category: "Panduan",
-    slug: "cara-balik-nama-sertifikat-tanah",
-  },
-  {
-    id: "2",
-    title: "Dokumen yang Diperlukan untuk AJB di PPAT",
-    excerpt:
-      "Sebelum datang ke PPAT, pastikan seluruh dokumen Anda sudah lengkap. Berikut daftar lengkap yang harus dipersiapkan.",
-    date: "28 Feb 2025",
-    category: "Tips",
-    slug: "dokumen-ajb-ppat",
-  },
-  {
-    id: "3",
-    title: "Apa Itu Hak Tanggungan dan Bagaimana Cara Kerjanya?",
-    excerpt:
-      "Hak tanggungan adalah jaminan atas tanah yang sering digunakan dalam kredit bank. Pahami hak dan kewajiban Anda sebagai debitur.",
-    date: "10 Jan 2025",
-    category: "Edukasi",
-    slug: "hak-tanggungan-pengertian",
   },
 ];
 

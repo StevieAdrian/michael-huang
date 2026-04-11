@@ -8,12 +8,12 @@ import {
   ppatHero,
   ppatServices,
   ppatProcess,
-  ppatArticles,
   ppatContacts,
   ppatMapEmbedUrl,
   ppatReviews,
   ppatGalleryImages,
 } from "@/app/constants/ppat";
+import { ppatArticles } from "@/app/constants/ppat-articles";
 import { PPAT_WHATSAPP_URL } from "@/app/constants/links";
 import { Gallery } from "@/shared/components/gallery";
 
