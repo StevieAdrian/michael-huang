@@ -55,15 +55,6 @@ export interface ChurchTestimonial {
   avatarInitials: string;
 }
 
-export interface ChurchArticle {
-  id: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  category: string;
-  slug: string;
-}
-
 export const churchSchedules: ChurchSchedule[] = [
   { name: "Ibadah Umum", time: "Minggu 08:00 & 10:00 WIB" },
   { name: "Ibadah Pemuda", time: "Sabtu 17:00 WIB" },
@@ -215,32 +206,3 @@ export const churchTestimonials: ChurchTestimonial[] = [
   },
 ];
 
-export const churchArticles: ChurchArticle[] = [
-  {
-    id: "1",
-    title: "Makna Baptisan Air dalam Iman Kristen",
-    excerpt:
-      "Baptisan bukan sekadar ritual, melainkan pernyataan iman dan identitas baru sebagai pengikut Kristus.",
-    date: "5 April 2025",
-    category: "Iman",
-    slug: "makna-baptisan-air",
-  },
-  {
-    id: "2",
-    title: "Pelayanan Sosial: Menjangkau Komunitas Sekitar",
-    excerpt:
-      "Gereja dipanggil menjadi berkat. Lihat bagaimana jemaat Glory Ministry menjangkau banyak jiwa melalui aksi nyata.",
-    date: "20 Mar 2025",
-    category: "Pelayanan",
-    slug: "pelayanan-sosial-komunitas",
-  },
-  {
-    id: "3",
-    title: "Jadwal Retret Spiritual 2025 dan Persiapannya",
-    excerpt:
-      "Retret adalah waktu untuk berhenti, memulihkan hati, dan mendengar suara Tuhan dengan lebih jelas.",
-    date: "10 Feb 2025",
-    category: "Kegiatan",
-    slug: "jadwal-retret-spiritual-2025",
-  },
-];

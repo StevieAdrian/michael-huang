@@ -19,7 +19,6 @@ import { PageHero } from "@/features/home/components/page-hero";
 import { ArticleCards } from "@/shared/components/article-cards";
 import { YoutubeSection } from "@/shared/components/youtube-section";
 import {
-  churchArticles,
   churchAnnouncements,
   churchContactInfo,
   churchDonationItems,
@@ -28,6 +27,7 @@ import {
   churchWeeklyPhotoLabels,
   churchYoutubeVideos,
 } from "@/app/constants/church";
+import { churchArticles } from "@/app/constants/church-articles";
 
 export function ChurchClientPage() {
   const [timeLeft, setTimeLeft] = useState({
