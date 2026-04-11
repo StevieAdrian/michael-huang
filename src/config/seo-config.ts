@@ -8,7 +8,7 @@ export const seoConfig = {
   siteName: "Michael Huang ID",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://michaelhuang.id",
   description:
-    "Official website of Michael Huang. Specialist in Notaris, PPAT, Legal Consulting, and social ministries through Glory Ministry Church.",
+    "Official website of Michael Huang, expert in Notary, PPAT, and legal consulting services. Delivering trusted, efficient, and professional legal solutions, alongside social initiatives through Glory Ministry Church.",
 
   // Social Media
   social: {
