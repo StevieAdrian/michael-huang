@@ -56,6 +56,10 @@ export interface ChurchTestimonial {
   avatarInitials: string;
 }
 
+export interface ChurchWeeklyPhoto {
+  label: string;
+  image?: string;
+}
 
 export const churchSchedules: ChurchSchedule[] = [
   { name: "Ibadah Umum", time: "Minggu 08:00 & 10:00 WIB" },
@@ -197,3 +201,113 @@ export const churchTestimonials: ChurchTestimonial[] = [
   },
 ];
 
+export interface ChurchTitheRow {
+  date: string;
+  name: string;
+  paymentType: string;
+  amount: number;
+}
+
+export interface ChurchTitheMonth {
+  month: string;
+  year: number;
+  total: number;
+  rows: ChurchTitheRow[];
+}
+
+export const churchTitheData: ChurchTitheMonth[] = [
+  {
+    month: "April",
+    year: 2026,
+    total: 3500000,
+    rows: [
+      { date: "2026-04-05", name: "Jemaat A", paymentType: "QRIS", amount: 1500000 },
+      { date: "2026-04-05", name: "Anonym", paymentType: "Transfer BCA", amount: 1000000 },
+      { date: "2026-04-12", name: "Keluarga Budi", paymentType: "Tunai", amount: 1000000 },
+    ],
+  },
+  {
+    month: "Maret",
+    year: 2026,
+    total: 4200000,
+    rows: [
+      { date: "2026-03-01", name: "Anonym", paymentType: "Transfer BNI", amount: 1200000 },
+      { date: "2026-03-08", name: "Jemaat B", paymentType: "QRIS", amount: 2000000 },
+      { date: "2026-03-15", name: "Jemaat C", paymentType: "Transfer Mandiri", amount: 1000000 },
+    ],
+  },
+];
+
+export interface ChurchPastor {
+  name: string;
+  role: string;
+  image: string;
+  isMain: boolean;
+}
+
+export const churchPastors: ChurchPastor[] = [
+  {
+    name: "Pdt. Dr. Michael H., S.H., S.T., M.Kn., M.Th., P.hD",
+    role: "Gembala Sidang",
+    image: "/images/pdt-michael.jpg",
+    isMain: true,
+  },
+  {
+    name: "Pdm. Calvin L.",
+    role: "Pendeta Muda",
+    image: "/images/pdm-calvin.png",
+    isMain: false,
+  },
+  {
+    name: "Pdm. Marojahan S.",
+    role: "Pendeta Muda",
+    image: "/images/pdm-marojahan.jpg",
+    isMain: false,
+  },
+  {
+    name: "Pdm. Lany S.",
+    role: "Pendeta Muda",
+    image: "/images/pdm-lany.jpg",
+    isMain: false,
+  },
+  {
+    name: "Pdm. Nova P.",
+    role: "Pendeta Muda",
+    image: "https://i.pravatar.cc/300?img=5",
+    isMain: false,
+  },
+];
+
+export const churchVisionMission = {
+  vision: "Menjadi gereja yang memancarkan kemuliaan Tuhan dan membawa pemulihan bagi kota dan bangsa.",
+  mission: [
+    "Membangun komunitas penyembah yang intim dengan Tuhan.",
+    "Melengkapi jemaat dengan kebenaran Firman Tuhan.",
+    "Mengembangkan potensi setiap individu untuk melayani sesuai panggilan.",
+    "Menjangkau mereka yang terhilang dan membawa mereka kepada Kristus."
+  ]
+};
+
+export interface ChurchTheme {
+  monthId: number; // 1 to 12
+  monthName: string;
+  themeText: string;
+  bibleVerse: string;
+  description: string;
+  picture: string;
+}
+
+export const churchMonthlyThemes: ChurchTheme[] = [
+  { monthId: 1, monthName: "Januari", themeText: "Tahun Penuh Pengharapan", bibleVerse: "Yeremia 29:11", description: "Memulai tahun dengan keyakinan penuh akan rencana Tuhan.", picture: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=500&q=80" },
+  { monthId: 2, monthName: "Februari", themeText: "Kasih yang Menyelamatkan", bibleVerse: "Yohanes 3:16", description: "Meresapi kembali kasih agape dalam hidup sehari-hari.", picture: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=500&q=80" },
+  { monthId: 3, monthName: "Maret", themeText: "Kuasa Doa Bersama", bibleVerse: "Matius 18:20", description: "Kesatuan hati dalam doa mendatangkan mujizat.", picture: "https://images.unsplash.com/photo-1447023029226-ef8f6b52e3ea?w=500&q=80" },
+  { monthId: 4, monthName: "April", themeText: "Janji Kebangkitan", bibleVerse: "1 Korintus 15:20", description: "Merayakan Paskah dan kemenangan atas maut.", picture: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=500&q=80" },
+  { monthId: 5, monthName: "Mei", themeText: "Keluarga yang Diberkati", bibleVerse: "Yosua 24:15", description: "Membangun fondasi ilahi dalam rumah tangga.", picture: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=500&q=80" },
+  { monthId: 6, monthName: "Juni", themeText: "Buah Roh Harian", bibleVerse: "Galatia 5:22-23", description: "Karakter yang memuliakan Tuhan di tengah dunia.", picture: "https://images.unsplash.com/photo-1490818387583-1b5e5927c44c?w=500&q=80" },
+  { monthId: 7, monthName: "Juli", themeText: "Menjadi SaksiNya", bibleVerse: "Kisah Para Rasul 1:8", description: "Berani membagikan kabar baik kepada sesama.", picture: "https://images.unsplash.com/photo-1529156069898-49953eb1b5ae?w=500&q=80" },
+  { monthId: 8, monthName: "Agustus", themeText: "Kemerdekaan Sejati", bibleVerse: "Yohanes 8:36", description: "Bebas dari belenggu dosa dan hidup dalam rahmat.", picture: "https://images.unsplash.com/photo-1464817739973-1002fc5fdfc5?w=500&q=80" },
+  { monthId: 9, monthName: "September", themeText: "Melayani dengan Segenap Hati", bibleVerse: "Kolose 3:23", description: "Panggilan hidup untuk melayani sebagai bentuk penyembahan.", picture: "https://images.unsplash.com/photo-1593113568858-aab35b542037?w=500&q=80" },
+  { monthId: 10, monthName: "Oktober", themeText: "Pemulihan Ekonomi Ilahi", bibleVerse: "Filipi 4:19", description: "Janji pemeliharaan Tuhan dalam hidup secara utuh.", picture: "https://images.unsplash.com/photo-1450101499163-c8848c66cb85?w=500&q=80" },
+  { monthId: 11, monthName: "November", themeText: "Hati yang Bersyukur", bibleVerse: "1 Tesalonika 5:18", description: "Mengucap syukur dalam segala hal kepada Tuhan.", picture: "https://images.unsplash.com/photo-1506461944888-b80c107bebdd?w=500&q=80" },
+  { monthId: 12, monthName: "Desember", themeText: "Terang Telah Datang", bibleVerse: "Yesaya 9:1", description: "Merayakan Natal dan menyongsong tahun yang baru.", picture: "https://images.unsplash.com/photo-1512351735230-a07eb108ca78?w=500&q=80" },
+];
