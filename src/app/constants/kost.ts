@@ -6,7 +6,6 @@ import {
   Waves,
   Coffee,
 } from "lucide-react";
-import type { Article } from "@/shared/components/article-cards";
 import {
   KOST_GEMINI_MAPS_EMBED_URL,
   KOST_MERUYA_MAPS_EMBED_URL,
@@ -95,32 +94,3 @@ export const kostTestimonials = [
   },
 ];
 
-export const kostArticles: Article[] = [
-  {
-    id: "1",
-    title: "Tips Memilih Kost yang Tepat di Jakarta",
-    excerpt:
-      "Dengan ribuan pilihan kost di Jakarta, memilih yang terbaik bisa membingungkan. Inilah panduan lengkap memilih kost sesuai kebutuhan dan anggaran Anda.",
-    date: "3 April 2025",
-    category: "Tips",
-    slug: "tips-memilih-kost-jakarta",
-  },
-  {
-    id: "2",
-    title: "5 Fasilitas Wajib di Kost Premium Modern",
-    excerpt:
-      "Kost premium bukan hanya soal harga - ini tentang kualitas hidup. Pastikan kost pilihan Anda memiliki 5 fasilitas penting ini.",
-    date: "15 Mar 2025",
-    category: "Panduan",
-    slug: "fasilitas-wajib-kost-premium",
-  },
-  {
-    id: "3",
-    title: "Keuntungan Tinggal di Kost Dekat Pusat Bisnis",
-    excerpt:
-      "Lokasi adalah segalanya. Tinggal dekat pusat bisnis bukan hanya menghemat waktu - tapi juga membuka lebih banyak peluang karir.",
-    date: "8 Feb 2025",
-    category: "Gaya Hidup",
-    slug: "keuntungan-kost-pusat-bisnis",
-  },
-];

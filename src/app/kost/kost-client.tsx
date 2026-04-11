@@ -12,12 +12,12 @@ import { PageHero } from "@/features/home/components/page-hero";
 import { ArticleCards } from "@/shared/components/article-cards";
 import { WHATSAPP_PHONE } from "@/app/constants/links";
 import {
-  kostArticles,
   kostFacilities,
   kostHero,
   kostPlaces,
   kostTestimonials,
 } from "@/app/constants/kost";
+import { kostArticles } from "@/app/constants/kost-articles";
 
 export function KostClientPage() {
   return (
