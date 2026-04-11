@@ -8,7 +8,7 @@ import { seoConfig } from "@/config/seo-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = seoConfig.siteUrl;
-  const lastMod = new Date("2025-04-10");
+  const lastMod = new Date();
 
   const routes = [
     {
@@ -43,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/podcast`,
-      lastModified: new Date(),
+      lastModified: lastMod,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
