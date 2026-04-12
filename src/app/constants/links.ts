@@ -3,7 +3,7 @@ export const SPOTIFY_URL = "#";
 export const APPLE_PODCASTS_URL = "#";
 export const GOOGLE_PODCASTS_URL = "#";
 
-export const WHATSAPP_PHONE = "628122179370";
+export const WHATSAPP_PHONE = "628212385595";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}`;
 export const WHATSAPP_CONSULTATION_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin berkonsultasi dengan michaelhuang.id`;
 export const WARTEG_CATERING_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo,%20saya%20ingin%20order%20catering%20Warteg%20Gemini`;
