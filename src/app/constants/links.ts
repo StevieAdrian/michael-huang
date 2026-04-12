@@ -17,7 +17,7 @@ export const CHURCH_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, s
 export const EMAIL_ADDRESS = "contact@michaelhuang.id";
 export const EMAIL_CARE = "contact@michaelhuang.id";
 
-export const LOCATION_ADDRESS = "Komplek Mall, Perum Ruko Mutiara Taman Palem Blok C8. 23-26 Jalan Outer Ring Road, Sebarisan Hotel Aston Cengkareng, Taman Palem Jakarta Barat DKI Jakarta 11730 ID, Jl. Kamal Raya Belakang, Cengkareng Tim.";
+export const LOCATION_ADDRESS = "Michael Huang Building - Ruko Mutiara Taman Palem Blok C8 No 23 - 26 Cengkareng Timur Cengkareng Jakarta Barat, 11730 Jl Outer Ring Road";
 //export const GOOGLE_MAPS_SEARCH_URL = `https://maps.google.com/?q=${encodeURIComponent(LOCATION_ADDRESS)}`;
 export const GENERAL_MAPS_URL = `https://maps.app.goo.gl/tfV2tHeX9UWTXP3e7`;
 export const GOOGLE_MAPS_EMBED_URL = "https://www.google.com/maps?q=Michael,+S.H.,+S.T.,+M.Kn.,+Komplek+Mall,+Perum+Ruko+Mutiara+Taman+Palem+Blok+C8.+23+Jalan+Outer+Ring+Road,+Sebarisan+Hotel+Aston+Cengkareng,+Taman+Palem+Jakarta+Barat+DKI+Jakarta+11730+ID,+Jl.+Kamal+Raya+Belakang,+Cengkareng+Tim.&output=embed";

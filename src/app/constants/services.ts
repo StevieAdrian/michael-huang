@@ -82,7 +82,7 @@ export const services = [
     tag: "Ibadah",
   },
   {
-    title: "Musik Production",
+    title: "Music Production",
     description:
       "Studio rekaman profesional, aransemen, mixing & mastering untuk artis, korporat, dan gereja.",
     icon: Mic2,

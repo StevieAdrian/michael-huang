@@ -72,7 +72,7 @@ export const services = [
     tag: "Kuliner",
   },
   {
-    title: "Glory Ministry Church",
+    title: "Gereja",
     description:
       "Komunitas iman yang penuh kasih. Jadwal ibadah, kegiatan, dan persembahan online tersedia.",
     icon: Heart,
@@ -82,7 +82,7 @@ export const services = [
     tag: "Ibadah",
   },
   {
-    title: "Musik Production",
+    title: "Music Production",
     description:
       "Studio rekaman profesional, aransemen, mixing & mastering untuk artis, korporat, dan gereja.",
     icon: Mic2,

@@ -164,7 +164,7 @@ export const churchUpcomingEvents: ChurchEvent[] = [
 ];
 
 export const churchContactInfo: ChurchContactInfo = {
-  phone: "+62 812 2179 370",
+  phone: "+62 821 2385 595",
   email: "contact@michaelhuang.id",
   address: "Perum Ruko Mutiara Taman Palem, Jl. Kamal Raya Outer Ring Road Jl. Kamal Raya No.23-25 Blok C8, Cengkareng Tim., Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11730",
   mapsEmbedUrl: CHURCH_MAPS_EMBED_URL,
