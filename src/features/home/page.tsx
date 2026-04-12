@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="pb-24">
       <PageHero
-        title="#Michael Huang"
+        title="Michael Huang | Law "
         subtitle=""
       />
 

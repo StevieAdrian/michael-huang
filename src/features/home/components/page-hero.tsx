@@ -62,7 +62,7 @@ export function PageHero({
               <span
                 key={i}
                 className={
-                  i === title.split(" ").length - 1
+                  i === title.split(" ").length - 2
                     ? "text-gradient-gold"
                     : "text-foreground"
                 }
