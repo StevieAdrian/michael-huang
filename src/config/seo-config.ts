@@ -8,7 +8,7 @@ export const seoConfig = {
   siteName: "Notary & PPAT Services | Legal Consulting Michael Huang",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.michaelhuang.id",
   description:
-    "Official website of Michael Huang, expert in Notary, PPAT, and legal consulting services. Delivering trusted, efficient, and professional legal solutions, alongside social initiatives through Glory Ministry Church.",
+    "Official site of Michael Huang for Notary, PPAT, and legal consulting in Jakarta, plus social initiatives through Glory Ministry Church.",
 
   // Social Media
   social: {
