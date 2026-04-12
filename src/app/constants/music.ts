@@ -7,7 +7,7 @@ import {
 import type { YoutubeVideoItem } from "@/app/constants/youtube";
 
 export const musicHero = {
-  title: "Michael Music Production",
+  title: "MH Music Production",
   subtitle:
     "Studio produksi musik profesional berstandar internasional. Rekaman, aransemen, mixing, dan mastering untuk karya terbaik Anda.",
   align: "left" as const,
