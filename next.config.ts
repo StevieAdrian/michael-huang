@@ -73,12 +73,97 @@ const nextConfig: NextConfig = {
   // Redirects (use for URL changes to maintain SEO)
   async redirects() {
     return [
-      // Example: redirect old URLs to maintain SEO value
-      // {
-      //   source: "/old-page",
-      //   destination: "/new-page",
-      //   permanent: true, // 301 redirect for SEO
-      // },
+      {
+        source: "/notaris/:path*",
+        destination: "/notaris-michael/:path*",
+        permanent: true,
+      },
+      {
+        source: "/ppat/:path*",
+        destination: "/ppat-michael/:path*",
+        permanent: true,
+      },
+      {
+        source: "/law-firm/:path*",
+        destination: "/law-firm-michael/:path*",
+        permanent: true,
+      },
+      {
+        source: "/law-consulting/:path*",
+        destination: "/law-consulting-michael/:path*",
+        permanent: true,
+      },
+      {
+        source: "/gereja/:path*",
+        destination: "/glory-ministry-church/:path*",
+        permanent: true,
+      },
+      {
+        source: "/warteg/:path*",
+        destination: "/warteg-gemini/:path*",
+        permanent: true,
+      },
+      {
+        source: "/kost/:path*",
+        destination: "/kost-gemini-koolkost/:path*",
+        permanent: true,
+      },
+      {
+        source: "/podcast/:path*",
+        destination: "/podcast-michael/:path*",
+        permanent: true,
+      },
+      {
+        source: "/music/:path*",
+        destination: "/musik-production-michael/:path*",
+        permanent: true,
+      },
+      {
+        source: "/musik/:path*",
+        destination: "/musik-production-michael/:path*",
+        permanent: true,
+      },
+    ];
+  },
+
+  async rewrites() {
+    return [
+      {
+        source: "/notaris-michael/:path*",
+        destination: "/notaris/:path*",
+      },
+      {
+        source: "/ppat-michael/:path*",
+        destination: "/ppat/:path*",
+      },
+      {
+        source: "/law-firm-michael/:path*",
+        destination: "/law-firm/:path*",
+      },
+      {
+        source: "/law-consulting-michael/:path*",
+        destination: "/law-consulting/:path*",
+      },
+      {
+        source: "/glory-ministry-church/:path*",
+        destination: "/gereja/:path*",
+      },
+      {
+        source: "/warteg-gemini/:path*",
+        destination: "/warteg/:path*",
+      },
+      {
+        source: "/kost-gemini-koolkost/:path*",
+        destination: "/kost/:path*",
+      },
+      {
+        source: "/podcast-michael/:path*",
+        destination: "/podcast/:path*",
+      },
+      {
+        source: "/musik-production-michael/:path*",
+        destination: "/musik/:path*",
+      },
     ];
   },
 

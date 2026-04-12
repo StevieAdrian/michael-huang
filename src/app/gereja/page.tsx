@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     `${seoConfig.siteUrl}/images/church-og.png`
   ),
   alternates: {
-    canonical: `${seoConfig.siteUrl}/gereja`,
+    canonical: `${seoConfig.siteUrl}/glory-ministry-church`,
   },
 };
 

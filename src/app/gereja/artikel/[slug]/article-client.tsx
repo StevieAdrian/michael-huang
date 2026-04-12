@@ -40,7 +40,7 @@ export function ChurchArticleClientPage({
             Hub
           </Link>
           <ChevronRight className="w-3 h-3" />
-          <Link href="/gereja" className="hover:text-gold transition-colors">
+          <Link href="/glory-ministry-church" className="hover:text-gold transition-colors">
             Gereja
           </Link>
           <ChevronRight className="w-3 h-3" />
@@ -195,7 +195,7 @@ export function ChurchArticleClientPage({
         </div>
 
         <div className="mt-8">
-          <Link href="/gereja">
+          <Link href="/glory-ministry-church">
             <span className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-gold transition-colors">
               <ArrowLeft className="w-4 h-4" /> Kembali ke Gereja
             </span>
@@ -206,7 +206,7 @@ export function ChurchArticleClientPage({
           <h3 className="text-lg font-display font-bold mb-5">Artikel Terkait</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {relatedArticles.map((item) => (
-              <Link key={item.id} href={`/gereja/artikel/${item.slug}`}>
+              <Link key={item.id} href={`/glory-ministry-church/artikel/${item.slug}`}>
                 <div className="bg-card border border-border rounded-xl p-4 hover:border-gold/30 hover:shadow transition-all group cursor-pointer">
                   <span className="text-xs font-bold text-gold">{item.category}</span>
                   <p className="font-semibold text-sm mt-1 group-hover:text-gold transition-colors leading-snug">

@@ -760,7 +760,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
 
       <ArticleCards
         articles={churchArticles}
-        basePath="/gereja"
+        basePath="/glory-ministry-church"
         title="Artikel & Renungan"
       />
 

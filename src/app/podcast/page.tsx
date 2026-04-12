@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     `${seoConfig.siteUrl}/images/podcast-og.png`
   ),
   alternates: {
-    canonical: `${seoConfig.siteUrl}/podcast`,
+    canonical: `${seoConfig.siteUrl}/podcast-michael`,
   },
 };
 

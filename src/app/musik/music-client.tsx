@@ -136,7 +136,7 @@ export function MusicClientPage() {
         </div>
       </section>
 
-      <ArticleCards articles={musicArticles} basePath="/musik" title="Artikel Produksi Musik" />
+      <ArticleCards articles={musicArticles} basePath="/musik-production-michael" title="Artikel Produksi Musik" />
     </div>
   );
 }

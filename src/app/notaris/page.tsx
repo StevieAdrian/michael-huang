@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     `${seoConfig.siteUrl}/images/notaris-og.png`
   ),
   alternates: {
-    canonical: `${seoConfig.siteUrl}/notaris`,
+    canonical: `${seoConfig.siteUrl}/notaris-michael`,
   },
 };
 
@@ -22,7 +22,7 @@ export default function NotarisPage() {
   const schema = generateLegalServiceSchema({
     name: "Notaris Michael Huang",
     description: "Layanan Notaris profesional di Jakarta Barat.",
-    url: `${seoConfig.siteUrl}/notaris`,
+    url: `${seoConfig.siteUrl}/notaris-michael`,
   });
 
   return (

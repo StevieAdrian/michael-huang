@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Kost nyaman dan strategis di Jakarta Barat (Taman Palem). Kamar modern, fasilitas lengkap, lingkungan aman. Hubungi Michael Huang untuk info kost terbaik.",
   alternates: {
-    canonical: `${seoConfig.siteUrl}/kost`,
+    canonical: `${seoConfig.siteUrl}/kost-gemini-koolkost`,
   },
   openGraph: generateOGMetadata(
     "Kost Premium Jakarta Barat | Gemini Kost",
     "Kost nyaman dan strategis di Jakarta Barat. Kamar modern, fasilitas lengkap, lingkungan aman.",
     `${seoConfig.siteUrl}/og-image.png`,
-    `${seoConfig.siteUrl}/kost`
+    `${seoConfig.siteUrl}/kost-gemini-koolkost`
   ),
 };
 

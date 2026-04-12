@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     `${seoConfig.siteUrl}/images/consulting-og.png`
   ),
   alternates: {
-    canonical: `${seoConfig.siteUrl}/law-consulting`,
+    canonical: `${seoConfig.siteUrl}/law-consulting-michael`,
   },
 };
 
@@ -23,7 +23,7 @@ export default function LawConsultingPage() {
   const serviceSchema = generateLegalServiceSchema({
     name: "Michael Huang Law Consulting",
     description: "Strategic legal advisory for businesses.",
-    url: `${seoConfig.siteUrl}/law-consulting`,
+    url: `${seoConfig.siteUrl}/law-consulting-michael`,
   });
 
   const faqSchema = generateFAQSchema(lawConsultingFaqs);

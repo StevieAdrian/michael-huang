@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Layanan aransemen musik, worship leading, and produksi rekaman profesional. Dedikasi untuk karya musik yang memberkati dan menginspirasi.",
   alternates: {
-    canonical: `${seoConfig.siteUrl}/musik`,
+    canonical: `${seoConfig.siteUrl}/musik-production-michael`,
   },
   openGraph: generateOGMetadata(
     "Glory Worship & Musik | Michael Huang",
     "Layanan aransemen musik, worship leading, dan produksi rekaman profesional. Dedikasi untuk karya musik berkualitas.",
     `${seoConfig.siteUrl}/og-image.png`,
-    `${seoConfig.siteUrl}/musik`
+    `${seoConfig.siteUrl}/musik-production-michael`
   ),
 };
 

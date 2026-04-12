@@ -151,7 +151,7 @@ export function generateChurchSchema() {
     "@context": "https://schema.org",
     "@type": "Church",
     name: "Glory Ministry Church",
-    url: `${seoConfig.siteUrl}/gereja`,
+    url: `${seoConfig.siteUrl}/glory-ministry-church`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Taman Palem Lestari",
@@ -180,7 +180,7 @@ export function generatePodcastSchema() {
     "@context": "https://schema.org",
     "@type": "PodcastSeries",
     name: "Michael Huang Podcast",
-    url: `${seoConfig.siteUrl}/podcast`,
+    url: `${seoConfig.siteUrl}/podcast-michael`,
     description: "Obrolan mendalam tentang iman, bisnis, hukum, and kehidupan.",
     author: {
       "@type": "Person",
@@ -194,7 +194,7 @@ export function generateLodgingSchema() {
     "@context": "https://schema.org",
     "@type": "LodgingBusiness",
     name: "Gemini Kost",
-    url: `${seoConfig.siteUrl}/kost`,
+    url: `${seoConfig.siteUrl}/kost-gemini-koolkost`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Taman Palem Lestari",
@@ -209,7 +209,7 @@ export function generateFoodEstablishmentSchema() {
     "@context": "https://schema.org",
     "@type": "FoodEstablishment",
     name: "Warteg Gemini",
-    url: `${seoConfig.siteUrl}/warteg`,
+    url: `${seoConfig.siteUrl}/warteg-gemini`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Taman Palem Lestari",
@@ -224,7 +224,7 @@ export function generateMusicGroupSchema() {
     "@context": "https://schema.org",
     "@type": "MusicGroup",
     name: "Glory Worship",
-    url: `${seoConfig.siteUrl}/musik`,
+    url: `${seoConfig.siteUrl}/musik-production-michael`,
     description: "Layanan pujian dan penyembahan dari Glory Ministry Church.",
   };
 }

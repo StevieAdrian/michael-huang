@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     `${seoConfig.siteUrl}/images/ppat-og.png`
   ),
   alternates: {
-    canonical: `${seoConfig.siteUrl}/ppat`,
+    canonical: `${seoConfig.siteUrl}/ppat-michael`,
   },
 };
 
@@ -22,7 +22,7 @@ export default function PPATPage() {
   const schema = generateLegalServiceSchema({
     name: "PPAT Michael Huang",
     description: "Layanan Pejabat Pembuat Akta Tanah resmi Jakarta Barat.",
-    url: `${seoConfig.siteUrl}/ppat`,
+    url: `${seoConfig.siteUrl}/ppat-michael`,
   });
 
   return (

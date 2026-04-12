@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     `${seoConfig.siteUrl}/images/law-firm-og.png`
   ),
   alternates: {
-    canonical: `${seoConfig.siteUrl}/law-firm`,
+    canonical: `${seoConfig.siteUrl}/law-firm-michael`,
   },
 };
 
@@ -22,7 +22,7 @@ export default function LawFirmPage() {
   const schema = generateLegalServiceSchema({
     name: "Law Firm Michael Huang",
     description: "Professional legal firm specializing in corporate and litigations.",
-    url: `${seoConfig.siteUrl}/law-firm`,
+    url: `${seoConfig.siteUrl}/law-firm-michael`,
   });
 
   return (

@@ -16,7 +16,7 @@ export const services = [
     description:
       "Konsultasi hukum korporat, litigasi, dan pendampingan hukum strategis untuk individu dan perusahaan.",
     icon: Scale,
-    href: "/law-firm",
+    href: "/law-firm-michael",
     color: "from-blue-900/50 to-slate-900/50",
     border: "group-hover:border-blue-500/50",
     tag: "Hukum",
@@ -26,7 +26,7 @@ export const services = [
     description:
       "Pembuatan akta autentik, legalisasi dokumen, dan layanan notarisasi resmi berstandar hukum Indonesia.",
     icon: FileText,
-    href: "/notaris",
+    href: "/notaris-michael",
     color: "from-indigo-900/50 to-slate-900/50",
     tag: "Hukum",
     border: "group-hover:border-indigo-500/50",
@@ -36,7 +36,7 @@ export const services = [
     description:
       "Akta jual beli tanah, balik nama sertifikat, hibah, dan seluruh transaksi hak atas tanah resmi.",
     icon: Landmark,
-    href: "/ppat",
+    href: "/ppat-michael",
     color: "from-violet-900/50 to-slate-900/50",
     border: "group-hover:border-violet-500/50",
     tag: "Hukum",
@@ -46,7 +46,7 @@ export const services = [
     description:
       "Advisory hukum bisnis, legal due diligence, penyusunan kontrak, dan kepatuhan regulasi korporat.",
     icon: BookOpen,
-    href: "/law-consulting",
+    href: "/law-consulting-michael",
     color: "from-purple-900/50 to-slate-900/50",
     border: "group-hover:border-purple-500/50",
     tag: "Hukum",
@@ -56,7 +56,7 @@ export const services = [
     description:
       "Dua lokasi hunian premium di Jakarta — kamar modern, fasilitas lengkap, lingkungan aman dan nyaman.",
     icon: HomeIcon,
-    href: "/kost",
+    href: "/kost-gemini-koolkost",
     color: "from-orange-900/50 to-slate-900/50",
     border: "group-hover:border-orange-500/50",
     tag: "Properti",
@@ -66,7 +66,7 @@ export const services = [
     description:
       "Masakan lokal autentik yang diangkat dengan bahan premium dan presentasi modern. Catering tersedia.",
     icon: Coffee,
-    href: "/warteg",
+    href: "/warteg-gemini",
     color: "from-red-900/50 to-slate-900/50",
     border: "group-hover:border-red-500/50",
     tag: "Kuliner",
@@ -76,7 +76,7 @@ export const services = [
     description:
       "Komunitas iman yang penuh kasih. Jadwal ibadah, kegiatan, dan persembahan online tersedia.",
     icon: Heart,
-    href: "/gereja",
+    href: "/glory-ministry-church",
     color: "from-rose-900/50 to-slate-900/50",
     border: "group-hover:border-rose-500/50",
     tag: "Ibadah",
@@ -86,7 +86,7 @@ export const services = [
     description:
       "Studio rekaman profesional, aransemen, mixing & mastering untuk artis, korporat, dan gereja.",
     icon: Mic2,
-    href: "/musik",
+    href: "/musik-production-michael",
     color: "from-yellow-900/50 to-slate-900/50",
     border: "group-hover:border-yellow-500/50",
     tag: "Seni",
@@ -96,7 +96,7 @@ export const services = [
     description:
       "Obrolan mendalam tentang iman, bisnis, dan kehidupan. Baru setiap Senin dan Kamis.",
     icon: Mic,
-    href: "/podcast",
+    href: "/podcast-michael",
     color: "from-teal-900/50 to-slate-900/50",
     border: "group-hover:border-teal-500/50",
     tag: "Konten",

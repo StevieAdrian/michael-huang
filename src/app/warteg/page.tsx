@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Nikmati hidangan khas Warteg Gemini dengan rasa premium dan kualitas terjamin. Tersedia layanan catering untuk kantah, kantor, dan acara spesial di Jakarta Barat.",
   alternates: {
-    canonical: `${seoConfig.siteUrl}/warteg`,
+    canonical: `${seoConfig.siteUrl}/warteg-gemini`,
   },
   openGraph: generateOGMetadata(
     "Warteg Gemini Jakarta | Rasa Premium Harga Terjangkau",
     "Nikmati hidangan khas Warteg Gemini dengan rasa premium dan kualitas terjamin. Layanan catering tersedia.",
     `${seoConfig.siteUrl}/og-image.png`,
-    `${seoConfig.siteUrl}/warteg`
+    `${seoConfig.siteUrl}/warteg-gemini`
   ),
 };
 

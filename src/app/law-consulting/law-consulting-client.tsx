@@ -191,7 +191,7 @@ export function LawConsultingClientPage() {
 
       <ArticleCards
         articles={lawConsultingArticles}
-        basePath="/law-consulting"
+        basePath="/law-consulting-michael"
         title="Artikel Konsultasi Hukum"
       />
     </div>

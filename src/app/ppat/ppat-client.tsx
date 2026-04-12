@@ -183,7 +183,7 @@ export function PPATClientPage() {
 
       <ArticleCards
         articles={ppatArticles}
-        basePath="/ppat"
+        basePath="/ppat-michael"
         title="Artikel Seputar PPAT & Tanah"
       />
     </div>

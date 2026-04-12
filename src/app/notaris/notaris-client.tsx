@@ -189,7 +189,7 @@ export function NotarisClientPage() {
 
       <ArticleCards
         articles={notarisArticles}
-        basePath="/notaris"
+        basePath="/notaris-michael"
         title="Artikel Hukum Notaris"
       />
     </div>

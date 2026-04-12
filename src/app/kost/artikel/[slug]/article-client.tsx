@@ -41,7 +41,7 @@ export function KostArticleClientPage({
             Hub
           </Link>
           <ChevronRight className="w-3 h-3" />
-          <Link href="/kost" className="hover:text-gold transition-colors">
+          <Link href="/kost-gemini-koolkost" className="hover:text-gold transition-colors">
             Kost
           </Link>
           <ChevronRight className="w-3 h-3" />
@@ -198,7 +198,7 @@ export function KostArticleClientPage({
         </div>
 
         <div className="mt-8">
-          <Link href="/kost">
+          <Link href="/kost-gemini-koolkost">
             <span className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-gold transition-colors">
               <ArrowLeft className="w-4 h-4" /> Kembali ke Kost
             </span>
@@ -209,7 +209,7 @@ export function KostArticleClientPage({
           <h3 className="text-lg font-display font-bold mb-5">Artikel Terkait</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {relatedArticles.map((item) => (
-              <Link key={item.id} href={`/kost/artikel/${item.slug}`}>
+              <Link key={item.id} href={`/kost-gemini-koolkost/artikel/${item.slug}`}>
                 <div className="bg-card border border-border rounded-xl p-4 hover:border-gold/30 hover:shadow transition-all group cursor-pointer">
                   <span className="text-xs font-bold text-gold">{item.category}</span>
                   <p className="font-semibold text-sm mt-1 group-hover:text-gold transition-colors leading-snug">
