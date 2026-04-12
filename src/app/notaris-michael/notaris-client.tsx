@@ -9,12 +9,12 @@ import {
   notarisHero,
   notarisServices,
   notarisWhyUs,
-  notarisArticles,
   notarisContacts,
   notarisMapEmbedUrl,
   notarisGalleryImages,
   notarisFaqs,
 } from "@/app/constants/notaris";
+import { notarisArticles } from "@/app/constants/notaris-articles";
 import { googleReviews } from "@/features/home/constants/reviews";
 import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
 import { NOTARIS_WHATSAPP_URL } from "@/app/constants/links";
