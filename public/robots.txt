@@ -33,3 +33,7 @@ Allow: /
 # https://llmstxt.org/
 Sitemap: https://www.michaelhuang.id/sitemap.xml
 LLMs: https://www.michaelhuang.id/llms.txt
+
+# Markdown Mirrors for AI Tools
+# Clean markdown versions of all pages
+# https://www.michaelhuang.id/markdown/

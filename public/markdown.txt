@@ -1,0 +1,49 @@
+# Markdown Mirrors - Michael Huang
+
+Clean, AI-readable versions of all pages on michaelhuang.id
+
+## Available Pages
+
+### Homepage
+- [Homepage](https://www.michaelhuang.id/markdown/index.md) - Complete business overview
+
+### Legal Services
+- [Law Firm](https://www.michaelhuang.id/markdown/law-firm-michael.md) - Corporate litigation and legal advisory
+- [Notaris](https://www.michaelhuang.id/markdown/notaris-michael.md) - Notary services and authentic deeds
+- [PPAT](https://www.michaelhuang.id/markdown/ppat-michael.md) - Land deed and property transactions
+- [Legal Consulting](https://www.michaelhuang.id/markdown/law-consulting-michael.md) - Business legal advisory
+- [Legal FAQ](https://www.michaelhuang.id/markdown/indonesia-legal-faq.md) - Common legal questions
+
+### Other Services
+- [Kost Premium](https://www.michaelhuang.id/markdown/kost-gemini-koolkost.md) - Boarding house accommodations
+- [Warteg Gemini](https://www.michaelhuang.id/markdown/warteg-gemini.md) - Restaurant and catering
+- [Franchise](https://www.michaelhuang.id/markdown/franchise-michael.md) - Business partnership opportunities
+- [Glory Ministry Church](https://www.michaelhuang.id/markdown/glory-ministry-church.md) - Church ministry
+- [Music Production](https://www.michaelhuang.id/markdown/musik-production-michael.md) - Recording studio
+- [Podcast](https://www.michaelhuang.id/markdown/podcast-michael.md) - Weekly podcast episodes
+
+## Format
+
+All files include:
+- YAML frontmatter (title, description, url, last_updated)
+- Clean markdown content (no HTML, scripts, or navigation)
+- Structured headings and sections
+- Contact information and service details
+
+## Usage
+
+These markdown files are optimized for:
+- AI model training and context
+- Chatbot knowledge bases
+- Content analysis and indexing
+- Documentation mirrors
+
+## Last Updated
+
+2026-04-13
+
+---
+
+**Main Site:** https://www.michaelhuang.id
+**LLMs.txt:** https://www.michaelhuang.id/llms.txt
+**Contact:** contact@michaelhuang.id | +62 821 2385 595
