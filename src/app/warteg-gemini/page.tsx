@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { WartegClientPage } from "./warteg-client";
 import { seoConfig, generateOGMetadata } from "@/config/seo-config";
-import { generateFoodEstablishmentSchema } from "@/lib/structured-data";
+import { generateFoodEstablishmentSchema , generateBreadcrumbSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export default function WartegPage() {
   return (
     <>
       <StructuredData data={generateFoodEstablishmentSchema()} />
+      <StructuredData data={generateBreadcrumbSchema([{ name: "Beranda", url: "https://www.michaelhuang.id/" }, { name: "Warteg Gemini", url: "https://www.michaelhuang.id/warteg-gemini" }])} />
       <WartegClientPage />
     </>
   );

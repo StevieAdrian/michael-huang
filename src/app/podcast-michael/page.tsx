@@ -5,7 +5,7 @@ import { PageHero } from "@/features/home/components/page-hero";
 import { YOUTUBE_CHANNEL_URL } from "@/app/constants/links";
 import { podcastEpisodes, podcastPlatforms } from "@/app/constants/podcast";
 import { generateOGMetadata, seoConfig } from "@/config/seo-config";
-import { generatePodcastSchema } from "@/lib/structured-data";
+import { generatePodcastSchema , generateBreadcrumbSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
@@ -15,7 +15,8 @@ export const metadata: Metadata = {
   openGraph: generateOGMetadata(
     "Podcast | Michael Huang",
     "Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan bersama narasumber terpilih.",
-    `${seoConfig.siteUrl}/images/podcast-og.png`
+    `${seoConfig.siteUrl}/og-image.png`,
+    `${seoConfig.siteUrl}/podcast-michael`
   ),
   alternates: {
     canonical: `${seoConfig.siteUrl}/podcast-michael`,
@@ -26,6 +27,7 @@ export default function PodcastPage() {
   return (
     <>
       <StructuredData data={generatePodcastSchema()} />
+      <StructuredData data={generateBreadcrumbSchema([{ name: "Beranda", url: "https://www.michaelhuang.id/" }, { name: "Podcast", url: "https://www.michaelhuang.id/podcast-michael" }])} />
       <div className="pb-24">
       <PageHero
         title="Michael Huang Podcast"

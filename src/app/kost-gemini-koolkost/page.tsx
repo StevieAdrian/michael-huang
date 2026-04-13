@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { KostClientPage } from "./kost-client";
 import { seoConfig, generateOGMetadata } from "@/config/seo-config";
-import { generateLodgingSchema } from "@/lib/structured-data";
+import { generateLodgingSchema , generateBreadcrumbSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export default function KostPage() {
   return (
     <>
       <StructuredData data={generateLodgingSchema()} />
+      <StructuredData data={generateBreadcrumbSchema([{ name: "Beranda", url: "https://www.michaelhuang.id/" }, { name: "Kost Gemini", url: "https://www.michaelhuang.id/kost-gemini-koolkost" }])} />
       <KostClientPage />
     </>
   );

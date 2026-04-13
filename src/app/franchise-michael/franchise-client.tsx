@@ -4,45 +4,40 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown, Star } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
-import { ArticleCards } from "@/shared/components/article-cards";
-import { ClientLogos } from "@/components/client-logos";
 import {
-  lawConsultingHero,
-  lawConsultingServices,
-  lawConsultingFaqs,
-  lawConsultingContacts,
-  lawConsultingMapEmbedUrl,
-  lawConsultingReviews,
-  lawConsultingGalleryImages,
-} from "@/app/constants/law-consulting";
-import { lawConsultingArticles } from "@/app/constants/law-consulting-articles";
-import { LAW_CONSULTING_WHATSAPP_URL } from "@/app/constants/links";
+  franchiseHero,
+  franchiseServices,
+  franchiseFaqs,
+  franchiseContacts,
+  franchiseReviews,
+  franchiseGalleryImages,
+} from "@/app/constants/franchise";
+import { FRANCHISE_WHATSAPP_URL } from "@/app/constants/links";
 import { Gallery } from "@/shared/components/gallery";
 
-export function LawConsultingClientPage() {
+export function FranchiseClientPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
     <div className="pb-24">
       <PageHero
-        title={lawConsultingHero.title}
-        subtitle={lawConsultingHero.subtitle}
-        align={lawConsultingHero.align}
+        title={franchiseHero.title}
+        subtitle={franchiseHero.subtitle}
+        align={franchiseHero.align}
       />
 
       <section className="py-12 md:py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-14">
             <h2 className="text-2xl md:text-4xl font-display font-bold mb-3">
-              Area Layanan
+              Model & Peluang Bisnis
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Layanan konsultasi hukum komprehensif untuk berbagai kebutuhan
-              bisnis Anda
+              Berbagai macam peluang investasi yang disesuaikan dengan ekosistem bisnis terpercaya kami.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {lawConsultingServices.map((svc, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {franchiseServices.map((svc, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
@@ -64,9 +59,7 @@ export function LawConsultingClientPage() {
         </div>
       </section>
 
-      <ClientLogos />
-
-      <section className="py-12 md:py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background border-t border-border/50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-4xl font-display font-bold mb-3">
@@ -74,7 +67,7 @@ export function LawConsultingClientPage() {
             </h2>
           </div>
           <div className="space-y-3">
-            {lawConsultingFaqs.map((faq, i) => (
+            {franchiseFaqs.map((faq, i) => (
               <div key={i} className="bg-card border border-border rounded-2xl overflow-hidden">
                 <button
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
@@ -97,10 +90,11 @@ export function LawConsultingClientPage() {
           </div>
         </div>
       </section>
+
       <Gallery 
-        images={lawConsultingGalleryImages} 
-        title="Galeri Kegiatan & Advisory"
-        subtitle="Momen kolaborasi strategis dan suasana diskusi tim ahli kami."
+        images={franchiseGalleryImages} 
+        title="Galeri Aktivitas Franchise"
+        subtitle="Intip suasana otentik dan proses persiapan standar layanan unggulan kami."
       />
 
       <section className="py-12 md:py-24 bg-background">
@@ -108,7 +102,7 @@ export function LawConsultingClientPage() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/3 text-center md:text-left">
               <h2 className="text-2xl md:text-4xl font-display font-bold mb-4">
-                Feedback Client
+                Feedback Mitra
               </h2>
               <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
                 <span className="text-5xl font-bold text-foreground">5.0</span>
@@ -119,13 +113,13 @@ export function LawConsultingClientPage() {
                     ))}
                   </div>
                   <span className="text-muted-foreground text-sm">
-                    Berdasarkan klien korporasi
+                    Berdasarkan mitra investasi kami
                   </span>
                 </div>
               </div>
             </div>
             <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {lawConsultingReviews.map((review, i) => (
+              {franchiseReviews.map((review, i) => (
                 <div
                   key={i}
                   className="p-6 bg-card border border-border/50 rounded-2xl shadow-sm"
@@ -147,53 +141,31 @@ export function LawConsultingClientPage() {
       </section>
 
       <section className="py-12 bg-card border-y border-border/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <h2 className="text-2xl md:text-4xl font-display font-bold mb-4">
-                Konsultasikan Kebutuhan Hukum Anda
-              </h2>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                Jadwalkan sesi konsultasi dengan konsultan hukum kami. Sesi
-                pertama gratis untuk memahami situasi bisnis Anda.
-              </p>
-              <div className="space-y-4 mb-8">
-                {lawConsultingContacts.map((contact, i) => (
-                  <div key={i} className="flex items-center gap-3 text-sm">
-                    <contact.icon className="w-5 h-5 text-gold shrink-0" />
-                    <span className="text-muted-foreground">{contact.text}</span>
-                  </div>
-                ))}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl md:text-4xl font-display font-bold mb-4">
+            Siap Memulai Ekspansi Bisnis?
+          </h2>
+          <p className="text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
+            Hubungi tim kemitraan kami untuk mendapatkan penawaran proposal lengkap The Gemini Franchise serta pelajari bagaimana sistem kami membantu Anda beroperasi dengan profitabel.
+          </p>
+          <div className="flex flex-wrap justify-center gap-6 mb-8">
+            {franchiseContacts.map((contact, i) => (
+              <div key={i} className="flex items-center justify-center gap-2 text-sm">
+                <contact.icon className="w-5 h-5 text-gold shrink-0" />
+                <span className="text-muted-foreground">{contact.text}</span>
               </div>
-              <a
-                href={LAW_CONSULTING_WHATSAPP_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-gold text-primary-foreground font-bold rounded-xl text-sm hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all"
-              >
-                Mulai Konsultasi Gratis <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-            <div className="h-[300px] md:h-[380px] rounded-2xl overflow-hidden border border-border/50 shadow-xl">
-              <iframe
-                src={lawConsultingMapEmbedUrl}
-                width="100%"
-                height="100%"
-                style={{ border: 0, filter: "grayscale(0.2)" }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
+            ))}
           </div>
+          <a
+            href={FRANCHISE_WHATSAPP_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gradient-gold text-primary-foreground font-bold rounded-xl text-sm hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all"
+          >
+            Hubungi Tim Kemitraan Sekarang <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </section>
-
-      <ArticleCards
-        articles={lawConsultingArticles}
-        basePath="/law-consulting-michael"
-        title="Artikel Konsultasi Hukum"
-      />
     </div>
   );
 }

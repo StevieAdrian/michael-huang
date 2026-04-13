@@ -22,33 +22,30 @@ export const lawConsultingHero = {
 export const lawConsultingServices = [
   {
     icon: BookOpen,
-    title: "Opini Hukum",
-    desc: "Analisis mendalam dan pendapat hukum tertulis atas permasalahan atau transaksi bisnis Anda.",
+    title: "Konsultasi HAKI",
+    desc: "Pendaftaran, perlindungan, dan penyelesaian sengketa Hak Kekayaan Intelektual (Merek, Hak Cipta, Paten).",
   },
   {
     icon: FileSearch,
-    title: "Legal Due Diligence",
-    desc: "Pemeriksaan menyeluruh aspek hukum perusahaan target sebelum akuisisi, investasi, atau merger.",
+    title: "Konsultasi Perizinan",
+    desc: "Advisory dan pengurusan perizinan berusaha, NIB, OSS, serta lisensi operasional untuk bisnis Anda.",
   },
   {
     icon: Briefcase,
-    title: "Penyusunan Kontrak",
-    desc: "Drafting dan review kontrak komersial, perjanjian kerja sama, SLA, NDA, dan berbagai perjanjian bisnis.",
+    title: "Layanan Notaris",
+    desc: "Pembuatan akta autentik, legalisasi dokumen, dan layanan notarisasi resmi berstandar hukum Indonesia.",
+    href: "/notaris-michael",
   },
   {
     icon: Scale,
-    title: "Kepatuhan & Regulasi",
-    desc: "Audit kepatuhan hukum perusahaan, penyusunan SOP hukum, dan advisory regulasi industri.",
-  },
-  {
-    icon: Users,
-    title: "Hukum Ketenagakerjaan",
-    desc: "Advisory hubungan industrial, pembuatan peraturan perusahaan, dan penanganan perselisihan kerja.",
+    title: "Layanan PPAT",
+    desc: "Akta jual beli tanah, balik nama sertifikat, hibah, dan seluruh transaksi hak atas tanah resmi.",
+    href: "/ppat-michael",
   },
   {
     icon: Globe,
-    title: "Transaksi & M&A",
-    desc: "Pendampingan hukum dalam transaksi M&A, joint venture, pembiayaan, dan restrukturisasi bisnis.",
+    title: "Konsultasi Hukum Lainnya",
+    desc: "Legal due diligence, penyusunan kontrak, hukum ketenagakerjaan, M&A, dan kepatuhan regulasi korporat.",
   },
 ];
 

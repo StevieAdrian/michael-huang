@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { NotarisClientPage } from "./notaris-client";
 import { generateOGMetadata, seoConfig } from "@/config/seo-config";
-import { generateLegalServiceSchema } from "@/lib/structured-data";
+import { generateLegalServiceSchema , generateBreadcrumbSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   openGraph: generateOGMetadata(
     "Notaris | Michael Huang",
     "Pembuatan akta autentik yang sah, cepat, dan terpercaya. Melayani individu dan korporasi di seluruh Indonesia.",
-    `${seoConfig.siteUrl}/images/notaris-og.png`
+    `${seoConfig.siteUrl}/og-image.png`,
+    `${seoConfig.siteUrl}/notaris-michael`
   ),
   alternates: {
     canonical: `${seoConfig.siteUrl}/notaris-michael`,
@@ -28,6 +29,7 @@ export default function NotarisPage() {
   return (
     <>
       <StructuredData data={schema} />
+      <StructuredData data={generateBreadcrumbSchema([{ name: "Beranda", url: "https://www.michaelhuang.id/" }, { name: "Notaris", url: "https://www.michaelhuang.id/notaris-michael" }])} />
       <NotarisClientPage />
     </>
   );

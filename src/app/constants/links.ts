@@ -14,6 +14,7 @@ export const LAW_FIRM_FORM_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=
 export const PPAT_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konsultasi layanan PPAT`;
 export const NOTARIS_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konsultasi layanan Notaris`;
 export const CHURCH_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konfirmasi Perpuluhan`;
+export const FRANCHISE_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya tertarik dengan peluang kemitraan Franchise Michael Huang`;
 export const EMAIL_ADDRESS = "contact@michaelhuang.id";
 export const EMAIL_CARE = "contact@michaelhuang.id";
 

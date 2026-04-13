@@ -31,29 +31,21 @@ export function FaqClientPage() {
 
           <div className="space-y-4">
             {legalFaqs.map((faq, i) => (
-              <div
+              <details
                 key={i}
-                className="bg-card border border-border/50 rounded-2xl overflow-hidden shadow-sm hover:border-gold/30 transition-colors"
+                className="bg-card border border-border/50 rounded-2xl overflow-hidden shadow-sm hover:border-gold/30 transition-colors group"
+                name="faq-accordion"
               >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between p-5 md:p-6 text-left gap-4"
-                >
+                <summary className="w-full flex items-center justify-between p-5 md:p-6 text-left gap-4 cursor-pointer marker:hidden list-none">
                   <span className="font-semibold text-lg md:text-xl text-foreground">
                     {faq.q}
                   </span>
-                  <ChevronDown
-                    className={`w-6 h-6 text-gold shrink-0 transition-transform duration-300 ${
-                      openFaq === i ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                {openFaq === i && (
-                  <div className="px-5 md:px-6 pb-6 text-muted-foreground text-sm md:text-base leading-relaxed border-t border-border/10 pt-4 animate-in fade-in slide-in-from-top-2 duration-300">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
+                  <ChevronDown className="w-6 h-6 text-gold shrink-0 transition-transform duration-300 group-open:rotate-180" />
+                </summary>
+                <div className="px-5 md:px-6 pb-6 text-muted-foreground text-sm md:text-base leading-relaxed border-t border-border/10 pt-4">
+                  {faq.a}
+                </div>
+              </details>
             ))}
           </div>
         </div>

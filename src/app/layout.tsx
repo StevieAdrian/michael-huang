@@ -1,21 +1,23 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Cinzel } from "next/font/google";
 import "./globals.css";
 import { seoConfig, generateOGMetadata, generateTwitterMetadata } from "@/config/seo-config";
-import { generateOrganizationSchema, generateWebsiteSchema } from "@/lib/structured-data";
+import { generateOrganizationSchema, generateWebsiteSchema, generatePersonSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
 import { Navbar } from "@/shared/components/navbar";
 import { Footer } from "@/shared/components/footer";
 import { WhatsAppButton } from "@/shared/components/whatsapp-button";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const cinzel = Cinzel({
+  variable: "--font-display",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -101,7 +103,7 @@ export default function RootLayout({
   return (
     <html
       lang="id"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${plusJakartaSans.variable} ${cinzel.variable} h-full antialiased`}
     >
       <head>
         {/* Google Tag Manager */}
@@ -120,6 +122,8 @@ export default function RootLayout({
         <StructuredData data={generateOrganizationSchema()} />
         {/* Structured Data - Website Schema */}
         <StructuredData data={generateWebsiteSchema()} />
+        {/* Structured Data - Person Schema */}
+        <StructuredData data={generatePersonSchema()} />
         
         {/* Preconnect to external resources for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

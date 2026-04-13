@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PPATClientPage } from "./ppat-client";
 import { generateOGMetadata, seoConfig } from "@/config/seo-config";
-import { generateLegalServiceSchema } from "@/lib/structured-data";
+import { generateLegalServiceSchema , generateBreadcrumbSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   openGraph: generateOGMetadata(
     "PPAT | Michael Huang",
     "Layanan pembuatan akta tanah yang legal, akurat, dan terdaftar resmi di Badan Pertanahan Nasional (BPN).",
-    `${seoConfig.siteUrl}/images/ppat-og.png`
+    `${seoConfig.siteUrl}/og-image.png`,
+    `${seoConfig.siteUrl}/ppat-michael`
   ),
   alternates: {
     canonical: `${seoConfig.siteUrl}/ppat-michael`,
@@ -28,6 +29,7 @@ export default function PPATPage() {
   return (
     <>
       <StructuredData data={schema} />
+      <StructuredData data={generateBreadcrumbSchema([{ name: "Beranda", url: "https://www.michaelhuang.id/" }, { name: "PPAT", url: "https://www.michaelhuang.id/ppat-michael" }])} />
       <PPATClientPage />
     </>
   );

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { MusicClientPage } from "./music-client";
 import { seoConfig, generateOGMetadata } from "@/config/seo-config";
-import { generateMusicGroupSchema } from "@/lib/structured-data";
+import { generateMusicGroupSchema , generateBreadcrumbSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export default function MusicPage() {
   return (
     <>
       <StructuredData data={generateMusicGroupSchema()} />
+      <StructuredData data={generateBreadcrumbSchema([{ name: "Beranda", url: "https://www.michaelhuang.id/" }, { name: "Musik Production", url: "https://www.michaelhuang.id/musik-production-michael" }])} />
       <MusicClientPage />
     </>
   );

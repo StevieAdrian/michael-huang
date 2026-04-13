@@ -1,50 +1,50 @@
 export const legalFaqs = [
   {
-    q: "What legal services do you offer?",
-    a: "Our law firm and consulting services in Indonesia provide comprehensive support for businesses and individuals. We handle corporate structuring such as establishing PT or CV entities, drafting and reviewing contracts including employment and vendor agreements, managing mergers and acquisitions (M&A) with due diligence and negotiations, and ensuring regulatory compliance with BKPM, OJK, and KPPN requirements. AI-assisted tools enhance efficiency by automating contract analysis to flag risks like non-compete clauses or unfavorable terms, offering real-time consultations for quick legal insights."
+    q: "Layanan hukum apa saja yang Anda sediakan?",
+    a: "Kantor hukum dan layanan konsultasi kami menyediakan dukungan komprehensif untuk bisnis maupun individu. Kami menangani urusan korporasi seperti pendirian PT atau CV, pembuatan dan tinjauan kontrak (perjanjian kerja, vendor), merger dan akuisisi (M&A) berikut due diligence, serta mengurus kepatuhan legalitas di BKPM, OJK, dan KPPN. Kami juga memberikan perlindungan hukum yang presisi untuk memitigasi risiko pada bisnis Anda."
   },
   {
-    q: "How do I establish a PT or PMA company?",
-    a: "Establishing a PT (Perseroan Terbatas) or PMA (foreign investment company) starts with preparing the Deed of Articles of Association via a notary, detailing shareholder names, capital structure, business activities per KBLI codes, and management structure. Submit this to the Ministry of Law and Human Rights (Kemenkumham) for approval, then obtain NIB through the OSS system for tax ID (NPWP) and business license. For PMA, additional BKPM approval is needed for foreign ownership ratios. The total process usually takes 2-4 weeks."
+    q: "Bagaimana tahapan mendirikan perusahaan PT atau PMA?",
+    a: "Pendirian PT (Perseroan Terbatas) atau PMA (Penanaman Modal Asing) dimulai dari penyiapan Akta Pendirian di Notaris yang memuat struktur modal, pengurus, dan bidang usaha (KBLI). Selanjutnya, akta didaftarkan ke Kemenkumham untuk disahkan. Setelah itu, pengurusan NIB (Nomor Induk Berusaha) dilakukan melalui platform OSS untuk izin operasional dan NPWP perusahaan. Khusus PMA, ada ketentuan batas kepemilikan asing yang harus disesuaikan. Proses ini normalnya selesai dalam 2-4 minggu."
   },
   {
-    q: "What are costs for legal advice?",
-    a: "Costs vary by complexity. Simple consultations start at around Rp1-5 million per hour, full PT setup ranges from Rp15-50 million including notary fees, while M&A or litigation can exceed Rp100 million. Fixed-fee packages are common for startups, with discounts for ongoing retainers. AI tools can also reduce reliance on hourly billing for basic regulatory or clause-drafting queries."
+    q: "Berapa biayanya untuk mendapatkan konsultasi dan pengurusan legal?",
+    a: "Biaya sangat bergantung pada tingkat kompleksitas kebutuhan Anda. Konsultasi standar dimulai dari rentang terjangkau, sementara pengurusan pendirian PT secara legal dan tuntas sudah termasuk biaya Notaris berkisar di nominal yang kompetitif sesuai ketentuan, sedangkan layanan pendampingan akuisisi bisa menyesuaikan bobot transaksi. Kami menyediakan paket hemat (fixed-fee) untuk startup/UMKM, serta opsi retainer bulanan untuk layanan berkelanjutan korporasi."
   },
   {
-    q: "What documents do you authenticate?",
-    a: "As notaries and PPAT (Pejabat Pembuat Akta Tanah) in Indonesia, we authenticate key documents including Akta Jual Beli (AJB) for property sales, Akta Pemberian Hak Tanggungan (APHT) for mortgages, affidavits for personal declarations, Sertifikat Hak Milik (SHM) land title verifications, powers of attorney (Surat Kuasa), and company foundational deeds. We also handle inheritance distributions (PKW), partnerships, and electronic deeds under cyber notary protocols, ensuring validity under applicable Indonesian law."
+    q: "Dokumen apa saja yang diurus oleh Notaris & PPAT?",
+    a: "Sebagai Notaris dan PPAT resmi di Indonesia, kami berwenang membuat dan mengesahkan dokumen autentik seperti Akta Jual Beli (AJB) properti, Akta Pemberian Hak Tanggungan (APHT), pengecekan legalitas Sertifikat Hak Milik (SHM), Surat Kuasa, hingga Akta Pendirian Perusahaan. Kami juga menangani urusan pewarisan, legalisasi kontrak kesepakatan, dan akta elektronik dengan standar hukum yang berlaku."
   },
   {
-    q: "Is AI allowed for notary deeds?",
-    a: "AI is permitted for supporting notary deeds in Indonesia as cyber notary tools can automate drafting, tax calculations such as BPHTB and final PPh, and BPN submissions. However, final authentication still requires the notary's physical or electronic signature and personal responsibility. AI cannot replace the notary's liability for deed accuracy or anti-fraud checks."
+    q: "Apakah proses notaris sudah dapat diproses secara elektronik/digital?",
+    a: "Beberapa administrasi seperti validasi pajak daerah (BPHTB, PPh) dan perizinan sistem OSS sudah terintegrasi secara elektronik untuk mempercepat efisiensi waktu hingga hitungan jam. Namun, untuk menjaga keabsahan autentik, tanda tangan fisik pengesahan dari Notaris serta kehadiran para pihak masih menjadi syarat wajib demi memastikan kebenaran formil dan mencegah kecurangan (fraud)."
   },
   {
-    q: "Timeline and fees?",
-    a: "Standard deed processing takes 1-3 days without AI, while AI tools can save 2-3 hours per document by auto-populating forms and calculating fees. Notary fees are regionally regulated, for example in Jakarta around 1.5-2.5% of property value for AJB with a minimum of Rp500,000. Urgent services may incur a 20-50% premium, and electronic submissions can speed BPN approvals to 1-2 days."
+    q: "Berapa lama estimasi waktu pengurusan Akta Jual Beli (AJB) Properti?",
+    a: "Pembuatan akta seperti AJB dapat diselesaikan cukup singkat dalam estimasi 1-3 hari kerja setelah dokumen dari dua belah pihak diperiksa secara lengkap. Untuk biaya atau honorarium PPAT, aturannya mengikuti standar wilayah yang umumnya tidak lebih dari persentase tertentu nilai transaksi. Proses balik nama di BPN kini juga semakin cepat dengan sistem percepatan layanan terbaru."
   },
   {
-    q: "Legal requirements to start?",
-    a: "Starting a warteg requires NIB registration via OSS for business ID, a P-IRT food hygiene certificate from Dinkes, a halal label from MUI, NPWP for taxes, and a TDUP location permit. Franchise operations also need franchise agreement notarization and review for royalties. Fire safety and waste management compliance are also essential."
+    q: "Apa perizinan hukum esensial untuk membuka bisnis kuliner UMKM (e.g. Warteg)?",
+    a: "Untuk menjamin kelancaran masa depan bisnis kuliner Anda, diperlukan pengurusan NIB melalui sistem pemerintahan (OSS), serta izin lingkungan lokasi. Tergantung jenis dan skala-nya, mungkin Anda juga akan perlu mengurus surat izin keamanan pangan (P-IRT) dan sertifikat Halal demi kenyamanan pelanggan. Jika dikembangkan via franchise, Anda juga wajib memiliki Perjanjian Waralaba berdasar hukum perlindungan investasi."
   },
   {
-    q: "Location and menu tips?",
-    a: "Choose high-traffic locations near offices, factories, or universities with strong daily foot traffic, ideally in spaces of around 50-100 square meters with parking. Menus should focus on affordable pre-cooked Indonesian staples such as sayur, ayam goreng, and tempe, priced around Rp10,000-20,000 per plate. Rotate 10-15 items daily based on local tastes and use reliable suppliers to maintain freshness."
+    q: "Bagaimana saran mengatur kontrak lokasi usaha komersial properti?",
+    a: "Saat menyewa lahan komersial/ruko dengan pemilik lahan, pastikan Anda membuat Dokumen Perjanjian Sewa Menyewa yang kuat di mata hukum yang menyebut peruntukkan untuk tempat makan, mengatur jangka waktu yang sepadan dengan nilai investasi balik modal Anda, serta status hak renovasi aset bangunan tersebut agar Anda tidak dirugikan bila terjadi sengketa dengan pihak gedung."
   },
   {
-    q: "Daily operations?",
-    a: "Daily operations usually run from 10 AM to 8 PM with an emphasis on quick service, portion control, and inventory tracking. Businesses should train 2-4 staff on hygiene and FIFO practices, maintain supplier relationships for fresh daily deliveries, and use a simple POS system. Promotions such as free rice offers can help boost customer loyalty."
+    q: "Adakah standar hukum dalam mempekerjakan karyawan (staf) di usaha Anda?",
+    a: "Setiap tenaga kerja—mulai dari koki hingga pramusaji—sebaiknya diikat dengan Perjanjian Kerja Waktu Tertentu (PKWT) yang disahkan melalui kontrak agar hak serta kewajiban (seperti jam kerja panjang industri F&B) disepakati jelas. Praktik ini melindungi pemilik dan pekerja atas konflik ketidakcocokan sekaligus menjaga efisiensi."
   },
   {
-    q: "How to get permits?",
-    a: "To get permits for a kost business, obtain the IMB building permit first, followed by BAPL for environmental feasibility and BAPT for noise proofing, then apply for SIRK through the local OSS portal with floor plans, sanitation proof, and a fire safety certificate. The process typically takes 7-14 days, with fees depending on the city and property size."
+    q: "Apa saja langkah legal teknis untuk mengubah properti menjadi unit bisnis Kost?",
+    a: "Mengalih-fungsikan bangunan menjadi kawasan hunian kost berbayar perlu pengecekan surat zona Persetujuan Bangunan Gedung (IMB/PBG) hunian yang sesuai. Lantas Anda juga disarankan untuk memiliki NIB bagi sektor perhotelan/akomodasi sementara agar usaha berjalan aman tanpa ancaman pelanggaran retribusi pemda dan masalah penyegelan properti di kemudian hari."
   },
   {
-    q: "What rules for tenants?",
-    a: "Tenant rules commonly include no subletting, a maximum of two guests per night with registration, a 10 PM curfew, no cooking or smoking in rooms, monthly payments by bank transfer by the 5th, and tenant liability for damages. It is also common to require a one-month security deposit, allow eviction after warnings for violations, and specify CCTV access in shared areas."
+    q: "Seberapa pentingnya Aturan Penghuni dan dokumen Perjanjian Sewa untuk Kost?",
+    a: "Keberadaan Perjanjian Sewa Kamar Tertulis (Tenancy Agreement) adalah alat hukum andalan Anda. Perjanjian tersebut harus tegas merincikan aturan pembayaran, pelarangan pengalihan penyewaan ke pihak ke-3 (sublet), batas toleransi jumlah tamu, kebijakan deposit yang menutupi ongkos kerusakan barang, dan hak pemutusan penyewaan untuk mencegah penghuni nakal secara sah."
   },
   {
-    q: "Ideal setup?",
-    a: "An ideal kost setup targets locations near campuses, offices, or transit hubs with strong occupancy potential. Rooms are typically around 3x3 meters and include a bed, AC or fan, WiFi, and preferably an en-suite bathroom. Additional amenities such as cleaning, laundry service, 24/7 security, and a kitchenette can improve competitiveness and support healthy rental returns."
+    q: "Apa kewajiban perlindungan dan keamanan fasilitas premium terhadap penyewa Kost?",
+    a: "Jika ada fasilitas premium, maka keamanan hak privasi penyewa harus dijamin. Hal ini termasuk menjamin keamanan barang dari pembobolan luar atau kecelakaan kecil di gedung properti Anda. Pemasangan pantauan kamera CCTV 24 jam sangat dianjurkan semata-mata pada zona publik, sambil memenuhi Hak Privasi di dalam lorong maupun kamar penyewa."
   }
 ];
