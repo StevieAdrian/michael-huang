@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ArrowRight, ExternalLink, Play } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { YOUTUBE_CHANNEL_URL } from "@/app/constants/links";
-import { podcastEpisodes, podcastPlatforms } from "@/app/constants/podcast";
+import {
+  podcastEpisodes,
+  podcastPlatforms,
+  podcastYoutubeVideos,
+} from "@/app/constants/podcast";
+import { podcastArticles } from "@/app/constants/podcast-articles";
 import { generateOGMetadata, seoConfig } from "@/config/seo-config";
 import { generatePodcastSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
+import { YoutubeSection } from "@/shared/components/youtube-section";
+import { ArticleCards } from "@/shared/components/article-cards";
 
 export const metadata: Metadata = {
   title: "Podcast | Michael Huang",
@@ -113,14 +119,26 @@ export default function PodcastPage() {
         </div>
       </section>
 
+      <YoutubeSection
+        title="Tonton di YouTube"
+        subtitle="Seluruh episode tersedia di channel YouTube kami dalam format video lengkap"
+        videos={podcastYoutubeVideos}
+      />
+
+      <ArticleCards
+        articles={podcastArticles}
+        basePath="/podcast"
+        title="Artikel Seputar Podcast"
+      />
+
       <section className="py-12 bg-card border-t border-border/50">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-4xl font-display font-bold mb-4">
             Jangan Lewatkan Episode Baru
           </h2>
           <p className="text-muted-foreground mb-8">
-            Subscribe dan aktifkan notifikasi supaya kamu selalu jadi yang
-            pertama dengar episode terbaru.
+            Subscribe dan aktifkan notifikasi agar Anda selalu menjadi yang
+            pertama mendengar episode terbaru.
           </p>
           <a
             href={YOUTUBE_CHANNEL_URL}
@@ -128,16 +146,8 @@ export default function PodcastPage() {
             rel="noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-colors text-base"
           >
-            Subscribe di YouTube
+            🔔 Subscribe di YouTube
           </a>
-          <div className="mt-5">
-            <Link
-              href="/"
-              className="text-sm text-gold hover:underline underline-offset-4"
-            >
-              Kembali ke Hub
-            </Link>
-          </div>
         </div>
       </section>
     </div>

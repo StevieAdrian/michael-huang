@@ -1,4 +1,5 @@
 import { YOUTUBE_CHANNEL_URL, SPOTIFY_URL, APPLE_PODCASTS_URL, GOOGLE_PODCASTS_URL } from "./links";
+import type { YoutubeVideoItem } from "./youtube";
 
 export interface PodcastEpisode {
   number: string;
@@ -70,4 +71,22 @@ export const podcastPlatforms: PodcastPlatform[] = [
   { name: "Spotify", url: SPOTIFY_URL, color: "bg-emerald-600", icon: "S" },
   { name: "Apple Podcasts", url: APPLE_PODCASTS_URL, color: "bg-indigo-600", icon: "A" },
   { name: "Google Podcasts", url: GOOGLE_PODCASTS_URL, color: "bg-blue-600", icon: "G" },
+];
+
+export const podcastYoutubeVideos: YoutubeVideoItem[] = [
+  {
+    title: "EP 24 — Bisnis & Iman: Menemukan Keseimbangan",
+    description:
+      "Full episode terbaru bersama Michael Huang. Jujur, mendalam, dan menginspirasi.",
+  },
+  {
+    title: "EP 23 — Hukum untuk Pengusaha Muda",
+    description:
+      "Adv. Sari Wulandari berbagi tips hukum wajib tahu bagi setiap pengusaha di Indonesia.",
+  },
+  {
+    title: "Cuplikan: Apa Arti Sukses Sejati?",
+    description:
+      "Momen terbaik dari berbagai episode — pertanyaan yang membuat kita berpikir lebih dalam.",
+  },
 ];
