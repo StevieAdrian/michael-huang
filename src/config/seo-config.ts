@@ -35,7 +35,7 @@ export const seoConfig = {
   // JSON-LD Organization Schema
   organization: {
     name: "Michael Huang",
-    logo: "https://www.michaelhuang.id/logo.png",
+    logo: "https://www.michaelhuang.id/images/logo-mich.ico",
     url: "https://www.michaelhuang.id",
     sameAs: [
       "https://facebook.com/michaelhuangofficial",

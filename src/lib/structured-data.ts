@@ -128,8 +128,8 @@ export function generateComprehensiveBusinessSchema() {
     telephone: "+62-821-2385-595",
     email: "contact@michaelhuang.id",
     priceRange: "$$",
-    image: `${seoConfig.siteUrl}/logo.png`,
-    logo: `${seoConfig.siteUrl}/logo.png`,
+    image: seoConfig.organization.logo,
+    logo: seoConfig.organization.logo,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur",

@@ -1,4 +1,5 @@
 export const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@michaelhuangofficial2022";
+export const WEBSITE_LOGO_PATH = "/images/logo-mich.ico";
 export const SPOTIFY_URL = "#";
 export const APPLE_PODCASTS_URL = "#";
 export const GOOGLE_PODCASTS_URL = "#";
@@ -40,4 +41,4 @@ export const KOST_MERUYA_MAPS_EMBED_URL = "https://www.google.com/maps/embed?pb=
 export const KOST_GEMINI_MAPS_URL = "https://maps.app.goo.gl/rbx37dyEodS8GvhRA";
 export const WARTEG_MAPS_URL = "https://maps.app.goo.gl/rbx37dyEodS8GvhRA";
 export const WARTEG_MAPS_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9587122898038!2d106.72863377400589!3d-6.136249860156894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dc8bd53c531%3A0xe963d17829418e55!2sWarteg%20%26%20Kos%20Nyaman%20Gemini!5e0!3m2!1sen!2sid!4v1776012483329!5m2!1sen!2sid";
-export const KOST_GEMINI_MAPS_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9587122898038!2d106.72863377400589!3d-6.136249860156894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dc8bd53c531%3A0xe963d17829418e55!2sWarteg%20%26%20Kos%20Nyaman%20Gemini!5e0!3m2!1sen!2sid!4v1776012483329!5m2!1sen!2sid";
+export const KOST_GEMINI_MAPS_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9587122898038!2d106.72863377400589!3d-6.136249860156894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dc8bd53c531%3A0xe963d17829418e55!2sWarteg%20%26%20Kos%20Nyaman%20Gemini!5e0!3m2!1sen!2sid!4v1776012483329!5m2!1sen!2sid";

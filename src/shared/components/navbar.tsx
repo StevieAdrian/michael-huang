@@ -2,10 +2,12 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Moon, Sun, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { legalNavItems, navItems, mainNavItems } from "@/shared/constants/nav";
+import { WEBSITE_LOGO_PATH } from "@/app/constants/links";
 
 function cn(...classes: (string | boolean | undefined)[]) {
   return classes.filter(Boolean).join(" ");
@@ -124,8 +126,15 @@ export function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group shrink-0">
-              <div className="w-10 h-10 rounded-sm bg-gradient-gold flex items-center justify-center text-primary-foreground font-display font-bold text-xl shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:shadow-[0_0_25px_rgba(212,175,55,0.6)] transition-shadow duration-300">
-                M
+              <div className="w-10 h-10 rounded-xl overflow-hidden border border-gold/30 bg-card shadow-[0_0_15px_rgba(212,175,55,0.35)] group-hover:shadow-[0_0_25px_rgba(212,175,55,0.55)] transition-shadow duration-300">
+                <Image
+                  src={WEBSITE_LOGO_PATH}
+                  alt="Michael Huang logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
               <span className="font-display font-bold text-sm xl:text-lg tracking-widest hidden sm:block">
                 MICHAEL<span className="text-gold">.HUANG</span>

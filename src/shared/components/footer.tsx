@@ -1,9 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MessageCircle, MapPin } from "lucide-react";
 import {
   legalNavItems,
   footerNavItems as otherNavItems,
 } from "@/shared/constants/nav";
+import { WEBSITE_LOGO_PATH } from "@/app/constants/links";
 
 export function Footer() {
   return (
@@ -16,8 +18,14 @@ export function Footer() {
           {/* Brand Section */}
           <div className="col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-5">
-              <div className="w-8 h-8 rounded-sm bg-gradient-gold flex items-center justify-center text-primary-foreground font-display font-bold text-lg">
-                M
+              <div className="w-8 h-8 rounded-sm overflow-hidden border border-gold/30 bg-card">
+                <Image
+                  src={WEBSITE_LOGO_PATH}
+                  alt="Michael Huang logo"
+                  width={32}
+                  height={32}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="font-display font-bold text-lg tracking-widest">
                 MICHAEL<span className="text-gold">.HUANG</span>

@@ -70,8 +70,9 @@ export const metadata: Metadata = {
 
   // Icons
   icons: {
-    icon: "/favicon.ico",
-    // apple: "/apple-touch-icon.png",
+    icon: [{ url: "/images/logo-mich.ico", type: "image/x-icon" }],
+    shortcut: [{ url: "/images/logo-mich.ico", type: "image/x-icon" }],
+    apple: [{ url: "/images/logo-mich.ico", type: "image/x-icon" }],
   },
 
   // Canonical URL (will be overridden on child pages as needed)
