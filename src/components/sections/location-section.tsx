@@ -21,13 +21,15 @@ export function LocationSection() {
               <MapPin className="w-3.5 h-3.5" /> Temukan Kami
             </div>
             <h2 className="text-2xl md:text-4xl font-display font-bold mb-4 md:mb-6">
-              Kantor Pusat Michael Huang
+              Kami berlokasi di jantung bisnis Jakarta. Kunjungi kami untuk
+              konsultasi tatap muka, atau hubungi kami melalui WhatsApp untuk
+              jadwal pertemuan
             </h2>
-            <p className="text-muted-foreground mb-8 leading-relaxed">
+            {/*<p className="text-muted-foreground mb-8 leading-relaxed">
               Kami berlokasi di jantung bisnis Jakarta. Kunjungi kami untuk
               konsultasi tatap muka, atau hubungi kami melalui WhatsApp untuk
               jadwal pertemuan.
-            </p>
+            </p>*/}
 
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-4 p-4 bg-background rounded-xl border border-border/50">

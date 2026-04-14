@@ -9,6 +9,7 @@ export const navItems = [
   { name: "Hub", path: "/" },
   { name: "Kost", path: "/kost-gemini-koolkost" },
   { name: "Warteg", path: "/warteg-gemini" },
+  { name: "Franchise", path: "/franchise-michael" },
   { name: "Gereja", path: "/glory-ministry-church" },
   { name: "Musik", path: "/musik-production-michael" },
   { name: "Podcast", path: "/podcast-michael" },

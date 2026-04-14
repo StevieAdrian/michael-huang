@@ -5,10 +5,10 @@
 
 export const seoConfig = {
   // Site-wide information
-  siteName: "Notary & PPAT Services | Legal Consulting Michael Huang",
+  siteName: "Notaris, PPAT, Law Firm & Consulting di Jakarta | Michael Huang",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.michaelhuang.id",
   description:
-    "Official site of Michael Huang for Notary, PPAT, and legal consulting in Jakarta, plus social initiatives through Glory Ministry Church.",
+    "Michael Huang - Notaris, PPAT & Law Firm di Jakarta Barat. Layanan hukum korporat, pendirian PT/PMA, transaksi properti, franchise warteg & kost premium.",
 
   // Social Media
   social: {
@@ -22,6 +22,14 @@ export const seoConfig = {
   author: {
     name: "Michael Huang",
     email: "contact@michaelhuang.id",
+  },
+
+  // Review & Rating Data
+  reviewData: {
+    ratingValue: "5.0",
+    reviewCount: "691",
+    bestRating: "5",
+    worstRating: "1",
   },
 
   // JSON-LD Organization Schema
@@ -45,6 +53,9 @@ export const seoConfig = {
     "Pengacara Jakarta",
     "Law Firm Jakarta",
     "Law Consulting Jakarta",
+    "Franchise Warteg",
+    "Peluang Bisnis Franchise",
+    "Kemitraan Warteg Gemini",
     "Warteg Gemini",
     "Kos Gemini",
     "Kos Jakarta",

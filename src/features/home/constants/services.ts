@@ -21,30 +21,11 @@ export const services = [
     border: "group-hover:border-blue-500/50",
     tag: "Hukum",
   },
-  {
-    title: "Notaris",
-    description:
-      "Pembuatan akta autentik, legalisasi dokumen, dan layanan notarisasi resmi berstandar hukum Indonesia.",
-    icon: FileText,
-    href: "/notaris-michael",
-    color: "from-indigo-900/50 to-slate-900/50",
-    tag: "Hukum",
-    border: "group-hover:border-indigo-500/50",
-  },
-  {
-    title: "PPAT",
-    description:
-      "Akta jual beli tanah, balik nama sertifikat, hibah, dan seluruh transaksi hak atas tanah resmi.",
-    icon: Landmark,
-    href: "/ppat-michael",
-    color: "from-violet-900/50 to-slate-900/50",
-    border: "group-hover:border-violet-500/50",
-    tag: "Hukum",
-  },
+
   {
     title: "Konsultasi Hukum",
     description:
-      "Advisory hukum bisnis, legal due diligence, penyusunan kontrak, dan kepatuhan regulasi korporat.",
+      "Konsultasi HAKI, Perizinan Usaha, PPAT, Notaris, serta layanan advisory dan hukum korporat lainnya.",
     icon: BookOpen,
     href: "/law-consulting-michael",
     color: "from-purple-900/50 to-slate-900/50",
@@ -100,5 +81,15 @@ export const services = [
     color: "from-teal-900/50 to-slate-900/50",
     border: "group-hover:border-teal-500/50",
     tag: "Konten",
+  },
+  {
+    title: "Franchise Bisnis",
+    description:
+      "Peluang kemitraan bisnis restoran warteg premium dan model bisnis potensial lainnya dengan sistem teruji.",
+    icon: HomeIcon,
+    href: "/franchise-michael",
+    color: "from-emerald-900/50 to-slate-900/50",
+    border: "group-hover:border-emerald-500/50",
+    tag: "Kemitraan",
   },
 ];
