@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 interface PageHeroProps {
   title: string;
@@ -18,21 +17,17 @@ export function PageHero({
 }: PageHeroProps) {
   return (
     <div className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden min-h-[50vh] flex items-center">
-      {/* Background Image & Overlay */}
       {imageSrc && (
         <>
-          <div className="absolute inset-0 z-0">
-            <img
-              src={imageSrc}
-              alt={title}
-              className="w-full h-full object-cover object-center"
-            />
-          </div>
+          <div
+            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${imageSrc})` }}
+            aria-hidden="true"
+          />
           <div className="absolute inset-0 z-10 bg-background/80 md:bg-gradient-to-r md:from-background/95 md:to-background/40 backdrop-blur-[2px]" />
         </>
       )}
 
-      {/* Default abstract background if no image */}
       {!imageSrc && (
         <div className="absolute inset-0 z-0 bg-background overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/5 rounded-full blur-[100px]" />
@@ -45,15 +40,25 @@ export function PageHero({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className={align === "center" ? "max-w-3xl mx-auto text-center" : "max-w-3xl text-left"}
+          className={
+            align === "center" ? "max-w-3xl mx-auto text-center" : "max-w-3xl text-left"
+          }
         >
+          <div
+            className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gold/30 bg-gold/5 mb-6 text-sm font-medium text-gold ${
+              align === "center" ? "mx-auto" : ""
+            }`}
+          >
+            <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
+            MICHAEL.COM ECOSYSTEM
+          </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6">
             {title.split(" ").map((word, i) => (
               <span
                 key={i}
                 className={
-                  i === title.split(" ").length - 2
+                  i === title.split(" ").length - 1
                     ? "text-gradient-gold"
                     : "text-foreground"
                 }
@@ -63,24 +68,12 @@ export function PageHero({
             ))}
           </h1>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="flex justify-center"
-          >
-            <Image
-              src="/images/mich-logo-transparent.png"
-              alt="Michael Huang Logo"
-              width={320}
-              height={320}
-              className="h-85 w-auto"
-            />
-          </motion.div>
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            {subtitle}
+          </p>
         </motion.div>
       </div>
 
-      {/* Bottom decorative border */}
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent z-20" />
     </div>
   );

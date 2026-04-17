@@ -125,7 +125,7 @@ export function NotarisClientPage() {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4 line-clamp-3 italic">
-                    "{review.text}"
+                    &quot;{review.text}&quot;
                   </p>
                   <p className="font-semibold text-sm">— {review.author}</p>
                 </div>

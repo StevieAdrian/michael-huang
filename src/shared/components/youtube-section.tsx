@@ -96,7 +96,7 @@ export function YoutubeSection({
                         {video.thumbnail ? (
                           <img
                             src={video.thumbnail}
-                            alt={video.title}
+                            alt={video.title || "YouTube video thumbnail"}
                             className="w-full h-full object-cover group-hover/btn:scale-105 transition-transform duration-500"
                           />
                         ) : (

@@ -1,4 +1,4 @@
-import { FileText, Shield, CheckCircle, Clock, Users, Phone, Mail, MapPin } from "lucide-react";
+import { Shield, CheckCircle, Clock, Users, Phone, Mail, MapPin } from "lucide-react";
 import type { Article } from "@/shared/components/article-cards";
 import { NOTARIS_MAPS_EMBED_URL, WHATSAPP_PHONE, EMAIL_ADDRESS, LOCATION_ADDRESS } from "@/app/constants/links";
 

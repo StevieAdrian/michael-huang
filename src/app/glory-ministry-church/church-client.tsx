@@ -221,7 +221,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
                   <div className="w-full md:w-2/5 aspect-[4/5] md:aspect-square overflow-hidden border-b md:border-b-0 md:border-r border-gold/10">
                     <img 
                       src={pastor.image} 
-                      alt={pastor.name} 
+                      alt={pastor.name || "Foto gembala utama"} 
                       className="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" 
                     />
                   </div>
@@ -261,7 +261,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
                   <div className="relative w-full h-full bg-muted rounded-full overflow-hidden border-2 border-transparent group-hover:border-gold/50 shadow-xl transition-all duration-500">
                     <img 
                       src={pastor.image} 
-                      alt={pastor.name} 
+                      alt={pastor.name || "Foto gembala"} 
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" 
                     />
                   </div>
@@ -306,7 +306,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
                 <div className="absolute inset-0 z-0">
                   <img 
                     src={theme.picture} 
-                    alt={theme.monthName} 
+                    alt={theme.monthName || "Tema bulanan gereja"} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" 
                   />
                   {/* Premium Dark Gradient Overlay */}
@@ -431,7 +431,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
                   <>
                     <img 
                       src={item.image} 
-                      alt={item.label}
+                      alt={item.label || "Foto jemaat mingguan"}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 md:p-4">
@@ -860,7 +860,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
           >
             <img 
               src={selectedPhoto.image} 
-              alt={selectedPhoto.label} 
+              alt={selectedPhoto.label || "Foto jemaat"} 
               className="max-w-[90vw] max-h-[80vh] md:max-h-[85vh] object-contain rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
               draggable={false}
             />
@@ -888,7 +888,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
           <div className="relative bg-card border border-border/50 rounded-3xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl animate-in fade-in zoom-in-95 duration-200">
             {/* Image Header */}
             <div className="relative h-56 md:h-72 w-full">
-              <img src={selectedTheme.picture} alt={selectedTheme.themeText} className="w-full h-full object-cover" />
+              <img src={selectedTheme.picture} alt={selectedTheme.themeText || "Tema bulanan"} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-card via-background/40 to-black/20" />
               
               {/* Close Button */}

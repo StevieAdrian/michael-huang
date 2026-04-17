@@ -1,7 +1,6 @@
-import { PageHero } from "@/features/home/components/page-hero";
+import { HomePageHero } from "@/features/home/components/home-page-hero";
 import { ClientLogos } from "@/features/home/components/client-logos";
 import { ServicesSection } from "@/features/home/components/sections/services-section";
-import { SearchSection } from "@/features/home/components/sections/search-section";
 import { ReviewsSection } from "@/features/home/components/sections/reviews-section";
 import { LocationSection } from "@/features/home/components/sections/location-section";
 import { StructuredData } from "@/shared/components/StructuredData";
@@ -26,7 +25,7 @@ export default function Home() {
       <StructuredData data={generateServiceListSchema()} />
 
       <div className="pb-24">
-        <PageHero
+        <HomePageHero
           title="Michael Huang"
           subtitle="Ekosistem layanan hukum, hunian, kuliner, dan peluang bisnis terpadu di Jakarta Barat."
         />
