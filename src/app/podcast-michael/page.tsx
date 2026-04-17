@@ -129,7 +129,7 @@ export default function PodcastPage() {
 
       <ArticleCards
         articles={podcastArticles}
-        basePath="/podcast"
+        basePath="/podcast-michael"
         title="Artikel Seputar Podcast"
       />
 

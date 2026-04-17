@@ -12,21 +12,35 @@ export async function fetchLiveTitheData(): Promise<ChurchTitheMonth[]> {
   try {
     const fetchPromises = SHEET_GIDS.map(async (gid) => {
       const url = `https://docs.google.com/spreadsheets/d/1uBBirkqnagjrPbek7apzioWaeEHyDAFmc8EbQcO1j3E/export?format=csv&gid=${gid}`;
-      const res = await fetch(url, {
-        next: { revalidate: 60 } // Cache for 60 seconds
-      });
-      
+
+      // Abort fetch after 5 seconds to prevent hanging renders during Googlebot crawls
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 5000);
+
+      let res: Response;
+      try {
+        res = await fetch(url, {
+          signal: controller.signal,
+          next: { revalidate: 3600 }, // Cache for 1 hour — reduces live-fetch exposure during crawls
+        });
+      } catch (fetchErr) {
+        console.error(`Fetch aborted or failed for gid ${gid}:`, fetchErr);
+        return null;
+      } finally {
+        clearTimeout(timeout);
+      }
+
       if (!res.ok) {
         console.error(`Failed to fetch spreadsheet gid ${gid}`, res.status);
         return null;
       }
-      
+
       const text = await res.text();
       return parseTitheCSV(text);
     });
 
     const results = await Promise.all(fetchPromises);
-    
+
     // Filter out nulls and empty data
     const validMonths = results.filter((r): r is ChurchTitheMonth => r !== null);
     return validMonths;
