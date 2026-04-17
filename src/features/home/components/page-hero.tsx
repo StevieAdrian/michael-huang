@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface PageHeroProps {
   title: string;
@@ -53,8 +54,6 @@ export function PageHero({
                 : "inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gold/30 bg-gold/5 mb-6 text-sm font-medium text-gold"
             }
           >
-            <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-            MICHAELHUANG.ID ECOSYSTEM
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6">
@@ -72,9 +71,20 @@ export function PageHero({
             ))}
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            {subtitle}
-          </p>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            className="flex justify-center"
+          >
+            <Image
+              src="/images/mich-logo-transparent.png"
+              alt="Michael Huang Logo"
+              width={320}
+              height={320}
+              className="h-85 w-auto"
+            />
+          </motion.div>
         </motion.div>
       </div>
 

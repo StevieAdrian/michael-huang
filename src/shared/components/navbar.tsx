@@ -125,17 +125,7 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group shrink-0">
-              <div className="w-10 h-10 rounded-xl overflow-hidden border border-gold/30 bg-card shadow-[0_0_15px_rgba(212,175,55,0.35)] group-hover:shadow-[0_0_25px_rgba(212,175,55,0.55)] transition-shadow duration-300">
-                <Image
-                  src={WEBSITE_LOGO_PATH}
-                  alt="Michael Huang logo"
-                  width={40}
-                  height={40}
-                  className="w-full h-full object-cover"
-                  priority
-                />
-              </div>
+            <Link href="/" className="flex items-center group shrink-0">
               <span className="font-display font-bold text-sm xl:text-lg tracking-widest hidden sm:block">
                 MICHAEL<span className="text-gold">.HUANG</span>
               </span>
