@@ -47,14 +47,6 @@ export function PageHero({
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={align === "center" ? "max-w-3xl mx-auto text-center" : "max-w-3xl text-left"}
         >
-          <div
-            className={
-              align === "center"
-                ? "inline-flex mx-auto items-center gap-2 px-3 py-1 rounded-full border border-gold/30 bg-gold/5 mb-6 text-sm font-medium text-gold"
-                : "inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gold/30 bg-gold/5 mb-6 text-sm font-medium text-gold"
-            }
-          >
-          </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6">
             {title.split(" ").map((word, i) => (
