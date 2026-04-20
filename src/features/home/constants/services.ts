@@ -33,6 +33,16 @@ export const services = [
     tag: "Hukum",
   },
   {
+    title: "FAQ Hukum Indonesia",
+    description:
+      "Pertanyaan umum seputar hukum Indonesia: notaris, PPAT, kontrak, perizinan, dan langkah praktis untuk pemilik bisnis.",
+    icon: FileText,
+    href: "/indonesia-legal-faq",
+    color: "from-indigo-900/50 to-slate-900/50",
+    border: "group-hover:border-indigo-500/50",
+    tag: "Edukasi",
+  },
+  {
     title: "Kost Premium",
     description:
       "Dua lokasi hunian premium di Jakarta — kamar modern, fasilitas lengkap, lingkungan aman dan nyaman.",

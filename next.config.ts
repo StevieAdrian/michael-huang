@@ -73,7 +73,12 @@ const nextConfig: NextConfig = {
   // Redirects (use for URL changes to maintain SEO)
   async redirects() {
     return [
-      // Old short aliases → canonical SEO slugs (301 permanent)
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "michaelhuang.id" }],
+        destination: "https://www.michaelhuang.id/:path*",
+        permanent: true,
+      },
       {
         source: "/notaris/:path*",
         destination: "/notaris-michael/:path*",
@@ -126,12 +131,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-
-  // NOTE: rewrites() intentionally removed.
-  // Previously, rewrites() mapped canonical slugs (e.g. /notaris-michael)
-  // to internal aliases (e.g. /notaris), causing Google to see duplicate-content
-  // shadow URLs for all 10 pages — preventing them from being indexed.
-  // The app directories already live at the canonical slug names, so no rewrites needed.
 
   // Environment variables
   env: {

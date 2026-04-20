@@ -3,6 +3,7 @@ export const legalNavItems = [
   { name: "Notaris", path: "/notaris-michael" },
   { name: "PPAT", path: "/ppat-michael" },
   { name: "Konsultasi Hukum", path: "/law-consulting-michael" },
+  { name: "FAQ Hukum", path: "/indonesia-legal-faq" },
 ];
 
 export const navItems = [
