@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { RelatedServices } from "@/shared/components/related-services";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -372,6 +373,8 @@ export function LawFirmClientPage() {
           <Testimonials items={lawFirmTestimonials} />
         </div>
       </section>
+
+      <RelatedServices currentPath="/law-firm-michael" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { RelatedServices } from "@/shared/components/related-services";
 import { Landmark, ArrowRight, Star } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { ArticleCards } from "@/shared/components/article-cards";
@@ -186,6 +187,8 @@ export function PPATClientPage() {
         basePath="/ppat-michael"
         title="Artikel Seputar PPAT & Tanah"
       />
+
+      <RelatedServices currentPath="/ppat-michael" />
     </div>
   );
 }

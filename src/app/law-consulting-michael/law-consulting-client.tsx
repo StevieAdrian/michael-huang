@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { RelatedServices } from "@/shared/components/related-services";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown, Star } from "lucide-react";
 import Link from "next/link";
@@ -205,6 +206,8 @@ export function LawConsultingClientPage() {
         basePath="/law-consulting-michael"
         title="Artikel Konsultasi Hukum"
       />
+
+      <RelatedServices currentPath="/law-consulting-michael" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { RelatedServices } from "@/shared/components/related-services";
 import { ChevronDown, MessageSquare } from "lucide-react";
 import { legalFaqs } from "../constants/faqs";
 import { PageHero } from "@/features/home/components/page-hero";
@@ -70,6 +71,8 @@ export function FaqClientPage() {
           </a>
         </div>
       </section>
+
+      <RelatedServices currentPath="/indonesia-legal-faq" />
     </div>
   );
 }

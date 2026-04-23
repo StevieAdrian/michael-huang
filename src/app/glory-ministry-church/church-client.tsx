@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { RelatedServices } from "@/shared/components/related-services";
 import {
   Bell,
   Calendar,
@@ -931,6 +932,8 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
           </div>
         </div>
       )}
+
+      <RelatedServices currentPath="/glory-ministry-church" />
     </div>
   );
 }

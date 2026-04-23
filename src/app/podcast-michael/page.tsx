@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { RelatedServices } from "@/shared/components/related-services";
 import { ArrowRight, ExternalLink, Play } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { YOUTUBE_CHANNEL_URL } from "@/app/constants/links";
@@ -152,6 +153,8 @@ export default function PodcastPage() {
           </a>
         </div>
       </section>
+
+      <RelatedServices currentPath="/podcast-michael" />
     </div>
   </>
 );

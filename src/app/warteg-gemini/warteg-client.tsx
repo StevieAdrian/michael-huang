@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { RelatedServices } from "@/shared/components/related-services";
 import { ChefHat, MapPin } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { Testimonials } from "@/shared/components/testimonials";
@@ -208,6 +209,8 @@ export function WartegClientPage() {
           <Testimonials items={wartegTestimonials} />
         </div>
       </section>
+
+      <RelatedServices currentPath="/warteg-gemini" />
 
       <div className="fixed bottom-0 left-0 right-0 z-40 p-4 bg-background/95 backdrop-blur-sm border-t border-border/50 md:hidden pb-safe">
         <a

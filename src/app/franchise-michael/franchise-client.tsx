@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { RelatedServices } from "@/shared/components/related-services";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown, Star } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
@@ -166,6 +167,8 @@ export function FranchiseClientPage() {
           </a>
         </div>
       </section>
+
+      <RelatedServices currentPath="/franchise-michael" />
     </div>
   );
 }

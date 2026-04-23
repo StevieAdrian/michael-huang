@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { RelatedServices } from "@/shared/components/related-services";
 import {
   MapPin,
   MessageCircle,
@@ -179,6 +180,8 @@ export function KostClientPage() {
       </section>
 
       <ArticleCards articles={kostArticles} basePath="/kost-gemini-koolkost" title="Artikel Seputar Hunian" />
+
+      <RelatedServices currentPath="/kost-gemini-koolkost" />
 
       <div className="fixed bottom-0 left-0 right-0 z-40 p-4 md:hidden bg-background/80 backdrop-blur-md border-t border-border/50">
         <a

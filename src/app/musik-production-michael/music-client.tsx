@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { RelatedServices } from "@/shared/components/related-services";
 import { Star, ArrowRight } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { YoutubeSection } from "@/shared/components/youtube-section";
@@ -137,6 +138,8 @@ export function MusicClientPage() {
       </section>
 
       <ArticleCards articles={musicArticles} basePath="/musik-production-michael" title="Artikel Produksi Musik" />
+
+      <RelatedServices currentPath="/musik-production-michael" />
     </div>
   );
 }

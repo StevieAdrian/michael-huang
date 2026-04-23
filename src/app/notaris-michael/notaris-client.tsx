@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { RelatedServices } from "@/shared/components/related-services";
 import { FileText, Phone, ArrowRight, Star } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { ArticleCards } from "@/shared/components/article-cards";
@@ -192,6 +193,8 @@ export function NotarisClientPage() {
         basePath="/notaris-michael"
         title="Artikel Hukum Notaris"
       />
+
+      <RelatedServices currentPath="/notaris-michael" />
     </div>
   );
 }
