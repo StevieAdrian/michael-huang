@@ -12,7 +12,7 @@ import {
 } from "@/app/constants/links";
 
 export const kostHero = {
-  title: "Kost Premium Michael",
+  title: "Kost Premium",
   subtitle:
     "Dua lokasi strategis di Jakarta dengan kamar modern, fasilitas lengkap, dan lingkungan yang aman dan nyaman.",
   imageSrc: "/images/kost-hero.png",

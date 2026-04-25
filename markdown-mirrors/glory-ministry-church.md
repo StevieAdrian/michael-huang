@@ -40,10 +40,13 @@ Menjadi gereja yang memancarkan kemuliaan Tuhan dan membawa pemulihan bagi kota 
 
 ## Jadwal Ibadah
 
-- **Ibadah Umum:** Minggu 08:00 & 10:00 WIB
-- **Ibadah Pemuda:** Sabtu 17:00 WIB
-- **Doa Pagi:** Senin-Jumat 06:00 WIB
+- **Ibadah Pemuda:** Sabtu 18:00 WIB
+- **Ibadah Mingguan:** Minggu 10:00 WIB
 - **Sekolah Minggu:** Minggu 10:00 WIB
+
+## Konseling & Doa
+
+Butuh dukungan spiritual? Kami siap mendampingi Anda dalam doa dan konseling. Jangan ragu untuk menghubungi kami via WhatsApp.
 
 ## Pengumuman
 

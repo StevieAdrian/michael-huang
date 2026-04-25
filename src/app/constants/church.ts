@@ -62,9 +62,8 @@ export interface ChurchWeeklyPhoto {
 }
 
 export const churchSchedules: ChurchSchedule[] = [
-  { name: "Ibadah Umum", time: "Minggu 08:00 & 10:00 WIB" },
-  { name: "Ibadah Pemuda", time: "Sabtu 17:00 WIB" },
-  { name: "Doa Pagi", time: "Senin-Jumat 06:00 WIB" },
+  { name: "Ibadah Pemuda", time: "Sabtu 18:00 WIB" },
+  { name: "Ibadah Mingguan", time: "Minggu 10:00 WIB" },
   { name: "Sekolah Minggu", time: "Minggu 10:00 WIB" },
 ];
 

@@ -357,7 +357,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {churchSchedules.map((schedule) => (
               <div
                 key={schedule.name}
@@ -368,6 +368,30 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
                 <p className="text-muted-foreground text-sm">{schedule.time}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 md:py-20 bg-card border-b border-border/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-4xl font-display font-bold mb-3 flex items-center justify-center gap-3">
+              <HeartHandshake className="w-7 h-7 text-gold" /> Konseling & Doa
+            </h2>
+            <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
+              Butuh dukungan spiritual? Kami siap mendampingi Anda dalam doa dan konseling. Jangan ragu untuk menghubungi kami.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <a
+              href={CHURCH_WHATSAPP_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-gold text-primary-foreground font-bold rounded-xl hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all"
+            >
+              Hubungi untuk Konseling & Doa
+            </a>
           </div>
         </div>
       </section>
