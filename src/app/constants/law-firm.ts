@@ -6,7 +6,7 @@ export const lawFirmHero = {
   title: "Penasihat Hukum",
   subtitle:
     "Melindungi kepentingan Anda dengan keunggulan tanpa kompromi dan presisi strategis.",
-  imageSrc: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2000",
+  imageSrc: "/images/law-scale.jpeg",
   align: "left" as const,
 };
 
@@ -44,8 +44,7 @@ export const lawFirmTeam = [
     name: "Michael Antonius, S.H., M.Kn.",
     role: "Managing Partner",
     spec: "Hukum Korporasi & M&A",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800",
+    image: "/images/managing-partner.png",
   },
   {
     name: "Sarah Jenkins",
