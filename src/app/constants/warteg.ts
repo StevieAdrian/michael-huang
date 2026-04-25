@@ -25,9 +25,9 @@ export const wartegHero = {
 };
 
 export const wartegOperatingHours = {
-  openHour: 7,
-  closeHour: 21,
-  label: "07:00 - 21:00 WIB",
+  openHour: 0,
+  closeHour: 24,
+  label: "Buka 24 Jam",
 };
 
 export const wartegMenuItems: WartegMenuItem[] = [];
