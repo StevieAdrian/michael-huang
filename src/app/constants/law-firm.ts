@@ -42,23 +42,15 @@ export const lawFirmStats = [
 export const lawFirmTeam = [
   {
     name: "Michael Antonius, S.H., M.Kn.",
-    role: "Managing Partner",
+    role: "Founder & Executive Partner",
     spec: "Hukum Korporasi & M&A",
-    image: "/images/managing-partner.png",
+    image: "/images/founder-michael.png",
   },
   {
-    name: "Sarah Jenkins",
-    role: "Senior Partner",
+    name: "Antonius",
+    role: "Managing Partner",
     spec: "Litigasi",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    name: "David Chen",
-    role: "Partner",
-    spec: "Hukum Properti",
-    image:
-      "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=800",
+    image: "/images/managing-partner-antonius.jpg",
   },
 ];
 

@@ -212,7 +212,7 @@ export function LawFirmClientPage() {
             Pakar hukum terkemuka dengan pengalaman gabungan puluhan tahun dalam menangani kasus-kasus berisiko tinggi.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {lawFirmTeam.map((lawyer, i) => (
               <div
                 key={i}
