@@ -11,9 +11,10 @@ import {
   ppatProcess,
   ppatContacts,
   ppatMapEmbedUrl,
-  ppatReviews,
   ppatGalleryImages,
 } from "@/app/constants/ppat";
+import { googleReviews } from "@/features/home/constants/reviews";
+import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
 import { ppatArticles } from "@/app/constants/ppat-articles";
 import { PPAT_WHATSAPP_URL } from "@/app/constants/links";
 import { Gallery } from "@/shared/components/gallery";
@@ -97,45 +98,11 @@ export function PPATClientPage() {
       />
 
       <section className="py-12 md:py-24 bg-card border-y border-border/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="md:w-1/3 text-center md:text-left">
-              <h2 className="text-2xl md:text-4xl font-display font-bold mb-4" id="feedback">
-                Feedback Client
-              </h2>
-              <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
-                <span className="text-5xl font-bold text-foreground">5.0</span>
-                <div className="flex flex-col items-start">
-                  <div className="flex text-gold">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} className="w-5 h-5 fill-current" />
-                    ))}
-                  </div>
-                  <span className="text-muted-foreground text-sm">
-                    Berdasarkan kepuasan klien
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {ppatReviews.map((review, i) => (
-                <div
-                  key={i}
-                  className="p-6 bg-background border border-border/50 rounded-2xl shadow-sm"
-                >
-                  <div className="flex gap-1 text-gold mb-3">
-                    {[...Array(review.stars)].map((_, j) => (
-                      <Star key={j} className="w-4 h-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground mb-4 line-clamp-3 italic">
-                    "{review.text}"
-                  </p>
-                  <p className="font-semibold text-sm">— {review.author}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-4xl font-display font-bold mb-8 text-center" id="feedback">
+            Feedback Client
+          </h2>
+          <TestimonialCarousel items={googleReviews} />
         </div>
       </section>
 

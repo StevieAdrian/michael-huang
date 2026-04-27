@@ -12,9 +12,10 @@ import {
   notarisArticles,
   notarisContacts,
   notarisMapEmbedUrl,
-  notarisReviews,
   notarisGalleryImages,
 } from "@/app/constants/notaris";
+import { googleReviews } from "@/features/home/constants/reviews";
+import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
 import { NOTARIS_WHATSAPP_URL } from "@/app/constants/links";
 import { Gallery } from "@/shared/components/gallery";
 
@@ -93,46 +94,12 @@ export function NotarisClientPage() {
         subtitle="Suasana kantor dan fasilitas layanan kami untuk kenyamanan Anda."
       />
 
-      <section className="py-12 md:py-20 bg-card border-y border-border/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="md:w-1/3 text-center md:text-left">
-              <h2 className="text-2xl md:text-4xl font-display font-bold mb-4">
-                Feedback Client
-              </h2>
-              <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
-                <span className="text-5xl font-bold text-foreground">5.0</span>
-                <div className="flex flex-col items-start">
-                  <div className="flex text-gold">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} className="w-5 h-5 fill-current" />
-                    ))}
-                  </div>
-                  <span className="text-muted-foreground text-sm">
-                    Berdasarkan ulasan Google
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {notarisReviews.map((review, i) => (
-                <div
-                  key={i}
-                  className="p-6 bg-card border border-border/50 rounded-2xl"
-                >
-                  <div className="flex gap-1 text-gold mb-3">
-                    {[...Array(review.stars)].map((_, j) => (
-                      <Star key={j} className="w-4 h-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground mb-4 line-clamp-3 italic">
-                    &quot;{review.text}&quot;
-                  </p>
-                  <p className="font-semibold text-sm">— {review.author}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+      <section className="py-12 md:py-24 bg-card border-y border-border/50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-4xl font-display font-bold mb-8 text-center">
+            Feedback Client
+          </h2>
+          <TestimonialCarousel items={googleReviews} />
         </div>
       </section>
 
