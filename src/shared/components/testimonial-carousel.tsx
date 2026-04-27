@@ -131,18 +131,41 @@ export function TestimonialCarousel({
         </button>
 
         <div className="flex gap-2">
-          {items.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setActiveIndex(i)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                i === activeIndex
-                  ? "w-6 bg-gold"
-                  : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
-              }`}
-              aria-label={`Go to testimonial ${i + 1}`}
-            />
-          ))}
+          {(() => {
+            const maxIndicators = 7;
+            const total = items.length;
+            const current = activeIndex;
+            if (total <= maxIndicators) {
+              return items.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActiveIndex(i)}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    i === activeIndex
+                      ? "w-6 bg-gold"
+                      : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
+                  aria-label={`Go to testimonial ${i + 1}`}
+                />
+              ));
+            }
+            let start = Math.max(0, Math.min(current - 3, total - maxIndicators));
+            let end = Math.min(total, start + maxIndicators);
+            const indicators = [];
+            for (let i = start; i < end; i++) {
+              indicators.push(
+                <button
+                  key={i}
+                  onClick={() => setActiveIndex(i)}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    i === current ? "w-6 bg-gold" : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
+                  aria-label={`Go to testimonial ${i + 1}`}
+                />
+              );
+            }
+            return indicators;
+          })()}
         </div>
 
         <button
