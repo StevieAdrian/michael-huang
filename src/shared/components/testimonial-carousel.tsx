@@ -56,7 +56,7 @@ export function TestimonialCarousel({
             return (
               <motion.div
                 key={offset}
-                className={`absolute ${isActive ? "w-[90vw] max-w-[260px] md:w-[300px]" : "w-[70vw] max-w-[220px] md:w-[240px]"} cursor-pointer`}
+                className={`absolute ${isActive ? "w-[90vw] max-w-[260px] md:w-[300px]" : "w-[70vw] max-w-[200px] md:w-[240px]"} cursor-pointer`}
                 style={{ zIndex: z }}
                 animate={{
                   x,
