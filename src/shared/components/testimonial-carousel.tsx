@@ -40,14 +40,14 @@ export function TestimonialCarousel({
     (activeIndex + offset + items.length) % items.length;
 
   const cardConfigs = [
-    { offset: -1, x: "-55%", scale: 0.8, z: 10, opacity: 0.85, rotate: -3 },
-    { offset: 0, x: "0%", scale: 1, z: 20, opacity: 1, rotate: 0 },
-    { offset: 1, x: "55%", scale: 0.8, z: 10, opacity: 0.85, rotate: 3 },
+    { offset: -1, x: "-55%", scale: 0.7, z: 5, opacity: 0.5, rotate: -3, side: true },
+    { offset: 0, x: "0%", scale: 1, z: 20, opacity: 1, rotate: 0, side: false },
+    { offset: 1, x: "55%", scale: 0.7, z: 5, opacity: 0.5, rotate: 3, side: true },
   ];
 
   return (
     <div className="relative w-full">
-      <div className="relative h-[420px] md:h-[440px] flex items-center justify-center">
+      <div className="relative h-[420px] md:h-[440px] flex items-center justify-center px-2">
         {cardConfigs.map(({ offset, x, scale, z, opacity, rotate }) => {
             const idx = getCardIndex(offset);
             const item = items[idx];
@@ -56,7 +56,7 @@ export function TestimonialCarousel({
             return (
               <motion.div
                 key={offset}
-                className="absolute w-[260px] md:w-[300px] cursor-pointer"
+                className={`absolute ${isActive ? "w-[90vw] max-w-[260px] md:w-[300px]" : "w-[70vw] max-w-[220px] md:w-[240px]"} cursor-pointer`}
                 style={{ zIndex: z }}
                 animate={{
                   x,
