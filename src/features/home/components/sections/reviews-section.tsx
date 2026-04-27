@@ -1,9 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Star, ExternalLink } from "lucide-react";
 import { googleReviews } from "@/features/home/constants/reviews";
 import { GENERAL_MAPS_URL } from "@/app/constants/links";
+import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
 
 export function ReviewsSection() {
   return (
@@ -53,59 +53,8 @@ export function ReviewsSection() {
           </a>
         </div>
 
-        {/* Review Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {googleReviews.map((review, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="bg-card border border-border rounded-2xl p-5 md:p-6 flex flex-col gap-4 hover:border-gold/30 hover:shadow-lg transition-all duration-300"
-            >
-              {/* Top: avatar + name + Google icon */}
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center text-primary-foreground font-bold text-sm shrink-0">
-                    {review.initials}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground text-sm leading-tight">
-                      {review.name}
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      {review.time}
-                    </p>
-                  </div>
-                </div>
-                <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-sm shrink-0">
-                  <span
-                    className="text-xs font-bold"
-                    style={{ color: "#4285F4" }}
-                  >
-                    G
-                  </span>
-                </div>
-              </div>
-
-              {/* Stars */}
-              <div className="flex gap-0.5">
-                {[...Array(review.rating)].map((_, j) => (
-                  <Star
-                    key={j}
-                    className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400"
-                  />
-                ))}
-              </div>
-
-              {/* Review text */}
-              <p className="text-muted-foreground text-sm leading-relaxed flex-1">
-                "{review.text}"
-              </p>
-            </motion.div>
-          ))}
-        </div>
+        {/* Carousel */}
+        <TestimonialCarousel items={googleReviews} />
 
         {/* Overall rating bar summary */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 py-8 px-6 bg-card border border-border/50 rounded-2xl">

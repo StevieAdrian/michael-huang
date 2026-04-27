@@ -40,6 +40,8 @@ import {
   churchMonthlyThemes,
   ChurchTitheMonth
 } from "@/app/constants/church";
+import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
+import { churchReviews } from "@/app/constants/church";
 import { churchArticles } from "@/app/constants/church-articles";
 
 interface ChurchClientPageProps {
@@ -783,11 +785,27 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
         </div>
       </section>*/}
 
+
       <ArticleCards
         articles={churchArticles}
         basePath="/glory-ministry-church"
         title="Artikel & Renungan"
       />
+
+      {/* Testimonial Carousel Section */}
+      <section className="py-16 md:py-24 bg-background border-b border-border/50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-4xl font-display font-bold mb-3">
+              Kesaksian Jemaat
+            </h2>
+            <p className="text-muted-foreground text-sm md:text-base">
+              Cerita dan pengalaman jemaat tentang pertumbuhan iman dan komunitas di Glory Ministry Church.
+            </p>
+          </div>
+          <TestimonialCarousel items={churchReviews} />
+        </div>
+      </section>
 
       {/* Lightbox Foto Jemaat */}
       {selectedPhoto && (

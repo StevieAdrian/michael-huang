@@ -5,12 +5,11 @@ import { RelatedServices } from "@/shared/components/related-services";
 import {
   MapPin,
   MessageCircle,
-  Star,
   CheckCircle,
-  Phone,
 } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { ArticleCards } from "@/shared/components/article-cards";
+import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
 import { WHATSAPP_PHONE } from "@/app/constants/links";
 import {
   kostFacilities,
@@ -155,27 +154,7 @@ export function KostClientPage() {
               Apa Kata Penghuni Kami
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {kostTestimonials.map((t, i) => (
-              <div
-                key={i}
-                className="bg-card border border-border rounded-2xl p-6 hover:border-gold/30 transition-colors"
-              >
-                <div className="flex gap-0.5 mb-4">
-                  {[...Array(5)].map((_, j) => (
-                    <Star key={j} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                  "{t.text}"
-                </p>
-                <div className="pt-4 border-t border-border/50">
-                  <p className="font-semibold text-sm">{t.name}</p>
-                  <p className="text-xs text-muted-foreground">{t.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <TestimonialCarousel items={kostTestimonials} />
         </div>
       </section>
 

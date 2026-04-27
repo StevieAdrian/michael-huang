@@ -1,3 +1,5 @@
+import type { Testimonial } from "@/shared/types/testimonial";
+
 export interface WartegMenuItem {
   id: string;
   name: string;
@@ -5,15 +7,6 @@ export interface WartegMenuItem {
   price: number;
   emoji: string;
   isSpecialToday?: boolean;
-}
-
-export interface WartegTestimonial {
-  id: string;
-  name: string;
-  role: string;
-  comment: string;
-  rating: number;
-  avatarInitials: string;
 }
 
 export const wartegHero = {
@@ -32,32 +25,142 @@ export const wartegOperatingHours = {
 
 export const wartegMenuItems: WartegMenuItem[] = [];
 
-export const wartegTestimonials: WartegTestimonial[] = [
+export const wartegTestimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Andi Pratama",
-    role: "Karyawan Swasta",
+    name: "Zahra Amanda",
     comment:
-      "Rasa makanannya konsisten enak, tempatnya bersih, dan pelayanan cepat. Jadi langganan tiap makan siang.",
+      "",
     rating: 5,
-    avatarInitials: "AP",
+    avatarInitials: "ZA",
+    time: "2 bulan lalu",
   },
   {
     id: "2",
-    name: "Nadia Putri",
-    role: "Ibu Rumah Tangga",
+    name: "Halifah Irma",
     comment:
-      "Porsi pas, bumbu berasa, dan pilihan lauknya banyak. Anak-anak saya juga suka banget.",
+      "",
     rating: 5,
-    avatarInitials: "NP",
+    avatarInitials: "HI",
+    time: "2 bulan lalu",
   },
   {
     id: "3",
-    name: "Riko Susanto",
-    role: "Entrepreneur",
+    name: "Khusnul Ashfiya",
     comment:
-      "Catering kantor selalu tepat waktu dan presentasinya rapi. Cocok untuk meeting maupun acara keluarga.",
+      "",
     rating: 5,
-    avatarInitials: "RS",
+    avatarInitials: "KA",
+    time: "2 bulan lalu",
   },
+  {
+    id: "4",
+    name: "Denny Thamida",
+    comment:
+      "",
+    rating: 5,
+    avatarInitials: "DT",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "5",
+    name: "Benson Fadli",
+    comment:
+      "",
+    rating: 5,
+    avatarInitials: "BF",
+    time: "1 bulan lalu",
+  },
+  {
+    id: "6",
+    name: "IRFAN LIMBONG",
+    comment:
+      "Warteg dan Apalagi kosnya paling NYAMAN secengkareng",
+    rating: 5,
+    avatarInitials: "IL",
+    time: "1 bulan lalu",
+  },
+  {
+    id: "7",
+    name: "Ucok Tasro",
+    comment:
+      "",
+    rating: 5,
+    avatarInitials: "UT",
+    time: "2 hari lalu",
+  },
+  {
+    id: "8",
+    name: "Rian Hidayat",
+    comment:
+      "mantap",
+    rating: 5,
+    avatarInitials: "RH",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "9",
+    name: "Hindi Wang",
+    comment:
+      "Mantap Makanannya 👍🏻👍🏻👍🏻",
+    rating: 5,
+    avatarInitials: "HW",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "10",
+    name: "Resha nanda",
+    comment:
+      "nyaman dan makanan nya enak",
+    rating: 5,
+    avatarInitials: "RN",
+    time: "1 bulan lalu",
+  },
+  {
+    id: "11",
+    name: "Jihan Saya",
+    comment:
+      "Wartegnya makanannya enak enak dan kosnya nyamann 👍👍",
+    rating: 5,
+    avatarInitials: "JS",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "12",
+    name: "Paulustaufangunawan setio",
+    comment:
+      "Makanan selera nusantara , buka 24 jam , harga terjangkau. 👍😁",
+    rating: 5,
+    avatarInitials: "PS",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "13",
+    name: "Reni Angraini",
+    comment:
+      "Makanannya enak banget, murah, tempat bersih banget, pelayanannya oke bangettttt💗💗💗💗😍😍😍",
+    rating: 5,
+    avatarInitials: "RA",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "14",
+    name: "AO. tAniA",
+    comment:
+      "Mantap euy 👍 cabenya sukaa, dpt byk lg, pas pedesnya di saya ya; cumi asin baladonya udah pasti bakal beli lg sihh ❤ tengkyuuu …",
+    rating: 5,
+    avatarInitials: "AT",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "15",
+    name: "Peri Budiman",
+    comment:
+      "Mantap enak sekali , pelayan ramah ramah sekali , warteg nya bagus bersih nyaman untuk makan di tempat",
+    rating: 5,
+    avatarInitials: "PB",
+    time: "2 bulan lalu",
+  },
+
+
 ];

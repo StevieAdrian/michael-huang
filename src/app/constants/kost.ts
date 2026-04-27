@@ -10,6 +10,7 @@ import {
   KOST_GEMINI_MAPS_EMBED_URL,
   KOST_MERUYA_MAPS_EMBED_URL,
 } from "@/app/constants/links";
+import type { Testimonial } from "@/shared/types/testimonial";
 
 export const kostHero = {
   title: "Kost Premium",
@@ -76,21 +77,141 @@ export const kostPlaces = [
   },
 ];
 
-export const kostTestimonials = [
+export const kostTestimonials: Testimonial[] = [
   {
-    name: "Rini Agustina",
-    role: "Penghuni Gemini - 8 bulan",
-    text: "Kost paling nyaman yang pernah saya tinggali. Kamarnya bersih, keamanannya baik, dan lokasinya sangat strategis untuk kerja.",
+    id: "1",
+    name: "Zahra Amanda",
+    comment:
+      "",
+    rating: 5,
+    avatarInitials: "ZA",
+    time: "2 bulan lalu",
   },
   {
-    name: "David Kurniawan",
-    role: "Penghuni Meruya - 1 tahun",
-    text: "Harga sangat sebanding dengan fasilitas yang diberikan. Pengelolanya responsif dan peduli dengan kenyamanan penghuni.",
+    id: "2",
+    name: "Halifah Irma",
+    comment:
+      "",
+    rating: 5,
+    avatarInitials: "HI",
+    time: "2 bulan lalu",
   },
   {
-    name: "Sinta Maharani",
-    role: "Penghuni Gemini - 6 bulan",
-    text: "WiFi kencang, kamar luas, AC dingin. Semua yang dibutuhkan tersedia. Tidak mau pindah ke tempat lain!",
+    id: "3",
+    name: "Khusnul Ashfiya",
+    comment:
+      "",
+    rating: 5,
+    avatarInitials: "KA",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "4",
+    name: "Denny Thamida",
+    comment:
+      "",
+    rating: 5,
+    avatarInitials: "DT",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "5",
+    name: "Benson Fadli",
+    comment:
+      "",
+    rating: 5,
+    avatarInitials: "BF",
+    time: "1 bulan lalu",
+  },
+  {
+    id: "6",
+    name: "IRFAN LIMBONG",
+    comment:
+      "Warteg dan Apalagi kosnya paling NYAMAN secengkareng",
+    rating: 5,
+    avatarInitials: "IL",
+    time: "1 bulan lalu",
+  },
+  {
+    id: "7",
+    name: "Ucok Tasro",
+    comment:
+      "",
+    rating: 5,
+    avatarInitials: "UT",
+    time: "2 hari lalu",
+  },
+  {
+    id: "8",
+    name: "Rian Hidayat",
+    comment:
+      "mantap",
+    rating: 5,
+    avatarInitials: "RH",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "9",
+    name: "Nurmala Sari",
+    comment:
+      "kos nya bersih",
+    rating: 5,
+    avatarInitials: "NS",
+    time: "3 bulan lalu",
+  },
+  {
+    id: "10",
+    name: "Guskar17 02",
+    comment:
+      "Kosnya nyaman, bersih, semua fasilitas lengkap 👍👍👍",
+    rating: 5,
+    avatarInitials: "GK",
+    time: "3 bulan lalu",
+  },
+  {
+    id: "11",
+    name: "Didik Setyawan",
+    comment:
+      "Tempatnya nyaman & bersih👍🏻",
+    rating: 5,
+    avatarInitials: "DS",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "12",
+    name: "Jihan Saya",
+    comment:
+      "Wartegnya makanannya enak enak dan kosnya nyamann 👍👍",
+    rating: 5,
+    avatarInitials: "JS",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "13",
+    name: "Reni Angraini",
+    comment:
+      "Makanannya enak banget, murah, tempat bersih banget, pelayanannya oke bangettttt💗💗💗💗😍😍😍",
+    rating: 5,
+    avatarInitials: "RA",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "14",
+    name: "Siti Azizah Azahra",
+    comment:
+      "Kosnya enak, nyaman, bersih, wifinya lancar ga lemot, udah ada laundry juga, fasilitas lengkap, makanan wartegnya enak2, kakak kosnya juga baik banget, cepat tanggap, recommend bgttt pokoknya🫶",
+    rating: 5,
+    avatarInitials: "SA",
+    time: "2 bulan lalu",
+  },
+  {
+    id: "15",
+    name: "Ferdinand Zendrato",
+    comment:
+      "Kostnya bersih, fasilitas lengkap (AC & WiFi kencang), dan lokasinya strategis banget. Owner-nya juga ramah. Recommended!",
+    rating: 5,
+    avatarInitials: "FZ",
+    time: "3 bulan lalu",
   },
 ];
 

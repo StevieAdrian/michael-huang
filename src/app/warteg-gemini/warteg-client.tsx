@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { RelatedServices } from "@/shared/components/related-services";
 import { ChefHat, MapPin } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
-import { Testimonials } from "@/shared/components/testimonials";
+import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
 import {
   wartegHero,
   wartegMenuItems,
@@ -206,7 +206,7 @@ export function WartegClientPage() {
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 text-center">
             Ulasan Pelanggan
           </h2>
-          <Testimonials items={wartegTestimonials} />
+          <TestimonialCarousel items={wartegTestimonials} />
         </div>
       </section>
 
