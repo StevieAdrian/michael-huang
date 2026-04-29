@@ -30,7 +30,7 @@ A Jakarta-based law firm established in 2010 providing elite legal representatio
 
 ## Team
 
-- Michael Antonius, S.H., M.Kn. — Managing Partner (Corporate Law & M&A)
+- Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. — Managing Partner (Corporate Law & M&A)
 - Sarah Jenkins — Senior Partner (Litigation)
 - David Chen — Partner (Property Law)
 
