@@ -17,13 +17,17 @@ interface ArticleCardsProps {
   articles: Article[];
   basePath: string;
   title?: string;
+  limit?: number;
 }
 
 export function ArticleCards({
   articles,
   basePath,
   title = "Artikel & Wawasan",
+  limit = 3,
 }: ArticleCardsProps) {
+  const displayedArticles = articles.slice(0, limit);
+
   return (
     <section className="py-12 md:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,7 +47,7 @@ export function ArticleCards({
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {articles.map((article, index) => (
+          {displayedArticles.map((article, index) => (
             <motion.div
               key={article.id}
               initial={{ opacity: 0, y: 20 }}
