@@ -29,6 +29,24 @@ export const musicArticles: Article[] = [
     category: "Distribusi",
     slug: "distribusi-musik-streaming",
   },
+  {
+    id: "4",
+    title: "Peralatan Home Studio Esensial untuk Pemula",
+    excerpt:
+      "Ingin membangun studio musik sendiri di rumah? Berikut adalah daftar peralatan esensial paling hemat untuk memulai produksi musik.",
+    date: "15 Juni 2026",
+    category: "Peralatan",
+    slug: "peralatan-home-studio-pemula",
+  },
+  {
+    id: "5",
+    title: "Memahami DAW Terbaik untuk Kebutuhan Anda",
+    excerpt:
+      "Dari FL Studio hingga Ableton Live, setiap software DAW memiliki keunggulan tersendiri. Temukan DAW yang paling sesuai dengan alur kerja Anda.",
+    date: "2 Mei 2026",
+    category: "Software",
+    slug: "memilih-daw-terbaik",
+  },
 ];
 
 export const musicArticleDetails: Record<string, ArticleDetail> = {
@@ -176,4 +194,93 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
     ],
     tags: ["Distribusi", "Spotify", "Apple Music", "Rilis Digital"],
   },
+  "peralatan-home-studio-pemula": {
+    slug: "peralatan-home-studio-pemula",
+    category: "Peralatan",
+    readTime: "6 menit",
+    date: "15 Juni 2026",
+    title: "Peralatan Home Studio Esensial untuk Pemula",
+    subtitle:
+      "Membangun workstation musik pribadi tidak melulu mahal. Fokus pada perangkat inti adalah kunci efisiensi budget.",
+    author: {
+      name: "Tim Audio Michael Music",
+      role: "Gear Consultant",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Membuat musik dari kenyamanan kamar sendiri kini bukan lagi impian yang mahal. Berkat kemajuan teknologi audio digital, Anda bisa merekam, memproduksi, dan memproses musik berkualitas tinggi hanya dengan beberapa alat utama.",
+      },
+      {
+        type: "heading",
+        text: "1. Komputer atau Laptop (DAW Host)",
+      },
+      {
+        type: "paragraph",
+        text: "Komputer Anda adalah otak dari studio. Pastikan memiliki RAM minimal 8GB (direkomendasikan 16GB) dan penyimpanan SSD agar pemuatan instrumen virtual serta pengolahan audio berjalan lancar.",
+      },
+      {
+        type: "heading",
+        text: "2. Audio Interface (Soundcard)",
+      },
+      {
+        type: "paragraph",
+        text: "Audio interface mengubah sinyal analog dari mikrofon atau instrumen menjadi data digital. Pilihlah interface yang memiliki preamp berkualitas baik dengan opsi phantom power 48V.",
+      },
+      {
+        type: "heading",
+        text: "3. Mikrofon Kondensor & Headphone Monitor",
+      },
+      {
+        type: "paragraph",
+        text: "Untuk vokal atau instrumen akustik, mikrofon kondensor adalah pilihan standar. Pasangkan dengan headphone monitor tipe closed-back agar suara instrumen tidak bocor kembali ke rekaman mikrofon.",
+      },
+    ],
+    tags: ["Home Studio", "Audio Interface", "Mikrofon", "Gear Guide"],
+  },
+  "memilih-daw-terbaik": {
+    slug: "memilih-daw-terbaik",
+    category: "Software",
+    readTime: "5 menit",
+    date: "2 Mei 2026",
+    title: "Memahami DAW Terbaik untuk Kebutuhan Anda",
+    subtitle:
+      "Memilih software utama untuk berkreasi musik bisa membingungkan. Mari bandingkan DAW terpopuler di kalangan produser musik.",
+    author: {
+      name: "Tim Kreatif Michael Music",
+      role: "Music Producer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Digital Audio Workstation (DAW) adalah perangkat lunak utama tempat Anda merekam, menyusun aransemen, melakukan mixing, dan mengekspor musik. Tidak ada DAW yang mutlak terbaik, melainkan mana yang paling cocok dengan kreativitas Anda.",
+      },
+      {
+        type: "heading",
+        text: "FL Studio: Surganya Pembuat Beat",
+      },
+      {
+        type: "paragraph",
+        text: "Sangat populer untuk genre EDM, hip-hop, dan pop. FL Studio terkenal dengan fitur Step Sequencer-nya yang intuitif dan lisensi update gratis seumur hidup.",
+      },
+      {
+        type: "heading",
+        text: "Ableton Live: Terbaik untuk Live Performance & Loop",
+      },
+      {
+        type: "paragraph",
+        text: "Jika alur kerja Anda banyak bermain dengan contoh suara (sampling) atau ingin menggunakannya untuk penampilan langsung di panggung, Ableton Live memiliki Session View yang sangat fleksibel.",
+      },
+      {
+        type: "heading",
+        text: "Logic Pro & Reaper: Pilihan Rekaman Klasik",
+      },
+      {
+        type: "paragraph",
+        text: "Logic Pro adalah pilihan eksklusif pengguna Mac dengan instrumen bawaan yang melimpah. Sementara Reaper sangat ringan dan fleksibel dengan lisensi yang sangat terjangkau.",
+      },
+    ],
+    tags: ["DAW", "Software", "FL Studio", "Ableton", "Logic Pro"],
+  },
 };
+
