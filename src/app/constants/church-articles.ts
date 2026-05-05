@@ -29,6 +29,24 @@ export const churchArticles: Article[] = [
     category: "Kegiatan",
     slug: "jadwal-retret-spiritual-2025",
   },
+  {
+    id: "4",
+    title: "Membangun Kehidupan Doa yang Konsisten",
+    excerpt:
+      "Doa bukan sekadar rutinitas, melainkan napas kehidupan rohani. Pelajari cara membangun kebiasaan doa yang hidup dan bermakna setiap hari.",
+    date: "18 Mei 2025",
+    category: "Renungan",
+    slug: "kehidupan-doa-konsisten",
+  },
+  {
+    id: "5",
+    title: "Pentingnya Kelompok Kecil dalam Pertumbuhan Iman",
+    excerpt:
+      "Kelompok kecil adalah tempat di mana iman bertumbuh melalui relasi, saling menguatkan, dan belajar firman bersama.",
+    date: "2 Mei 2025",
+    category: "Komunitas",
+    slug: "kelompok-kecil-pertumbuhan-iman",
+  },
 ];
 
 export const churchArticleDetails: Record<string, ArticleDetail> = {
@@ -196,5 +214,132 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Retret", "Pertumbuhan", "Komunitas", "Doa"],
+  },
+  "kehidupan-doa-konsisten": {
+    slug: "kehidupan-doa-konsisten",
+    category: "Renungan",
+    readTime: "7 menit",
+    date: "18 Mei 2025",
+    title: "Membangun Kehidupan Doa yang Konsisten",
+    subtitle:
+      "Banyak orang percaya merindukan kehidupan doa yang lebih dalam, namun kesulitan menjaga konsistensi. Artikel ini membagikan prinsip praktis untuk membangun kebiasaan doa yang bermakna.",
+    author: {
+      name: "Tim Pastoral Glory Ministry",
+      role: "Redaksi Gereja",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Doa adalah percakapan pribadi dengan Tuhan — bukan monolog formal, melainkan dialog penuh kepercayaan antara anak dan Bapa surgawi. Namun di tengah kesibukan hidup modern, banyak orang percaya merasa kehidupan doa mereka kering dan tidak konsisten.",
+      },
+      {
+        type: "heading",
+        text: "Mengapa Doa Sering Terabaikan?",
+      },
+      {
+        type: "list",
+        items: [
+          "Kesibukan dan jadwal yang padat membuat doa tergeser oleh aktivitas lain.",
+          "Perasaan bahwa doa tidak langsung menjawab kebutuhan sehingga motivasi menurun.",
+          "Kurangnya pemahaman bahwa doa adalah kebutuhan rohani, bukan sekadar kewajiban.",
+          "Gangguan digital — ponsel dan media sosial merebut waktu yang bisa digunakan untuk berdoa.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Prinsip Membangun Kebiasaan Doa",
+      },
+      {
+        type: "list",
+        items: [
+          "Tentukan waktu tetap — pilih waktu spesifik setiap hari (pagi sebelum aktivitas atau malam sebelum tidur) dan jadikan non-negotiable.",
+          "Mulai dari yang sederhana — tidak harus lama. 5-10 menit doa yang tulus lebih bermakna daripada 1 jam tanpa fokus.",
+          "Gunakan panduan — jurnal doa, daftar syukur, atau model doa ACTS (Adoration, Confession, Thanksgiving, Supplication) membantu mengarahkan doa.",
+          "Berdoa dengan firman — baca satu ayat Alkitab lalu respons dalam doa. Ini membantu doa tetap berdasarkan kebenaran.",
+          "Cari partner doa — berdoa bersama teman atau pasangan meningkatkan akuntabilitas dan kedalaman doa.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Tetaplah berdoa dan jangan jemu-jemu. — Kolose 4:2",
+      },
+      {
+        type: "heading",
+        text: "Ketika Doa Terasa Hambar",
+      },
+      {
+        type: "paragraph",
+        text: "Setiap orang percaya pernah mengalami musim kering dalam kehidupan doa. Ini bukan tanda kegagalan rohani, melainkan bagian alami dari perjalanan iman. Ketika doa terasa hambar, tetaplah datang kepada Tuhan — bahkan dengan kata-kata yang sederhana. Kesetiaan dalam musim kering justru membentuk iman yang lebih tangguh.",
+      },
+      {
+        type: "paragraph",
+        text: "Di Glory Ministry Church, kami percaya bahwa kehidupan doa yang sehat adalah fondasi dari segala pelayanan dan pertumbuhan iman. Bergabunglah dalam doa bersama setiap ibadah atau hubungi tim pastoral kami jika Anda ingin pendampingan doa secara pribadi.",
+      },
+    ],
+    tags: ["Doa", "Renungan", "Kehidupan Rohani", "Pertumbuhan Iman"],
+  },
+  "kelompok-kecil-pertumbuhan-iman": {
+    slug: "kelompok-kecil-pertumbuhan-iman",
+    category: "Komunitas",
+    readTime: "6 menit",
+    date: "2 Mei 2025",
+    title: "Pentingnya Kelompok Kecil dalam Pertumbuhan Iman",
+    subtitle:
+      "Gereja bukan hanya soal ibadah Minggu. Kelompok kecil adalah tempat di mana iman dipraktikkan, hubungan dibangun, dan setiap orang dikenal secara pribadi.",
+    author: {
+      name: "Tim Pemuridan Glory Ministry",
+      role: "Koordinator Kelompok Kecil",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Dalam gereja yang semakin besar, mudah bagi seseorang untuk merasa tersembunyi di tengah keramaian. Ibadah Minggu memberikan inspirasi dan penyembahan, namun pertumbuhan iman yang sesungguhnya sering terjadi dalam lingkaran yang lebih kecil dan intim — di situlah kelompok kecil berperan.",
+      },
+      {
+        type: "heading",
+        text: "Apa Itu Kelompok Kecil?",
+      },
+      {
+        type: "paragraph",
+        text: "Kelompok kecil (cell group atau small group) adalah perkumpulan 5-12 orang yang bertemu secara rutin untuk belajar firman, berdoa, berbagi kehidupan, dan saling mendukung. Di Glory Ministry Church, kelompok kecil bertemu setiap minggu di rumah-rumah anggota atau secara online.",
+      },
+      {
+        type: "heading",
+        text: "Manfaat Bergabung di Kelompok Kecil",
+      },
+      {
+        type: "list",
+        items: [
+          "Pertumbuhan iman yang lebih dalam — belajar firman secara interaktif dan relevan dengan kehidupan sehari-hari.",
+          "Akuntabilitas rohani — memiliki teman yang mengenal Anda dan mendorong Anda bertumbuh.",
+          "Dukungan dalam pergumulan — tempat aman untuk berbagi beban dan didoakan secara spesifik.",
+          "Penemuan karunia — kelompok kecil menjadi ruang latihan untuk menemukan dan mengembangkan karunia pelayanan.",
+          "Relasi yang otentik — membangun persahabatan yang lebih dari sekadar kenalan di ibadah Minggu.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Besi menajamkan besi, orang menajamkan sesamanya. — Amsal 27:17",
+      },
+      {
+        type: "heading",
+        text: "Bagaimana Kelompok Kecil di Glory Ministry Berjalan?",
+      },
+      {
+        type: "list",
+        items: [
+          "Ice breaker — pembuka ringan untuk mencairkan suasana dan membangun keakraban.",
+          "Pujian dan penyembahan — waktu menyembah bersama dalam suasana intim.",
+          "Diskusi firman — pembahasan perikop Alkitab atau tema khotbah minggu sebelumnya secara interaktif.",
+          "Doa bersama — saling mendoakan pergumulan dan syukur secara spesifik.",
+          "Fellowship — makan bersama atau kegiatan sosial ringan untuk mempererat hubungan.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Jika Anda belum bergabung di kelompok kecil, ini adalah saat yang tepat untuk memulai. Tidak perlu menunggu sempurna atau merasa siap — datang apa adanya dan biarkan komunitas ini menjadi tempat Anda bertumbuh bersama. Hubungi tim kami untuk informasi kelompok kecil terdekat di area Anda.",
+      },
+    ],
+    tags: ["Kelompok Kecil", "Komunitas", "Pemuridan", "Persekutuan"],
   },
 };
