@@ -41,13 +41,13 @@ export const lawFirmStats = [
 
 export const lawFirmTeam = [
   {
-    name: "Michael Antonius, S.H., M.Kn.",
+    name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     role: "Founder & Executive Partner",
     spec: "Hukum Korporasi & M&A",
     image: "/images/founder-michael.png",
   },
   {
-    name: "Antonius",
+    name: "Antonius Edwin, S.H.",
     role: "Managing Partner",
     spec: "Litigasi",
     image: "/images/managing-partner-antonius.jpg",
