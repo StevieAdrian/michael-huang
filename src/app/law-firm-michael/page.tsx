@@ -5,12 +5,23 @@ import { generateLegalServiceSchema , generateBreadcrumbSchema } from "@/lib/str
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Law Firm | Michael Huang",
+  title: "Law Firm Jakarta | Pengacara Korporasi & Litigasi | Michael Huang, S.H., M.Kn.",
   description:
-    "Protecting your interests with uncompromising excellence and strategic precision.",
+    "Law firm profesional di Jakarta. Michael Huang, S.H., S.T., M.Kn. menangani hukum korporasi, litigasi perdata & komersial, merger & akuisisi (M&A), hukum properti, dan hukum keluarga. Konsultasi hukum terpercaya.",
+  keywords: [
+    "law firm jakarta",
+    "pengacara jakarta",
+    "pengacara korporasi jakarta",
+    "litigasi perdata jakarta",
+    "konsultasi hukum jakarta",
+    "pengacara bisnis jakarta",
+    "firma hukum jakarta barat",
+    "Michael Huang pengacara",
+    "hukum korporasi jakarta",
+  ],
   openGraph: generateOGMetadata(
-    "Law Firm | Michael Huang",
-    "Protecting your interests with uncompromising excellence and strategic precision.",
+    "Law Firm Jakarta | Pengacara Korporasi & Litigasi | Michael Huang, S.H., M.Kn.",
+    "Law firm profesional di Jakarta. Michael Huang, S.H., S.T., M.Kn. menangani hukum korporasi, litigasi perdata & komersial, merger & akuisisi (M&A), hukum properti, dan hukum keluarga. Konsultasi hukum terpercaya.",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/law-firm-michael`
   ),

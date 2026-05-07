@@ -7,7 +7,7 @@ import { StructuredData } from "@/shared/components/StructuredData";
 export const metadata: Metadata = {
   title: "Notaris Jakarta Barat | Akta Autentik Resmi | Michael Huang, S.H., M.Kn.",
   description:
-    "Jasa Notaris resmi di Jakarta Barat. Michael Huang, S.H., S.T., M.Kn. melayani akta autentik, pendirian PT/CV/PMA, akta jual beli properti, waris & hibah, dan legalisasi dokumen. Terdaftar di Kemenkumham RI & INI.",
+    "Jasa Notaris resmi di Jakarta Barat. Michael Huang, S.H., S.T., M.Kn. melayani akta autentik, pendirian PT/CV/PMA, akta jual beli properti, akta waris & hibah, RUPS, dan legalisasi dokumen. Terdaftar di Kemenkumham RI & Ikatan Notaris Indonesia (INI).",
   keywords: [
     "notaris jakarta barat",
     "notaris jakarta",
@@ -17,10 +17,13 @@ export const metadata: Metadata = {
     "notaris cengkareng",
     "notaris terpercaya jakarta barat",
     "Michael Huang notaris",
+    "akta autentik jakarta",
+    "notaris pendirian cv jakarta",
+    "notaris pma jakarta",
   ],
   openGraph: generateOGMetadata(
     "Notaris Jakarta Barat | Akta Autentik Resmi | Michael Huang, S.H., M.Kn.",
-    "Jasa Notaris resmi di Jakarta Barat. Michael Huang, S.H., S.T., M.Kn. melayani akta autentik, pendirian PT/CV/PMA, akta jual beli properti, waris & hibah, dan legalisasi dokumen. Terdaftar di Kemenkumham RI & INI.",
+    "Jasa Notaris resmi di Jakarta Barat. Michael Huang, S.H., S.T., M.Kn. melayani akta autentik, pendirian PT/CV/PMA, akta jual beli properti, akta waris & hibah, RUPS, dan legalisasi dokumen. Terdaftar di Kemenkumham RI & Ikatan Notaris Indonesia (INI).",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/notaris-michael`
   ),

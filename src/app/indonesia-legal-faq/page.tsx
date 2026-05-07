@@ -6,12 +6,22 @@ import { StructuredData } from "@/shared/components/StructuredData";
 import { legalFaqs } from "../constants/faqs";
 
 export const metadata: Metadata = {
-  title: "Indonesia Legal FAQ | Michael Huang",
+  title: "FAQ Hukum Indonesia | Notaris, Pendirian PT/CV, PPAT & Konsultasi Bisnis",
   description:
-    "Pertanyaan yang sering diajukan mengenai layanan hukum, notaris, pendirian PT/CV, HAKI, hingga konsultasi bisnis di Indonesia.",
+    "Temukan jawaban atas pertanyaan hukum Indonesia: cara pendirian PT/CV/PMA, prosedur notaris & PPAT, akta jual beli properti, HAKI, izin usaha OSS, hingga konsultasi hukum bisnis.",
+  keywords: [
+    "faq hukum indonesia",
+    "pertanyaan hukum notaris",
+    "cara pendirian pt indonesia",
+    "prosedur ppat jakarta",
+    "konsultasi hukum bisnis jakarta",
+    "hukum bisnis indonesia",
+    "pendirian cv jakarta",
+    "izin usaha oss indonesia",
+  ],
   openGraph: generateOGMetadata(
-    "Indonesia Legal FAQ | Michael Huang",
-    "Pertanyaan yang sering diajukan mengenai layanan hukum, notaris, pendirian PT/CV, HAKI, hingga konsultasi bisnis di Indonesia.",
+    "FAQ Hukum Indonesia | Notaris, Pendirian PT/CV, PPAT & Konsultasi Bisnis",
+    "Temukan jawaban atas pertanyaan hukum Indonesia: cara pendirian PT/CV/PMA, prosedur notaris & PPAT, akta jual beli properti, HAKI, izin usaha OSS, hingga konsultasi hukum bisnis.",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/indonesia-legal-faq`
   ),

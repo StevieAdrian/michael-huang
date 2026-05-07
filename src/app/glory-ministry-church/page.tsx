@@ -6,12 +6,22 @@ import { generateChurchSchema , generateBreadcrumbSchema } from "@/lib/structure
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Gereja | Michael Huang",
+  title: "Glory Ministry Church Jakarta | Gereja Kristen & Ibadah Mingguan",
   description:
-    "Komunitas iman yang penuh kasih, harapan, dan sukacita dengan jadwal ibadah serta kegiatan mingguan.",
+    "Glory Ministry Church — gereja Kristen di Jakarta dengan ibadah mingguan, program pemuridan, dan komunitas iman yang hangat. Temukan jadwal ibadah, lokasi, dan kegiatan rohani komunitas Kristen Jakarta.",
+  keywords: [
+    "glory ministry church",
+    "gereja kristen jakarta",
+    "gereja jakarta",
+    "ibadah minggu jakarta",
+    "komunitas kristen jakarta",
+    "gereja glory ministry",
+    "gereja cengkareng",
+    "jadwal ibadah gereja jakarta",
+  ],
   openGraph: generateOGMetadata(
-    "Gereja | Michael Huang",
-    "Komunitas iman yang penuh kasih, harapan, dan sukacita dengan jadwal ibadah serta kegiatan mingguan.",
+    "Glory Ministry Church Jakarta | Gereja Kristen & Ibadah Mingguan",
+    "Glory Ministry Church - gereja Kristen di Jakarta dengan ibadah mingguan, program pemuridan, dan komunitas iman yang hangat. Temukan jadwal ibadah, lokasi, dan kegiatan rohani komunitas Kristen Jakarta.",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/glory-ministry-church`
   ),
