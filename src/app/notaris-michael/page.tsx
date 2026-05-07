@@ -5,12 +5,22 @@ import { generateLegalServiceSchema , generateBreadcrumbSchema } from "@/lib/str
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Notaris | Michael Huang",
+  title: "Notaris Jakarta Barat | Akta Autentik Resmi | Michael Huang, S.H., M.Kn.",
   description:
-    "Pembuatan akta autentik yang sah, cepat, dan terpercaya. Melayani individu dan korporasi di seluruh Indonesia.",
+    "Jasa Notaris resmi di Jakarta Barat. Michael Huang, S.H., S.T., M.Kn. melayani akta autentik, pendirian PT/CV/PMA, akta jual beli properti, waris & hibah, dan legalisasi dokumen. Terdaftar di Kemenkumham RI & INI.",
+  keywords: [
+    "notaris jakarta barat",
+    "notaris jakarta",
+    "jasa notaris jakarta",
+    "notaris pendirian pt jakarta",
+    "notaris akta jual beli jakarta",
+    "notaris cengkareng",
+    "notaris terpercaya jakarta barat",
+    "Michael Huang notaris",
+  ],
   openGraph: generateOGMetadata(
-    "Notaris | Michael Huang",
-    "Pembuatan akta autentik yang sah, cepat, dan terpercaya. Melayani individu dan korporasi di seluruh Indonesia.",
+    "Notaris Jakarta Barat | Akta Autentik Resmi | Michael Huang, S.H., M.Kn.",
+    "Jasa Notaris resmi di Jakarta Barat. Michael Huang, S.H., S.T., M.Kn. melayani akta autentik, pendirian PT/CV/PMA, akta jual beli properti, waris & hibah, dan legalisasi dokumen. Terdaftar di Kemenkumham RI & INI.",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/notaris-michael`
   ),
@@ -21,8 +31,8 @@ export const metadata: Metadata = {
 
 export default function NotarisPage() {
   const schema = generateLegalServiceSchema({
-    name: "Notaris Michael Huang",
-    description: "Layanan Notaris profesional di Jakarta Barat.",
+    name: "Notaris Jakarta Barat - Michael Huang, S.H., S.T., M.Kn.",
+    description: "Jasa Notaris resmi di Jakarta Barat. Melayani akta autentik, pendirian PT/CV/PMA, akta jual beli properti, waris & hibah, dan legalisasi dokumen. Terdaftar di Kemenkumham RI dan Ikatan Notaris Indonesia (INI).",
     url: `${seoConfig.siteUrl}/notaris-michael`,
   });
 

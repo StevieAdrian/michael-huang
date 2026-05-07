@@ -3,9 +3,9 @@ import type { Article } from "@/shared/components/article-cards";
 import { NOTARIS_MAPS_EMBED_URL, WHATSAPP_PHONE, EMAIL_ADDRESS, LOCATION_ADDRESS } from "@/app/constants/links";
 
 export const notarisHero = {
-  title: "Jasa Notaris Profesional",
+  title: "Jasa Notaris Jakarta Barat",
   subtitle:
-    "Pembuatan akta autentik yang sah, cepat, dan terpercaya. Melayani individu dan korporasi di seluruh Indonesia.",
+    "Notaris resmi di Jakarta Barat — Michael Huang, S.H., S.T., M.Kn. Akta autentik yang sah, pendirian PT/CV/PMA, akta jual beli properti, dan legalisasi dokumen untuk individu maupun korporasi.",
   align: "left" as const,
 };
 
