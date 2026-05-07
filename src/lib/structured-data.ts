@@ -328,13 +328,24 @@ export function generateLegalServiceSchema(metadata: {
     description: metadata.description,
     url: metadata.url,
     priceRange: "$$",
+    telephone: "+62-821-2385-595",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Taman Palem Lestari",
+      streetAddress: "Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur",
       addressLocality: "Jakarta Barat",
       addressRegion: "DKI Jakarta",
+      postalCode: "11730",
       addressCountry: "ID",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: -6.13891866018095,
+      longitude: 106.73066707400585,
+    },
+    areaServed: [
+      { "@type": "City", name: "Jakarta Barat" },
+      { "@type": "City", name: "Jakarta" },
+    ],
   };
 }
 
