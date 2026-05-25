@@ -137,3 +137,30 @@ export const notarisGalleryImages = [
     title: "Arsip & Legalitas Dokumen Notaris",
   },
 ];
+
+export const notarisFaqs = [
+  {
+    q: "Di mana kantor notaris terpercaya di Jakarta Barat?",
+    a: "Kantor Notaris Michael Huang, S.H., S.T., M.Kn. berlokasi di Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur, Jakarta Barat 11730. Kami melayani klien dari seluruh wilayah Jakarta Barat termasuk Cengkareng, Kebon Jeruk, Kalideres, Grogol, dan sekitarnya.",
+  },
+  {
+    q: "Apa saja layanan notaris di Jakarta Barat yang tersedia?",
+    a: "Notaris Michael Huang di Jakarta Barat menyediakan layanan lengkap: akta jual beli (AJB), pendirian PT, CV, dan PMA, akta perjanjian, legalisasi dokumen, akta waris & hibah, RUPS dan corporate action, serta pembuatan surat kuasa notariil.",
+  },
+  {
+    q: "Apakah notaris Jakarta Barat ini bisa membantu pendirian PT?",
+    a: "Ya. Notaris Michael Huang yang berdomisili di Jakarta Barat berpengalaman dalam pendirian PT, CV, dan PMA. Proses mencakup pembuatan akta pendirian, pengesahan di Kemenkumham RI, dan pendaftaran NPWP perusahaan.",
+  },
+  {
+    q: "Apa perbedaan notaris dan PPAT di Jakarta Barat?",
+    a: "Notaris berwenang membuat akta autentik untuk berbagai keperluan hukum (pendirian usaha, perjanjian, waris, dll.), sedangkan PPAT (Pejabat Pembuat Akta Tanah) berwenang khusus membuat akta terkait peralihan dan pembebanan hak atas tanah. Michael Huang memegang keduanya — notaris sekaligus PPAT — sehingga semua kebutuhan hukum properti Anda dapat diselesaikan di satu tempat di Jakarta Barat.",
+  },
+  {
+    q: "Bagaimana prosedur pembuatan akta di notaris Jakarta Barat ini?",
+    a: "Prosesnya mudah: (1) Hubungi kami via WhatsApp untuk konsultasi awal gratis, (2) Siapkan dokumen yang diperlukan sesuai jenis akta, (3) Datang ke kantor di Cengkareng Timur, Jakarta Barat untuk penandatanganan, (4) Akta selesai dan siap diserahkan. Hubungi kami untuk estimasi waktu dan biaya.",
+  },
+  {
+    q: "Apakah bisa konsultasi notaris Jakarta Barat secara online?",
+    a: "Ya, kami menyediakan konsultasi awal via WhatsApp atau telepon tanpa biaya. Untuk penandatanganan akta autentik, klien tetap perlu hadir secara fisik di kantor sesuai ketentuan hukum yang berlaku.",
+  },
+];

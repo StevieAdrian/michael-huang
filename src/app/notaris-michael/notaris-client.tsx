@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { RelatedServices } from "@/shared/components/related-services";
-import { FileText, Phone, ArrowRight, Star } from "lucide-react";
+import { FileText, Phone, ArrowRight, Star, ChevronDown } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { ArticleCards } from "@/shared/components/article-cards";
 import {
@@ -13,6 +13,7 @@ import {
   notarisContacts,
   notarisMapEmbedUrl,
   notarisGalleryImages,
+  notarisFaqs,
 } from "@/app/constants/notaris";
 import { googleReviews } from "@/features/home/constants/reviews";
 import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
@@ -151,6 +152,38 @@ export function NotarisClientPage() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-4xl font-display font-bold mb-3">
+              Pertanyaan Seputar Notaris Jakarta Barat
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Temukan jawaban dari pertanyaan umum tentang layanan notaris di Jakarta Barat.
+            </p>
+          </div>
+          <div className="space-y-3">
+            {notarisFaqs.map((faq, i) => (
+              <details
+                key={i}
+                className="bg-card border border-border/50 rounded-2xl overflow-hidden hover:border-gold/30 transition-colors group"
+                name="notaris-faq"
+              >
+                <summary className="flex items-center justify-between p-5 md:p-6 text-left gap-4 cursor-pointer list-none marker:hidden">
+                  <span className="font-semibold text-base md:text-lg text-foreground">
+                    {faq.q}
+                  </span>
+                  <ChevronDown className="w-5 h-5 text-gold shrink-0 transition-transform duration-300 group-open:rotate-180" />
+                </summary>
+                <div className="px-5 md:px-6 pb-6 text-muted-foreground text-sm md:text-base leading-relaxed border-t border-border/10 pt-4">
+                  {faq.a}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

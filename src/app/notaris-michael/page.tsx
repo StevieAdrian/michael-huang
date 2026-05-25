@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { NotarisClientPage } from "./notaris-client";
 import { generateOGMetadata, seoConfig } from "@/config/seo-config";
-import { generateLegalServiceSchema , generateBreadcrumbSchema } from "@/lib/structured-data";
+import { generateLegalServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
+import { notarisFaqs } from "@/app/constants/notaris";
 
 export const metadata: Metadata = {
   title: "Notaris Jakarta Barat | Akta Autentik Resmi | Michael Huang, S.H., M.Kn.",
@@ -39,9 +40,12 @@ export default function NotarisPage() {
     url: `${seoConfig.siteUrl}/notaris-michael`,
   });
 
+  const faqSchema = generateFAQSchema(notarisFaqs);
+
   return (
     <>
       <StructuredData data={schema} />
+      <StructuredData data={faqSchema} />
       <StructuredData data={generateBreadcrumbSchema([{ name: "Beranda", url: "https://www.michaelhuang.id/" }, { name: "Notaris", url: "https://www.michaelhuang.id/notaris-michael" }])} />
       <NotarisClientPage />
     </>
