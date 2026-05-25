@@ -323,12 +323,13 @@ export function generateLegalServiceSchema(metadata: {
 }) {
   return {
     "@context": "https://schema.org",
-    "@type": "LegalService",
+    "@type": ["LegalService", "Notary"],
     name: metadata.name,
     description: metadata.description,
     url: metadata.url,
     priceRange: "$$",
     telephone: "+62-821-2385-595",
+    email: "contact@michaelhuang.id",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur",
@@ -342,10 +343,17 @@ export function generateLegalServiceSchema(metadata: {
       latitude: -6.13891866018095,
       longitude: 106.73066707400585,
     },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "17:00",
+      },
+    ],
     areaServed: [
       { "@type": "City", name: "Jakarta Barat" },
-      { "@type": "City", name: "Jakarta" },
-    ],
+      { "@type": "City", name: "Jakarta" },],
   };
 }
 
