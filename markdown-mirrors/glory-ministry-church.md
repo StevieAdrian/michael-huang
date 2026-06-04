@@ -50,7 +50,7 @@ Butuh dukungan spiritual? Kami siap mendampingi Anda dalam doa dan konseling. Ja
 
 ## Pengumuman
 
-- Registrasi Youth Camp 2025 sudah dibuka
+- Registrasi Youth Camp 2026 sudah dibuka
 - Pelatihan Volunteer Hospitality (Sabtu 14:00 WIB)
 - Ibadah Baptisan Air - Pendaftaran dibuka untuk bulan depan
 
