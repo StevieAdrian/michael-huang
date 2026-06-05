@@ -6,11 +6,11 @@ import { StructuredData } from "@/shared/components/StructuredData";
 import { lawConsultingFaqs } from "@/app/constants/law-consulting";
 
 export const metadata: Metadata = {
-  title: "Konsultasi Hukum | Michael Huang",
+  title: "Konsultasi Hukum | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
   description:
     "Advisory hukum strategis untuk melindungi, menstrukturisasi, dan mengakselerasi pertumbuhan bisnis Anda.",
   openGraph: generateOGMetadata(
-    "Konsultasi Hukum | Michael Huang",
+    "Konsultasi Hukum | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     "Advisory hukum strategis untuk melindungi, menstrukturisasi, dan mengakselerasi pertumbuhan bisnis Anda.",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/law-consulting-michael`
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function LawConsultingPage() {
   const serviceSchema = generateLegalServiceSchema({
-    name: "Michael Huang Law Consulting",
+    name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Law Consulting",
     description: "Strategic legal advisory for businesses.",
     url: `${seoConfig.siteUrl}/law-consulting-michael`,
   });

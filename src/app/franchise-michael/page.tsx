@@ -6,11 +6,11 @@ import { StructuredData } from "@/shared/components/StructuredData";
 import { franchiseFaqs } from "@/app/constants/franchise";
 
 export const metadata: Metadata = {
-  title: "Franchise Warteg Gemini - Peluang Kemitraan Bisnis | Michael Huang",
+  title: "Franchise Warteg Gemini - Peluang Kemitraan Bisnis | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
   description:
     "Peluang kemitraan bisnis restoran warteg premium dan model bisnis potensial lainnya dengan sistem teruji.",
   openGraph: generateOGMetadata(
-    "Franchise Bisnis | Michael Huang",
+    "Franchise Bisnis | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     "Peluang kemitraan bisnis restoran warteg premium dan model bisnis potensial lainnya dengan sistem teruji.",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/franchise-michael`

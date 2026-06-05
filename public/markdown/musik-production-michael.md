@@ -1,5 +1,5 @@
 ---
-title: Glory Worship & Musik | Michael Huang
+title: Glory Worship & Musik | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 description: Layanan aransemen musik, worship leading, and produksi rekaman profesional. Dedikasi untuk karya musik yang memberkati dan menginspirasi.
 url: https://www.michaelhuang.id/musik-production-michael
 last_updated: 2026-04-13
@@ -33,7 +33,7 @@ Commercial jingle creation, background scores for film, advertising, digital con
 
 Watch production processes, latest works, and tutorials from Michael Music Studio.
 
-- Official Music Video - Michael Huang
+- Official Music Video - Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 - Live Performance Eksklusif
 - Behind The Scenes & Highlight
 

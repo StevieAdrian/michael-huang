@@ -15,13 +15,13 @@ export async function generateMetadata({
 
   if (!article) {
     return {
-      title: "Artikel Podcast | Michael Huang",
+      title: "Artikel Podcast | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       description: "Artikel seputar podcast, interview, dan strategi konten audio.",
     };
   }
 
   return {
-    title: `${article.title} | Podcast | Michael Huang`,
+    title: `${article.title} | Podcast | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
   };
 }

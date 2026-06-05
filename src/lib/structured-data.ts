@@ -121,8 +121,8 @@ export function generateComprehensiveBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${seoConfig.siteUrl}/#organization`,
-    name: "Michael Huang",
-    alternateName: "Michael Huang Building",
+    name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+    alternateName: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Building",
     description: "Integrated business ecosystem providing legal services (Law Firm, Notaris, PPAT, Legal Consulting), premium boarding house, authentic Indonesian restaurant, church ministry, music production, and franchise opportunities in Jakarta.",
     url: seoConfig.siteUrl,
     telephone: "+62-821-2385-595",
@@ -157,7 +157,7 @@ export function generateComprehensiveBusinessSchema() {
     ],
     founder: {
       "@type": "Person",
-      name: "Michael Huang",
+      name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       jobTitle: "Notaris, PPAT, Legal Consultant",
       honorificSuffix: "S.H., S.T., M.Kn."
     },
@@ -252,7 +252,7 @@ export function generateNotarySchema() {
     "@context": "https://schema.org",
     "@type": "Notary",
     "@id": `${seoConfig.siteUrl}/notaris-michael#notary`,
-    name: "Michael Huang - Notaris & PPAT",
+    name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. - Notaris & PPAT",
     alternateName: "Michael, S.H., S.T., M.Kn.",
     description: "Licensed Notaris and PPAT providing authentic legal documents including company formation, property deeds, and legal authentication services.",
     url: `${seoConfig.siteUrl}/notaris-michael`,
@@ -414,12 +414,12 @@ export function generateHomepageFAQSchema() {
       a: "Hubungi kami via WhatsApp di +62 821 2385 595 untuk informasi peluang kemitraan franchise. Kami menyediakan sistem bisnis teruji, training operasional, dan dokumentasi legal lengkap sesuai regulasi waralaba Indonesia."
     },
     {
-      q: "Apakah Michael Huang adalah Notaris dan PPAT resmi?",
-      a: "Ya, Michael Huang (S.H., S.T., M.Kn.) adalah Notaris dan PPAT resmi berlisensi di Indonesia, berwenang membuat dokumen autentik seperti akta perusahaan, akta jual beli properti, dan dokumen legal lainnya."
+      q: "Apakah Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. adalah Notaris dan PPAT resmi?",
+      a: "Ya, Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. adalah Notaris dan PPAT resmi berlisensi di Indonesia, berwenang membuat dokumen autentik seperti akta perusahaan, akta jual beli properti, dan dokumen legal lainnya."
     },
     {
-      q: "Dimana lokasi kantor Michael Huang?",
-      a: "Kantor pusat kami berlokasi di Michael Huang Building, Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur, Jakarta Barat 11730. Hubungi +62 821 2385 595 untuk jadwal konsultasi."
+      q: "Dimana lokasi kantor Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.?",
+      a: "Kantor pusat kami berlokasi di Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Building, Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur, Jakarta Barat 11730. Hubungi +62 821 2385 595 untuk jadwal konsultasi."
     }
   ];
 
@@ -431,7 +431,7 @@ export function generateServiceListSchema() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "@id": `${seoConfig.siteUrl}/#services`,
-    name: "Michael Huang Services",
+    name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Services",
     description: "Comprehensive business ecosystem services",
     itemListElement: [
       {
@@ -460,7 +460,7 @@ export function generateServiceListSchema() {
           description: "Company formation documents, deed authentication, power of attorney, inheritance documents",
           provider: {
             "@type": "Notary",
-            name: "Michael Huang - Notaris"
+            name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. - Notaris"
           },
           areaServed: "Jakarta",
           serviceType: "Notary Services"
@@ -476,7 +476,7 @@ export function generateServiceListSchema() {
           description: "Property sale-purchase deeds, mortgage deeds, land certificate verification, title transfer",
           provider: {
             "@type": "Notary",
-            name: "Michael Huang - PPAT"
+            name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. - PPAT"
           },
           areaServed: "Jakarta",
           serviceType: "Land Deed Services"
@@ -492,7 +492,7 @@ export function generateServiceListSchema() {
           description: "Corporate law, M&A due diligence, contract drafting, business licensing, compliance",
           provider: {
             "@type": "ProfessionalService",
-            name: "Michael Huang Legal Consulting"
+            name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Legal Consulting"
           },
           areaServed: "Jakarta",
           serviceType: "Legal Consulting"
@@ -540,7 +540,7 @@ export function generateServiceListSchema() {
           description: "Business partnership opportunities with proven systems and operational support",
           provider: {
             "@type": "Organization",
-            name: "Michael Huang"
+            name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D."
           },
           areaServed: "Indonesia",
           serviceType: "Franchise"
@@ -554,12 +554,12 @@ export function generatePodcastSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "PodcastSeries",
-    name: "Michael Huang Podcast",
+    name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Podcast",
     url: `${seoConfig.siteUrl}/podcast-michael`,
     description: "Obrolan mendalam tentang iman, bisnis, hukum, and kehidupan.",
     author: {
       "@type": "Person",
-      name: "Michael Huang",
+      name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     },
   };
 }

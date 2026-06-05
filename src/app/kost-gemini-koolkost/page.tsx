@@ -7,7 +7,7 @@ import { StructuredData } from "@/shared/components/StructuredData";
 export const metadata: Metadata = {
   title: "Kost Premium Jakarta Barat | Gemini Kost",
   description:
-    "Kost nyaman dan strategis di Jakarta Barat (Taman Palem). Kamar modern, fasilitas lengkap, lingkungan aman. Hubungi Michael Huang untuk info kost terbaik.",
+    "Kost nyaman dan strategis di Jakarta Barat (Taman Palem). Kamar modern, fasilitas lengkap, lingkungan aman. Hubungi Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. untuk info kost terbaik.",
   alternates: {
     canonical: `${seoConfig.siteUrl}/kost-gemini-koolkost`,
   },

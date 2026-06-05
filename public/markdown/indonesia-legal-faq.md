@@ -1,5 +1,5 @@
 ---
-title: Indonesia Legal FAQ | Michael Huang
+title: Indonesia Legal FAQ | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 description: Frequently asked questions regarding legal services, notary, company establishment, intellectual property, and business consulting in Indonesia.
 url: https://www.michaelhuang.id/indonesia-legal-faq
 last_updated: 2026-04-13

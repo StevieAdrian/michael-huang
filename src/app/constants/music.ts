@@ -42,8 +42,8 @@ export const musicServices = [
 
 export const musicYoutubeVideos: YoutubeVideoItem[] = [
   {
-    title: "Official Music Video - Michael Huang",
-    description: "Tonton karya terbaru dari Michael Huang di channel YouTube resmi kami.",
+    title: "Official Music Video - Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+    description: "Tonton karya terbaru dari Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. di channel YouTube resmi kami.",
     thumbnail: "https://img.youtube.com/vi/9f_YB-WJ0EQ/maxresdefault.jpg",
     url: "https://youtu.be/9f_YB-WJ0EQ?si=GpxGm1FjpFbxbLIM",
   },

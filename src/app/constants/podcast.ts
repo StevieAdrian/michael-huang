@@ -20,7 +20,7 @@ export const podcastEpisodes: PodcastEpisode[] = [
   {
     number: "EP 24",
     title: "Bisnis dan Iman: Menemukan Keseimbangan",
-    guest: "Michael Huang",
+    guest: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     duration: "1j 12m",
     desc: "Bagaimana iman membentuk cara kita berbisnis. Obrolan jujur tentang prinsip, godaan, dan keberhasilan sejati.",
   },
@@ -77,7 +77,7 @@ export const podcastYoutubeVideos: YoutubeVideoItem[] = [
   {
     title: "EP 24 — Bisnis & Iman: Menemukan Keseimbangan",
     description:
-      "Full episode terbaru bersama Michael Huang. Jujur, mendalam, dan menginspirasi.",
+      "Full episode terbaru bersama Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.. Jujur, mendalam, dan menginspirasi.",
   },
   {
     title: "EP 23 — Hukum untuk Pengusaha Muda",

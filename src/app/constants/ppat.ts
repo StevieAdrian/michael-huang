@@ -83,11 +83,11 @@ export const ppatReviews = [
 export const ppatGalleryImages = [
   {
     url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200",
-    title: "Kantor PPAT Jakarta Michael Huang - Layanan Sertifikat Tanah",
+    title: "Kantor PPAT Jakarta Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. - Layanan Sertifikat Tanah",
   },
   {
     url: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1200",
-    title: "Tim Profesional PPAT Jakarta Michael Huang",
+    title: "Tim Profesional PPAT Jakarta Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
   },
   {
     url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200",
@@ -99,7 +99,7 @@ export const ppatGalleryImages = [
   },
   {
     url: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
-    title: "Suasana Kantor PPAT Michael Huang",
+    title: "Suasana Kantor PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
   },
   {
     url: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80&w=1200",

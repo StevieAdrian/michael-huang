@@ -35,14 +35,7 @@ export function HomePageHero({
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6">
             {title.split(" ").map((word, i) => (
-              <span
-                key={i}
-                className={
-                  i === title.split(" ").length - 2
-                    ? "text-gradient-gold"
-                    : "text-foreground"
-                }
-              >
+              <span key={i} className="text-foreground">
                 {word}{" "}
               </span>
             ))}
@@ -56,7 +49,7 @@ export function HomePageHero({
           >
             <Image
               src="/images/mich-logo-transparent.png"
-              alt="Michael Huang Logo"
+              alt="Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Logo"
               width={320}
               height={320}
               className="h-85 w-auto"

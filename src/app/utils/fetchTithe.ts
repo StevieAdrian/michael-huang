@@ -1,11 +1,12 @@
 import { ChurchTitheMonth, ChurchTitheRow } from "@/app/constants/church";
 
 const SHEET_GIDS = [
-  "1988151645", // Tab 1
-  "1852066128", // Tab 2
-  "569630883",  // Tab 3
-  "337286366",  // Tab 4
-  "0"           // Tab 5
+  "1725120961", // MEI. 26
+  "1988151645", // APR. 26
+  "1852066128", // MAR. 26
+  "569630883",  // FEB. 26
+  "337286366",  // JAN. 26
+  "0"           // DEC. 25
 ];
 
 export async function fetchLiveTitheData(): Promise<ChurchTitheMonth[]> {

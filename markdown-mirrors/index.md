@@ -1,11 +1,11 @@
 ---
-title: Notaris, PPAT, Law Firm & Consulting di Jakarta | Michael Huang
-description: Michael Huang - Notaris, PPAT & Law Firm di Jakarta Barat. Layanan hukum korporat, pendirian PT/PMA, transaksi properti, franchise warteg & kost premium.
+title: Notaris, PPAT, Law Firm & Consulting di Jakarta | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
+description: Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. - Notaris, PPAT & Law Firm di Jakarta Barat. Layanan hukum korporat, pendirian PT/PMA, transaksi properti, franchise warteg & kost premium.
 url: https://www.michaelhuang.id
 last_updated: 2026-04-13
 ---
 
-# Notaris, PPAT, Law Firm & Consulting di Jakarta | Michael Huang
+# Notaris, PPAT, Law Firm & Consulting di Jakarta | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 
 Integrated business ecosystem providing legal services, premium boarding house, authentic Indonesian restaurant, church ministry, music production, and franchise opportunities in Jakarta.
 

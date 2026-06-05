@@ -1,5 +1,5 @@
 ---
-title: Notaris | Michael Huang
+title: Notaris | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 description: Pembuatan akta autentik yang sah, cepat, dan terpercaya. Melayani individu dan korporasi di seluruh Indonesia.
 url: https://www.michaelhuang.id/notaris-michael
 last_updated: 2026-04-13
@@ -60,6 +60,6 @@ Hubungi kami untuk konsultasi awal secara gratis. Tim notaris kami siap membantu
 **Kontak:**
 - +62 821 2385 595
 - contact@michaelhuang.id
-- Michael Huang Building - Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur, Jakarta Barat 11730
+- Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Building - Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur, Jakarta Barat 11730
 
 **Jam Operasional:** Senin-Jumat, 08:00-17:00 WIB

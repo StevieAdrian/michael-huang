@@ -5,9 +5,9 @@ import { generateLegalServiceSchema , generateBreadcrumbSchema } from "@/lib/str
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Law Firm Jakarta | Pengacara Korporasi & Litigasi | Michael Huang, S.H., M.Kn.",
+  title: "Law Firm Jakarta | Pengacara Korporasi & Litigasi | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
   description:
-    "Law firm profesional di Jakarta. Michael Huang, S.H., S.T., M.Kn. menangani hukum korporasi, litigasi perdata & komersial, merger & akuisisi (M&A), hukum properti, dan hukum keluarga. Konsultasi hukum terpercaya.",
+    "Law firm profesional di Jakarta. Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. menangani hukum korporasi, litigasi perdata & komersial, merger & akuisisi (M&A), hukum properti, dan hukum keluarga. Konsultasi hukum terpercaya.",
   keywords: [
     "law firm jakarta",
     "pengacara jakarta",
@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     "konsultasi hukum jakarta",
     "pengacara bisnis jakarta",
     "firma hukum jakarta barat",
-    "Michael Huang pengacara",
+    "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. pengacara",
     "hukum korporasi jakarta",
   ],
   openGraph: generateOGMetadata(
-    "Law Firm Jakarta | Pengacara Korporasi & Litigasi | Michael Huang, S.H., M.Kn.",
-    "Law firm profesional di Jakarta. Michael Huang, S.H., S.T., M.Kn. menangani hukum korporasi, litigasi perdata & komersial, merger & akuisisi (M&A), hukum properti, dan hukum keluarga. Konsultasi hukum terpercaya.",
+    "Law Firm Jakarta | Pengacara Korporasi & Litigasi | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+    "Law firm profesional di Jakarta. Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. menangani hukum korporasi, litigasi perdata & komersial, merger & akuisisi (M&A), hukum properti, dan hukum keluarga. Konsultasi hukum terpercaya.",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/law-firm-michael`
   ),
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function LawFirmPage() {
   const schema = generateLegalServiceSchema({
-    name: "Law Firm Michael Huang",
+    name: "Law Firm Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     description: "Professional legal firm specializing in corporate and litigations.",
     url: `${seoConfig.siteUrl}/law-firm-michael`,
   });

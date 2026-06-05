@@ -41,7 +41,7 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
     subtitle:
       "Balik nama sertifikat memastikan pemilik baru tercatat resmi di BPN. Proses ini penting untuk kepastian hukum dan perlindungan hak atas tanah.",
     author: {
-      name: "Tim PPAT Michael Huang",
+      name: "Tim PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       role: "Konsultan Pertanahan",
     },
     content: [

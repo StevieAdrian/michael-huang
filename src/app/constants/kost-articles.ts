@@ -41,7 +41,7 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
     subtitle:
       "Memilih kost yang tepat bukan sekadar soal harga murah. Anda perlu mempertimbangkan lokasi, keamanan, dan kualitas fasilitas agar hidup harian lebih nyaman.",
     author: {
-      name: "Tim Hunian Michael Huang",
+      name: "Tim Hunian Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       role: "Property Advisor",
     },
     content: [

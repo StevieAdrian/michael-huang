@@ -15,11 +15,11 @@ export const LAW_FIRM_FORM_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=
 export const PPAT_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konsultasi layanan PPAT`;
 export const NOTARIS_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konsultasi layanan Notaris`;
 export const CHURCH_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konfirmasi Perpuluhan`;
-export const FRANCHISE_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya tertarik dengan peluang kemitraan Franchise Michael Huang`;
+export const FRANCHISE_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya tertarik dengan peluang kemitraan Franchise Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`;
 export const EMAIL_ADDRESS = "contact@michaelhuang.id";
 export const EMAIL_CARE = "contact@michaelhuang.id";
 
-export const LOCATION_ADDRESS = "Michael Huang Building - Ruko Mutiara Taman Palem Blok C8 No 23 - 26 Cengkareng Timur Cengkareng Jakarta Barat, 11730 Jl Outer Ring Road";
+export const LOCATION_ADDRESS = "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Building - Ruko Mutiara Taman Palem Blok C8 No 23 - 26 Cengkareng Timur Cengkareng Jakarta Barat, 11730 Jl Outer Ring Road";
 //export const GOOGLE_MAPS_SEARCH_URL = `https://maps.google.com/?q=${encodeURIComponent(LOCATION_ADDRESS)}`;
 export const GENERAL_MAPS_URL = `https://maps.app.goo.gl/tfV2tHeX9UWTXP3e7`;
 export const GOOGLE_MAPS_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.93884262891!2d106.73066707400585!3d-6.13891866018095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7fd6383a5cd%3A0xfd4228bd9c682cda!2sMichael%2C%20S.H.%2C%20S.T.%2C%20M.Kn.!5e0!3m2!1sen!2sid!4v1776011935636!5m2!1sen!2sid";

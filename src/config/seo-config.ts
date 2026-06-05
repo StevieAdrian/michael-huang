@@ -5,10 +5,10 @@
 
 export const seoConfig = {
   // Site-wide information
-  siteName: "Notaris, PPAT, Law Firm & Consulting di Jakarta | Michael Huang",
+  siteName: "Notaris, PPAT, Law Firm & Consulting di Jakarta | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.michaelhuang.id",
   description:
-    "Michael Huang - Notaris, PPAT & Law Firm di Jakarta Barat. Layanan hukum korporat, pendirian PT/PMA, transaksi properti, franchise warteg & kost premium.",
+    "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. - Notaris, PPAT & Law Firm di Jakarta Barat. Layanan hukum korporat, pendirian PT/PMA, transaksi properti, franchise warteg & kost premium.",
 
   // Social Media
   social: {
@@ -20,7 +20,7 @@ export const seoConfig = {
 
   // Author/Organization
   author: {
-    name: "Michael Huang",
+    name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     email: "contact@michaelhuang.id",
   },
 
@@ -34,7 +34,7 @@ export const seoConfig = {
 
   // JSON-LD Organization Schema
   organization: {
-    name: "Michael Huang",
+    name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     logo: "https://www.michaelhuang.id/images/logo-mich.ico",
     url: "https://www.michaelhuang.id",
     sameAs: [
@@ -45,7 +45,7 @@ export const seoConfig = {
 
   // Keywords & Topics (for your content strategy)
   primaryKeywords: [
-    "Michael Huang",
+    "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     "Glory Ministry Church",
     "Legal Consultant Jakarta",
     "Notaris Jakarta Barat",
@@ -70,7 +70,7 @@ export const seoConfig = {
     "Balik Nama Sertifikat",
     "Akta Jual Beli Tanah",
     "Christian Ministry",
-    "Michael Huang Podcast"
+    "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Podcast"
   ] as const,
 
   // Verification codes
