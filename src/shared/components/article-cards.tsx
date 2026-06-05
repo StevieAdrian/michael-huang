@@ -34,12 +34,12 @@ export function ArticleCards({
               Informasi dan panduan terkini untuk Anda
             </p>
           </div>
-          <a
-            href="#"
+          <Link
+            href={`${basePath}/artikel`}
             className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:underline underline-offset-4 shrink-0"
           >
             Lihat semua artikel <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
