@@ -71,10 +71,15 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
       const now = new Date();
       const nextSunday = new Date();
 
-      nextSunday.setDate(now.getDate() + ((7 - now.getDay()) % 7 || 7));
+      // Calculate days until upcoming Sunday (Sunday is 0)
+      // If today is Sunday before 10 AM, daysUntilSunday is 0 (today)
+      // If today is Sunday after 10 AM, daysUntilSunday is 7 (next Sunday)
+      let daysUntilSunday = (7 - now.getDay()) % 7;
       if (now.getDay() === 0 && now.getHours() >= 10) {
-        nextSunday.setDate(nextSunday.getDate() + 7);
+        daysUntilSunday = 7;
       }
+
+      nextSunday.setDate(now.getDate() + daysUntilSunday);
       nextSunday.setHours(10, 0, 0, 0);
 
       const diff = Math.max(0, nextSunday.getTime() - now.getTime());
@@ -433,11 +438,11 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
           <div className="flex items-center gap-3 mb-8">
             <Users className="w-6 h-6 text-gold" />
             <h2 className="text-2xl md:text-4xl font-display font-bold">
-              Foto Jemaat Mingguan
+              Foto Jemaat
             </h2>
           </div>
           <p className="text-muted-foreground mt-1 mb-8 text-sm">
-            Momen kebersamaan kita setiap minggu
+            Momen kebersamaan kita
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
@@ -458,11 +463,10 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
                   <>
                     <img 
                       src={item.image} 
-                      alt={item.label || "Foto jemaat mingguan"}
+                      alt={item.label || "Foto jemaat"}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 md:p-4">
-                      <span className="text-white text-[10px] md:text-sm font-bold uppercase tracking-wider">{item.label}</span>
                       <span className="text-gold/80 text-[8px] md:text-[10px] font-medium uppercase tracking-widest mt-0.5">Klik untuk memperbesar</span>
                     </div>
                   </>
@@ -477,9 +481,6 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
               </div>
             ))}
           </div>
-          <p className="text-xs text-muted-foreground/60 mt-4 text-center">
-            Foto akan diperbarui setiap Minggu setelah ibadah selesai.
-          </p>
         </div>
       </section>
 
@@ -874,11 +875,7 @@ export function ChurchClientPage({ initialTitheData }: ChurchClientPageProps) {
             </>
           )}
 
-          <div className="absolute top-6 left-1/2 -translate-x-1/2 z-[110] text-center hidden md:block">
-            <span className="bg-gold/20 text-gold px-6 py-2 rounded-full text-xs font-bold tracking-[0.3em] uppercase border border-gold/30 backdrop-blur-md shadow-lg">
-              {selectedPhoto.label}
-            </span>
-          </div>
+
 
           {/* Image Wrapper */}
           <div 

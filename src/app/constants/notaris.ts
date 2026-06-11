@@ -5,7 +5,7 @@ import { NOTARIS_MAPS_EMBED_URL, WHATSAPP_PHONE, EMAIL_ADDRESS, LOCATION_ADDRESS
 export const notarisHero = {
   title: "Jasa Notaris Jakarta Barat",
   subtitle:
-    "Notaris resmi di Jakarta Barat — Michael Huang, S.H., S.T., M.Kn. Akta autentik yang sah, pendirian PT/CV/PMA, akta jual beli properti, dan legalisasi dokumen untuk individu maupun korporasi.",
+    "Notaris resmi di Jakarta Barat — Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Akta autentik yang sah, pendirian PT/CV/PMA, akta jual beli properti, dan legalisasi dokumen untuk individu maupun korporasi.",
   align: "left" as const,
 };
 
@@ -114,11 +114,11 @@ export const notarisReviews = [
 export const notarisGalleryImages = [
   {
     url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200",
-    title: "Kantor Notaris Michael Huang - Keadilan & Hukum",
+    title: "Kantor Notaris Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. - Keadilan & Hukum",
   },
   {
     url: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1200",
-    title: "Tim Profesional Notaris Jakarta Michael Huang",
+    title: "Tim Profesional Notaris Jakarta Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
   },
   {
     url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200",
@@ -130,7 +130,7 @@ export const notarisGalleryImages = [
   },
   {
     url: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
-    title: "Fasilitas Kantor Michael Huang Jakarta",
+    title: "Fasilitas Kantor Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Jakarta",
   },
   {
     url: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80&w=1200",
@@ -141,19 +141,19 @@ export const notarisGalleryImages = [
 export const notarisFaqs = [
   {
     q: "Di mana kantor notaris terpercaya di Jakarta Barat?",
-    a: "Kantor Notaris Michael Huang, S.H., S.T., M.Kn. berlokasi di Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur, Jakarta Barat 11730. Kami melayani klien dari seluruh wilayah Jakarta Barat termasuk Cengkareng, Kebon Jeruk, Kalideres, Grogol, dan sekitarnya.",
+    a: "Kantor Notaris Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. berlokasi di Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur, Jakarta Barat 11730. Kami melayani klien dari seluruh wilayah Jakarta Barat termasuk Cengkareng, Kebon Jeruk, Kalideres, Grogol, dan sekitarnya.",
   },
   {
     q: "Apa saja layanan notaris di Jakarta Barat yang tersedia?",
-    a: "Notaris Michael Huang di Jakarta Barat menyediakan layanan lengkap: akta jual beli (AJB), pendirian PT, CV, dan PMA, akta perjanjian, legalisasi dokumen, akta waris & hibah, RUPS dan corporate action, serta pembuatan surat kuasa notariil.",
+    a: "Notaris Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. di Jakarta Barat menyediakan layanan lengkap: akta jual beli (AJB), pendirian PT, CV, dan PMA, akta perjanjian, legalisasi dokumen, akta waris & hibah, RUPS dan corporate action, serta pembuatan surat kuasa notariil.",
   },
   {
     q: "Apakah notaris Jakarta Barat ini bisa membantu pendirian PT?",
-    a: "Ya. Notaris Michael Huang yang berdomisili di Jakarta Barat berpengalaman dalam pendirian PT, CV, dan PMA. Proses mencakup pembuatan akta pendirian, pengesahan di Kemenkumham RI, dan pendaftaran NPWP perusahaan.",
+    a: "Ya. Notaris Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. yang berdomisili di Jakarta Barat berpengalaman dalam pendirian PT, CV, dan PMA. Proses mencakup pembuatan akta pendirian, pengesahan di Kemenkumham RI, dan pendaftaran NPWP perusahaan.",
   },
   {
     q: "Apa perbedaan notaris dan PPAT di Jakarta Barat?",
-    a: "Notaris berwenang membuat akta autentik untuk berbagai keperluan hukum (pendirian usaha, perjanjian, waris, dll.), sedangkan PPAT (Pejabat Pembuat Akta Tanah) berwenang khusus membuat akta terkait peralihan dan pembebanan hak atas tanah. Michael Huang memegang keduanya — notaris sekaligus PPAT — sehingga semua kebutuhan hukum properti Anda dapat diselesaikan di satu tempat di Jakarta Barat.",
+    a: "Notaris berwenang membuat akta autentik untuk berbagai keperluan hukum (pendirian usaha, perjanjian, waris, dll.), sedangkan PPAT (Pejabat Pembuat Akta Tanah) berwenang khusus membuat akta terkait peralihan dan pembebanan hak atas tanah. Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. memegang keduanya — notaris sekaligus PPAT — sehingga semua kebutuhan hukum properti Anda dapat diselesaikan di satu tempat di Jakarta Barat.",
   },
   {
     q: "Bagaimana prosedur pembuatan akta di notaris Jakarta Barat ini?",

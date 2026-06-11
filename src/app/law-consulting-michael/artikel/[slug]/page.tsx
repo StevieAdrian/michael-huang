@@ -18,14 +18,14 @@ export async function generateMetadata({
 
   if (!article) {
     return {
-      title: "Artikel Konsultasi Hukum | Michael Huang",
+      title: "Artikel Konsultasi Hukum | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       description:
         "Artikel seputar legal due diligence, kontrak bisnis, dan kepatuhan hukum startup.",
     };
   }
 
   return {
-    title: `${article.title} | Konsultasi Hukum | Michael Huang`,
+    title: `${article.title} | Konsultasi Hukum | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
   };
 }

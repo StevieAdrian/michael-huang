@@ -1,11 +1,11 @@
 ---
-title: Podcast | Michael Huang
+title: Podcast | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 description: Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan bersama narasumber terpilih.
 url: https://www.michaelhuang.id/podcast-michael
 last_updated: 2026-04-13
 ---
 
-# Michael Huang Podcast
+# Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Podcast
 
 Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan. Episode baru hadir setiap minggu.
 
@@ -22,7 +22,7 @@ Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan. Episode baru hadir 
 
 **EP 24 · 1h 12m**
 ### Bisnis dan Iman: Menemukan Keseimbangan
-Featuring Michael Huang
+Featuring Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 
 Bagaimana iman membentuk cara kita berbisnis. Obrolan jujur tentang prinsip, godaan, dan keberhasilan sejati.
 

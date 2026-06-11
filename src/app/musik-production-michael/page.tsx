@@ -5,14 +5,14 @@ import { generateMusicGroupSchema , generateBreadcrumbSchema } from "@/lib/struc
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Glory Worship & Musik | Michael Huang",
+  title: "Glory Worship & Musik | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
   description:
     "Layanan aransemen musik, worship leading, and produksi rekaman profesional. Dedikasi untuk karya musik yang memberkati dan menginspirasi.",
   alternates: {
     canonical: `${seoConfig.siteUrl}/musik-production-michael`,
   },
   openGraph: generateOGMetadata(
-    "Glory Worship & Musik | Michael Huang",
+    "Glory Worship & Musik | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     "Layanan aransemen musik, worship leading, dan produksi rekaman profesional. Dedikasi untuk karya musik berkualitas.",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/musik-production-michael`

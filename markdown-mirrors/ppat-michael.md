@@ -1,5 +1,5 @@
 ---
-title: PPAT | Michael Huang
+title: PPAT | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 description: Layanan pembuatan akta tanah yang legal, akurat, dan terdaftar resmi di Badan Pertanahan Nasional (BPN).
 url: https://www.michaelhuang.id/ppat-michael
 last_updated: 2026-04-13
@@ -40,5 +40,5 @@ Konsultasi gratis untuk mengetahui dokumen yang perlu Anda siapkan dan estimasi 
 
 - **Telepon:** +628212385595
 - **Email:** contact@michaelhuang.id
-- **Alamat:** Michael Huang Building - Ruko Mutiara Taman Palem Blok C8 No 23-26 Cengkareng Timur Cengkareng Jakarta Barat, 11730 Jl Outer Ring Road
+- **Alamat:** Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Building - Ruko Mutiara Taman Palem Blok C8 No 23-26 Cengkareng Timur Cengkareng Jakarta Barat, 11730 Jl Outer Ring Road
 - **Jam Operasional:** Senin-Jumat, 08:00-17:00 WIB

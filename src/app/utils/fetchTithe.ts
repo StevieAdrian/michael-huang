@@ -1,11 +1,12 @@
 import { ChurchTitheMonth, ChurchTitheRow } from "@/app/constants/church";
 
 const SHEET_GIDS = [
-  "1988151645", // Tab 1
-  "1852066128", // Tab 2
-  "569630883",  // Tab 3
-  "337286366",  // Tab 4
-  "0"           // Tab 5
+  "1725120961", // MEI. 26
+  "1988151645", // APR. 26
+  "1852066128", // MAR. 26
+  "569630883",  // FEB. 26
+  "337286366",  // JAN. 26
+  "0"           // DEC. 25
 ];
 
 export async function fetchLiveTitheData(): Promise<ChurchTitheMonth[]> {
@@ -78,17 +79,19 @@ function parseTitheCSV(csv: string): ChurchTitheMonth | null {
   const rows: ChurchTitheRow[] = [];
   
   let isParsingRows = false;
+  let noColumnIndex = -1;
   
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     const columns = parseCSVLine(line);
     
     // Header check
-    if (columns[0] && columns[0].toUpperCase() === "BULAN:") {
-      month = columns[1] || "Unknown";
+    const bulanIndex = columns.findIndex(col => col && col.toUpperCase() === "BULAN:");
+    if (bulanIndex !== -1) {
+      month = columns[bulanIndex + 1] || "Unknown";
       
       // Find total jumlah
-      const totalIndex = columns.findIndex(col => col.toUpperCase() === "TOTAL JUMLAH");
+      const totalIndex = columns.findIndex(col => col && col.toUpperCase() === "TOTAL JUMLAH");
       if (totalIndex !== -1 && totalIndex + 1 < columns.length) {
         total = parseRupiahStr(columns[totalIndex + 1]);
       }
@@ -96,17 +99,19 @@ function parseTitheCSV(csv: string): ChurchTitheMonth | null {
     }
     
     // Start of columns
-    if (columns[0] && columns[0].toUpperCase() === "NO.") {
+    const noIndex = columns.findIndex(col => col && col.toUpperCase() === "NO.");
+    if (noIndex !== -1) {
       isParsingRows = true;
+      noColumnIndex = noIndex;
       continue;
     }
     
-    if (isParsingRows) {
-      const idStr = columns[0];
-      const date = columns[1];
-      const name = columns[2];
-      const paymentType = columns[3];
-      const amountStr = columns[4];
+    if (isParsingRows && noColumnIndex !== -1) {
+      const idStr = columns[noColumnIndex];
+      const date = columns[noColumnIndex + 1];
+      const name = columns[noColumnIndex + 2];
+      const paymentType = columns[noColumnIndex + 3];
+      const amountStr = columns[noColumnIndex + 4];
       
       // If no valid ID, we've hit the end of the populated rows 
       if (!idStr || idStr.trim() === "") {

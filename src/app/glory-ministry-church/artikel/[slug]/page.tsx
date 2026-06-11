@@ -15,13 +15,13 @@ export async function generateMetadata({
 
   if (!article) {
     return {
-      title: "Artikel Gereja | Michael Huang",
+      title: "Artikel Gereja | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       description: "Artikel dan renungan komunitas Glory Ministry Church.",
     };
   }
 
   return {
-    title: `${article.title} | Gereja | Michael Huang`,
+    title: `${article.title} | Gereja | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
   };
 }

@@ -15,13 +15,13 @@ export async function generateMetadata({
 
   if (!article) {
     return {
-      title: "Artikel PPAT | Michael Huang",
+      title: "Artikel PPAT | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       description: "Artikel seputar layanan PPAT, AJB, balik nama, dan hak tanggungan.",
     };
   }
 
   return {
-    title: `${article.title} | PPAT | Michael Huang`,
+    title: `${article.title} | PPAT | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
   };
 }

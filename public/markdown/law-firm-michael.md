@@ -1,5 +1,5 @@
 ---
-title: Law Firm | Michael Huang
+title: Law Firm | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 description: Protecting your interests with uncompromising excellence and strategic precision.
 url: https://www.michaelhuang.id/law-firm-michael
 last_updated: 2026-04-13

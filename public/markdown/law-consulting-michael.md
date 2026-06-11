@@ -1,5 +1,5 @@
 ---
-title: Konsultasi Hukum | Michael Huang
+title: Konsultasi Hukum | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 description: Advisory hukum strategis untuk melindungi, menstrukturisasi, dan mengakselerasi pertumbuhan bisnis Anda.
 url: https://www.michaelhuang.id/law-consulting-michael
 last_updated: 2026-04-13

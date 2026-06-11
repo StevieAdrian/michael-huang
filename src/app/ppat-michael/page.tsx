@@ -5,11 +5,11 @@ import { generateLegalServiceSchema , generateBreadcrumbSchema } from "@/lib/str
 import { StructuredData } from "@/shared/components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "PPAT | Michael Huang",
+  title: "PPAT | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
   description:
     "Layanan pembuatan akta tanah yang legal, akurat, dan terdaftar resmi di Badan Pertanahan Nasional (BPN).",
   openGraph: generateOGMetadata(
-    "PPAT | Michael Huang",
+    "PPAT | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     "Layanan pembuatan akta tanah yang legal, akurat, dan terdaftar resmi di Badan Pertanahan Nasional (BPN).",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/ppat-michael`
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function PPATPage() {
   const schema = generateLegalServiceSchema({
-    name: "PPAT Michael Huang",
+    name: "PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     description: "Layanan Pejabat Pembuat Akta Tanah resmi Jakarta Barat.",
     url: `${seoConfig.siteUrl}/ppat-michael`,
   });

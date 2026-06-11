@@ -41,7 +41,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     subtitle:
       "Legal due diligence membantu investor dan pembeli bisnis memahami risiko hukum tersembunyi sebelum transaksi disepakati.",
     author: {
-      name: "Tim Konsultasi Hukum Michael Huang",
+      name: "Tim Konsultasi Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       role: "Corporate Legal Advisor",
     },
     content: [
@@ -86,7 +86,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     subtitle:
       "Kontrak yang baik bukan sekadar formalitas. Klausul yang tepat melindungi kepentingan bisnis Anda saat kondisi terbaik maupun terburuk.",
     author: {
-      name: "Tim Drafting Michael Huang",
+      name: "Tim Drafting Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       role: "Contract Specialist",
     },
     content: [

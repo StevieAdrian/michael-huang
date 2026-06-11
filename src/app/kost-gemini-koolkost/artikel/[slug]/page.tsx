@@ -15,13 +15,13 @@ export async function generateMetadata({
 
   if (!article) {
     return {
-      title: "Artikel Kost | Michael Huang",
+      title: "Artikel Kost | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       description: "Artikel seputar tips memilih kost, fasilitas, dan gaya hidup hunian.",
     };
   }
 
   return {
-    title: `${article.title} | Kost | Michael Huang`,
+    title: `${article.title} | Kost | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
   };
 }

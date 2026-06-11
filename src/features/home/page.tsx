@@ -26,7 +26,7 @@ export default function Home() {
 
       <div className="pb-24">
         <HomePageHero
-          title="Michael Huang"
+          title="Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D."
           subtitle="Ekosistem layanan hukum, hunian, kuliner, dan peluang bisnis terpadu di Jakarta Barat."
         />
 

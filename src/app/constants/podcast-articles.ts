@@ -41,7 +41,7 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
     subtitle:
       "Podcast yang baik tidak dimulai dari alat mahal, tetapi dari konsep yang jelas, alur produksi yang rapi, dan konsistensi dalam eksekusi.",
     author: {
-      name: "Tim Podcast Michael Huang",
+      name: "Tim Podcast Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       role: "Podcast Producer",
     },
     content: [

@@ -1,8 +1,8 @@
 ---
-title: Gereja | Michael Huang | Glory Ministry Church
+title: Gereja | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. | Glory Ministry Church
 description: Komunitas iman yang penuh kasih, harapan, dan sukacita dengan jadwal ibadah serta kegiatan mingguan.
 url: https://www.michaelhuang.id/glory-ministry-church
-last_updated: 2026-04-13
+last_updated: 2026-06-05
 ---
 
 # Glory Ministry Church
@@ -50,7 +50,7 @@ Butuh dukungan spiritual? Kami siap mendampingi Anda dalam doa dan konseling. Ja
 
 ## Pengumuman
 
-- Registrasi Youth Camp 2025 sudah dibuka
+- Registrasi Youth Camp 2026 sudah dibuka
 - Pelatihan Volunteer Hospitality (Sabtu 14:00 WIB)
 - Ibadah Baptisan Air - Pendaftaran dibuka untuk bulan depan
 

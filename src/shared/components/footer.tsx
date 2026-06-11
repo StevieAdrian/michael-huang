@@ -21,14 +21,14 @@ export function Footer() {
               <div className="w-8 h-8 rounded-sm overflow-hidden border border-gold/30 bg-card">
                 <Image
                   src={WEBSITE_LOGO_PATH}
-                  alt="Michael Huang logo"
+                  alt="Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. logo"
                   width={32}
                   height={32}
                   className="w-full h-full object-cover"
                 />
               </div>
               <span className="font-display font-bold text-lg tracking-widest">
-                MICHAEL<span className="text-gold">.HUANG</span>
+                MICHAEL <span className="text-gold">HUANG</span>
               </span>
             </Link>
             <p className="text-muted-foreground mb-4 max-w-sm text-sm">
@@ -102,7 +102,7 @@ export function Footer() {
 
         {/* Footer Bottom */}
         <div className="mt-10 pt-8 border-t border-border/50 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Michael.Huang Ecosystem. Hak cipta dilindungi.</p>
+          <p>© {new Date().getFullYear()} Michael Huang Ecosystem. Hak cipta dilindungi.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-gold transition-colors">
               Kebijakan Privasi

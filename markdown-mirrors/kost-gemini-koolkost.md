@@ -1,6 +1,6 @@
 ---
 title: Kost Premium Jakarta Barat | Gemini Kost
-description: Kost nyaman dan strategis di Jakarta Barat (Taman Palem). Kamar modern, fasilitas lengkap, lingkungan aman. Hubungi Michael Huang untuk info kost terbaik.
+description: Kost nyaman dan strategis di Jakarta Barat (Taman Palem). Kamar modern, fasilitas lengkap, lingkungan aman. Hubungi Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. untuk info kost terbaik.
 url: https://www.michaelhuang.id/kost-gemini-koolkost
 last_updated: 2026-04-13
 ---

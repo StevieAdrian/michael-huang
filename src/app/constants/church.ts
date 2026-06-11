@@ -102,7 +102,7 @@ export const churchSchedules: ChurchSchedule[] = [
 export const churchAnnouncements: ChurchAnnouncement[] = [
   {
     date: "15 Okt",
-    title: "Registrasi Youth Camp 2025",
+    title: "Registrasi Youth Camp 2026",
     desc: "Pendaftaran awal youth camp tahunan kita sudah dibuka. Daftar sekarang dan dapatkan harga spesial!",
     link: "#",
   },
@@ -122,13 +122,13 @@ export const churchAnnouncements: ChurchAnnouncement[] = [
 
 export const churchWeeklyPhotos: ChurchWeeklyPhoto[] = [
   { label: "Minggu ke-1", image: "/images/weekly-church-pic1.jpg" },
-  { label: "Minggu ke-2", image: "/images/weekly-church-pic2.jpg" },
-  { label: "Minggu ke-3" },
-  { label: "Minggu ke-4" },
-  { label: "Minggu ke-5" },
-  { label: "Minggu ke-6" },
-  { label: "Minggu ke-7" },
-  { label: "Minggu ke-8" },
+  { label: "Minggu ke-2", image: "/images/weekly-church-pic2.jpeg" },
+  { label: "Minggu ke-3", image: "/images/weekly-church-pic3.jpeg" },
+  { label: "Minggu ke-4", image: "/images/weekly-church-pic4.jpeg" },
+  { label: "Minggu ke-5", image: "/images/weekly-church-pic5.jpeg" },
+  { label: "Minggu ke-6", image: "/images/weekly-church-pic6.jpeg" },
+  { label: "Minggu ke-7", image: "/images/weekly-church-pic7.jpeg" },
+  { label: "Minggu ke-8", image: "/images/weekly-church-pic8.jpeg" },
 ];
 
 export const churchYoutubeVideos: ChurchYoutubeVideo[] = [
@@ -334,7 +334,7 @@ export const churchMonthlyThemes: ChurchTheme[] = [
   { monthId: 3, monthName: "Maret", themeText: "Kuasa Doa Bersama", bibleVerse: "Matius 18:20", description: "Kesatuan hati dalam doa mendatangkan mujizat.", picture: "https://images.unsplash.com/photo-1447023029226-ef8f6b52e3ea?w=500&q=80" },
   { monthId: 4, monthName: "April", themeText: "Janji Kebangkitan", bibleVerse: "1 Korintus 15:20", description: "Merayakan Paskah dan kemenangan atas maut.", picture: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=500&q=80" },
   { monthId: 5, monthName: "Mei", themeText: "Keluarga yang Diberkati", bibleVerse: "Yosua 24:15", description: "Membangun fondasi ilahi dalam rumah tangga.", picture: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=500&q=80" },
-  { monthId: 6, monthName: "Juni", themeText: "Buah Roh Harian", bibleVerse: "Galatia 5:22-23", description: "Karakter yang memuliakan Tuhan di tengah dunia.", picture: "https://images.unsplash.com/photo-1490818387583-1b5e5927c44c?w=500&q=80" },
+  { monthId: 6, monthName: "Juni", themeText: "Buah Roh Harian", bibleVerse: "Galatia 5:22-23", description: "Karakter yang memuliakan Tuhan di tengah dunia.", picture: "/images/theme-juni.png" },
   { monthId: 7, monthName: "Juli", themeText: "Menjadi SaksiNya", bibleVerse: "Kisah Para Rasul 1:8", description: "Berani membagikan kabar baik kepada sesama.", picture: "https://images.unsplash.com/photo-1529156069898-49953eb1b5ae?w=500&q=80" },
   { monthId: 8, monthName: "Agustus", themeText: "Kemerdekaan Sejati", bibleVerse: "Yohanes 8:36", description: "Bebas dari belenggu dosa dan hidup dalam rahmat.", picture: "https://images.unsplash.com/photo-1464817739973-1002fc5fdfc5?w=500&q=80" },
   { monthId: 9, monthName: "September", themeText: "Melayani dengan Segenap Hati", bibleVerse: "Kolose 3:23", description: "Panggilan hidup untuk melayani sebagai bentuk penyembahan.", picture: "https://images.unsplash.com/photo-1593113568858-aab35b542037?w=500&q=80" },

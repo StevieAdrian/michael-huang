@@ -10,13 +10,13 @@ Your homepage now includes 6 comprehensive JSON-LD schemas that tell AI models a
 **What it does:** Tells search engines this is a professional service business with multiple offerings.
 
 **Key information included:**
-- Business name: Michael Huang
+- Business name: Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 - 5.0-star rating with 691 reviews
 - Full address with coordinates (-6.138918, 106.730667)
 - Phone: +62-821-2385-595
 - Email: contact@michaelhuang.id
 - Price range: $$
-- Founder: Michael Huang, S.H., S.T., M.Kn.
+- Founder: Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 - Service catalog with all legal services
 - Area served: Jakarta
 
@@ -42,7 +42,7 @@ Your homepage now includes 6 comprehensive JSON-LD schemas that tell AI models a
 **What it does:** Identifies you as a licensed Notaris and PPAT official.
 
 **Key information included:**
-- Name: Michael Huang - Notaris & PPAT
+- Name: Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. - Notaris & PPAT
 - Credentials: S.H., S.T., M.Kn.
 - Services: Company formation, property deeds, legal authentication
 - Full address and coordinates
@@ -77,7 +77,7 @@ Your homepage now includes 6 comprehensive JSON-LD schemas that tell AI models a
 4. Does Warteg Gemini offer catering? (Answer: Yes)
 5. What facilities at Kost Gemini/KoolKost?
 6. How to join Warteg Gemini franchise?
-7. Is Michael Huang a licensed Notaris/PPAT? (Answer: Yes)
+7. Is Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. a licensed Notaris/PPAT? (Answer: Yes)
 8. Where is the office located?
 
 **Why it matters:** Google can show these answers directly in search results as "People Also Ask" boxes, driving more traffic.

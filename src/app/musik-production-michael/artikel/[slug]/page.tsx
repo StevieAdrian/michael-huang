@@ -15,13 +15,13 @@ export async function generateMetadata({
 
   if (!article) {
     return {
-      title: "Artikel Musik | Michael Huang",
+      title: "Artikel Musik | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
       description: "Artikel seputar produksi musik, mixing, mastering, dan distribusi digital.",
     };
   }
 
   return {
-    title: `${article.title} | Musik | Michael Huang`,
+    title: `${article.title} | Musik | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
   };
 }

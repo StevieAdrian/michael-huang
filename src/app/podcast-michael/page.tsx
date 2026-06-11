@@ -16,11 +16,11 @@ import { YoutubeSection } from "@/shared/components/youtube-section";
 import { ArticleCards } from "@/shared/components/article-cards";
 
 export const metadata: Metadata = {
-  title: "Podcast | Michael Huang",
+  title: "Podcast | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
   description:
     "Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan bersama narasumber terpilih.",
   openGraph: generateOGMetadata(
-    "Podcast | Michael Huang",
+    "Podcast | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
     "Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan bersama narasumber terpilih.",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/podcast-michael`
@@ -37,7 +37,7 @@ export default function PodcastPage() {
       <StructuredData data={generateBreadcrumbSchema([{ name: "Beranda", url: "https://www.michaelhuang.id/" }, { name: "Podcast", url: "https://www.michaelhuang.id/podcast-michael" }])} />
       <div className="pb-24">
       <PageHero
-        title="Michael Huang Podcast"
+        title="Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Podcast"
         subtitle="Obrolan mendalam tentang iman, bisnis, hukum, dan kehidupan. Episode baru hadir setiap minggu."
         align="left"
       />
