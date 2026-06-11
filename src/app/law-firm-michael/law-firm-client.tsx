@@ -21,15 +21,16 @@ import {
   lawFirmStats,
   lawFirmTeam,
   lawFirmGalleryImages,
-  lawFirmArticles,
   lawFirmFAQs,
   lawFirmTestimonials,
   lawFirmMapEmbedUrl,
 } from "@/app/constants/law-firm";
+import { lawFirmArticles } from "@/app/constants/law-firm-articles";
 import { googleReviews } from "@/features/home/constants/reviews";
 import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
 import { LAW_FIRM_FORM_WHATSAPP_URL, WHATSAPP_PHONE } from "@/app/constants/links";
 import { Gallery } from "@/shared/components/gallery";
+import { ArticleCards } from "@/shared/components/article-cards";
 
 export function LawFirmClientPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -255,35 +256,11 @@ export function LawFirmClientPage() {
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-card border-y border-border/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-end mb-12">
-            <h2 className="text-3xl md:text-5xl font-display font-bold">
-              Wawasan Terbaru
-            </h2>
-            <button className="hidden md:flex text-gold font-semibold items-center gap-2 hover:gap-4 transition-all">
-              Semua Artikel <ChevronRight className="w-4 h-4" />
-            </button>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {lawFirmArticles.map((article, i) => (
-              <div
-                key={i}
-                className="bg-background border border-border/50 p-6 md:p-8 rounded-2xl hover:border-gold/30 hover:shadow-lg transition-all duration-300"
-              >
-                <span className="text-xs font-bold uppercase tracking-wider text-gold mb-4 block">
-                  {article.category}
-                </span>
-                <h3 className="text-xl font-bold mb-3">{article.title}</h3>
-                <p className="text-muted-foreground mb-6">{article.excerpt}</p>
-                <button className="text-foreground font-semibold flex items-center gap-2 hover:text-gold transition-colors">
-                  Baca Selengkapnya <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ArticleCards
+        articles={lawFirmArticles}
+        basePath="/law-firm-michael"
+        title="Wawasan Terbaru"
+      />
 
       <section className="py-12 md:py-20 bg-background">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
