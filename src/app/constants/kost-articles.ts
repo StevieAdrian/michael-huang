@@ -29,6 +29,24 @@ export const kostArticles: Article[] = [
     category: "Gaya Hidup",
     slug: "keuntungan-kost-pusat-bisnis",
   },
+  {
+    id: "4",
+    title: "Cara Mengatur Budget Bulanan untuk Anak Kost",
+    excerpt:
+      "Mengelola keuangan saat tinggal di kost bisa jadi tantangan. Pelajari cara mengatur pengeluaran bulanan agar tetap hemat tanpa mengorbankan kenyamanan.",
+    date: "25 Mei 2025",
+    category: "Keuangan",
+    slug: "budget-bulanan-anak-kost",
+  },
+  {
+    id: "5",
+    title: "Dekorasi Kamar Kost: Bikin Nyaman Tanpa Mahal",
+    excerpt:
+      "Kamar kost sempit bukan alasan untuk tidak nyaman. Dengan trik dekorasi sederhana, kamar Anda bisa terasa lebih luas, rapi, dan estetik.",
+    date: "10 Mei 2025",
+    category: "Dekorasi",
+    slug: "dekorasi-kamar-kost-nyaman",
+  },
 ];
 
 export const kostArticleDetails: Record<string, ArticleDetail> = {
@@ -151,5 +169,133 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Lokasi", "Pusat Bisnis", "Produktivitas", "Kost"],
+  },
+  "budget-bulanan-anak-kost": {
+    slug: "budget-bulanan-anak-kost",
+    category: "Keuangan",
+    readTime: "7 menit",
+    date: "25 Mei 2025",
+    title: "Cara Mengatur Budget Bulanan untuk Anak Kost",
+    subtitle:
+      "Tinggal di kost artinya Anda harus mandiri mengatur keuangan. Dengan perencanaan yang tepat, Anda bisa hidup nyaman tanpa kehabisan uang di akhir bulan.",
+    author: {
+      name: "Tim Hunian Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Property Advisor",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Salah satu tantangan terbesar bagi penghuni kost, terutama mahasiswa dan pekerja muda, adalah mengelola keuangan bulanan. Tanpa perencanaan yang matang, pengeluaran bisa membengkak dan mengganggu kenyamanan hidup sehari-hari.",
+      },
+      {
+        type: "heading",
+        text: "Langkah-Langkah Mengatur Budget",
+      },
+      {
+        type: "list",
+        items: [
+          "Catat semua pemasukan bulanan Anda — gaji, uang saku, atau pendapatan freelance.",
+          "Pisahkan pengeluaran tetap (sewa kost, listrik, internet) dan pengeluaran variabel (makan, transportasi, hiburan).",
+          "Terapkan aturan 50/30/20: 50% kebutuhan, 30% keinginan, 20% tabungan.",
+          "Gunakan aplikasi pencatat keuangan untuk memantau pengeluaran harian.",
+          "Siapkan dana darurat minimal 1 bulan biaya hidup.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Tips Hemat Saat Tinggal di Kost",
+      },
+      {
+        type: "list",
+        items: [
+          "Masak sendiri — investasikan rice cooker atau kompor listrik kecil untuk menghemat biaya makan.",
+          "Manfaatkan promo dan diskon dari aplikasi pesan makanan secara bijak.",
+          "Cuci pakaian sendiri jika kost menyediakan mesin cuci bersama.",
+          "Gabung iuran internet atau streaming dengan teman satu kost.",
+          "Batasi pengeluaran hiburan dengan menentukan anggaran maksimal per minggu.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Hemat bukan berarti pelit. Hemat adalah seni mengelola uang agar setiap rupiah memberikan nilai terbaik untuk kualitas hidup Anda.",
+      },
+      {
+        type: "heading",
+        text: "Kapan Harus Pindah Kost?",
+      },
+      {
+        type: "paragraph",
+        text: "Jika biaya kost Anda menghabiskan lebih dari 30-35% total pemasukan bulanan, pertimbangkan untuk mencari alternatif yang lebih terjangkau. Kost yang terlalu mahal akan membuat pos pengeluaran lain menjadi terlalu ketat dan mengorbankan kualitas hidup.",
+      },
+      {
+        type: "paragraph",
+        text: "Kost Gemini menawarkan hunian nyaman dengan harga transparan — tanpa biaya tersembunyi. Hubungi kami untuk informasi kamar yang tersedia.",
+      },
+    ],
+    tags: ["Keuangan", "Budget", "Anak Kost", "Tips Hemat"],
+  },
+  "dekorasi-kamar-kost-nyaman": {
+    slug: "dekorasi-kamar-kost-nyaman",
+    category: "Dekorasi",
+    readTime: "6 menit",
+    date: "10 Mei 2025",
+    title: "Dekorasi Kamar Kost: Bikin Nyaman Tanpa Mahal",
+    subtitle:
+      "Kamar kost yang ditata dengan baik bisa meningkatkan mood dan produktivitas. Simak tips dekorasi sederhana yang bisa Anda terapkan hari ini.",
+    author: {
+      name: "Tim Hunian Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Resident Experience",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Kamar kost biasanya berukuran terbatas, tapi bukan berarti tidak bisa nyaman dan estetik. Dengan sedikit kreativitas dan budget yang wajar, Anda bisa mengubah kamar kost menjadi ruang yang menyenangkan untuk istirahat dan bekerja.",
+      },
+      {
+        type: "heading",
+        text: "Prinsip Dasar Dekorasi Kamar Kost",
+      },
+      {
+        type: "list",
+        items: [
+          "Pilih warna terang dan netral — warna putih, krem, atau pastel membuat ruangan terasa lebih luas.",
+          "Manfaatkan vertikal — gunakan rak dinding, hook, dan organizer gantung untuk menghemat lantai.",
+          "Less is more — hindari menumpuk barang. Simpan hanya yang benar-benar digunakan.",
+          "Pencahayaan yang tepat — tambahkan lampu meja atau LED strip untuk suasana yang lebih hangat.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Ide Dekorasi Budget-Friendly",
+      },
+      {
+        type: "list",
+        items: [
+          "Pasang fairy light atau LED strip di sekitar tempat tidur atau meja belajar untuk ambient lighting.",
+          "Gunakan tanaman hias kecil (sukulen, pothos) untuk mempercantik dan menyegarkan udara.",
+          "Tata buku dan barang koleksi di rak minimalis sebagai elemen dekoratif.",
+          "Gunakan karpet kecil atau rug di samping tempat tidur untuk sentuhan hangat.",
+          "Tambahkan cermin — cermin memberi ilusi ruangan yang lebih besar dan terang.",
+          "Pasang poster, foto, atau artwork dengan frame sederhana di dinding.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Zona dalam Kamar Kost",
+      },
+      {
+        type: "paragraph",
+        text: "Meskipun ruangnya terbatas, coba bagi kamar Anda menjadi 'zona' yang berbeda: zona tidur, zona kerja/belajar, dan zona penyimpanan. Pemisahan fungsi ini membantu otak Anda membedakan waktu istirahat dan waktu produktif, sehingga kualitas tidur dan fokus kerja sama-sama meningkat.",
+      },
+      {
+        type: "quote",
+        text: "Kamar yang rapi dan tertata adalah investasi untuk kesehatan mental. Lingkungan fisik Anda mempengaruhi cara Anda berpikir dan merasa.",
+      },
+      {
+        type: "paragraph",
+        text: "Kamar-kamar di Kost Gemini dirancang dengan layout yang efisien dan pencahayaan alami yang baik, sehingga Anda punya fondasi yang sempurna untuk mendekorasi sesuai selera. Kunjungi kami untuk melihat unit yang tersedia.",
+      },
+    ],
+    tags: ["Dekorasi", "Kamar Kost", "Interior", "Budget"],
   },
 };
