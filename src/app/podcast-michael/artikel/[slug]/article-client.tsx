@@ -18,7 +18,7 @@ export function PodcastArticleClientPage({
     <ArticleDetailPage
       article={article}
       relatedArticles={relatedArticles}
-      basePath="/podcast"
+      basePath="/podcast-michael"
       breadcrumbLabel="Podcast"
       backLabel="Kembali ke Podcast"
       cta={{
