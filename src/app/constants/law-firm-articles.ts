@@ -29,6 +29,24 @@ export const lawFirmArticles: Article[] = [
     category: "Litigasi",
     slug: "hak-menghadapi-sengketa",
   },
+  {
+    id: "4",
+    title: "Aspek Hukum Pendirian Joint Venture di Indonesia",
+    excerpt:
+      "Membangun kemitraan dengan investor asing? Pahami kerangka hukum, pembagian saham, dan ketentuan PMA untuk pendirian joint venture.",
+    date: "10 Juni 2026",
+    category: "Korporat",
+    slug: "aspek-hukum-joint-venture",
+  },
+  {
+    id: "5",
+    title: "Pentingnya Klausul Arbitrase dalam Kontrak Bisnis",
+    excerpt:
+      "Mengapa banyak pelaku usaha memilih arbitrase dibanding pengadilan negeri? Simak kelebihan klausul arbitrase untuk menyelesaikan sengketa bisnis.",
+    date: "2 Mei 2026",
+    category: "Litigasi",
+    slug: "klausul-arbitrase-kontrak-bisnis",
+  },
 ];
 
 export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
@@ -226,4 +244,88 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     ],
     tags: ["Litigasi", "Hak Hukum", "Pengadilan", "Sengketa"],
   },
+  "aspek-hukum-joint-venture": {
+    slug: "aspek-hukum-joint-venture",
+    category: "Korporat",
+    readTime: "7 menit",
+    date: "10 Juni 2026",
+    title: "Aspek Hukum Pendirian Joint Venture di Indonesia",
+    subtitle:
+      "Kerjasama bisnis internasional menawarkan peluang besar, namun membutuhkan perlindungan hukum yang presisi sejak awal.",
+    author: {
+      name: "Tim Legal Michael, Antonius & Co",
+      role: "Corporate Law Division",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Joint Venture (JV) merupakan salah satu strategi paling umum bagi perusahaan lokal untuk berkolaborasi dengan investor asing atau sebaliknya. Namun, penggabungan modal dan teknologi lintas negara ini diatur dengan ketat oleh regulasi Penanaman Modal Asing (PMA) di Indonesia."
+      },
+      {
+        type: "heading",
+        text: "1. Pemilihan Struktur Badan Hukum"
+      },
+      {
+        type: "paragraph",
+        text: "Di Indonesia, joint venture dengan pihak asing wajib didirikan dalam bentuk Perseroan Terbatas Penanaman Modal Asing (PT PMA). Dokumen utama yang menjadi landasan adalah Joint Venture Agreement (JVA) dan Akta Pendirian Perusahaan."
+      },
+      {
+        type: "heading",
+        text: "2. Pembagian Saham dan Hak Suara"
+      },
+      {
+        type: "paragraph",
+        text: "JVA harus merinci pembagian kepemilikan saham, komposisi direksi dan dewan komisaris, hak veto (quorom & voting), serta mekanisme resolusi jika terjadi perselisihan (deadlock resolution)."
+      },
+      {
+        type: "heading",
+        text: "3. Hak Kekayaan Intelektual (HKI) dan Alih Teknologi"
+      },
+      {
+        type: "paragraph",
+        text: "Penting untuk mengatur kepemilikan HKI yang digunakan dalam JV. Apakah lisensi diberikan secara eksklusif, bagaimana royalti dihitung, dan siapa yang berhak atas pengembangan teknologi baru hasil dari JV tersebut."
+      }
+    ],
+    tags: ["Joint Venture", "Korporat", "PT PMA", "Investasi"]
+  },
+  "klausul-arbitrase-kontrak-bisnis": {
+    slug: "klausul-arbitrase-kontrak-bisnis",
+    category: "Litigasi",
+    readTime: "6 menit",
+    date: "2 Mei 2026",
+    title: "Pentingnya Klausul Arbitrase dalam Kontrak Bisnis",
+    subtitle:
+      "Penyelesaian sengketa yang cepat, tertutup, dan ditangani oleh ahli industri menjadikan arbitrase pilihan utama kontrak komersial.",
+    author: {
+      name: "Tim Litigasi Michael, Antonius & Co",
+      role: "Litigation & Dispute Resolution Division",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Saat merancang kontrak bisnis, bagian penyelesaian sengketa (dispute resolution clause) sering kali kurang mendapat perhatian. Padahal, pilihan forum penyelesaian sengketa sangat menentukan biaya, waktu, dan kerahasiaan saat terjadi perselisihan di kemudian hari."
+      },
+      {
+        type: "heading",
+        text: "Kelebihan Arbitrase Dibanding Pengadilan"
+      },
+      {
+        type: "list",
+        items: [
+          "Kerahasiaan Terjamin: Berbeda dengan sidang pengadilan negeri yang terbuka untuk umum, proses arbitrase bersifat tertutup dan rahasia.",
+          "Keahlian Arbiter: Para pihak dapat memilih arbiter yang memiliki keahlian khusus di bidang industri yang disengketakan (misal: konstruksi, teknologi, atau keuangan).",
+          "Waktu Penyelesaian Terukur: Putusan arbitrase umumnya lebih cepat dan bersifat final serta mengikat (final and binding), sehingga tidak ada proses banding panjang."
+        ]
+      },
+      {
+        type: "heading",
+        text: "Cara Menyusun Klausul Arbitrase yang Sah"
+      },
+      {
+        type: "paragraph",
+        text: "Pastikan klausul arbitrase mencantumkan lembaga arbitrase yang dipilih (seperti BANI atau SIAC), hukum yang berlaku (governing law), bahasa yang digunakan, serta jumlah arbiter. Klausul yang tidak jelas (pathological clause) justru dapat memicu sengketa baru."
+      }
+    ],
+    tags: ["Arbitrase", "Kontrak Bisnis", "Sengketa", "BANI"]
+  }
 };
