@@ -65,7 +65,7 @@ export const notarisArticles: Article[] = [
     title: "Apa Itu Akta Autentik dan Mengapa Penting?",
     excerpt:
       "Akta autentik adalah akta yang dibuat oleh atau di hadapan pejabat umum yang berwenang. Kekuatan pembuktiannya sempurna di mata hukum.",
-    date: "10 Maret 2025",
+    date: "10 Maret 2026",
     category: "Panduan",
     slug: "apa-itu-akta-autentik",
   },
@@ -74,7 +74,7 @@ export const notarisArticles: Article[] = [
     title: "Prosedur Pendirian PT Melalui Notaris",
     excerpt:
       "Mendirikan perseroan terbatas memerlukan akta notaris sebagai dasar legalitas. Pelajari langkah-langkah prosesnya di sini.",
-    date: "22 Feb 2025",
+    date: "22 Feb 2026",
     category: "Bisnis",
     slug: "prosedur-pendirian-pt-notaris",
   },
@@ -83,7 +83,7 @@ export const notarisArticles: Article[] = [
     title: "Perbedaan Notaris dan PPAT: Mana yang Anda Butuhkan?",
     excerpt:
       "Banyak orang keliru membedakan notaris dan PPAT. Artikel ini menjelaskan perbedaan fungsi dan kewenangannya secara jelas.",
-    date: "5 Jan 2025",
+    date: "5 Jan 2026",
     category: "Edukasi",
     slug: "perbedaan-notaris-ppat",
   },

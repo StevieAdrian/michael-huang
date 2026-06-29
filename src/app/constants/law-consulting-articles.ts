@@ -7,7 +7,7 @@ export const lawConsultingArticles: Article[] = [
     title: "Pentingnya Legal Due Diligence Sebelum Akuisisi Bisnis",
     excerpt:
       "LDD yang komprehensif dapat mengungkap risiko tersembunyi yang berpotensi menggagalkan transaksi Anda. Pelajari apa saja yang diperiksa dalam proses ini.",
-    date: "20 Maret 2025",
+    date: "20 Maret 2026",
     category: "M&A",
     slug: "legal-due-diligence-akuisisi",
   },
@@ -16,7 +16,7 @@ export const lawConsultingArticles: Article[] = [
     title: "5 Klausul Penting yang Wajib Ada dalam Kontrak Bisnis",
     excerpt:
       "Kontrak yang lemah bisa menjadi sumber sengketa di kemudian hari. Pastikan kontrak Anda memuat klausul-klausul perlindungan berikut ini.",
-    date: "1 Mar 2025",
+    date: "1 Mar 2026",
     category: "Kontrak",
     slug: "klausul-penting-kontrak-bisnis",
   },
@@ -25,7 +25,7 @@ export const lawConsultingArticles: Article[] = [
     title: "Kepatuhan Hukum untuk Startup: Dari Awal Hingga Skalabilitas",
     excerpt:
       "Banyak startup mengabaikan aspek hukum di fase awal. Artikel ini menjelaskan fondasi legalitas yang perlu dibangun sejak hari pertama.",
-    date: "14 Jan 2025",
+    date: "14 Jan 2026",
     category: "Startup",
     slug: "kepatuhan-hukum-startup",
   },
@@ -54,7 +54,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "legal-due-diligence-akuisisi",
     category: "M&A",
     readTime: "7 menit",
-    date: "20 Maret 2025",
+    date: "20 Maret 2026",
     title: "Pentingnya Legal Due Diligence Sebelum Akuisisi Bisnis",
     subtitle:
       "Legal due diligence membantu investor dan pembeli bisnis memahami risiko hukum tersembunyi sebelum transaksi disepakati.",
@@ -99,7 +99,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "klausul-penting-kontrak-bisnis",
     category: "Kontrak",
     readTime: "6 menit",
-    date: "1 Mar 2025",
+    date: "1 Mar 2026",
     title: "5 Klausul Penting yang Wajib Ada dalam Kontrak Bisnis",
     subtitle:
       "Kontrak yang baik bukan sekadar formalitas. Klausul yang tepat melindungi kepentingan bisnis Anda saat kondisi terbaik maupun terburuk.",
@@ -141,7 +141,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "kepatuhan-hukum-startup",
     category: "Startup",
     readTime: "6 menit",
-    date: "14 Jan 2025",
+    date: "14 Jan 2026",
     title: "Kepatuhan Hukum untuk Startup: Dari Awal Hingga Skalabilitas",
     subtitle:
       "Startup yang tumbuh sehat sejak awal biasanya membangun fondasi legal yang rapi sejak hari pertama operasional.",
