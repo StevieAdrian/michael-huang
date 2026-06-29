@@ -29,6 +29,24 @@ export const podcastArticles: Article[] = [
     category: "Tips",
     slug: "tips-tamu-podcast-berkualitas",
   },
+  {
+    id: "4",
+    title: "Peralatan Dasar Podcast untuk Hasil Audio Profesional",
+    excerpt:
+      "Tidak perlu studio mahal untuk menghasilkan audio jernih. Pahami peralatan dasar esensial dari mikrofon hingga software editing.",
+    date: "24 Juni 2026",
+    category: "Peralatan",
+    slug: "peralatan-dasar-podcast-profesional",
+  },
+  {
+    id: "5",
+    title: "Cara Mengatasi Gugup dan Berbicara Lancar saat Podcasting",
+    excerpt:
+      "Merasa kaku atau gugup di depan mikrofon? Temukan teknik olah vokal, latihan pernapasan, dan penyusunan naskah agar bicara lebih mengalir.",
+    date: "15 Mei 2026",
+    category: "Teknik",
+    slug: "cara-bicara-lancar-podcast",
+  },
 ];
 
 export const podcastArticleDetails: Record<string, ArticleDetail> = {
@@ -150,5 +168,77 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Podcast", "Interview", "Guest", "Host"],
+  },
+  "peralatan-dasar-podcast-profesional": {
+    slug: "peralatan-dasar-podcast-profesional",
+    category: "Peralatan",
+    readTime: "5 menit",
+    date: "24 Juni 2026",
+    title: "Peralatan Dasar Podcast untuk Hasil Audio Profesional",
+    subtitle:
+      "Kualitas audio adalah penentu utama retensi pendengar podcast. Berikut panduan memilih alat sesuai anggaran Anda.",
+    author: {
+      name: "Tim Podcast Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Audio Engineer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Banyak podcast pemula gagal mempertahankan pendengar bukan karena topiknya kurang menarik, tetapi karena kualitas audio yang buruk atau bising. Kunci utama audio podcast yang baik adalah pilihan mikrofon yang tepat dan penanganan ruangan.",
+      },
+      {
+        type: "heading",
+        text: "1. Mikrofon: USB vs XLR",
+      },
+      {
+        type: "paragraph",
+        text: "Mikrofon USB adalah pilihan termudah (plug-and-play), cocok untuk pemula. Sedangkan mikrofon XLR menawarkan kualitas audio yang lebih matang tetapi memerlukan audio interface tambahan.",
+      },
+      {
+        type: "heading",
+        text: "2. Headphone Monitor & Software Editing",
+      },
+      {
+        type: "paragraph",
+        text: "Gunakan headphone closed-back untuk memantau suara tanpa adanya kebocoran suara. Untuk software (DAW), Audacity (gratis) atau Reaper (sangat terjangkau) adalah opsi yang sangat disarankan untuk editing podcast.",
+      },
+    ],
+    tags: ["Podcast", "Audio Gear", "Mikrofon", "Produksi"],
+  },
+  "cara-bicara-lancar-podcast": {
+    slug: "cara-bicara-lancar-podcast",
+    category: "Teknik",
+    readTime: "6 menit",
+    date: "15 Mei 2026",
+    title: "Cara Mengatasi Gugup dan Berbicara Lancar saat Podcasting",
+    subtitle:
+      "Kemampuan berbicara yang luwes di depan mikrofon dapat dilatih. Hilangkan kecemasan Anda dengan panduan praktis ini.",
+    author: {
+      name: "Tim Talent Development",
+      role: "Vocal & Presentation Coach",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Sangat wajar jika Anda merasa gugup atau kaku saat pertama kali berbicara di depan mikrofon. Bahkan podcaster berpengalaman pun membutuhkan latihan khusus sebelum memulai rekaman agar suara terdengar natural dan bersahabat.",
+      },
+      {
+        type: "heading",
+        text: "1. Membuat Script Outline (Bukan Teks Lengkap)",
+      },
+      {
+        type: "paragraph",
+        text: "Membaca teks lengkap sering kali membuat Anda terdengar monoton seperti membaca buku. Cukup tulis poin-poin penting (outline) agar cara penyampaian Anda tetap santai dan mengalir secara spontan.",
+      },
+      {
+        type: "heading",
+        text: "2. Latihan Pernapasan dan Pemanasan Suara",
+      },
+      {
+        type: "paragraph",
+        text: "Lakukan pernapasan diafragma selama 2-3 menit sebelum merekam. Pemanasan artikulasi sederhana seperti melafalkan huruf vokal dengan jelas membantu mengurangi slip-of-the-tongue saat berbicara cepat.",
+      },
+    ],
+    tags: ["Podcast", "Public Speaking", "Vokal", "Tips Trik"],
   },
 };
