@@ -7,25 +7,25 @@ export const lawFirmArticles: Article[] = [
     title: "Cara Melindungi Aset Bisnis Anda dari Sengketa Hukum",
     excerpt:
       "Strategi legal yang komprehensif untuk melindungi aset perusahaan dari potensi sengketa bisnis dan risiko litigasi.",
-    date: "15 Mei 2025",
+    date: "15 Mei 2026",
     category: "Korporat",
     slug: "melindungi-aset-bisnis",
   },
   {
     id: "2",
-    title: "Panduan Hukum Kontrak Kerja 2025: Apa yang Berubah?",
+    title: "Panduan Hukum Kontrak Kerja 2026: Apa yang Berubah?",
     excerpt:
       "Perubahan regulasi ketenagakerjaan terbaru dan dampaknya terhadap hubungan kerja antara perusahaan dan karyawan.",
-    date: "28 Apr 2025",
+    date: "28 Apr 2026",
     category: "Ketenagakerjaan",
-    slug: "panduan-kontrak-kerja-2025",
+    slug: "panduan-kontrak-kerja-2026",
   },
   {
     id: "3",
     title: "5 Hak Anda Saat Menghadapi Sengketa di Pengadilan",
     excerpt:
       "Pahami hak-hak hukum Anda secara menyeluruh sebelum memasuki proses litigasi di pengadilan.",
-    date: "10 Mar 2025",
+    date: "10 Mar 2026",
     category: "Litigasi",
     slug: "hak-menghadapi-sengketa",
   },
@@ -54,7 +54,7 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     slug: "melindungi-aset-bisnis",
     category: "Korporat",
     readTime: "7 menit",
-    date: "15 Mei 2025",
+    date: "15 Mei 2026",
     title: "Cara Melindungi Aset Bisnis Anda dari Sengketa Hukum",
     subtitle:
       "Perlindungan aset bukan hanya soal asuransi. Strategi legal yang tepat dapat menjadi perisai paling efektif bagi keberlangsungan bisnis Anda.",
@@ -113,14 +113,14 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     ],
     tags: ["Korporat", "Aset", "Perlindungan Hukum", "Bisnis"],
   },
-  "panduan-kontrak-kerja-2025": {
-    slug: "panduan-kontrak-kerja-2025",
+  "panduan-kontrak-kerja-2026": {
+    slug: "panduan-kontrak-kerja-2026",
     category: "Ketenagakerjaan",
     readTime: "8 menit",
-    date: "28 Apr 2025",
-    title: "Panduan Hukum Kontrak Kerja 2025: Apa yang Berubah?",
+    date: "28 Apr 2026",
+    title: "Panduan Hukum Kontrak Kerja 2026: Apa yang Berubah?",
     subtitle:
-      "Tahun 2025 membawa sejumlah perubahan regulasi ketenagakerjaan di Indonesia. Berikut panduan lengkap yang wajib dipahami perusahaan dan pekerja.",
+      "Tahun 2026 membawa sejumlah perubahan regulasi ketenagakerjaan di Indonesia. Berikut panduan lengkap yang wajib dipahami perusahaan dan pekerja.",
     author: {
       name: "Tim Legal Michael, Antonius & Co",
       role: "Employment Law Division",
@@ -132,7 +132,7 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
       },
       {
         type: "heading",
-        text: "Perubahan Utama dalam Regulasi 2025",
+        text: "Perubahan Utama dalam Regulasi 2026",
       },
       {
         type: "list",
@@ -180,7 +180,7 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     slug: "hak-menghadapi-sengketa",
     category: "Litigasi",
     readTime: "6 menit",
-    date: "10 Mar 2025",
+    date: "10 Mar 2026",
     title: "5 Hak Anda Saat Menghadapi Sengketa di Pengadilan",
     subtitle:
       "Memahami hak-hak Anda dalam proses litigasi adalah langkah pertama untuk melindungi kepentingan Anda secara efektif di pengadilan.",

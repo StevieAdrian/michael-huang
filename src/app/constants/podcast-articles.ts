@@ -7,7 +7,7 @@ export const podcastArticles: Article[] = [
     title: "Memulai Podcast: Panduan Lengkap dari Nol",
     excerpt:
       "Dari konsep, peralatan, distribusi, hingga promosi, ini fondasi yang perlu Anda siapkan untuk membangun podcast yang bertahan lama.",
-    date: "8 April 2025",
+    date: "8 April 2026",
     category: "Panduan",
     slug: "memulai-podcast-panduan",
   },
@@ -16,7 +16,7 @@ export const podcastArticles: Article[] = [
     title: "Mengapa Podcast adalah Medium yang Tepat untuk Bisnis Anda",
     excerpt:
       "Podcast bukan hanya sarana hiburan. Medium ini efektif untuk membangun otoritas, kedekatan, dan kepercayaan audiens terhadap brand Anda.",
-    date: "18 Maret 2025",
+    date: "18 Maret 2026",
     category: "Bisnis",
     slug: "podcast-untuk-bisnis",
   },
@@ -25,7 +25,7 @@ export const podcastArticles: Article[] = [
     title: "Tips Mendapatkan Tamu Podcast yang Berkualitas",
     excerpt:
       "Tamu yang tepat dapat menaikkan kualitas percakapan sekaligus memperluas jangkauan episode Anda. Persiapan pendekatan jadi faktor penentu.",
-    date: "2 Feb 2025",
+    date: "2 Feb 2026",
     category: "Tips",
     slug: "tips-tamu-podcast-berkualitas",
   },
@@ -54,7 +54,7 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
     slug: "memulai-podcast-panduan",
     category: "Panduan",
     readTime: "7 menit",
-    date: "8 April 2025",
+    date: "8 April 2026",
     title: "Memulai Podcast: Panduan Lengkap dari Nol",
     subtitle:
       "Podcast yang baik tidak dimulai dari alat mahal, tetapi dari konsep yang jelas, alur produksi yang rapi, dan konsistensi dalam eksekusi.",
@@ -95,7 +95,7 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
     slug: "podcast-untuk-bisnis",
     category: "Bisnis",
     readTime: "6 menit",
-    date: "18 Maret 2025",
+    date: "18 Maret 2026",
     title: "Mengapa Podcast adalah Medium yang Tepat untuk Bisnis Anda",
     subtitle:
       "Podcast memberi ruang bagi bisnis untuk membangun kedekatan dan otoritas melalui percakapan yang lebih dalam daripada format konten singkat.",
@@ -132,7 +132,7 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
     slug: "tips-tamu-podcast-berkualitas",
     category: "Tips",
     readTime: "5 menit",
-    date: "2 Feb 2025",
+    date: "2 Feb 2026",
     title: "Tips Mendapatkan Tamu Podcast yang Berkualitas",
     subtitle:
       "Tamu yang relevan dapat meningkatkan kualitas diskusi dan memperluas jangkauan podcast Anda, tetapi pendekatan yang tepat tetap menjadi kunci.",
