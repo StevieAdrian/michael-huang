@@ -29,6 +29,24 @@ export const ppatArticles: Article[] = [
     category: "Edukasi",
     slug: "hak-tanggungan-pengertian",
   },
+  {
+    id: "4",
+    title: "Prosedur Hibah Tanah dan Ketentuan Pajaknya",
+    excerpt:
+      "Ingin memberikan tanah kepada anak atau kerabat dekat? Pahami perbedaan hibah dengan jual beli, tata cara pembuatan Akta Hibah di PPAT, dan aturan pajaknya.",
+    date: "15 Juni 2026",
+    category: "Panduan",
+    slug: "prosedur-hibah-tanah-pajak",
+  },
+  {
+    id: "5",
+    title: "Memahami Pembuatan Akta Pembagian Hak Bersama (APHB)",
+    excerpt:
+      "Sertifikat tanah masih atas nama waris bersama? Temukan fungsi APHB di PPAT untuk memisahkan bagian hak masing-masing ahli waris secara resmi.",
+    date: "8 April 2026",
+    category: "Edukasi",
+    slug: "akta-pembagian-hak-bersama-aphb",
+  },
 ];
 
 export const ppatArticleDetails: Record<string, ArticleDetail> = {
@@ -151,5 +169,86 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Hak Tanggungan", "APHT", "PPAT", "Kredit Bank"],
+  },
+  "prosedur-hibah-tanah-pajak": {
+    slug: "prosedur-hibah-tanah-pajak",
+    category: "Panduan",
+    readTime: "7 menit",
+    date: "15 Juni 2026",
+    title: "Prosedur Hibah Tanah dan Ketentuan Pajaknya",
+    subtitle:
+      "Pemberian tanah secara hibah wajib dicatatkan melalui Akta Hibah yang dibuat oleh PPAT agar sah secara hukum.",
+    author: {
+      name: "Tim PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Konsultan Pertanahan",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Hibah tanah adalah pengalihan hak atas tanah dari satu pihak (pemberi hibah) ke pihak lain (penerima hibah) yang dilakukan secara sukarela semasa hidup tanpa adanya kontraprestasi uang. Untuk memastikan pengalihan ini sah di mata hukum, prosesnya harus dituangkan dalam Akta Hibah yang dibuat oleh PPAT.",
+      },
+      {
+        type: "heading",
+        text: "Persyaratan Pengurusan Akta Hibah di PPAT",
+      },
+      {
+        type: "list",
+        items: [
+          "Sertifikat Tanah Asli untuk divalidasi.",
+          "KTP, KK, and NPWP dari pemberi dan penerima hibah.",
+          "Bukti pembayaran PBB tahun berjalan.",
+          "Persetujuan dari ahli waris atau pasangan (apabila tanah merupakan harta bersama).",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Ketentuan Pajak Hibah Tanah",
+      },
+      {
+        type: "paragraph",
+        text: "Meskipun sifatnya pemberian cuma-cuma, hibah tanah tetap dikenakan pajak. Penerima hibah dikenakan BPHTB (Bea Perolehan Hak atas Tanah dan Bangunan). Sementara pemberi hibah dikenakan PPh (Pajak Penghasilan) Final, kecuali jika hibah dilakukan kepada keluarga sedarah dalam garis keturunan lurus satu derajat, yang memenuhi syarat tertentu untuk dikecualikan.",
+      },
+    ],
+    tags: ["Hibah Tanah", "Akta Hibah", "PPAT", "Pajak Properti"],
+  },
+  "akta-pembagian-hak-bersama-aphb": {
+    slug: "akta-pembagian-hak-bersama-aphb",
+    category: "Edukasi",
+    readTime: "6 menit",
+    date: "8 April 2026",
+    title: "Memahami Pembuatan Akta Pembagian Hak Bersama (APHB)",
+    subtitle:
+      "APHB digunakan untuk membagi tanah yang dimiliki bersama (seperti warisan) menjadi hak individu.",
+    author: {
+      name: "Tim Legal PPAT",
+      role: "Ahli Hak Atas Tanah",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Tanah warisan sering kali tercatat atas nama beberapa orang ahli waris dalam satu sertifikat (kepemilikan bersama). Untuk membaginya agar masing-masing ahli waris memiliki sertifikat sendiri yang sah secara mandiri, diperlukan pembuatan Akta Pembagian Hak Bersama (APHB) oleh PPAT.",
+      },
+      {
+        type: "heading",
+        text: "Kapan APHB Diperlukan?",
+      },
+      {
+        type: "paragraph",
+        text: "APHB diperlukan ketika para pemegang hak bersama sepakat untuk melepaskan haknya kepada pemegang hak lainnya, baik dengan pembayaran kompensasi maupun tanpa kompensasi. Ini adalah dokumen dasar sebelum BPN melakukan pemecahan sertifikat.",
+      },
+      {
+        type: "heading",
+        text: "Langkah Pengurusan APHB",
+      },
+      {
+        type: "list",
+        items: [
+          "Pendaftaran Kematian & Balik Nama Waris: Mengubah nama sertifikat dari pewaris ke para ahli waris bersama terlebih dahulu.",
+          "Pembuatan APHB di PPAT: Kesepakatan pembagian dituangkan dalam akta resmi PPAT.",
+          "Pendaftaran ke BPN: Mengajukan pemisahan nama kepemilikan individu berdasarkan akta APHB tersebut.",
+        ],
+      },
+    ],
+    tags: ["APHB", "Waris", "Sertifikat Tanah", "PPAT"],
   },
 };

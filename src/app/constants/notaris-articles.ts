@@ -29,6 +29,24 @@ export const notarisArticles: Article[] = [
     category: "Edukasi",
     slug: "perbedaan-notaris-ppat",
   },
+  {
+    id: "4",
+    title: "Pentingnya Akta Pendirian Yayasan dan Prosedurnya",
+    excerpt:
+      "Ingin mendirikan yayasan sosial, keagamaan, atau kemanusiaan? Pahami syarat dan prosedur pembuatan akta pendirian yayasan secara lengkap.",
+    date: "22 Juni 2026",
+    category: "Panduan",
+    slug: "akta-pendirian-yayasan-prosedur",
+  },
+  {
+    id: "5",
+    title: "Fungsi Legalisasi, Waarmerking, dan Pencocokan Fotokopi oleh Notaris",
+    excerpt:
+      "Kenali perbedaan legalisasi tanda tangan, pendaftaran surat (waarmerking), dan pencocokan dokumen fotokopi dengan aslinya di kantor notaris.",
+    date: "15 April 2026",
+    category: "Edukasi",
+    slug: "fungsi-legalisasi-waarmerking-notaris",
+  },
 ];
 
 export const notarisArticleDetails: Record<string, ArticleDetail> = {
@@ -253,5 +271,90 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Notaris", "PPAT", "Hukum Properti", "Edukasi Hukum"],
+  },
+  "akta-pendirian-yayasan-prosedur": {
+    slug: "akta-pendirian-yayasan-prosedur",
+    category: "Panduan",
+    readTime: "7 menit",
+    date: "22 Juni 2026",
+    title: "Pentingnya Akta Pendirian Yayasan dan Prosedurnya",
+    subtitle:
+      "Yayasan adalah badan hukum nirlaba. Pendiriannya memerlukan akta notaris dan pengesahan Kemenkumham agar sah secara hukum.",
+    author: {
+      name: "Kantor Notaris Dr. Michael, S.H., S.T., M.Kn.",
+      role: "Tim Redaksi Notaris",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Yayasan merupakan badan hukum yang terdiri atas kekayaan yang dipisahkan dan diperuntukkan untuk mencapai tujuan tertentu di bidang sosial, keagamaan, dan kemanusiaan, yang tidak mempunyai anggota. Untuk mendirikan yayasan yang sah dan diakui negara, para pendiri wajib membuat akta pendirian di hadapan Notaris.",
+      },
+      {
+        type: "heading",
+        text: "Syarat Administrasi Pendirian Yayasan",
+      },
+      {
+        type: "list",
+        items: [
+          "Nama Yayasan: Terdiri dari minimal 3 kata dan tidak boleh menggunakan nama yang sudah terdaftar.",
+          "Dokumen Identitas: KTP dan NPWP dari Pendiri, Pembina, Pengurus, dan Pengawas.",
+          "Kekayaan Awal: Adanya pemisahan kekayaan pribadi pendiri untuk modal awal yayasan (berdasarkan surat pernyataan).",
+          "Alamat Kantor: Surat domisili atau keterangan alamat kantor yayasan yang jelas.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Tahapan Pembuatan Akta dan Pengesahan",
+      },
+      {
+        type: "paragraph",
+        text: "Proses dimulai dari pemesanan nama yayasan, dilanjutkan penandatanganan Akta Pendirian Yayasan oleh para pendiri (atau kuasanya) di hadapan Notaris. Setelah itu, Notaris mengajukan permohonan pengesahan badan hukum ke Menteri Hukum dan HAM. Yayasan resmi menjadi badan hukum setelah SK Pengesahan diterbitkan.",
+      },
+    ],
+    tags: ["Yayasan", "Notaris", "Badan Hukum", "Nirlaba"],
+  },
+  "fungsi-legalisasi-waarmerking-notaris": {
+    slug: "fungsi-legalisasi-waarmerking-notaris",
+    category: "Edukasi",
+    readTime: "6 menit",
+    date: "15 April 2026",
+    title: "Fungsi Legalisasi, Waarmerking, dan Pencocokan Fotokopi oleh Notaris",
+    subtitle:
+      "Sering diminta dokumen yang dilegalisasi Notaris? Ketahui jenis pengesahan dokumen di bawah tangan agar tidak salah paham.",
+    author: {
+      name: "Kantor Notaris Dr. Michael, S.H., S.T., M.Kn.",
+      role: "Tim Edukasi Hukum",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Dalam urusan perbankan, visa, atau transaksi komersial, kita sering kali diminta untuk melegalisasi dokumen di hadapan Notaris. Namun, terdapat beberapa istilah pengesahan dokumen di bawah tangan yang memiliki konsekuensi hukum berbeda.",
+      },
+      {
+        type: "heading",
+        text: "1. Legalisasi (Legalisation)",
+      },
+      {
+        type: "paragraph",
+        text: "Tindakan Notaris mensertifikasi tanda tangan para pihak pada dokumen di bawah tangan. Notaris memastikan identitas para pihak, dan bahwa tanda tangan tersebut dibubuhkan langsung di hadapan Notaris pada tanggal yang tertera.",
+      },
+      {
+        type: "heading",
+        text: "2. Waarmerking (Registrasi)",
+      },
+      {
+        type: "paragraph",
+        text: "Pendaftaran surat di bawah tangan ke dalam buku khusus Notaris. Notaris tidak menjamin keabsahan tanda tangan atau isi surat, melainkan hanya mendaftarkan tanggal keberadaan surat tersebut agar para pihak tidak dapat memanipulasi tanggal di kemudian hari.",
+      },
+      {
+        type: "heading",
+        text: "3. Pencocokan Fotokopi (Legalisir)",
+      },
+      {
+        type: "paragraph",
+        text: "Notaris mencocokkan dokumen fotokopi dengan dokumen aslinya, lalu membubuhkan cap dan tanda tangan untuk menyatakan bahwa fotokopi tersebut sesuai dengan dokumen aslinya.",
+      },
+    ],
+    tags: ["Legalisasi", "Waarmerking", "Notaris", "Edukasi Hukum"],
   },
 };
