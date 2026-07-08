@@ -7,7 +7,7 @@ export const musicArticles: Article[] = [
     title: "Proses Rekaman Studio: Dari Konsep Hingga Master",
     excerpt:
       "Rekaman profesional bukan hanya soal memasang mikrofon. Pelajari tahapan lengkap produksi musik dari pre-production hingga mastering.",
-    date: "12 April 2026",
+    date: "12 Mei 2026",
     category: "Studio",
     slug: "proses-rekaman-studio",
   },
@@ -16,7 +16,7 @@ export const musicArticles: Article[] = [
     title: "Mixing vs Mastering: Apa Bedanya?",
     excerpt:
       "Banyak musisi bingung membedakan mixing dan mastering. Artikel ini menjelaskan peran masing-masing dalam rantai produksi audio.",
-    date: "5 Maret 2026",
+    date: "15 Mei 2026",
     category: "Teknis",
     slug: "mixing-vs-mastering",
   },
@@ -25,7 +25,7 @@ export const musicArticles: Article[] = [
     title: "Cara Mendistribusikan Musik ke Spotify dan Apple Music",
     excerpt:
       "Setelah rekaman selesai, langkah berikutnya adalah distribusi digital. Pelajari cara mendaftarkan musik Anda ke platform streaming.",
-    date: "20 Feb 2026",
+    date: "24 Mei 2026",
     category: "Distribusi",
     slug: "distribusi-musik-streaming",
   },
@@ -43,7 +43,7 @@ export const musicArticles: Article[] = [
     title: "Memahami DAW Terbaik untuk Kebutuhan Anda",
     excerpt:
       "Dari FL Studio hingga Ableton Live, setiap software DAW memiliki keunggulan tersendiri. Temukan DAW yang paling sesuai dengan alur kerja Anda.",
-    date: "2 Mei 2026",
+    date: "15 Juni 2026",
     category: "Software",
     slug: "memilih-daw-terbaik",
   },
@@ -54,7 +54,7 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
     slug: "proses-rekaman-studio",
     category: "Studio",
     readTime: "7 menit",
-    date: "12 April 2026",
+    date: "12 Mei 2026",
     title: "Proses Rekaman Studio: Dari Konsep Hingga Master",
     subtitle:
       "Produksi musik yang rapi selalu dimulai dari perencanaan yang jelas. Dari ide lagu sampai file final, setiap tahap punya peran penting.",
@@ -107,7 +107,7 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
     slug: "mixing-vs-mastering",
     category: "Teknis",
     readTime: "6 menit",
-    date: "5 Maret 2026",
+    date: "15 Mei 2026",
     title: "Mixing vs Mastering: Apa Bedanya?",
     subtitle:
       "Keduanya sering disamakan, padahal fungsi mixing dan mastering berbeda. Memahami perbedaannya membantu musisi mengambil keputusan produksi yang tepat.",
@@ -157,7 +157,7 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
     slug: "distribusi-musik-streaming",
     category: "Distribusi",
     readTime: "5 menit",
-    date: "20 Feb 2026",
+    date: "24 Mei 2026",
     title: "Cara Mendistribusikan Musik ke Spotify dan Apple Music",
     subtitle:
       "Setelah proses produksi selesai, distribusi digital adalah langkah penting agar lagu Anda bisa ditemukan pendengar di berbagai platform streaming.",
@@ -242,7 +242,7 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
     slug: "memilih-daw-terbaik",
     category: "Software",
     readTime: "5 menit",
-    date: "2 Mei 2026",
+    date: "15 Juni 2026",
     title: "Memahami DAW Terbaik untuk Kebutuhan Anda",
     subtitle:
       "Memilih software utama untuk berkreasi musik bisa membingungkan. Mari bandingkan DAW terpopuler di kalangan produser musik.",

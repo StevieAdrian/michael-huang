@@ -7,7 +7,7 @@ export const lawConsultingArticles: Article[] = [
     title: "Pentingnya Legal Due Diligence Sebelum Akuisisi Bisnis",
     excerpt:
       "LDD yang komprehensif dapat mengungkap risiko tersembunyi yang berpotensi menggagalkan transaksi Anda. Pelajari apa saja yang diperiksa dalam proses ini.",
-    date: "20 Maret 2026",
+    date: "12 Mei 2026",
     category: "M&A",
     slug: "legal-due-diligence-akuisisi",
   },
@@ -16,7 +16,7 @@ export const lawConsultingArticles: Article[] = [
     title: "5 Klausul Penting yang Wajib Ada dalam Kontrak Bisnis",
     excerpt:
       "Kontrak yang lemah bisa menjadi sumber sengketa di kemudian hari. Pastikan kontrak Anda memuat klausul-klausul perlindungan berikut ini.",
-    date: "1 Mar 2026",
+    date: "14 Mei 2026",
     category: "Kontrak",
     slug: "klausul-penting-kontrak-bisnis",
   },
@@ -25,7 +25,7 @@ export const lawConsultingArticles: Article[] = [
     title: "Kepatuhan Hukum untuk Startup: Dari Awal Hingga Skalabilitas",
     excerpt:
       "Banyak startup mengabaikan aspek hukum di fase awal. Artikel ini menjelaskan fondasi legalitas yang perlu dibangun sejak hari pertama.",
-    date: "14 Jan 2026",
+    date: "14 Mei 2026",
     category: "Startup",
     slug: "kepatuhan-hukum-startup",
   },
@@ -34,7 +34,7 @@ export const lawConsultingArticles: Article[] = [
     title: "Aspek Hukum Merger dan Akuisisi di Indonesia",
     excerpt:
       "Ingin melakukan ekspansi bisnis melalui penggabungan atau pengambilalihan perusahaan? Pahami regulasi KPPU, hak karyawan, dan prosedurnya.",
-    date: "22 Juni 2026",
+    date: "12 Juni 2026",
     category: "M&A",
     slug: "aspek-hukum-merger-akuisisi",
   },
@@ -43,7 +43,7 @@ export const lawConsultingArticles: Article[] = [
     title: "Pentingnya Perlindungan Data Pribadi (PDP) dalam Operasional Perusahaan",
     excerpt:
       "Dengan berlakunya UU PDP, setiap bisnis wajib menjaga keamanan data pelanggan. Pelajari sanksi hukum dan langkah kepatuhan yang harus diterapkan.",
-    date: "15 Mei 2026",
+    date: "15 Juni 2026",
     category: "Compliance",
     slug: "perlindungan-data-pribadi-pdp-perusahaan",
   },
@@ -54,7 +54,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "legal-due-diligence-akuisisi",
     category: "M&A",
     readTime: "7 menit",
-    date: "20 Maret 2026",
+    date: "12 Mei 2026",
     title: "Pentingnya Legal Due Diligence Sebelum Akuisisi Bisnis",
     subtitle:
       "Legal due diligence membantu investor dan pembeli bisnis memahami risiko hukum tersembunyi sebelum transaksi disepakati.",
@@ -99,7 +99,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "klausul-penting-kontrak-bisnis",
     category: "Kontrak",
     readTime: "6 menit",
-    date: "1 Mar 2026",
+    date: "14 Mei 2026",
     title: "5 Klausul Penting yang Wajib Ada dalam Kontrak Bisnis",
     subtitle:
       "Kontrak yang baik bukan sekadar formalitas. Klausul yang tepat melindungi kepentingan bisnis Anda saat kondisi terbaik maupun terburuk.",
@@ -141,7 +141,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "kepatuhan-hukum-startup",
     category: "Startup",
     readTime: "6 menit",
-    date: "14 Jan 2026",
+    date: "14 Mei 2026",
     title: "Kepatuhan Hukum untuk Startup: Dari Awal Hingga Skalabilitas",
     subtitle:
       "Startup yang tumbuh sehat sejak awal biasanya membangun fondasi legal yang rapi sejak hari pertama operasional.",
@@ -182,7 +182,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "aspek-hukum-merger-akuisisi",
     category: "M&A",
     readTime: "7 menit",
-    date: "22 Juni 2026",
+    date: "12 Juni 2026",
     title: "Aspek Hukum Merger dan Akuisisi di Indonesia",
     subtitle:
       "Proses Merger dan Akuisisi (M&A) melibatkan regulasi yang kompleks dari aspek persaingan usaha hingga ketenagakerjaan.",
@@ -226,7 +226,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "perlindungan-data-pribadi-pdp-perusahaan",
     category: "Compliance",
     readTime: "6 menit",
-    date: "15 Mei 2026",
+    date: "15 Juni 2026",
     title: "Pentingnya Perlindungan Data Pribadi (PDP) dalam Operasional Perusahaan",
     subtitle:
       "Kepatuhan terhadap regulasi PDP kini bukan lagi pilihan, melainkan kewajiban legal yang memengaruhi kredibilitas bisnis Anda.",

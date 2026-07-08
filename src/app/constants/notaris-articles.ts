@@ -7,7 +7,7 @@ export const notarisArticles: Article[] = [
     title: "Apa Itu Akta Autentik dan Mengapa Penting?",
     excerpt:
       "Akta autentik adalah akta yang dibuat oleh atau di hadapan pejabat umum yang berwenang. Kekuatan pembuktiannya sempurna di mata hukum.",
-    date: "10 Maret 2026",
+    date: "11 Mei 2026",
     category: "Panduan",
     slug: "apa-itu-akta-autentik",
   },
@@ -16,7 +16,7 @@ export const notarisArticles: Article[] = [
     title: "Prosedur Pendirian PT Melalui Notaris",
     excerpt:
       "Mendirikan perseroan terbatas memerlukan akta notaris sebagai dasar legalitas. Pelajari langkah-langkah prosesnya di sini.",
-    date: "22 Feb 2026",
+    date: "15 Mei 2026",
     category: "Bisnis",
     slug: "prosedur-pendirian-pt-notaris",
   },
@@ -25,7 +25,7 @@ export const notarisArticles: Article[] = [
     title: "Perbedaan Notaris dan PPAT: Mana yang Anda Butuhkan?",
     excerpt:
       "Banyak orang keliru membedakan notaris dan PPAT. Artikel ini menjelaskan perbedaan fungsi dan kewenangannya secara jelas.",
-    date: "5 Jan 2026",
+    date: "16 Mei 2026",
     category: "Edukasi",
     slug: "perbedaan-notaris-ppat",
   },
@@ -34,7 +34,7 @@ export const notarisArticles: Article[] = [
     title: "Pentingnya Akta Pendirian Yayasan dan Prosedurnya",
     excerpt:
       "Ingin mendirikan yayasan sosial, keagamaan, atau kemanusiaan? Pahami syarat dan prosedur pembuatan akta pendirian yayasan secara lengkap.",
-    date: "22 Juni 2026",
+    date: "10 Juni 2026",
     category: "Panduan",
     slug: "akta-pendirian-yayasan-prosedur",
   },
@@ -43,7 +43,7 @@ export const notarisArticles: Article[] = [
     title: "Fungsi Legalisasi, Waarmerking, dan Pencocokan Fotokopi oleh Notaris",
     excerpt:
       "Kenali perbedaan legalisasi tanda tangan, pendaftaran surat (waarmerking), dan pencocokan dokumen fotokopi dengan aslinya di kantor notaris.",
-    date: "15 April 2026",
+    date: "12 April 2026",
     category: "Edukasi",
     slug: "fungsi-legalisasi-waarmerking-notaris",
   },
@@ -54,7 +54,7 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
     slug: "apa-itu-akta-autentik",
     category: "Panduan",
     readTime: "7 menit",
-    date: "10 Maret 2026",
+    date: "11 Mei 2026",
     title: "Apa Itu Akta Autentik dan Mengapa Penting?",
     subtitle:
       "Akta autentik memiliki kekuatan pembuktian sempurna di pengadilan. Memahami jenis akta ini sangat penting untuk melindungi hak dan kepentingan hukum Anda.",
@@ -126,7 +126,7 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
     slug: "prosedur-pendirian-pt-notaris",
     category: "Bisnis",
     readTime: "8 menit",
-    date: "22 Feb 2026",
+    date: "15 Mei 2026",
     title: "Prosedur Pendirian PT Melalui Notaris",
     subtitle:
       "Langkah demi langkah mendirikan Perseroan Terbatas (PT) yang legal dan sesuai peraturan, mulai dari persiapan dokumen hingga pengesahan di Kemenkumham.",
@@ -205,7 +205,7 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
     slug: "perbedaan-notaris-ppat",
     category: "Edukasi",
     readTime: "6 menit",
-    date: "5 Jan 2026",
+    date: "16 Mei 2026",
     title: "Perbedaan Notaris dan PPAT: Mana yang Anda Butuhkan?",
     subtitle:
       "Banyak masyarakat mengira notaris dan PPAT adalah profesi yang sama. Padahal, keduanya memiliki kewenangan, dasar hukum, dan lingkup kerja yang berbeda.",
@@ -276,7 +276,7 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
     slug: "akta-pendirian-yayasan-prosedur",
     category: "Panduan",
     readTime: "7 menit",
-    date: "22 Juni 2026",
+    date: "10 Juni 2026",
     title: "Pentingnya Akta Pendirian Yayasan dan Prosedurnya",
     subtitle:
       "Yayasan adalah badan hukum nirlaba. Pendiriannya memerlukan akta notaris dan pengesahan Kemenkumham agar sah secara hukum.",
@@ -317,7 +317,7 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
     slug: "fungsi-legalisasi-waarmerking-notaris",
     category: "Edukasi",
     readTime: "6 menit",
-    date: "15 April 2026",
+    date: "12 Juni 2026",
     title: "Fungsi Legalisasi, Waarmerking, dan Pencocokan Fotokopi oleh Notaris",
     subtitle:
       "Sering diminta dokumen yang dilegalisasi Notaris? Ketahui jenis pengesahan dokumen di bawah tangan agar tidak salah paham.",

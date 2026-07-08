@@ -7,7 +7,7 @@ export const kostArticles: Article[] = [
     title: "Tips Memilih Kost yang Tepat di Jakarta",
     excerpt:
       "Dengan ribuan pilihan kost di Jakarta, memilih yang terbaik bisa membingungkan. Inilah panduan lengkap memilih kost sesuai kebutuhan dan anggaran Anda.",
-    date: "3 April 2026",
+    date: "13 Mei 2026",
     category: "Tips",
     slug: "tips-memilih-kost-jakarta",
   },
@@ -16,7 +16,7 @@ export const kostArticles: Article[] = [
     title: "5 Fasilitas Wajib di Kost Premium Modern",
     excerpt:
       "Kost premium bukan hanya soal harga - ini tentang kualitas hidup. Pastikan kost pilihan Anda memiliki 5 fasilitas penting ini.",
-    date: "15 Mar 2026",
+    date: "15 Mei 2026",
     category: "Panduan",
     slug: "fasilitas-wajib-kost-premium",
   },
@@ -25,7 +25,7 @@ export const kostArticles: Article[] = [
     title: "Keuntungan Tinggal di Kost Dekat Pusat Bisnis",
     excerpt:
       "Lokasi adalah segalanya. Tinggal dekat pusat bisnis bukan hanya menghemat waktu - tapi juga membuka lebih banyak peluang karir.",
-    date: "8 Feb 2026",
+    date: "18 Mei 2026",
     category: "Gaya Hidup",
     slug: "keuntungan-kost-pusat-bisnis",
   },
@@ -34,7 +34,7 @@ export const kostArticles: Article[] = [
     title: "Cara Mengatur Budget Bulanan untuk Anak Kost",
     excerpt:
       "Mengelola keuangan saat tinggal di kost bisa jadi tantangan. Pelajari cara mengatur pengeluaran bulanan agar tetap hemat tanpa mengorbankan kenyamanan.",
-    date: "25 Mei 2026",
+    date: "19 Juni 2026",
     category: "Keuangan",
     slug: "budget-bulanan-anak-kost",
   },
@@ -43,7 +43,7 @@ export const kostArticles: Article[] = [
     title: "Dekorasi Kamar Kost: Bikin Nyaman Tanpa Mahal",
     excerpt:
       "Kamar kost sempit bukan alasan untuk tidak nyaman. Dengan trik dekorasi sederhana, kamar Anda bisa terasa lebih luas, rapi, dan estetik.",
-    date: "10 Mei 2026",
+    date: "19 Juni 2026",
     category: "Dekorasi",
     slug: "dekorasi-kamar-kost-nyaman",
   },
@@ -54,7 +54,7 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
     slug: "tips-memilih-kost-jakarta",
     category: "Tips",
     readTime: "6 menit",
-    date: "3 April 2026",
+    date: "13 Mei 2026",
     title: "Tips Memilih Kost yang Tepat di Jakarta",
     subtitle:
       "Memilih kost yang tepat bukan sekadar soal harga murah. Anda perlu mempertimbangkan lokasi, keamanan, dan kualitas fasilitas agar hidup harian lebih nyaman.",
@@ -95,7 +95,7 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
     slug: "fasilitas-wajib-kost-premium",
     category: "Panduan",
     readTime: "5 menit",
-    date: "15 Mar 2026",
+    date: "15 Mei 2026",
     title: "5 Fasilitas Wajib di Kost Premium Modern",
     subtitle:
       "Standar kost premium terus berkembang. Penghuni kini mencari hunian yang bukan hanya nyaman, tapi juga mendukung produktivitas dan keamanan sehari-hari.",
@@ -133,7 +133,7 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
     slug: "keuntungan-kost-pusat-bisnis",
     category: "Gaya Hidup",
     readTime: "5 menit",
-    date: "8 Feb 2026",
+    date: "18 Mei 2026",
     title: "Keuntungan Tinggal di Kost Dekat Pusat Bisnis",
     subtitle:
       "Tinggal di area strategis memberi lebih dari sekadar kemudahan mobilitas. Anda juga mendapat akses yang lebih baik ke peluang kerja dan jaringan profesional.",
@@ -174,7 +174,7 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
     slug: "budget-bulanan-anak-kost",
     category: "Keuangan",
     readTime: "7 menit",
-    date: "25 Mei 2026",
+    date: "19 Juni 2026",
     title: "Cara Mengatur Budget Bulanan untuk Anak Kost",
     subtitle:
       "Tinggal di kost artinya Anda harus mandiri mengatur keuangan. Dengan perencanaan yang tepat, Anda bisa hidup nyaman tanpa kehabisan uang di akhir bulan.",
@@ -238,7 +238,7 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
     slug: "dekorasi-kamar-kost-nyaman",
     category: "Dekorasi",
     readTime: "6 menit",
-    date: "10 Mei 2026",
+    date: "19 Juni 2026",
     title: "Dekorasi Kamar Kost: Bikin Nyaman Tanpa Mahal",
     subtitle:
       "Kamar kost yang ditata dengan baik bisa meningkatkan mood dan produktivitas. Simak tips dekorasi sederhana yang bisa Anda terapkan hari ini.",
