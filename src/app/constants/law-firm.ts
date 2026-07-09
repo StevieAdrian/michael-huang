@@ -88,7 +88,7 @@ export const lawFirmArticles = [
     excerpt: "Strategi legal untuk melindungi aset perusahaan dari sengketa bisnis.",
   },
   {
-    title: "Panduan Hukum Kontrak Kerja 2025",
+    title: "Panduan Hukum Kontrak Kerja 2026",
     category: "Ketenagakerjaan",
     excerpt: "Perubahan terbaru dalam regulasi ketenagakerjaan dan dampaknya.",
   },

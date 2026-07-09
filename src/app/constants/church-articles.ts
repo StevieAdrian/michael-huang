@@ -7,7 +7,7 @@ export const churchArticles: Article[] = [
     title: "Makna Baptisan Air dalam Iman Kristen",
     excerpt:
       "Baptisan bukan sekadar ritual, melainkan pernyataan iman dan identitas baru sebagai pengikut Kristus.",
-    date: "5 April 2025",
+    date: "15 Mei 2026",
     category: "Iman",
     slug: "makna-baptisan-air",
   },
@@ -16,25 +16,25 @@ export const churchArticles: Article[] = [
     title: "Pelayanan Sosial: Menjangkau Komunitas Sekitar",
     excerpt:
       "Gereja dipanggil menjadi berkat. Lihat bagaimana jemaat Glory Ministry menjangkau banyak jiwa melalui aksi nyata.",
-    date: "20 Mar 2025",
+    date: "20 Mei 2026",
     category: "Pelayanan",
     slug: "pelayanan-sosial-komunitas",
   },
   {
     id: "3",
-    title: "Jadwal Retret Spiritual 2025 dan Persiapannya",
+    title: "Jadwal Retret Spiritual 2026 dan Persiapannya",
     excerpt:
       "Retret adalah waktu untuk berhenti, memulihkan hati, dan mendengar suara Tuhan dengan lebih jelas.",
-    date: "10 Feb 2025",
+    date: "20 Mei 2026",
     category: "Kegiatan",
-    slug: "jadwal-retret-spiritual-2025",
+    slug: "jadwal-retret-spiritual-2026",
   },
   {
     id: "4",
     title: "Membangun Kehidupan Doa yang Konsisten",
     excerpt:
       "Doa bukan sekadar rutinitas, melainkan napas kehidupan rohani. Pelajari cara membangun kebiasaan doa yang hidup dan bermakna setiap hari.",
-    date: "18 Mei 2025",
+    date: "18 Juni 2026",
     category: "Renungan",
     slug: "kehidupan-doa-konsisten",
   },
@@ -43,7 +43,7 @@ export const churchArticles: Article[] = [
     title: "Pentingnya Kelompok Kecil dalam Pertumbuhan Iman",
     excerpt:
       "Kelompok kecil adalah tempat di mana iman bertumbuh melalui relasi, saling menguatkan, dan belajar firman bersama.",
-    date: "2 Mei 2025",
+    date: "18 Juni 2026",
     category: "Komunitas",
     slug: "kelompok-kecil-pertumbuhan-iman",
   },
@@ -54,7 +54,7 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
     slug: "makna-baptisan-air",
     category: "Iman",
     readTime: "6 menit",
-    date: "5 April 2025",
+    date: "15 Mei 2026",
     title: "Makna Baptisan Air dalam Iman Kristen",
     subtitle:
       "Baptisan air bukan sekadar tradisi gereja. Baptisan adalah tanda ketaatan, pertobatan, dan komitmen untuk hidup baru di dalam Kristus.",
@@ -120,7 +120,7 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
     slug: "pelayanan-sosial-komunitas",
     category: "Pelayanan",
     readTime: "6 menit",
-    date: "20 Mar 2025",
+    date: "20 Mei 2026",
     title: "Pelayanan Sosial: Menjangkau Komunitas Sekitar",
     subtitle:
       "Gereja dipanggil menjadi garam dan terang, bukan hanya di ruang ibadah, tetapi juga di tengah kebutuhan masyarakat sekitar.",
@@ -174,12 +174,12 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
     ],
     tags: ["Pelayanan", "Komunitas", "Misi", "Kasih"],
   },
-  "jadwal-retret-spiritual-2025": {
-    slug: "jadwal-retret-spiritual-2025",
+  "jadwal-retret-spiritual-2026": {
+    slug: "jadwal-retret-spiritual-2026",
     category: "Kegiatan",
     readTime: "4 menit",
-    date: "10 Feb 2025",
-    title: "Jadwal Retret Spiritual 2025 dan Persiapannya",
+    date: "20 Mei 2026",
+    title: "Jadwal Retret Spiritual 2026 dan Persiapannya",
     subtitle:
       "Retret tahunan adalah momen untuk berhenti sejenak, memulihkan hati, dan kembali menyelaraskan hidup dengan panggilan Tuhan.",
     author: {
@@ -219,7 +219,7 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
     slug: "kehidupan-doa-konsisten",
     category: "Renungan",
     readTime: "7 menit",
-    date: "18 Mei 2025",
+    date: "18 Juni 2026",
     title: "Membangun Kehidupan Doa yang Konsisten",
     subtitle:
       "Banyak orang percaya merindukan kehidupan doa yang lebih dalam, namun kesulitan menjaga konsistensi. Artikel ini membagikan prinsip praktis untuk membangun kebiasaan doa yang bermakna.",
@@ -282,7 +282,7 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
     slug: "kelompok-kecil-pertumbuhan-iman",
     category: "Komunitas",
     readTime: "6 menit",
-    date: "2 Mei 2025",
+    date: "18 Juni 2026",
     title: "Pentingnya Kelompok Kecil dalam Pertumbuhan Iman",
     subtitle:
       "Gereja bukan hanya soal ibadah Minggu. Kelompok kecil adalah tempat di mana iman dipraktikkan, hubungan dibangun, dan setiap orang dikenal secara pribadi.",
