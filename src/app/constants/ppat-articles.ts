@@ -7,7 +7,7 @@ export const ppatArticles: Article[] = [
     title: "Cara Balik Nama Sertifikat Tanah Setelah Jual Beli",
     excerpt:
       "Balik nama sertifikat adalah langkah wajib setelah transaksi jual beli tanah. Pelajari prosedur lengkapnya bersama PPAT kami.",
-    date: "15 Maret 2026",
+    date: "11 Mei 2026",
     category: "Panduan",
     slug: "cara-balik-nama-sertifikat-tanah",
   },
@@ -16,7 +16,7 @@ export const ppatArticles: Article[] = [
     title: "Dokumen yang Diperlukan untuk AJB di PPAT",
     excerpt:
       "Sebelum datang ke PPAT, pastikan seluruh dokumen Anda sudah lengkap. Berikut daftar lengkap yang harus dipersiapkan.",
-    date: "28 Feb 2026",
+    date: "13 Mei 2026",
     category: "Tips",
     slug: "dokumen-ajb-ppat",
   },
@@ -25,7 +25,7 @@ export const ppatArticles: Article[] = [
     title: "Apa Itu Hak Tanggungan dan Bagaimana Cara Kerjanya?",
     excerpt:
       "Hak tanggungan adalah jaminan atas tanah yang sering digunakan dalam kredit bank. Pahami hak dan kewajiban Anda sebagai debitur.",
-    date: "10 Jan 2026",
+    date: "13 Mei 2026",
     category: "Edukasi",
     slug: "hak-tanggungan-pengertian",
   },
@@ -43,7 +43,7 @@ export const ppatArticles: Article[] = [
     title: "Memahami Pembuatan Akta Pembagian Hak Bersama (APHB)",
     excerpt:
       "Sertifikat tanah masih atas nama waris bersama? Temukan fungsi APHB di PPAT untuk memisahkan bagian hak masing-masing ahli waris secara resmi.",
-    date: "8 April 2026",
+    date: "18 Juni 2026",
     category: "Edukasi",
     slug: "akta-pembagian-hak-bersama-aphb",
   },
@@ -54,7 +54,7 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
     slug: "cara-balik-nama-sertifikat-tanah",
     category: "Panduan",
     readTime: "6 menit",
-    date: "15 Maret 2026",
+    date: "11 Mei 2026",
     title: "Cara Balik Nama Sertifikat Tanah Setelah Jual Beli",
     subtitle:
       "Balik nama sertifikat memastikan pemilik baru tercatat resmi di BPN. Proses ini penting untuk kepastian hukum dan perlindungan hak atas tanah.",
@@ -95,7 +95,7 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
     slug: "dokumen-ajb-ppat",
     category: "Tips",
     readTime: "5 menit",
-    date: "28 Feb 2026",
+    date: "13 Mei 2026",
     title: "Dokumen yang Diperlukan untuk AJB di PPAT",
     subtitle:
       "Kelengkapan dokumen adalah kunci agar proses AJB berjalan lancar. Persiapan yang tepat menghemat waktu dan menghindari penundaan penandatanganan.",
@@ -133,7 +133,7 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
     slug: "hak-tanggungan-pengertian",
     category: "Edukasi",
     readTime: "6 menit",
-    date: "10 Jan 2026",
+    date: "15 Mei 2026",
     title: "Apa Itu Hak Tanggungan dan Bagaimana Cara Kerjanya?",
     subtitle:
       "Hak tanggungan adalah jaminan kebendaan atas tanah untuk pelunasan utang tertentu. Instrumen ini umum digunakan dalam pembiayaan perbankan.",
@@ -215,7 +215,7 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
     slug: "akta-pembagian-hak-bersama-aphb",
     category: "Edukasi",
     readTime: "6 menit",
-    date: "8 April 2026",
+    date: "18 Juni 2026",
     title: "Memahami Pembuatan Akta Pembagian Hak Bersama (APHB)",
     subtitle:
       "APHB digunakan untuk membagi tanah yang dimiliki bersama (seperti warisan) menjadi hak individu.",

@@ -16,7 +16,7 @@ export const lawFirmArticles: Article[] = [
     title: "Panduan Hukum Kontrak Kerja 2026: Apa yang Berubah?",
     excerpt:
       "Perubahan regulasi ketenagakerjaan terbaru dan dampaknya terhadap hubungan kerja antara perusahaan dan karyawan.",
-    date: "28 Apr 2026",
+    date: "16 Mei 2026",
     category: "Ketenagakerjaan",
     slug: "panduan-kontrak-kerja-2026",
   },
@@ -25,7 +25,7 @@ export const lawFirmArticles: Article[] = [
     title: "5 Hak Anda Saat Menghadapi Sengketa di Pengadilan",
     excerpt:
       "Pahami hak-hak hukum Anda secara menyeluruh sebelum memasuki proses litigasi di pengadilan.",
-    date: "10 Mar 2026",
+    date: "20 Mei 2026",
     category: "Litigasi",
     slug: "hak-menghadapi-sengketa",
   },
@@ -43,7 +43,7 @@ export const lawFirmArticles: Article[] = [
     title: "Pentingnya Klausul Arbitrase dalam Kontrak Bisnis",
     excerpt:
       "Mengapa banyak pelaku usaha memilih arbitrase dibanding pengadilan negeri? Simak kelebihan klausul arbitrase untuk menyelesaikan sengketa bisnis.",
-    date: "2 Mei 2026",
+    date: "11 Juni 2026",
     category: "Litigasi",
     slug: "klausul-arbitrase-kontrak-bisnis",
   },
@@ -117,7 +117,7 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     slug: "panduan-kontrak-kerja-2026",
     category: "Ketenagakerjaan",
     readTime: "8 menit",
-    date: "28 Apr 2026",
+    date: "16 Mei 2026",
     title: "Panduan Hukum Kontrak Kerja 2026: Apa yang Berubah?",
     subtitle:
       "Tahun 2026 membawa sejumlah perubahan regulasi ketenagakerjaan di Indonesia. Berikut panduan lengkap yang wajib dipahami perusahaan dan pekerja.",
@@ -180,7 +180,7 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     slug: "hak-menghadapi-sengketa",
     category: "Litigasi",
     readTime: "6 menit",
-    date: "10 Mar 2026",
+    date: "20 Mei 2026",
     title: "5 Hak Anda Saat Menghadapi Sengketa di Pengadilan",
     subtitle:
       "Memahami hak-hak Anda dalam proses litigasi adalah langkah pertama untuk melindungi kepentingan Anda secara efektif di pengadilan.",
@@ -292,7 +292,7 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     slug: "klausul-arbitrase-kontrak-bisnis",
     category: "Litigasi",
     readTime: "6 menit",
-    date: "2 Mei 2026",
+    date: "11 Juni 2026",
     title: "Pentingnya Klausul Arbitrase dalam Kontrak Bisnis",
     subtitle:
       "Penyelesaian sengketa yang cepat, tertutup, dan ditangani oleh ahli industri menjadikan arbitrase pilihan utama kontrak komersial.",

@@ -7,7 +7,7 @@ export const podcastArticles: Article[] = [
     title: "Memulai Podcast: Panduan Lengkap dari Nol",
     excerpt:
       "Dari konsep, peralatan, distribusi, hingga promosi, ini fondasi yang perlu Anda siapkan untuk membangun podcast yang bertahan lama.",
-    date: "8 April 2026",
+    date: "18 Mei 2026",
     category: "Panduan",
     slug: "memulai-podcast-panduan",
   },
@@ -16,7 +16,7 @@ export const podcastArticles: Article[] = [
     title: "Mengapa Podcast adalah Medium yang Tepat untuk Bisnis Anda",
     excerpt:
       "Podcast bukan hanya sarana hiburan. Medium ini efektif untuk membangun otoritas, kedekatan, dan kepercayaan audiens terhadap brand Anda.",
-    date: "18 Maret 2026",
+    date: "18 Mei 2026",
     category: "Bisnis",
     slug: "podcast-untuk-bisnis",
   },
@@ -25,7 +25,7 @@ export const podcastArticles: Article[] = [
     title: "Tips Mendapatkan Tamu Podcast yang Berkualitas",
     excerpt:
       "Tamu yang tepat dapat menaikkan kualitas percakapan sekaligus memperluas jangkauan episode Anda. Persiapan pendekatan jadi faktor penentu.",
-    date: "2 Feb 2026",
+    date: "24 Mei 2026",
     category: "Tips",
     slug: "tips-tamu-podcast-berkualitas",
   },
@@ -34,7 +34,7 @@ export const podcastArticles: Article[] = [
     title: "Peralatan Dasar Podcast untuk Hasil Audio Profesional",
     excerpt:
       "Tidak perlu studio mahal untuk menghasilkan audio jernih. Pahami peralatan dasar esensial dari mikrofon hingga software editing.",
-    date: "24 Juni 2026",
+    date: "11 Juni 2026",
     category: "Peralatan",
     slug: "peralatan-dasar-podcast-profesional",
   },
@@ -43,7 +43,7 @@ export const podcastArticles: Article[] = [
     title: "Cara Mengatasi Gugup dan Berbicara Lancar saat Podcasting",
     excerpt:
       "Merasa kaku atau gugup di depan mikrofon? Temukan teknik olah vokal, latihan pernapasan, dan penyusunan naskah agar bicara lebih mengalir.",
-    date: "15 Mei 2026",
+    date: "15 Juni 2026",
     category: "Teknik",
     slug: "cara-bicara-lancar-podcast",
   },
@@ -54,7 +54,7 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
     slug: "memulai-podcast-panduan",
     category: "Panduan",
     readTime: "7 menit",
-    date: "8 April 2026",
+    date: "18 Mei 2026",
     title: "Memulai Podcast: Panduan Lengkap dari Nol",
     subtitle:
       "Podcast yang baik tidak dimulai dari alat mahal, tetapi dari konsep yang jelas, alur produksi yang rapi, dan konsistensi dalam eksekusi.",
@@ -95,7 +95,7 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
     slug: "podcast-untuk-bisnis",
     category: "Bisnis",
     readTime: "6 menit",
-    date: "18 Maret 2026",
+    date: "18 Mei 2026",
     title: "Mengapa Podcast adalah Medium yang Tepat untuk Bisnis Anda",
     subtitle:
       "Podcast memberi ruang bagi bisnis untuk membangun kedekatan dan otoritas melalui percakapan yang lebih dalam daripada format konten singkat.",
@@ -132,7 +132,7 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
     slug: "tips-tamu-podcast-berkualitas",
     category: "Tips",
     readTime: "5 menit",
-    date: "2 Feb 2026",
+    date: "24 Mei 2026",
     title: "Tips Mendapatkan Tamu Podcast yang Berkualitas",
     subtitle:
       "Tamu yang relevan dapat meningkatkan kualitas diskusi dan memperluas jangkauan podcast Anda, tetapi pendekatan yang tepat tetap menjadi kunci.",
@@ -173,7 +173,7 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
     slug: "peralatan-dasar-podcast-profesional",
     category: "Peralatan",
     readTime: "5 menit",
-    date: "24 Juni 2026",
+    date: "11 Juni 2026",
     title: "Peralatan Dasar Podcast untuk Hasil Audio Profesional",
     subtitle:
       "Kualitas audio adalah penentu utama retensi pendengar podcast. Berikut panduan memilih alat sesuai anggaran Anda.",
@@ -209,7 +209,7 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
     slug: "cara-bicara-lancar-podcast",
     category: "Teknik",
     readTime: "6 menit",
-    date: "15 Mei 2026",
+    date: "15 Juni 2026",
     title: "Cara Mengatasi Gugup dan Berbicara Lancar saat Podcasting",
     subtitle:
       "Kemampuan berbicara yang luwes di depan mikrofon dapat dilatih. Hilangkan kecemasan Anda dengan panduan praktis ini.",
