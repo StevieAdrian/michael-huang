@@ -47,6 +47,24 @@ export const notarisArticles: Article[] = [
     category: "Edukasi",
     slug: "fungsi-legalisasi-waarmerking-notaris",
   },
+  {
+    id: "6",
+    title: "Perjanjian Pranikah Setelah Menikah: Masih Bisa Dibuat?",
+    excerpt:
+      "Banyak pasangan baru sadar pentingnya pemisahan harta setelah menikah. Simak dasar hukum dan prosedur pembuatan perjanjian perkawinan pasca-nikah melalui notaris.",
+    date: "4 Juli 2026",
+    category: "Panduan",
+    slug: "perjanjian-pranikah-setelah-menikah",
+  },
+  {
+    id: "7",
+    title: "Checklist Legalisasi Dokumen untuk Keperluan Studi dan Kerja di Luar Negeri",
+    excerpt:
+      "Agar dokumen Indonesia diakui di luar negeri, proses legalisasi harus tepat urutannya. Pahami peran notaris, kementerian, hingga apostille.",
+    date: "4 Juli 2026",
+    category: "Edukasi",
+    slug: "checklist-legalisasi-dokumen-luar-negeri",
+  },
 ];
 
 export const notarisArticleDetails: Record<string, ArticleDetail> = {
@@ -356,5 +374,135 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Legalisasi", "Waarmerking", "Notaris", "Edukasi Hukum"],
+  },
+  "perjanjian-pranikah-setelah-menikah": {
+    slug: "perjanjian-pranikah-setelah-menikah",
+    category: "Panduan",
+    readTime: "7 menit",
+    date: "4 Juli 2026",
+    title: "Perjanjian Pranikah Setelah Menikah: Masih Bisa Dibuat?",
+    subtitle:
+      "Putusan Mahkamah Konstitusi membuka ruang perjanjian perkawinan dibuat setelah pernikahan berlangsung. Berikut poin penting yang wajib dipahami pasangan suami istri.",
+    author: {
+      name: "Kantor Notaris Dr. Michael, S.H., S.T., M.Kn.",
+      role: "Family and Civil Law Desk",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Selama bertahun-tahun, banyak orang mengira perjanjian perkawinan hanya bisa dibuat sebelum pernikahan. Padahal, perkembangan hukum di Indonesia memungkinkan pasangan membuat perjanjian perkawinan setelah menikah (postnuptial agreement), sepanjang memenuhi syarat hukum dan dibuat melalui akta notaris.",
+      },
+      {
+        type: "heading",
+        text: "Dasar Hukum Perjanjian Perkawinan Pasca-Nikah",
+      },
+      {
+        type: "paragraph",
+        text: "Perubahan penting ini merujuk pada Putusan Mahkamah Konstitusi yang menafsirkan bahwa perjanjian perkawinan dapat dibuat sebelum, pada saat, atau selama ikatan perkawinan berlangsung. Artinya, pasangan tetap memiliki opsi legal untuk mengatur pemisahan harta dan tanggung jawab keuangan setelah menikah.",
+      },
+      {
+        type: "heading",
+        text: "Manfaat Praktis untuk Pasangan",
+      },
+      {
+        type: "list",
+        items: [
+          "Memberikan kejelasan status harta bawaan dan harta yang diperoleh selama perkawinan.",
+          "Mengurangi risiko sengketa harta jika terjadi perceraian atau pewarisan.",
+          "Membantu perlindungan aset ketika salah satu pihak menjalankan usaha berisiko.",
+          "Mempermudah pengelolaan aset lintas negara atau pernikahan campuran.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Tahapan Penyusunan Melalui Notaris",
+      },
+      {
+        type: "list",
+        items: [
+          "Konsultasi awal untuk memetakan kebutuhan dan struktur kepemilikan harta para pihak.",
+          "Penyusunan klausul perjanjian secara seimbang dan tidak melanggar hukum, agama, serta kesusilaan.",
+          "Penandatanganan akta di hadapan notaris oleh suami dan istri.",
+          "Pendaftaran atau pencatatan sesuai ketentuan yang berlaku agar memiliki kekuatan mengikat terhadap pihak ketiga.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Perjanjian perkawinan yang baik bukan soal ketidakpercayaan, tetapi tentang kepastian hukum dan perlindungan masa depan keluarga.",
+      },
+      {
+        type: "paragraph",
+        text: "Sebelum menandatangani, pastikan seluruh klausul dipahami secara utuh oleh kedua pihak. Pendampingan notaris membantu memastikan redaksi perjanjian tidak multitafsir dan dapat dijalankan secara efektif ketika dibutuhkan.",
+      },
+    ],
+    tags: ["Perjanjian Perkawinan", "Notaris", "Hukum Keluarga", "Aset"],
+  },
+  "checklist-legalisasi-dokumen-luar-negeri": {
+    slug: "checklist-legalisasi-dokumen-luar-negeri",
+    category: "Edukasi",
+    readTime: "6 menit",
+    date: "4 Juli 2026",
+    title:
+      "Checklist Legalisasi Dokumen untuk Keperluan Studi dan Kerja di Luar Negeri",
+    subtitle:
+      "Ijazah, transkrip, akta kelahiran, dan dokumen perdata lainnya sering ditolak karena legalisasi tidak sesuai urutan. Gunakan checklist ini agar proses lebih aman.",
+    author: {
+      name: "Kantor Notaris Dr. Michael, S.H., S.T., M.Kn.",
+      role: "Document Legalization Desk",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Saat mengurus studi, pekerjaan, atau migrasi ke luar negeri, dokumen dari Indonesia sering perlu melalui proses legalisasi berlapis. Kesalahan urutan dapat menyebabkan dokumen ditolak dan menghambat timeline keberangkatan.",
+      },
+      {
+        type: "heading",
+        text: "Dokumen yang Umumnya Diminta",
+      },
+      {
+        type: "list",
+        items: [
+          "Ijazah dan transkrip nilai.",
+          "Akta kelahiran, akta nikah, atau akta cerai.",
+          "Surat keterangan kerja atau reference letter.",
+          "SKCK dan dokumen pendukung identitas lainnya.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Urutan Proses yang Perlu Diperhatikan",
+      },
+      {
+        type: "list",
+        items: [
+          "Verifikasi dokumen asli dan salinan, lalu lakukan legalisasi notaris bila diperlukan.",
+          "Legalisasi di kementerian teknis sesuai jenis dokumen (misalnya Kemendikbud untuk ijazah).",
+          "Legalisasi di Kementerian Hukum atau Kementerian Luar Negeri sesuai mekanisme negara tujuan.",
+          "Apostille atau legalisasi kedutaan/konsulat negara tujuan bila disyaratkan.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Kesalahan yang Sering Terjadi",
+      },
+      {
+        type: "list",
+        items: [
+          "Mengajukan fotokopi tanpa validasi kesesuaian dengan dokumen asli.",
+          "Salah menentukan instansi legalisasi berdasarkan jenis dokumen.",
+          "Tidak menyiapkan terjemahan tersumpah untuk dokumen berbahasa Indonesia.",
+          "Mengabaikan masa berlaku beberapa dokumen administratif.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Dalam legalisasi dokumen lintas negara, urutan proses sama pentingnya dengan isi dokumen itu sendiri.",
+      },
+      {
+        type: "paragraph",
+        text: "Agar proses lebih cepat dan minim penolakan, lakukan pengecekan kebutuhan negara tujuan sejak awal. Tim notaris kami dapat membantu validasi awal dan penyusunan alur legalisasi yang paling efisien sesuai jenis dokumen Anda.",
+      },
+    ],
+    tags: ["Legalisasi Dokumen", "Apostille", "Notaris", "Studi Luar Negeri"],
   },
 };

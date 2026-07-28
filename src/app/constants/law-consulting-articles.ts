@@ -47,6 +47,24 @@ export const lawConsultingArticles: Article[] = [
     category: "Compliance",
     slug: "perlindungan-data-pribadi-pdp-perusahaan",
   },
+  {
+    id: "6",
+    title: "Audit Kontrak Vendor Tahunan: Cara Sederhana Menekan Risiko Hukum",
+    excerpt:
+      "Kontrak vendor yang tidak dievaluasi berkala sering jadi sumber kerugian tersembunyi. Pelajari framework audit kontrak tahunan untuk bisnis Anda.",
+    date: "4 Juli 2026",
+    category: "Kontrak",
+    slug: "audit-kontrak-vendor-tahunan",
+  },
+  {
+    id: "7",
+    title: "Retainer Legal untuk Perusahaan: Kapan Lebih Efisien daripada Konsultasi Satuan?",
+    excerpt:
+      "Untuk bisnis dengan kebutuhan hukum rutin, skema retainer sering lebih hemat dan responsif dibanding konsultasi per kasus. Simak pertimbangannya.",
+    date: "4 Juli 2026",
+    category: "Compliance",
+    slug: "retainer-legal-perusahaan-efisien",
+  },
 ];
 
 export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
@@ -261,5 +279,111 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["UU PDP", "Compliance", "Privasi Data", "Hukum Digital"],
+  },
+  "audit-kontrak-vendor-tahunan": {
+    slug: "audit-kontrak-vendor-tahunan",
+    category: "Kontrak",
+    readTime: "7 menit",
+    date: "4 Juli 2026",
+    title:
+      "Audit Kontrak Vendor Tahunan: Cara Sederhana Menekan Risiko Hukum",
+    subtitle:
+      "Banyak perusahaan fokus negosiasi awal, tetapi lupa melakukan audit berkala. Padahal klausul yang tidak relevan bisa memicu sengketa dan pemborosan biaya.",
+    author: {
+      name: "Tim Drafting Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Contract and Risk Advisory",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Vendor agreement yang ditandatangani 2-3 tahun lalu sering sudah tidak sesuai dengan kebutuhan operasional saat ini. Perubahan volume bisnis, standar layanan, dan regulasi dapat membuat kontrak lama menjadi sumber risiko baru jika tidak ditinjau ulang secara berkala.",
+      },
+      {
+        type: "heading",
+        text: "Apa Saja yang Diaudit?",
+      },
+      {
+        type: "list",
+        items: [
+          "Ruang lingkup layanan: apakah deliverables masih relevan dengan kebutuhan terkini.",
+          "Klausul SLA dan penalti: apakah metrik performa dapat diukur dan dapat ditegakkan.",
+          "Skema harga dan eskalasi biaya: identifikasi potensi overcharge atau klausul ambigu.",
+          "Kerahasiaan dan perlindungan data: pastikan sesuai kewajiban UU PDP dan standar keamanan internal.",
+          "Klausul terminasi dan exit: siapkan mekanisme transisi agar tidak mengganggu operasional saat kontrak dihentikan.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Frekuensi Audit yang Direkomendasikan",
+      },
+      {
+        type: "paragraph",
+        text: "Untuk vendor kritikal, audit disarankan minimal setiap 12 bulan atau saat terjadi perubahan material seperti kenaikan biaya signifikan, perubahan regulasi, atau pergantian scope layanan. Untuk vendor non-kritikal, audit dapat dilakukan berdasarkan risiko dan nilai kontrak.",
+      },
+      {
+        type: "quote",
+        text: "Kontrak vendor yang sehat bukan hanya ditandatangani dengan baik, tetapi juga dipelihara dengan disiplin.",
+      },
+      {
+        type: "paragraph",
+        text: "Mulailah dengan membuat matriks prioritas kontrak berdasarkan nilai, dampak operasional, dan potensi sengketa. Dari sana, tim hukum dapat menyiapkan amandemen yang tepat sebelum masalah berkembang menjadi kerugian nyata.",
+      },
+    ],
+    tags: ["Kontrak", "Vendor", "Audit Hukum", "Manajemen Risiko"],
+  },
+  "retainer-legal-perusahaan-efisien": {
+    slug: "retainer-legal-perusahaan-efisien",
+    category: "Compliance",
+    readTime: "6 menit",
+    date: "4 Juli 2026",
+    title:
+      "Retainer Legal untuk Perusahaan: Kapan Lebih Efisien daripada Konsultasi Satuan?",
+    subtitle:
+      "Skema retainer memberi akses cepat ke tim hukum untuk kebutuhan harian bisnis. Model ini cocok untuk perusahaan yang butuh kepastian biaya sekaligus respons yang konsisten.",
+    author: {
+      name: "Tim Konsultasi Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "General Counsel Support",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Banyak perusahaan menunggu masalah membesar baru mencari pendampingan hukum. Pendekatan reaktif ini sering membuat biaya melonjak karena penanganan sudah masuk tahap sengketa. Retainer legal hadir sebagai pendekatan preventif yang lebih terukur.",
+      },
+      {
+        type: "heading",
+        text: "Kapan Retainer Menjadi Pilihan Tepat?",
+      },
+      {
+        type: "list",
+        items: [
+          "Perusahaan rutin meninjau atau menyusun kontrak komersial.",
+          "Tim HR membutuhkan dukungan berkala untuk isu ketenagakerjaan.",
+          "Bisnis bergerak di sektor regulatif dengan kebutuhan kepatuhan tinggi.",
+          "Manajemen membutuhkan second opinion cepat sebelum mengambil keputusan strategis.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Keunggulan Dibanding Konsultasi Per Kasus",
+      },
+      {
+        type: "list",
+        items: [
+          "Kepastian budget hukum bulanan yang lebih mudah diproyeksikan.",
+          "Waktu respons lebih cepat karena tim hukum sudah memahami profil perusahaan.",
+          "Pendekatan preventif melalui monitoring berkala, bukan sekadar penanganan saat krisis.",
+          "Konsistensi posisi hukum antar divisi melalui standardisasi template dan SOP legal.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Dalam banyak kasus, biaya mencegah masalah hukum jauh lebih kecil daripada biaya memperbaiki dampaknya.",
+      },
+      {
+        type: "paragraph",
+        text: "Jika perusahaan Anda sudah memiliki frekuensi kebutuhan hukum yang stabil, retainer biasanya menjadi opsi paling efisien. Kuncinya adalah mendesain ruang lingkup layanan secara realistis agar manfaat dan biaya tetap seimbang.",
+      },
+    ],
+    tags: ["Retainer Legal", "Compliance", "Kontrak", "Corporate Advisory"],
   },
 };
