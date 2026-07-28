@@ -47,6 +47,24 @@ export const musicArticles: Article[] = [
     category: "Software",
     slug: "memilih-daw-terbaik",
   },
+  {
+    id: "6",
+    title: "Vokal Nempel di Mix: Teknik Dasar agar Suara Lebih Maju",
+    excerpt:
+      "Vokal sering tenggelam saat lagu makin ramai. Pelajari teknik EQ, compression, dan automation sederhana agar vokal tetap jelas dan emosional.",
+    date: "4 Juli 2026",
+    category: "Teknis",
+    slug: "vokal-nempel-di-mix",
+  },
+  {
+    id: "7",
+    title: "Release Plan Single 30 Hari: Strategi Rilis Musik yang Lebih Rapi",
+    excerpt:
+      "Rilis lagu tanpa perencanaan sering lewat begitu saja. Gunakan timeline 30 hari untuk membangun hype sebelum dan sesudah tanggal rilis.",
+    date: "4 Juli 2026",
+    category: "Distribusi",
+    slug: "release-plan-single-30-hari",
+  },
 ];
 
 export const musicArticleDetails: Record<string, ArticleDetail> = {
@@ -281,6 +299,109 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["DAW", "Software", "FL Studio", "Ableton", "Logic Pro"],
+  },
+  "vokal-nempel-di-mix": {
+    slug: "vokal-nempel-di-mix",
+    category: "Teknis",
+    readTime: "6 menit",
+    date: "4 Juli 2026",
+    title: "Vokal Nempel di Mix: Teknik Dasar agar Suara Lebih Maju",
+    subtitle:
+      "Vokal adalah pusat perhatian di banyak genre. Dengan penanganan yang tepat, vokal bisa terdengar jelas tanpa harus terlalu keras.",
+    author: {
+      name: "Tim Audio Michael Music",
+      role: "Mixing Engineer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Masalah paling umum dalam mixing adalah vokal terasa tertutup instrumen lain, terutama ketika aransemen mulai padat. Solusinya bukan sekadar menaikkan volume vokal, tetapi membangun ruang frekuensi dan dinamika yang seimbang.",
+      },
+      {
+        type: "heading",
+        text: "Langkah Dasar Membuat Vokal Lebih Maju",
+      },
+      {
+        type: "list",
+        items: [
+          "High-pass filter seperlunya untuk membersihkan low rumble yang tidak perlu.",
+          "Cut frekuensi boxy pada vokal jika terdengar keruh, lalu boost presence secara halus.",
+          "Gunakan compressor dengan setting moderat agar level vokal lebih stabil.",
+          "Beri de-esser untuk mengontrol sibilance tanpa membuat vokal kusam.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Peran Automation dalam Chorus",
+      },
+      {
+        type: "paragraph",
+        text: "Automation volume sangat membantu menjaga artikulasi kata-kata penting, terutama di bagian chorus yang ramai. Naikkan level vokal sedikit pada frase kunci agar emosi lagu tetap sampai ke pendengar.",
+      },
+      {
+        type: "quote",
+        text: "Mix vokal yang bagus bukan yang paling keras, tapi yang paling mudah dipahami dan dirasakan.",
+      },
+      {
+        type: "paragraph",
+        text: "Selain plugin, kualitas performa vokal saat tracking tetap krusial. Rekaman yang baik sejak awal akan jauh lebih mudah dipoles saat mixing dan memberi hasil akhir yang lebih natural.",
+      },
+    ],
+    tags: ["Vokal", "Mixing", "EQ", "Compression"],
+  },
+  "release-plan-single-30-hari": {
+    slug: "release-plan-single-30-hari",
+    category: "Distribusi",
+    readTime: "7 menit",
+    date: "4 Juli 2026",
+    title: "Release Plan Single 30 Hari: Strategi Rilis Musik yang Lebih Rapi",
+    subtitle:
+      "Single yang bagus butuh strategi publikasi yang terstruktur. Rencana 30 hari membantu Anda mengubah rilis lagu menjadi momentum audiens.",
+    author: {
+      name: "Tim Rilis Digital Michael Music",
+      role: "Campaign Planner",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Banyak musisi hanya fokus pada tanggal rilis, padahal keberhasilan single sangat dipengaruhi aktivitas sebelum dan sesudah hari H. Release plan membantu Anda menjaga konsistensi pesan, konten, dan engagement selama satu siklus kampanye.",
+      },
+      {
+        type: "heading",
+        text: "Minggu 1-2: Persiapan dan Teaser",
+      },
+      {
+        type: "list",
+        items: [
+          "Finalisasi master, artwork, dan metadata distribusi.",
+          "Rilis teaser audio 10-15 detik di media sosial.",
+          "Bangun pre-save campaign untuk Spotify.",
+          "Siapkan narasi cerita di balik lagu untuk materi promosi.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Minggu 3-4: Hari Rilis dan Follow-Up",
+      },
+      {
+        type: "list",
+        items: [
+          "Publish konten rilis utama di semua kanal pada hari yang sama.",
+          "Dorong user-generated content dengan challenge atau duet reels.",
+          "Bagikan insight proses kreatif untuk memperpanjang umur kampanye.",
+          "Pantau data streaming awal untuk evaluasi promosi berikutnya.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Rilis musik yang efektif bukan ledakan satu hari, melainkan percakapan yang dibangun bertahap.",
+      },
+      {
+        type: "paragraph",
+        text: "Dengan timeline yang realistis, Anda bisa menjaga energi tim, konsistensi konten, dan peluang lagu masuk radar audiens baru. Strategi sederhana namun konsisten sering lebih kuat daripada promosi besar yang sekali lewat.",
+      },
+    ],
+    tags: ["Rilis Musik", "Distribusi", "Marketing", "Spotify"],
   },
 };
 

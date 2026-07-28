@@ -47,6 +47,24 @@ export const podcastArticles: Article[] = [
     category: "Teknik",
     slug: "cara-bicara-lancar-podcast",
   },
+  {
+    id: "6",
+    title: "Struktur Episode Podcast 20 Menit yang Bikin Betah Didengar",
+    excerpt:
+      "Durasi pendek bisa sangat kuat jika strukturnya tepat. Pelajari format episode 20 menit agar flow pembahasan tetap padat dan engaging.",
+    date: "4 Juli 2026",
+    category: "Panduan",
+    slug: "struktur-episode-podcast-20-menit",
+  },
+  {
+    id: "7",
+    title: "Repurpose 1 Episode Jadi 10 Konten: Strategi Growth Podcast",
+    excerpt:
+      "Satu rekaman podcast bisa dipecah jadi banyak konten lintas platform. Gunakan strategi repurpose agar jangkauan meningkat tanpa rekaman ulang.",
+    date: "4 Juli 2026",
+    category: "Bisnis",
+    slug: "repurpose-episode-jadi-konten",
+  },
 ];
 
 export const podcastArticleDetails: Record<string, ArticleDetail> = {
@@ -240,5 +258,110 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Podcast", "Public Speaking", "Vokal", "Tips Trik"],
+  },
+  "struktur-episode-podcast-20-menit": {
+    slug: "struktur-episode-podcast-20-menit",
+    category: "Panduan",
+    readTime: "6 menit",
+    date: "4 Juli 2026",
+    title: "Struktur Episode Podcast 20 Menit yang Bikin Betah Didengar",
+    subtitle:
+      "Pendengar menyukai episode yang jelas arahnya. Struktur yang rapi membantu host menyampaikan ide tanpa berputar-putar.",
+    author: {
+      name: "Tim Podcast Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Show Producer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Durasi 20 menit ideal untuk banyak audiens mobile yang mendengarkan saat perjalanan atau jeda kerja. Tantangannya adalah menjaga fokus topik tetap tajam tanpa kehilangan kedalaman pembahasan.",
+      },
+      {
+        type: "heading",
+        text: "Format Praktis 20 Menit",
+      },
+      {
+        type: "list",
+        items: [
+          "Menit 0-2: Hook pembuka, konteks topik, dan janji nilai episode.",
+          "Menit 3-12: Pembahasan inti dalam 2-3 poin utama.",
+          "Menit 13-17: Contoh kasus atau pengalaman praktis.",
+          "Menit 18-20: Ringkasan, call to action, dan teaser episode berikutnya.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Agar Flow Tidak Kaku",
+      },
+      {
+        type: "paragraph",
+        text: "Gunakan outline poin, bukan naskah penuh. Teknik ini menjaga spontanitas bicara sambil memastikan Anda tetap on-track terhadap tujuan episode.",
+      },
+      {
+        type: "quote",
+        text: "Episode yang terstruktur membuat pendengar merasa waktunya dihargai.",
+      },
+      {
+        type: "paragraph",
+        text: "Sebelum publish, dengarkan ulang 1x sebagai audiens baru. Potong bagian repetitif dan sisakan poin yang paling bernilai agar retensi pendengar tetap tinggi sampai akhir episode.",
+      },
+    ],
+    tags: ["Podcast", "Struktur Episode", "Host", "Konten"],
+  },
+  "repurpose-episode-jadi-konten": {
+    slug: "repurpose-episode-jadi-konten",
+    category: "Bisnis",
+    readTime: "7 menit",
+    date: "4 Juli 2026",
+    title: "Repurpose 1 Episode Jadi 10 Konten: Strategi Growth Podcast",
+    subtitle:
+      "Growth podcast tidak selalu butuh rekaman lebih banyak. Kunci utamanya adalah mendistribusikan satu ide ke banyak format konten.",
+    author: {
+      name: "Tim Strategi Konten",
+      role: "Growth and Distribution",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Satu episode podcast sering hanya dikonsumsi oleh audiens yang sudah loyal. Padahal, materi yang sama bisa menjangkau audiens baru jika diolah ulang menjadi konten pendek untuk berbagai platform.",
+      },
+      {
+        type: "heading",
+        text: "Contoh Breakdown 1 Episode",
+      },
+      {
+        type: "list",
+        items: [
+          "3-4 short clips vertikal untuk reels/shorts.",
+          "1 carousel berisi ringkasan poin penting.",
+          "1 thread atau caption panjang dengan insight utama.",
+          "1 artikel blog dari transkrip episode.",
+          "1 newsletter mingguan berbasis tema episode.",
+          "1 kutipan visual untuk posting statis.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Workflow Supaya Efisien",
+      },
+      {
+        type: "list",
+        items: [
+          "Buat timecode highlight saat proses editing audio.",
+          "Siapkan template desain agar produksi konten turunan lebih cepat.",
+          "Jadwalkan distribusi konten selama 7-14 hari setelah episode tayang.",
+          "Pantau performa tiap format untuk menentukan pola yang paling efektif.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Di era distribusi digital, menang bukan yang paling banyak merekam, tetapi yang paling cerdas mengemas ulang pesan.",
+      },
+      {
+        type: "paragraph",
+        text: "Dengan strategi repurpose yang konsisten, setiap episode bekerja lebih lama untuk brand Anda. Hasilnya adalah efisiensi produksi lebih baik dan pertumbuhan audiens yang lebih stabil.",
+      },
+    ],
+    tags: ["Podcast", "Repurpose", "Content Marketing", "Growth"],
   },
 };
