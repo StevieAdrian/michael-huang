@@ -47,6 +47,24 @@ export const churchArticles: Article[] = [
     category: "Komunitas",
     slug: "kelompok-kecil-pertumbuhan-iman",
   },
+  {
+    id: "6",
+    title: "Disiplin Membaca Alkitab Setiap Hari: Mulai dari 15 Menit",
+    excerpt:
+      "Banyak jemaat rindu lebih dekat dengan Tuhan, tapi bingung mulai dari mana. Artikel ini membagikan pola sederhana membaca Alkitab yang konsisten.",
+    date: "4 Juli 2026",
+    category: "Renungan",
+    slug: "disiplin-membaca-alkitab-harian",
+  },
+  {
+    id: "7",
+    title: "Melayani dengan Sehat: Menjaga Hati agar Tidak Burnout",
+    excerpt:
+      "Pelayanan yang berdampak membutuhkan hati yang dipulihkan. Pahami cara menjaga ritme melayani agar tetap kuat secara rohani dan emosional.",
+    date: "4 Juli 2026",
+    category: "Pelayanan",
+    slug: "melayani-dengan-sehat-tanpa-burnout",
+  },
 ];
 
 export const churchArticleDetails: Record<string, ArticleDetail> = {
@@ -341,5 +359,112 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Kelompok Kecil", "Komunitas", "Pemuridan", "Persekutuan"],
+  },
+  "disiplin-membaca-alkitab-harian": {
+    slug: "disiplin-membaca-alkitab-harian",
+    category: "Renungan",
+    readTime: "6 menit",
+    date: "4 Juli 2026",
+    title: "Disiplin Membaca Alkitab Setiap Hari: Mulai dari 15 Menit",
+    subtitle:
+      "Konsistensi membaca firman tidak dibangun dari target besar, melainkan dari langkah kecil yang dilakukan setiap hari dengan hati yang lapar akan Tuhan.",
+    author: {
+      name: "Tim Pastoral Glory Ministry",
+      role: "Redaksi Pemuridan",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Banyak orang percaya memiliki niat baik untuk membaca Alkitab, tetapi berhenti di tengah jalan karena merasa tertinggal atau tidak paham. Kabar baiknya, pertumbuhan rohani tidak menuntut kesempurnaan, melainkan kesetiaan dalam ritme harian.",
+      },
+      {
+        type: "heading",
+        text: "Pola Sederhana 15 Menit",
+      },
+      {
+        type: "list",
+        items: [
+          "5 menit membaca satu perikop pendek.",
+          "5 menit menandai satu ayat kunci dan menulis satu kalimat refleksi.",
+          "5 menit berdoa berdasarkan ayat yang dibaca.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Agar Konsisten dalam Jangka Panjang",
+      },
+      {
+        type: "list",
+        items: [
+          "Tentukan jam tetap setiap hari dan jadikan prioritas utama.",
+          "Gunakan rencana bacaan mingguan agar tidak bingung memilih teks.",
+          "Simpan catatan renungan singkat untuk melihat jejak pertumbuhan iman.",
+          "Cari teman akuntabilitas yang saling mengingatkan dengan kasih.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Firman-Mu itu pelita bagi kakiku dan terang bagi jalanku. - Mazmur 119:105",
+      },
+      {
+        type: "paragraph",
+        text: "Jangan menunggu waktu luang baru membaca firman. Mulailah dari waktu yang Anda miliki hari ini, dan izinkan Roh Kudus membentuk kebiasaan yang mengakar. Dalam proses itu, hati kita akan semakin peka mendengar suara Tuhan.",
+      },
+    ],
+    tags: ["Alkitab", "Renungan", "Pemuridan", "Disiplin Rohani"],
+  },
+  "melayani-dengan-sehat-tanpa-burnout": {
+    slug: "melayani-dengan-sehat-tanpa-burnout",
+    category: "Pelayanan",
+    readTime: "7 menit",
+    date: "4 Juli 2026",
+    title: "Melayani dengan Sehat: Menjaga Hati agar Tidak Burnout",
+    subtitle:
+      "Pelayan Tuhan dipanggil untuk setia, tetapi juga perlu menjaga jiwa. Pelayanan yang berkelanjutan lahir dari hati yang terus dipulihkan dalam hadirat-Nya.",
+    author: {
+      name: "Tim Penggembalaan Glory Ministry",
+      role: "Care and Leadership Development",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Burnout dalam pelayanan bisa terjadi ketika seseorang terus memberi tanpa ruang untuk dipulihkan. Tanda-tandanya antara lain kelelahan emosional, mudah tersinggung, kehilangan sukacita melayani, dan mulai menjalankan tugas secara mekanis.",
+      },
+      {
+        type: "heading",
+        text: "Penyebab Umum Burnout Pelayanan",
+      },
+      {
+        type: "list",
+        items: [
+          "Tidak memiliki ritme sabat dan istirahat yang sehat.",
+          "Ekspektasi berlebihan terhadap diri sendiri.",
+          "Kurangnya delegasi dan kerja tim yang seimbang.",
+          "Melupakan kehidupan pribadi dengan Tuhan di luar tugas pelayanan.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Langkah Praktis Menjaga Kesehatan Rohani",
+      },
+      {
+        type: "list",
+        items: [
+          "Jadwalkan waktu teduh yang tidak berorientasi persiapan pelayanan.",
+          "Bangun budaya saling dukung dalam tim, termasuk evaluasi dan doa bersama.",
+          "Berani berkata cukup saat kapasitas sedang penuh.",
+          "Berkonsultasi dengan pemimpin rohani ketika mulai merasa kewalahan.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Pelayanan terbaik lahir bukan dari kelelahan yang dipaksakan, tetapi dari hati yang tinggal dalam kasih Tuhan.",
+      },
+      {
+        type: "paragraph",
+        text: "Jika Anda sedang lelah dalam melayani, jangan memikul beban sendirian. Datanglah kepada pemimpin dan komunitas rohani yang dapat menolong Anda dipulihkan. Tuhan tidak hanya peduli pada apa yang kita kerjakan, tetapi juga pada kondisi hati kita.",
+      },
+    ],
+    tags: ["Pelayanan", "Burnout", "Pemulihan", "Kepemimpinan"],
   },
 };

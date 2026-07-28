@@ -47,6 +47,24 @@ export const kostArticles: Article[] = [
     category: "Dekorasi",
     slug: "dekorasi-kamar-kost-nyaman",
   },
+  {
+    id: "6",
+    title: "Checklist Sebelum Masuk Kost Baru: Supaya Tidak Boncos di Awal",
+    excerpt:
+      "Masuk kost tanpa persiapan sering bikin biaya awal membengkak. Gunakan checklist ini agar kebutuhan utama sudah aman dari hari pertama.",
+    date: "4 Juli 2026",
+    category: "Panduan",
+    slug: "checklist-sebelum-masuk-kost-baru",
+  },
+  {
+    id: "7",
+    title: "Etika Tinggal di Kost Bersama: Cara Nyaman Tanpa Drama",
+    excerpt:
+      "Kenyamanan kost bukan hanya soal fasilitas, tapi juga perilaku penghuni. Pahami etika dasar hidup bersama agar suasana tetap harmonis.",
+    date: "4 Juli 2026",
+    category: "Gaya Hidup",
+    slug: "etika-tinggal-di-kost-bersama",
+  },
 ];
 
 export const kostArticleDetails: Record<string, ArticleDetail> = {
@@ -297,5 +315,110 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Dekorasi", "Kamar Kost", "Interior", "Budget"],
+  },
+  "checklist-sebelum-masuk-kost-baru": {
+    slug: "checklist-sebelum-masuk-kost-baru",
+    category: "Panduan",
+    readTime: "6 menit",
+    date: "4 Juli 2026",
+    title:
+      "Checklist Sebelum Masuk Kost Baru: Supaya Tidak Boncos di Awal",
+    subtitle:
+      "Minggu pertama di kost sering jadi fase paling boros. Dengan persiapan yang tepat, Anda bisa mulai hidup mandiri tanpa pengeluaran yang tidak perlu.",
+    author: {
+      name: "Tim Hunian Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Resident Setup Advisor",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Banyak penghuni baru fokus pada biaya sewa bulanan, tetapi lupa menghitung biaya setup awal seperti perlengkapan kamar, deposit, transportasi pindahan, dan kebutuhan harian. Akibatnya, anggaran bulan pertama cepat jebol.",
+      },
+      {
+        type: "heading",
+        text: "Daftar Prioritas Kebutuhan Hari Pertama",
+      },
+      {
+        type: "list",
+        items: [
+          "Dokumen administrasi: identitas, salinan kontrak, dan bukti pembayaran sewa.",
+          "Perlengkapan tidur: sprei, bantal, selimut, dan pelindung kasur.",
+          "Peralatan kebersihan dasar: sapu kecil, cairan pembersih, kantong sampah.",
+          "Kebutuhan mandi dan laundry minggu pertama.",
+          "Peralatan makan sederhana serta stok makanan ringan darurat.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Tips Menekan Biaya Setup Awal",
+      },
+      {
+        type: "list",
+        items: [
+          "Pisahkan kebutuhan wajib dan keinginan dekoratif agar belanja tidak impulsif.",
+          "Belanja bertahap selama 2-3 minggu pertama sesuai pemakaian nyata.",
+          "Manfaatkan paket bundling kebutuhan rumah tangga untuk harga lebih hemat.",
+          "Tanyakan fasilitas bawaan kost agar tidak membeli barang yang sebenarnya sudah tersedia.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Masuk kost dengan rencana yang jelas membuat Anda lebih tenang, hemat, dan cepat beradaptasi.",
+      },
+      {
+        type: "paragraph",
+        text: "Sebelum pindah, buat anggaran setup awal dan catat semua pengeluaran selama 30 hari pertama. Kebiasaan ini membantu Anda mengendalikan biaya sejak awal dan menjaga cashflow bulanan tetap sehat.",
+      },
+    ],
+    tags: ["Checklist Kost", "Anak Kost", "Budget", "Panduan"],
+  },
+  "etika-tinggal-di-kost-bersama": {
+    slug: "etika-tinggal-di-kost-bersama",
+    category: "Gaya Hidup",
+    readTime: "5 menit",
+    date: "4 Juli 2026",
+    title: "Etika Tinggal di Kost Bersama: Cara Nyaman Tanpa Drama",
+    subtitle:
+      "Konflik antar penghuni kost sering bermula dari hal kecil. Menjaga etika bersama membuat lingkungan tinggal lebih aman dan menyenangkan.",
+    author: {
+      name: "Tim Operasional Kost",
+      role: "Community Experience",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Tinggal di kost berarti berbagi ruang, aturan, dan ritme hidup dengan orang lain. Walau sederhana, etika dasar seperti menjaga kebersihan dan menghormati privasi sangat menentukan kualitas hidup semua penghuni.",
+      },
+      {
+        type: "heading",
+        text: "Etika Dasar yang Wajib Dijaga",
+      },
+      {
+        type: "list",
+        items: [
+          "Jaga volume suara, terutama pada malam hari dan pagi buta.",
+          "Gunakan area bersama secara tertib dan bersihkan setelah dipakai.",
+          "Hormati privasi penghuni lain, termasuk soal tamu dan penggunaan barang.",
+          "Patuhi aturan keamanan gedung seperti akses pintu dan jam kunjungan.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Cara Menyelesaikan Gesekan Kecil",
+      },
+      {
+        type: "paragraph",
+        text: "Jika ada masalah, sampaikan langsung dengan nada sopan dan fokus pada perilaku, bukan menyerang pribadi. Bila perlu, libatkan pengelola kost sebagai mediator agar solusi lebih objektif dan cepat.",
+      },
+      {
+        type: "quote",
+        text: "Kost yang nyaman dibangun dari kebiasaan kecil yang saling menghargai setiap hari.",
+      },
+      {
+        type: "paragraph",
+        text: "Lingkungan tinggal yang harmonis akan membantu Anda lebih fokus belajar, bekerja, dan beristirahat. Mulailah dari diri sendiri, karena etika baik menular ke seluruh komunitas kost.",
+      },
+    ],
+    tags: ["Etika Kost", "Komunitas", "Gaya Hidup", "Hunian"],
   },
 };
