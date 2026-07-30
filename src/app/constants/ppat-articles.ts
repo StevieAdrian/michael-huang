@@ -65,6 +65,24 @@ export const ppatArticles: Article[] = [
     category: "Panduan",
     slug: "split-sertifikat-tanah-proses",
   },
+  {
+    id: "8",
+    title: "Simulasi Biaya AJB: BPHTB, PPh, dan Komponen Lain yang Sering Terlewat",
+    excerpt:
+      "Banyak pembeli baru kaget di akhir transaksi karena belum menghitung komponen biaya AJB secara utuh. Pelajari struktur biayanya dari awal.",
+    date: "7 Agustus 2026",
+    category: "Tips",
+    slug: "simulasi-biaya-ajb-bphtb-pph",
+  },
+  {
+    id: "9",
+    title: "Cek Zona Tata Ruang Sebelum Beli Tanah: Langkah Penting yang Sering Dilupakan",
+    excerpt:
+      "Tanah yang terlihat ideal belum tentu sesuai peruntukan wilayah. Pastikan status zonasi dicek sebelum transaksi agar rencana pembangunan tidak terhambat.",
+    date: "7 Agustus 2026",
+    category: "Edukasi",
+    slug: "cek-zona-tata-ruang-tanah",
+  },
 ];
 
 export const ppatArticleDetails: Record<string, ArticleDetail> = {
@@ -386,5 +404,89 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Split Sertifikat", "Pemecahan Tanah", "PPAT", "BPN"],
+  },
+  "simulasi-biaya-ajb-bphtb-pph": {
+    slug: "simulasi-biaya-ajb-bphtb-pph",
+    category: "Tips",
+    readTime: "6 menit",
+    date: "7 Agustus 2026",
+    title:
+      "Simulasi Biaya AJB: BPHTB, PPh, dan Komponen Lain yang Sering Terlewat",
+    subtitle:
+      "Perencanaan biaya transaksi yang akurat membantu pembeli dan penjual menghindari kejutan finansial menjelang penandatanganan AJB.",
+    author: {
+      name: "Tim PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Transaction Advisory",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Dalam jual beli tanah, harga kesepakatan hanyalah satu bagian dari total biaya. Banyak pihak baru menghitung komponen lain di tahap akhir, sehingga proses tertunda karena dana belum siap.",
+      },
+      {
+        type: "heading",
+        text: "Komponen Biaya yang Perlu Disiapkan",
+      },
+      {
+        type: "list",
+        items: [
+          "BPHTB dari sisi perolehan hak pembeli.",
+          "PPh final dari sisi pengalihan hak penjual.",
+          "Biaya jasa PPAT dan administrasi pendukung.",
+          "Biaya pengecekan sertifikat dan proses balik nama.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Transaksi properti yang lancar dimulai dari kalkulasi biaya yang realistis sejak awal negosiasi.",
+      },
+      {
+        type: "paragraph",
+        text: "Sebelum menandatangani PPJB atau AJB, lakukan simulasi biaya bersama PPAT agar pembagian kewajiban pajak dan biaya administrasi jelas untuk kedua belah pihak.",
+      },
+    ],
+    tags: ["AJB", "BPHTB", "PPh", "PPAT"],
+  },
+  "cek-zona-tata-ruang-tanah": {
+    slug: "cek-zona-tata-ruang-tanah",
+    category: "Edukasi",
+    readTime: "6 menit",
+    date: "7 Agustus 2026",
+    title:
+      "Cek Zona Tata Ruang Sebelum Beli Tanah: Langkah Penting yang Sering Dilupakan",
+    subtitle:
+      "Kesesuaian zonasi menentukan apa yang boleh dibangun di atas bidang tanah. Pemeriksaan awal mencegah kerugian jangka panjang.",
+    author: {
+      name: "Tim Legal PPAT",
+      role: "Land Use Advisory",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Tidak sedikit transaksi tanah bermasalah karena pembeli baru mengetahui belakangan bahwa peruntukan lahannya tidak sesuai rencana. Zonasi adalah aspek legal yang harus diperiksa sebelum kesepakatan harga final.",
+      },
+      {
+        type: "heading",
+        text: "Kenapa Cek Zonasi Itu Krusial",
+      },
+      {
+        type: "list",
+        items: [
+          "Mengetahui jenis bangunan yang diperbolehkan di lokasi.",
+          "Menghindari risiko penolakan izin pembangunan.",
+          "Memastikan tanah sesuai kebutuhan bisnis atau hunian.",
+          "Mengurangi potensi sengketa administratif dengan pemerintah daerah.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Harga tanah bisa terlihat menarik, tetapi kepatuhan zonasi menentukan apakah tanah tersebut benar-benar bernilai bagi rencana Anda.",
+      },
+      {
+        type: "paragraph",
+        text: "Libatkan PPAT dan lakukan pengecekan data peruntukan wilayah sebelum pembayaran uang muka. Langkah ini sederhana, namun sangat menentukan keamanan investasi properti.",
+      },
+    ],
+    tags: ["Zonasi", "Tata Ruang", "PPAT", "Properti"],
   },
 };

@@ -39,32 +39,16 @@ export function Footer() {
           {/* Services Section */}
           <div>
             <h4 className="font-display font-semibold mb-4 text-foreground text-sm">
-              Layanan Hukum Jakarta Barat
+              Layanan Hukum
             </h4>
             <ul className="space-y-2 mb-6">
-              <li>
-                <Link
-                  href="/notaris-michael"
-                  className="text-muted-foreground hover:text-gold transition-colors text-sm font-medium"
-                >
-                  Notaris Jakarta Barat
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/ppat-michael"
-                  className="text-muted-foreground hover:text-gold transition-colors text-sm font-medium"
-                >
-                  PPAT Jakarta Barat
-                </Link>
-              </li>
-              {legalNavItems.filter(i => i.path !== "/notaris-michael" && i.path !== "/ppat-michael").map((item) => (
+              {legalNavItems.map((item) => (
                 <li key={item.path}>
                   <Link
                     href={item.path}
-                    className="text-muted-foreground hover:text-gold transition-colors text-sm"
+                    className="text-muted-foreground hover:text-gold transition-colors text-sm font-medium"
                   >
-                    {item.name}
+                    {item.footerName || item.name}
                   </Link>
                 </li>
               ))}
