@@ -46,9 +46,9 @@ export function Footer() {
                 <li key={item.path}>
                   <Link
                     href={item.path}
-                    className="text-muted-foreground hover:text-gold transition-colors text-sm"
+                    className="text-muted-foreground hover:text-gold transition-colors text-sm font-medium"
                   >
-                    {item.name}
+                    {item.footerName || item.name}
                   </Link>
                 </li>
               ))}
@@ -73,7 +73,7 @@ export function Footer() {
           {/* Contact Section */}
           <div>
             <h4 className="font-display font-semibold mb-4 text-foreground text-sm">
-              Kontak
+              Kantor & Kontak
             </h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-3">
@@ -93,7 +93,7 @@ export function Footer() {
                   <MapPin className="w-4 h-4" />
                 </div>
                 <span>
-                  Jakarta, Indonesia
+                  Ruko Mutiara Taman Palem C8/23-26, Cengkareng Timur, Jakarta Barat 11730
                 </span>
               </li>
             </ul>

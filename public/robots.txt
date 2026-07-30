@@ -1,3 +1,15 @@
+# Sitemap
+Sitemap: https://www.michaelhuang.id/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 User-agent: *
 Allow: /
 
@@ -29,10 +41,6 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# Sitemap and LLM Context
-# https://llmstxt.org/
-Sitemap: https://www.michaelhuang.id/sitemap.xml
-
 # Markdown Mirrors for AI Tools
-# Clean markdown versions of all pages
 # https://www.michaelhuang.id/markdown/
+

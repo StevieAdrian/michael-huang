@@ -1,9 +1,9 @@
 export const legalNavItems = [
-  { name: "Law Firm", path: "/law-firm-michael" },
-  { name: "Notaris", path: "/notaris-michael" },
-  { name: "PPAT", path: "/ppat-michael" },
-  { name: "Konsultasi Hukum", path: "/law-consulting-michael" },
-  { name: "FAQ Hukum", path: "/indonesia-legal-faq" },
+  { name: "Law Firm", footerName: "Law Firm Jakarta", path: "/law-firm-michael" },
+  { name: "Notaris", footerName: "Notaris Jakarta Barat", path: "/notaris-michael" },
+  { name: "PPAT", footerName: "PPAT Jakarta Barat", path: "/ppat-michael" },
+  { name: "Konsultasi Hukum", footerName: "Konsultasi Hukum", path: "/law-consulting-michael" },
+  { name: "FAQ Hukum", footerName: "FAQ Hukum Indonesia", path: "/indonesia-legal-faq" },
 ];
 
 export const navItems = [
