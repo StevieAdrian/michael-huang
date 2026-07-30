@@ -6,25 +6,25 @@ import { StructuredData } from "@/shared/components/StructuredData";
 import { notarisFaqs } from "@/app/constants/notaris";
 
 export const metadata: Metadata = {
-  title: "Notaris Jakarta Barat | Akta Autentik Resmi | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+  title: "Notaris Jakarta Barat | Akta Autentik & PPAT Resmi | Dr. Michael, S.H., S.T., M.Kn.",
   description:
-    "Jasa Notaris resmi di Jakarta Barat. Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. melayani akta autentik, pendirian PT/CV/PMA, akta jual beli properti, akta waris & hibah, RUPS, dan legalisasi dokumen. Terdaftar di Kemenkumham RI & Ikatan Notaris Indonesia (INI).",
+    "Kantor Notaris & PPAT resmi di Jakarta Barat (Cengkareng / Taman Palem). Melayani Akta Autentik, Pendirian PT/CV, AJB Properti & Legalisasi. Hubungi kami!",
   keywords: [
     "notaris jakarta barat",
-    "notaris jakarta",
-    "jasa notaris jakarta",
-    "notaris pendirian pt jakarta",
-    "notaris akta jual beli jakarta",
+    "kantor notaris jakarta barat",
     "notaris cengkareng",
-    "notaris terpercaya jakarta barat",
-    "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. notaris",
-    "akta autentik jakarta",
-    "notaris pendirian cv jakarta",
-    "notaris pma jakarta",
+    "notaris taman palem",
+    "notaris terdekat jakarta barat",
+    "jasa notaris jakarta barat",
+    "notaris pendirian pt jakarta barat",
+    "notaris ppat jakarta barat",
+    "akta autentik jakarta barat",
+    "biaya notaris jakarta barat",
+    "Dr. Michael, S.H., S.T., M.Kn. notaris",
   ],
   openGraph: generateOGMetadata(
-    "Notaris Jakarta Barat | Akta Autentik Resmi | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
-    "Jasa Notaris resmi di Jakarta Barat. Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. melayani akta autentik, pendirian PT/CV/PMA, akta jual beli properti, akta waris & hibah, RUPS, dan legalisasi dokumen. Terdaftar di Kemenkumham RI & Ikatan Notaris Indonesia (INI).",
+    "Notaris Jakarta Barat | Akta Autentik & PPAT Resmi | Dr. Michael, S.H., S.T., M.Kn.",
+    "Kantor Notaris & PPAT resmi di Jakarta Barat (Cengkareng / Taman Palem). Melayani Akta Autentik, Pendirian PT/CV, AJB Properti & Legalisasi. Hubungi kami!",
     `${seoConfig.siteUrl}/og-image.png`,
     `${seoConfig.siteUrl}/notaris-michael`
   ),

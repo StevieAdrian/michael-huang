@@ -148,12 +148,20 @@ export const notarisFaqs = [
     a: "Notaris Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. di Jakarta Barat menyediakan layanan lengkap: akta jual beli (AJB), pendirian PT, CV, dan PMA, akta perjanjian, legalisasi dokumen, akta waris & hibah, RUPS dan corporate action, serta pembuatan surat kuasa notariil.",
   },
   {
+    q: "Berapa biaya pembuatan akta di Notaris Jakarta Barat?",
+    a: "Biaya jasa Notaris & PPAT di Jakarta Barat bervariasi tergantung jenis akta (pendirian PT, AJB properti, perjanjian, atau legalisasi). Kami memberikan kepastian biaya transparan tanpa biaya tersembunyi. Silakan hubungi kami via WhatsApp untuk rincian penawaran biaya resmi.",
+  },
+  {
     q: "Apakah notaris Jakarta Barat ini bisa membantu pendirian PT?",
     a: "Ya. Notaris Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. yang berdomisili di Jakarta Barat berpengalaman dalam pendirian PT, CV, dan PMA. Proses mencakup pembuatan akta pendirian, pengesahan di Kemenkumham RI, dan pendaftaran NPWP perusahaan.",
   },
   {
     q: "Apa perbedaan notaris dan PPAT di Jakarta Barat?",
     a: "Notaris berwenang membuat akta autentik untuk berbagai keperluan hukum (pendirian usaha, perjanjian, waris, dll.), sedangkan PPAT (Pejabat Pembuat Akta Tanah) berwenang khusus membuat akta terkait peralihan dan pembebanan hak atas tanah. Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. memegang keduanya — notaris sekaligus PPAT — sehingga semua kebutuhan hukum properti Anda dapat diselesaikan di satu tempat di Jakarta Barat.",
+  },
+  {
+    q: "Apakah Notaris Dr. Michael terdaftar resmi di Kemenkumham dan INI?",
+    a: "Ya, Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. adalah Notaris & PPAT resmi terdaftar di Kementerian Hukum dan HAM RI (Kemenkumham), Ikatan Notaris Indonesia (INI), serta Ikatan Pejabat Pembuat Akta Tanah (IPPAT) di wilayah kerja Jakarta Barat.",
   },
   {
     q: "Bagaimana prosedur pembuatan akta di notaris Jakarta Barat ini?",

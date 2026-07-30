@@ -39,10 +39,26 @@ export function Footer() {
           {/* Services Section */}
           <div>
             <h4 className="font-display font-semibold mb-4 text-foreground text-sm">
-              Layanan Hukum
+              Layanan Hukum Jakarta Barat
             </h4>
             <ul className="space-y-2 mb-6">
-              {legalNavItems.map((item) => (
+              <li>
+                <Link
+                  href="/notaris-michael"
+                  className="text-muted-foreground hover:text-gold transition-colors text-sm font-medium"
+                >
+                  Notaris Jakarta Barat
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/ppat-michael"
+                  className="text-muted-foreground hover:text-gold transition-colors text-sm font-medium"
+                >
+                  PPAT Jakarta Barat
+                </Link>
+              </li>
+              {legalNavItems.filter(i => i.path !== "/notaris-michael" && i.path !== "/ppat-michael").map((item) => (
                 <li key={item.path}>
                   <Link
                     href={item.path}
@@ -73,7 +89,7 @@ export function Footer() {
           {/* Contact Section */}
           <div>
             <h4 className="font-display font-semibold mb-4 text-foreground text-sm">
-              Kontak
+              Kantor & Kontak
             </h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-3">
@@ -93,7 +109,7 @@ export function Footer() {
                   <MapPin className="w-4 h-4" />
                 </div>
                 <span>
-                  Jakarta, Indonesia
+                  Ruko Mutiara Taman Palem C8/23-26, Cengkareng Timur, Jakarta Barat 11730
                 </span>
               </li>
             </ul>

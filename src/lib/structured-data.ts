@@ -252,16 +252,18 @@ export function generateNotarySchema() {
     "@context": "https://schema.org",
     "@type": "Notary",
     "@id": `${seoConfig.siteUrl}/notaris-michael#notary`,
-    name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. - Notaris & PPAT",
-    alternateName: "Michael, S.H., S.T., M.Kn.",
-    description: "Licensed Notaris and PPAT providing authentic legal documents including company formation, property deeds, and legal authentication services.",
+    name: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. - Notaris & PPAT Jakarta Barat",
+    alternateName: ["Notaris Jakarta Barat Dr. Michael", "Michael Notaris & PPAT"],
+    description: "Licensed Notaris dan PPAT resmi di Jakarta Barat (Cengkareng / Taman Palem). Melayani pembuatan akta autentik, pendirian PT/CV/PMA, Akta Jual Beli (AJB) properti, waris, hibah, RUPS, dan legalisasi dokumen.",
     url: `${seoConfig.siteUrl}/notaris-michael`,
     telephone: "+62-821-2385-595",
     email: "contact@michaelhuang.id",
     priceRange: "$$",
+    image: seoConfig.organization.logo,
+    logo: seoConfig.organization.logo,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Ruko Mutiara Taman Palem Blok C8 No 23-26",
+      streetAddress: "Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur",
       addressLocality: "Jakarta Barat",
       addressRegion: "DKI Jakarta",
       postalCode: "11730",
@@ -272,14 +274,69 @@ export function generateNotarySchema() {
       latitude: -6.13891866018095,
       longitude: 106.73066707400585
     },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "17:00",
+      },
+    ],
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: seoConfig.reviewData.ratingValue,
-      reviewCount: seoConfig.reviewData.reviewCount
+      reviewCount: seoConfig.reviewData.reviewCount,
+      bestRating: "5",
+      worstRating: "1"
     },
-    areaServed: {
-      "@type": "City",
-      name: "Jakarta"
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Jakarta Barat" },
+      { "@type": "AdministrativeArea", name: "Cengkareng" },
+      { "@type": "AdministrativeArea", name: "Taman Palem" },
+      { "@type": "AdministrativeArea", name: "Kalideres" },
+      { "@type": "AdministrativeArea", name: "Kebon Jeruk" },
+      { "@type": "AdministrativeArea", name: "Puri Indah" },
+      { "@type": "City", name: "Jakarta" },
+      { "@type": "State", name: "DKI Jakarta" }
+    ],
+    knowsAbout: [
+      "Notaris Jakarta Barat",
+      "PPAT Jakarta Barat",
+      "Akta Autentik Notaris",
+      "Pendirian PT & CV",
+      "Akta Jual Beli Properti (AJB)",
+      "Legalisasi Dokumen",
+      "Akta Perjanjian & Waris"
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Layanan Notaris & PPAT Jakarta Barat",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Pendirian PT, CV & PMA",
+            description: "Pembuatan Akta Pendirian Perusahaan dan Pengesahan Kemenkumham"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Akta Jual Beli Properti (AJB)",
+            description: "Pembuatan Akta Jual Beli dan Peralihan Hak Properti oleh PPAT"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Legalisasi & Waarmerking Dokumen",
+            description: "Pengesahan dokumen resmi untuk kebutuhan dalam dan luar negeri"
+          }
+        }
+      ]
     }
   };
 }
@@ -352,8 +409,13 @@ export function generateLegalServiceSchema(metadata: {
       },
     ],
     areaServed: [
-      { "@type": "City", name: "Jakarta Barat" },
-      { "@type": "City", name: "Jakarta" },],
+      { "@type": "AdministrativeArea", name: "Jakarta Barat" },
+      { "@type": "AdministrativeArea", name: "Cengkareng" },
+      { "@type": "AdministrativeArea", name: "Taman Palem" },
+      { "@type": "AdministrativeArea", name: "Kalideres" },
+      { "@type": "AdministrativeArea", name: "Kebon Jeruk" },
+      { "@type": "City", name: "Jakarta" },
+    ],
   };
 }
 
