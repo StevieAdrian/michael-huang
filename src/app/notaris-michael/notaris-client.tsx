@@ -1,10 +1,9 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
-import { RelatedServices } from "@/shared/components/related-services";
 import { FileText, Phone, ArrowRight, Star, ChevronDown } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
-import { ArticleCards } from "@/shared/components/article-cards";
 import {
   notarisHero,
   notarisServices,
@@ -16,9 +15,12 @@ import {
 } from "@/app/constants/notaris";
 import { notarisArticles } from "@/app/constants/notaris-articles";
 import { googleReviews } from "@/features/home/constants/reviews";
-import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
 import { NOTARIS_WHATSAPP_URL } from "@/app/constants/links";
-import { Gallery } from "@/shared/components/gallery";
+
+const Gallery = dynamic(() => import("@/shared/components/gallery").then((mod) => mod.Gallery));
+const TestimonialCarousel = dynamic(() => import("@/shared/components/testimonial-carousel").then((mod) => mod.TestimonialCarousel));
+const ArticleCards = dynamic(() => import("@/shared/components/article-cards").then((mod) => mod.ArticleCards));
+const RelatedServices = dynamic(() => import("@/shared/components/related-services").then((mod) => mod.RelatedServices));
 
 export function NotarisClientPage() {
   return (
