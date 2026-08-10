@@ -143,6 +143,7 @@ export function NotarisClientPage() {
             </div>
             <div className="h-[300px] md:h-[380px] rounded-2xl overflow-hidden border border-border/50 shadow-xl">
               <iframe
+                title="Peta Lokasi Kantor Notaris Dr. Michael Jakarta Barat"
                 src={notarisMapEmbedUrl}
                 width="100%"
                 height="100%"

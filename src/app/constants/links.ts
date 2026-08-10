@@ -1,5 +1,5 @@
 export const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@michaelhuangofficial2022";
-export const WEBSITE_LOGO_PATH = "/images/logo-mich.ico";
+export const WEBSITE_LOGO_PATH = "/images/logo-mich-thumb.webp";
 export const SPOTIFY_URL = "#";
 export const APPLE_PODCASTS_URL = "#";
 export const GOOGLE_PODCASTS_URL = "#";
