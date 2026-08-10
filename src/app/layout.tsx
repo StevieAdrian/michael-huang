@@ -126,10 +126,7 @@ export default function RootLayout({
         {/* Structured Data - Person Schema */}
         <StructuredData data={generatePersonSchema()} />
         
-        {/* Preconnect to external resources for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+        {/* Preconnect for performance */}
         <meta name="theme-color" content="#d4af37" />
       </head>
       <body className="min-h-full flex flex-col">
