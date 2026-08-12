@@ -3,6 +3,7 @@
 import { ArticleDetailPage } from "@/shared/components/article-detail-page";
 import type { Article } from "@/shared/components/article-cards";
 import type { ArticleDetail } from "@/shared/types/article";
+import { WHATSAPP_URL } from "@/app/constants/links";
 
 interface ChurchArticleClientPageProps {
   article: ArticleDetail;
@@ -24,7 +25,7 @@ export function ChurchArticleClientPage({
         title: "Butuh bantuan lebih lanjut?",
         subtitle: "Tim Gereja kami siap membantu Anda secara langsung.",
         buttonText: "Hubungi Kami",
-        href: "https://wa.me/6281234567890",
+        href: WHATSAPP_URL,
       }}
     />
   );

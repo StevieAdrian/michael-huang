@@ -15,7 +15,7 @@ import {
 } from "@/app/constants/notaris";
 import { notarisArticles } from "@/app/constants/notaris-articles";
 import { googleReviews } from "@/features/home/constants/reviews";
-import { NOTARIS_WHATSAPP_URL } from "@/app/constants/links";
+import { NOTARIS_WHATSAPP_URL, WHATSAPP_PHONE } from "@/app/constants/links";
 
 const Gallery = dynamic(() => import("@/shared/components/gallery").then((mod) => mod.Gallery));
 const TestimonialCarousel = dynamic(() => import("@/shared/components/testimonial-carousel").then((mod) => mod.TestimonialCarousel));
@@ -136,7 +136,7 @@ export function NotarisClientPage() {
                   Konsultasi via WhatsApp <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
-                  href="tel:+6281234567890"
+                  href={`tel:+${WHATSAPP_PHONE}`}
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-border hover:border-gold/50 text-foreground font-semibold rounded-xl text-sm transition-all"
                 >
                   <Phone className="w-4 h-4" /> Telepon Sekarang
