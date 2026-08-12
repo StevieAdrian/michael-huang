@@ -27,7 +27,10 @@ export default function LawConsultingPage() {
     url: `${seoConfig.siteUrl}/law-consulting-michael`,
   });
 
-  const faqSchema = generateFAQSchema(lawConsultingFaqs);
+  const faqSchema = generateFAQSchema(
+    lawConsultingFaqs,
+    `${seoConfig.siteUrl}/law-consulting-michael`
+  );
 
   return (
     <>

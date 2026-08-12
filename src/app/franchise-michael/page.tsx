@@ -21,7 +21,10 @@ export const metadata: Metadata = {
 };
 
 export default function FranchisePage() {
-  const faqSchema = generateFAQSchema(franchiseFaqs);
+  const faqSchema = generateFAQSchema(
+    franchiseFaqs,
+    `${seoConfig.siteUrl}/franchise-michael`
+  );
 
   return (
     <>

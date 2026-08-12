@@ -433,11 +433,18 @@ export function generateChurchSchema() {
   };
 }
 
-export function generateFAQSchema(faqs: Array<{ q: string; a: string }>) {
+/**
+ * `pageUrl` scopes the @id to the page emitting the FAQ. Without it every page
+ * would share the same @id and Google would treat them as one FAQPage.
+ */
+export function generateFAQSchema(
+  faqs: Array<{ q: string; a: string }>,
+  pageUrl: string = seoConfig.siteUrl
+) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": `${seoConfig.siteUrl}/#faq`,
+    "@id": `${pageUrl}#faq`,
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,

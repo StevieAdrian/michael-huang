@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { NotarisClientPage } from "./notaris-client";
 import { generateOGMetadata, seoConfig } from "@/config/seo-config";
-import { generateLegalServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/structured-data";
+import { generateNotarySchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";
 import { notarisFaqs } from "@/app/constants/notaris";
 
@@ -34,13 +34,14 @@ export const metadata: Metadata = {
 };
 
 export default function NotarisPage() {
-  const schema = generateLegalServiceSchema({
-    name: "Notaris Jakarta Barat - Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
-    description: "Jasa Notaris resmi di Jakarta Barat. Melayani akta autentik, pendirian PT/CV/PMA, akta jual beli properti, waris & hibah, dan legalisasi dokumen. Terdaftar di Kemenkumham RI dan Ikatan Notaris Indonesia (INI).",
-    url: `${seoConfig.siteUrl}/notaris-michael`,
-  });
+  // The full Notary entity (geo, areaServed, opening hours, offer catalog)
+  // belongs on this page, not on the homepage.
+  const schema = generateNotarySchema();
 
-  const faqSchema = generateFAQSchema(notarisFaqs);
+  const faqSchema = generateFAQSchema(
+    notarisFaqs,
+    `${seoConfig.siteUrl}/notaris-michael`
+  );
 
   return (
     <>

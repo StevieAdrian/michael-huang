@@ -7,7 +7,6 @@ import { StructuredData } from "@/shared/components/StructuredData";
 import {
   generateComprehensiveBusinessSchema,
   generateAttorneySchema,
-  generateNotarySchema,
   generateRestaurantSchema,
   generateHomepageFAQSchema,
   generateServiceListSchema,
@@ -19,7 +18,7 @@ export default function Home() {
       {/* Comprehensive JSON-LD Structured Data for Homepage */}
       <StructuredData data={generateComprehensiveBusinessSchema()} />
       <StructuredData data={generateAttorneySchema()} />
-      <StructuredData data={generateNotarySchema()} />
+      {/* Notary entity lives on /notaris-michael, its own page. */}
       <StructuredData data={generateRestaurantSchema()} />
       <StructuredData data={generateHomepageFAQSchema()} />
       <StructuredData data={generateServiceListSchema()} />

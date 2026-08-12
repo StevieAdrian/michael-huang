@@ -31,7 +31,10 @@ export const metadata: Metadata = {
 };
 
 export default function IndonesiaLegalFaqPage() {
-  const schema = generateFAQSchema(legalFaqs);
+  const schema = generateFAQSchema(
+    legalFaqs,
+    `${seoConfig.siteUrl}/indonesia-legal-faq`
+  );
 
   return (
     <>
