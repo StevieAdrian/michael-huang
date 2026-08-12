@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { MusicArticleClientPage } from "./article-client";
 import { musicArticleDetails, musicArticles } from "@/app/constants/music-articles";
+import { seoConfig } from "@/config/seo-config";
 
 interface MusicArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -23,6 +24,9 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Musik | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
+    alternates: {
+      canonical: `${seoConfig.siteUrl}/musik-production-michael/artikel/${slug}`,
+    },
   };
 }
 

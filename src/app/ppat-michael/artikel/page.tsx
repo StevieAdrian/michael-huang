@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { AllArticlesPage } from "@/shared/components/all-articles-page";
 import { ppatArticles } from "@/app/constants/ppat-articles";
+import { seoConfig } from "@/config/seo-config";
 
 export const metadata: Metadata = {
   title: "Semua Artikel PPAT | Michael Huang",
   description:
     "Kumpulan artikel seputar layanan PPAT, akta tanah, jual beli properti, dan sertifikat hak atas tanah.",
+  alternates: {
+    canonical: `${seoConfig.siteUrl}/ppat-michael/artikel`,
+  },
 };
 
 export default function PPATAllArticlesPage() {

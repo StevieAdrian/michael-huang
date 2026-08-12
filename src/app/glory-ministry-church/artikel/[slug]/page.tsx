@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ChurchArticleClientPage } from "./article-client";
 import { churchArticleDetails, churchArticles } from "@/app/constants/church-articles";
+import { seoConfig } from "@/config/seo-config";
 
 interface ChurchArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -23,6 +24,9 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Gereja | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
+    alternates: {
+      canonical: `${seoConfig.siteUrl}/glory-ministry-church/artikel/${slug}`,
+    },
   };
 }
 

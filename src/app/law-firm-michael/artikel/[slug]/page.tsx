@@ -5,6 +5,7 @@ import {
   lawFirmArticleDetails,
   lawFirmArticles,
 } from "@/app/constants/law-firm-articles";
+import { seoConfig } from "@/config/seo-config";
 
 interface LawFirmArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -27,6 +28,9 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Law Firm | Michael Huang`,
     description: article.subtitle,
+    alternates: {
+      canonical: `${seoConfig.siteUrl}/law-firm-michael/artikel/${slug}`,
+    },
   };
 }
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { KostArticleClientPage } from "./article-client";
 import { kostArticleDetails, kostArticles } from "@/app/constants/kost-articles";
+import { seoConfig } from "@/config/seo-config";
 
 interface KostArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -23,6 +24,9 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Kost | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
+    alternates: {
+      canonical: `${seoConfig.siteUrl}/kost-gemini-koolkost/artikel/${slug}`,
+    },
   };
 }
 

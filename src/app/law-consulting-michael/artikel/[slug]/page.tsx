@@ -5,6 +5,7 @@ import {
   lawConsultingArticleDetails,
   lawConsultingArticles,
 } from "@/app/constants/law-consulting-articles";
+import { seoConfig } from "@/config/seo-config";
 
 interface LawConsultingArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -27,6 +28,9 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Konsultasi Hukum | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
+    alternates: {
+      canonical: `${seoConfig.siteUrl}/law-consulting-michael/artikel/${slug}`,
+    },
   };
 }
 

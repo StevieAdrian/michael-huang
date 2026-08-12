@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PodcastArticleClientPage } from "./article-client";
 import { podcastArticleDetails, podcastArticles } from "@/app/constants/podcast-articles";
+import { seoConfig } from "@/config/seo-config";
 
 interface PodcastArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -23,6 +24,9 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Podcast | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
+    alternates: {
+      canonical: `${seoConfig.siteUrl}/podcast-michael/artikel/${slug}`,
+    },
   };
 }
 

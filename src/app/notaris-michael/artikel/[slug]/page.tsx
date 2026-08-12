@@ -5,6 +5,7 @@ import {
   notarisArticleDetails,
   notarisArticles,
 } from "@/app/constants/notaris-articles";
+import { seoConfig } from "@/config/seo-config";
 
 interface NotarisArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -27,6 +28,9 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Notaris | Michael Huang`,
     description: article.subtitle,
+    alternates: {
+      canonical: `${seoConfig.siteUrl}/notaris-michael/artikel/${slug}`,
+    },
   };
 }
 
