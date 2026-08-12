@@ -75,13 +75,10 @@ export const metadata: Metadata = {
     apple: [{ url: "/images/logo-mich.ico", type: "image/x-icon" }],
   },
 
-  // Canonical URL (will be overridden on child pages as needed)
-  alternates: {
-    canonical: seoConfig.siteUrl,
-    languages: {
-      "id-ID": seoConfig.siteUrl,
-    },
-  },
+  // NOTE: no `alternates.canonical` here on purpose. A canonical set on the
+  // root layout is inherited by every child route, so any page that forgets to
+  // override it silently canonicalizes to the homepage. Each page declares its
+  // own canonical instead.
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
