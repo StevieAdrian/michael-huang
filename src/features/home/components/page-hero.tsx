@@ -37,8 +37,12 @@ export function PageHero({
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          // No opacity here: this block holds the LCP element, and framer-motion
+          // serializes `initial` into the SSR markup. Fading in from 0 would keep
+          // the headline invisible until hydration finishes, which wrecks LCP on
+          // mobile. The slide-up alone reads the same once painted.
+          initial={{ y: 30 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={
             align === "center" ? "max-w-3xl mx-auto text-center" : "max-w-3xl text-left"

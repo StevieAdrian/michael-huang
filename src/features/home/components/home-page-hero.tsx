@@ -28,8 +28,9 @@ export function HomePageHero({
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          // See page-hero.tsx: no opacity gate on the LCP block.
+          initial={{ y: 30 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={align === "center" ? "max-w-3xl mx-auto text-center" : "max-w-3xl text-left"}
         >
@@ -42,8 +43,8 @@ export function HomePageHero({
           </h1>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="flex justify-center"
           >
@@ -52,6 +53,8 @@ export function HomePageHero({
               alt="Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Logo"
               width={320}
               height={320}
+              priority
+              sizes="320px"
               className="h-85 w-auto"
             />
           </motion.div>
