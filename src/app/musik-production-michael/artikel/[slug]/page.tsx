@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { MusicArticleClientPage } from "./article-client";
 import { musicArticleDetails, musicArticles } from "@/app/constants/music-articles";
 import { seoConfig } from "@/config/seo-config";
+import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 
 interface MusicArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -44,5 +45,14 @@ export default async function MusicArticlePage({ params }: MusicArticlePageProps
 
   const relatedArticles = musicArticles.filter((item) => item.slug !== slug).slice(0, 3);
 
-  return <MusicArticleClientPage article={article} relatedArticles={relatedArticles} />;
+  return (
+    <>
+      <ArticleStructuredData
+        article={article}
+        basePath="/musik-production-michael"
+        sectionLabel="Musik"
+      />
+      <MusicArticleClientPage article={article} relatedArticles={relatedArticles} />
+    </>
+  );
 }

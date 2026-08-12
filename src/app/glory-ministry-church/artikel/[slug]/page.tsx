@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ChurchArticleClientPage } from "./article-client";
 import { churchArticleDetails, churchArticles } from "@/app/constants/church-articles";
 import { seoConfig } from "@/config/seo-config";
+import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 
 interface ChurchArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -46,5 +47,14 @@ export default async function ChurchArticlePage({
 
   const relatedArticles = churchArticles.filter((item) => item.slug !== slug).slice(0, 3);
 
-  return <ChurchArticleClientPage article={article} relatedArticles={relatedArticles} />;
+  return (
+    <>
+      <ArticleStructuredData
+        article={article}
+        basePath="/glory-ministry-church"
+        sectionLabel="Gereja"
+      />
+      <ChurchArticleClientPage article={article} relatedArticles={relatedArticles} />
+    </>
+  );
 }

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { KostArticleClientPage } from "./article-client";
 import { kostArticleDetails, kostArticles } from "@/app/constants/kost-articles";
 import { seoConfig } from "@/config/seo-config";
+import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 
 interface KostArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -44,5 +45,14 @@ export default async function KostArticlePage({ params }: KostArticlePageProps) 
 
   const relatedArticles = kostArticles.filter((item) => item.slug !== slug).slice(0, 3);
 
-  return <KostArticleClientPage article={article} relatedArticles={relatedArticles} />;
+  return (
+    <>
+      <ArticleStructuredData
+        article={article}
+        basePath="/kost-gemini-koolkost"
+        sectionLabel="Kost"
+      />
+      <KostArticleClientPage article={article} relatedArticles={relatedArticles} />
+    </>
+  );
 }

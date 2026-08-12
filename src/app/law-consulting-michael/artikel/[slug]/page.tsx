@@ -6,6 +6,7 @@ import {
   lawConsultingArticles,
 } from "@/app/constants/law-consulting-articles";
 import { seoConfig } from "@/config/seo-config";
+import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 
 interface LawConsultingArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -53,9 +54,16 @@ export default async function LawConsultingArticlePage({
     .slice(0, 3);
 
   return (
-    <LawConsultingArticleClientPage
-      article={article}
-      relatedArticles={relatedArticles}
-    />
+    <>
+      <ArticleStructuredData
+        article={article}
+        basePath="/law-consulting-michael"
+        sectionLabel="Konsultasi Hukum"
+      />
+      <LawConsultingArticleClientPage
+        article={article}
+        relatedArticles={relatedArticles}
+      />
+    </>
   );
 }

@@ -6,6 +6,7 @@ import {
   lawFirmArticles,
 } from "@/app/constants/law-firm-articles";
 import { seoConfig } from "@/config/seo-config";
+import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 
 interface LawFirmArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -53,9 +54,16 @@ export default async function LawFirmArticlePage({
     .slice(0, 3);
 
   return (
-    <LawFirmArticleClientPage
-      article={article}
-      relatedArticles={relatedArticles}
-    />
+    <>
+      <ArticleStructuredData
+        article={article}
+        basePath="/law-firm-michael"
+        sectionLabel="Law Firm"
+      />
+      <LawFirmArticleClientPage
+        article={article}
+        relatedArticles={relatedArticles}
+      />
+    </>
   );
 }

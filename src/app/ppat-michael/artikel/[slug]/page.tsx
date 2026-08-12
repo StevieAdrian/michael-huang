@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { PPATArticleClientPage } from "./article-client";
 import { ppatArticleDetails, ppatArticles } from "@/app/constants/ppat-articles";
 import { seoConfig } from "@/config/seo-config";
+import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 
 interface PPATArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -44,5 +45,14 @@ export default async function PPATArticlePage({ params }: PPATArticlePageProps) 
 
   const relatedArticles = ppatArticles.filter((item) => item.slug !== slug).slice(0, 3);
 
-  return <PPATArticleClientPage article={article} relatedArticles={relatedArticles} />;
+  return (
+    <>
+      <ArticleStructuredData
+        article={article}
+        basePath="/ppat-michael"
+        sectionLabel="PPAT"
+      />
+      <PPATArticleClientPage article={article} relatedArticles={relatedArticles} />
+    </>
+  );
 }

@@ -6,6 +6,7 @@ import {
   notarisArticles,
 } from "@/app/constants/notaris-articles";
 import { seoConfig } from "@/config/seo-config";
+import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 
 interface NotarisArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -53,9 +54,16 @@ export default async function NotarisArticlePage({
     .slice(0, 3);
 
   return (
-    <NotarisArticleClientPage
-      article={article}
-      relatedArticles={relatedArticles}
-    />
+    <>
+      <ArticleStructuredData
+        article={article}
+        basePath="/notaris-michael"
+        sectionLabel="Notaris"
+      />
+      <NotarisArticleClientPage
+        article={article}
+        relatedArticles={relatedArticles}
+      />
+    </>
   );
 }

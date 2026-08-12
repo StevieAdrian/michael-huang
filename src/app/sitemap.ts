@@ -5,6 +5,26 @@
 
 import { MetadataRoute } from "next";
 import { seoConfig } from "@/config/seo-config";
+import { latestDate, parseIndoDate } from "@/app/utils/parse-date";
+import { churchArticles } from "@/app/constants/church-articles";
+import { kostArticles } from "@/app/constants/kost-articles";
+import { lawConsultingArticles } from "@/app/constants/law-consulting-articles";
+import { lawFirmArticles } from "@/app/constants/law-firm-articles";
+import { musicArticles } from "@/app/constants/music-articles";
+import { notarisArticles } from "@/app/constants/notaris-articles";
+import { podcastArticles } from "@/app/constants/podcast-articles";
+import { ppatArticles } from "@/app/constants/ppat-articles";
+
+const articleSections = [
+  { base: "/notaris-michael", articles: notarisArticles },
+  { base: "/ppat-michael", articles: ppatArticles },
+  { base: "/law-firm-michael", articles: lawFirmArticles },
+  { base: "/law-consulting-michael", articles: lawConsultingArticles },
+  { base: "/glory-ministry-church", articles: churchArticles },
+  { base: "/kost-gemini-koolkost", articles: kostArticles },
+  { base: "/musik-production-michael", articles: musicArticles },
+  { base: "/podcast-michael", articles: podcastArticles },
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = seoConfig.siteUrl;
@@ -84,5 +104,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return routes;
+  const articleRoutes = articleSections.flatMap(({ base, articles }) => [
+    {
+      url: `${baseUrl}${base}/artikel`,
+      lastModified: latestDate(articles),
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    },
+    ...articles.map((article) => ({
+      url: `${baseUrl}${base}/artikel/${article.slug}`,
+      lastModified: parseIndoDate(article.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+  ]);
+
+  return [...routes, ...articleRoutes];
 }

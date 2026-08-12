@@ -61,7 +61,7 @@ export function generateArticleSchema(metadata: {
   title: string;
   description: string;
   image?: string;
-  publishedDate?: string;
+  publishedDate: string;
   modifiedDate?: string;
   author?: string;
   url: string;
@@ -72,8 +72,8 @@ export function generateArticleSchema(metadata: {
     headline: metadata.title,
     description: metadata.description,
     image: metadata.image || `${seoConfig.siteUrl}/og-image.png`,
-    datePublished: metadata.publishedDate || new Date().toISOString(),
-    dateModified: metadata.modifiedDate || new Date().toISOString(),
+    datePublished: metadata.publishedDate,
+    dateModified: metadata.modifiedDate || metadata.publishedDate,
     author: {
       "@type": "Person",
       name: metadata.author || seoConfig.author.name,

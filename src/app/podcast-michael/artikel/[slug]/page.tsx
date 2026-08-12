@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { PodcastArticleClientPage } from "./article-client";
 import { podcastArticleDetails, podcastArticles } from "@/app/constants/podcast-articles";
 import { seoConfig } from "@/config/seo-config";
+import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 
 interface PodcastArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -44,5 +45,14 @@ export default async function PodcastArticlePage({ params }: PodcastArticlePageP
 
   const relatedArticles = podcastArticles.filter((item) => item.slug !== slug).slice(0, 3);
 
-  return <PodcastArticleClientPage article={article} relatedArticles={relatedArticles} />;
+  return (
+    <>
+      <ArticleStructuredData
+        article={article}
+        basePath="/podcast-michael"
+        sectionLabel="Podcast"
+      />
+      <PodcastArticleClientPage article={article} relatedArticles={relatedArticles} />
+    </>
+  );
 }
