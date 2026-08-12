@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { AllArticlesPage } from "@/shared/components/all-articles-page";
 import { churchArticles } from "@/app/constants/church-articles";
+import { seoConfig } from "@/config/seo-config";
 
 export const metadata: Metadata = {
   title: "Semua Artikel Gereja | Glory Ministry Church",
   description:
     "Kumpulan artikel, renungan, dan panduan rohani dari Glory Ministry Church.",
+  alternates: {
+    canonical: `${seoConfig.siteUrl}/glory-ministry-church/artikel`,
+  },
 };
 
 export default function ChurchAllArticlesPage() {

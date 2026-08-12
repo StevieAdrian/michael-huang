@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { AllArticlesPage } from "@/shared/components/all-articles-page";
 import { lawConsultingArticles } from "@/app/constants/law-consulting-articles";
+import { seoConfig } from "@/config/seo-config";
 
 export const metadata: Metadata = {
   title: "Semua Artikel Konsultasi Hukum | Michael Huang",
   description:
     "Kumpulan artikel seputar legal due diligence, kontrak bisnis, kepatuhan hukum startup, dan konsultasi hukum.",
+  alternates: {
+    canonical: `${seoConfig.siteUrl}/law-consulting-michael/artikel`,
+  },
 };
 
 export default function LawConsultingAllArticlesPage() {

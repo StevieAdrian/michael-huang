@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PPATArticleClientPage } from "./article-client";
 import { ppatArticleDetails, ppatArticles } from "@/app/constants/ppat-articles";
+import { seoConfig } from "@/config/seo-config";
 
 interface PPATArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -23,6 +24,9 @@ export async function generateMetadata({
   return {
     title: `${article.title} | PPAT | Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`,
     description: article.subtitle,
+    alternates: {
+      canonical: `${seoConfig.siteUrl}/ppat-michael/artikel/${slug}`,
+    },
   };
 }
 

@@ -65,6 +65,24 @@ export const podcastArticles: Article[] = [
     category: "Bisnis",
     slug: "repurpose-episode-jadi-konten",
   },
+  {
+    id: "8",
+    title: "Teknik Opening 30 Detik yang Bikin Pendengar Langsung Nempel",
+    excerpt:
+      "Detik pertama menentukan apakah audiens lanjut mendengar. Pelajari struktur opening singkat yang tajam untuk meningkatkan retensi podcast.",
+    date: "7 Agustus 2026",
+    category: "Teknik",
+    slug: "teknik-opening-30-detik-podcast",
+  },
+  {
+    id: "9",
+    title: "Menjaga Konsistensi Rilis Podcast Mingguan Tanpa Kewalahan",
+    excerpt:
+      "Konsistensi adalah kunci pertumbuhan podcast, tapi banyak kreator berhenti karena kelelahan. Simak sistem produksi mingguan yang realistis.",
+    date: "7 Agustus 2026",
+    category: "Panduan",
+    slug: "konsistensi-rilis-podcast-mingguan",
+  },
 ];
 
 export const podcastArticleDetails: Record<string, ArticleDetail> = {
@@ -363,5 +381,87 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Podcast", "Repurpose", "Content Marketing", "Growth"],
+  },
+  "teknik-opening-30-detik-podcast": {
+    slug: "teknik-opening-30-detik-podcast",
+    category: "Teknik",
+    readTime: "5 menit",
+    date: "7 Agustus 2026",
+    title: "Teknik Opening 30 Detik yang Bikin Pendengar Langsung Nempel",
+    subtitle:
+      "Pembuka episode yang kuat memberi alasan jelas bagi pendengar untuk bertahan sampai akhir. Teknik ini bisa diterapkan bahkan oleh host pemula.",
+    author: {
+      name: "Tim Podcast Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Show Development",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Pendengar biasanya memutuskan dalam hitungan detik apakah sebuah episode layak dilanjutkan. Opening yang terlalu panjang atau berputar-putar membuat audiens cepat berpindah ke konten lain.",
+      },
+      {
+        type: "heading",
+        text: "Struktur Opening 30 Detik",
+      },
+      {
+        type: "list",
+        items: [
+          "Kalimat hook yang menyinggung masalah audiens.",
+          "Janji nilai: apa yang akan pendengar dapatkan.",
+          "Satu alasan kenapa topik ini relevan sekarang.",
+          "Transisi cepat ke isi utama tanpa intro berlebihan.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Opening yang efektif tidak menjelaskan semuanya, tapi membuat pendengar penasaran untuk lanjut.",
+      },
+      {
+        type: "paragraph",
+        text: "Uji beberapa versi opening dan pantau retensi menit pertama. Perbaikan kecil di bagian pembuka sering memberi dampak besar pada performa keseluruhan episode.",
+      },
+    ],
+    tags: ["Podcast", "Opening", "Retensi", "Host"],
+  },
+  "konsistensi-rilis-podcast-mingguan": {
+    slug: "konsistensi-rilis-podcast-mingguan",
+    category: "Panduan",
+    readTime: "6 menit",
+    date: "7 Agustus 2026",
+    title: "Menjaga Konsistensi Rilis Podcast Mingguan Tanpa Kewalahan",
+    subtitle:
+      "Rilis mingguan bisa terasa berat tanpa sistem. Dengan workflow yang sederhana, tim kecil sekalipun bisa tetap konsisten.",
+    author: {
+      name: "Tim Strategi Konten",
+      role: "Production Workflow",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Banyak podcast berhenti bukan karena kurang ide, tetapi karena proses produksi yang tidak realistis. Konsistensi membutuhkan sistem kerja yang berulang, bukan tenaga ekstra setiap minggu.",
+      },
+      {
+        type: "heading",
+        text: "Workflow Mingguan yang Disarankan",
+      },
+      {
+        type: "list",
+        items: [
+          "Hari 1: riset topik dan outline episode.",
+          "Hari 2: rekaman 1-2 episode sekaligus (batching).",
+          "Hari 3: editing dan pembuatan asset promosi.",
+          "Hari 4-7: distribusi konten turunan dan evaluasi data.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Podcast bertumbuh dari ritme yang konsisten, bukan dari episode yang sesekali sempurna.",
+      },
+      {
+        type: "paragraph",
+        text: "Mulailah dengan target yang bisa dipenuhi minimal 8 minggu berturut-turut. Setelah ritme stabil, baru tingkatkan kualitas produksi secara bertahap agar pertumbuhan tetap sehat.",
+      },
+    ],
+    tags: ["Podcast", "Konsistensi", "Workflow", "Produksi"],
   },
 };
