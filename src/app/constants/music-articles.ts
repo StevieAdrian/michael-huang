@@ -65,6 +65,24 @@ export const musicArticles: Article[] = [
     category: "Distribusi",
     slug: "release-plan-single-30-hari",
   },
+  {
+    id: "8",
+    title: "Template Mixing Dasar: Cara Hemat Waktu untuk Produksi Lagu Rutin",
+    excerpt:
+      "Membangun template mixing membuat workflow lebih konsisten dan cepat. Cocok untuk produser yang merilis lagu secara berkala.",
+    date: "7 Agustus 2026",
+    category: "Teknis",
+    slug: "template-mixing-dasar",
+  },
+  {
+    id: "9",
+    title: "Monetisasi Musisi Independen di Era Streaming: Dari Royalti sampai Merchandise",
+    excerpt:
+      "Pendapatan musisi tidak hanya dari stream. Pahami kombinasi kanal monetisasi agar karier musik lebih berkelanjutan.",
+    date: "7 Agustus 2026",
+    category: "Distribusi",
+    slug: "monetisasi-musisi-independen-streaming",
+  },
 ];
 
 export const musicArticleDetails: Record<string, ArticleDetail> = {
@@ -402,6 +420,90 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Rilis Musik", "Distribusi", "Marketing", "Spotify"],
+  },
+  "template-mixing-dasar": {
+    slug: "template-mixing-dasar",
+    category: "Teknis",
+    readTime: "6 menit",
+    date: "7 Agustus 2026",
+    title:
+      "Template Mixing Dasar: Cara Hemat Waktu untuk Produksi Lagu Rutin",
+    subtitle:
+      "Template mixing yang baik membantu Anda fokus pada kreativitas, bukan mengulang setup teknis dari nol di setiap proyek.",
+    author: {
+      name: "Tim Audio Michael Music",
+      role: "Mix Engineer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Produser yang aktif merilis lagu sering kehilangan waktu hanya untuk menata session awal. Dengan template mixing, Anda bisa memulai lebih cepat dengan struktur channel, routing, dan plugin dasar yang sudah siap.",
+      },
+      {
+        type: "heading",
+        text: "Elemen Template yang Disarankan",
+      },
+      {
+        type: "list",
+        items: [
+          "Grouping standar: drums, bass, instrument, vocal, FX.",
+          "Bus processing ringan untuk menjaga headroom awal.",
+          "Marker section lagu agar editing lebih cepat.",
+          "Utility tracks untuk referensi dan A/B check.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Template yang baik mempercepat keputusan kreatif tanpa membatasi karakter lagu.",
+      },
+      {
+        type: "paragraph",
+        text: "Template bukan aturan kaku. Gunakan sebagai fondasi, lalu sesuaikan sesuai genre dan kebutuhan proyek. Dengan pendekatan ini, konsistensi output meningkat tanpa mengorbankan orisinalitas.",
+      },
+    ],
+    tags: ["Mixing", "Template", "DAW", "Workflow"],
+  },
+  "monetisasi-musisi-independen-streaming": {
+    slug: "monetisasi-musisi-independen-streaming",
+    category: "Distribusi",
+    readTime: "7 menit",
+    date: "7 Agustus 2026",
+    title:
+      "Monetisasi Musisi Independen di Era Streaming: Dari Royalti sampai Merchandise",
+    subtitle:
+      "Karier musik berkelanjutan membutuhkan strategi pendapatan yang beragam. Streaming penting, tetapi bukan satu-satunya sumber pemasukan.",
+    author: {
+      name: "Tim Rilis Digital Michael Music",
+      role: "Artist Development",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Banyak musisi independen berharap semua biaya produksi kembali dari platform streaming. Pada praktiknya, penghasilan lebih stabil biasanya datang dari kombinasi beberapa kanal monetisasi yang saling mendukung.",
+      },
+      {
+        type: "heading",
+        text: "Kanal Monetisasi yang Bisa Digabung",
+      },
+      {
+        type: "list",
+        items: [
+          "Royalti streaming dan publishing dengan metadata yang rapi.",
+          "Live performance dan event komunitas.",
+          "Merchandise eksklusif untuk fanbase inti.",
+          "Lisensi musik untuk konten, iklan, atau film pendek.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Musisi independen yang sehat finansial biasanya tidak bergantung pada satu sumber pendapatan.",
+      },
+      {
+        type: "paragraph",
+        text: "Mulai dari target kecil yang terukur, lalu evaluasi kanal mana yang paling efektif untuk audiens Anda. Strategi monetisasi bertahap akan membantu karier musik bertahan lebih panjang dan lebih stabil.",
+      },
+    ],
+    tags: ["Monetisasi", "Musisi Independen", "Streaming", "Distribusi"],
   },
 };
 

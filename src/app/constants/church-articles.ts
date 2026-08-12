@@ -54,7 +54,7 @@ export const churchArticles: Article[] = [
       "Banyak jemaat rindu lebih dekat dengan Tuhan, tapi bingung mulai dari mana. Artikel ini membagikan pola sederhana membaca Alkitab yang konsisten.",
     date: "4 Juli 2026",
     category: "Renungan",
-    slug: "disiplin-membaca-alkitab-harian",
+    slug: "disiplin-baca-alkitab-15-menit",
   },
   {
     id: "7",
@@ -63,7 +63,25 @@ export const churchArticles: Article[] = [
       "Pelayanan yang berdampak membutuhkan hati yang dipulihkan. Pahami cara menjaga ritme melayani agar tetap kuat secara rohani dan emosional.",
     date: "4 Juli 2026",
     category: "Pelayanan",
-    slug: "melayani-dengan-sehat-tanpa-burnout",
+    slug: "melayani-dengan-sehat-anti-burnout",
+  },
+  {
+    id: "8",
+    title: "Arti Sabat bagi Pekerja Modern: Belajar Berhenti untuk Pulih",
+    excerpt:
+      "Kesibukan sering membuat kita kehilangan ritme istirahat rohani. Temukan makna sabat yang relevan untuk kehidupan kerja masa kini.",
+    date: "7 Agustus 2026",
+    category: "Renungan",
+    slug: "arti-sabat-pekerja-modern",
+  },
+  {
+    id: "9",
+    title: "Membangun Mezbah Keluarga Harian di Tengah Jadwal Padat",
+    excerpt:
+      "Ibadah keluarga tidak harus panjang, tapi perlu konsisten. Simak pola sederhana agar mezbah keluarga tetap hidup setiap hari.",
+    date: "7 Agustus 2026",
+    category: "Komunitas",
+    slug: "membangun-mezbah-keluarga-harian",
   },
 ];
 
@@ -360,8 +378,8 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
     ],
     tags: ["Kelompok Kecil", "Komunitas", "Pemuridan", "Persekutuan"],
   },
-  "disiplin-membaca-alkitab-harian": {
-    slug: "disiplin-membaca-alkitab-harian",
+  "disiplin-baca-alkitab-15-menit": {
+    slug: "disiplin-baca-alkitab-15-menit",
     category: "Renungan",
     readTime: "6 menit",
     date: "4 Juli 2026",
@@ -413,9 +431,9 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
     ],
     tags: ["Alkitab", "Renungan", "Pemuridan", "Disiplin Rohani"],
   },
-  "melayani-dengan-sehat-tanpa-burnout": {
-    slug: "melayani-dengan-sehat-tanpa-burnout",
-    category: "Pelayanan",
+  "melayani-dengan-sehat-anti-burnout": {
+    slug: "melayani-dengan-sehat-anti-burnout",
+    category: "Komunitas",
     readTime: "7 menit",
     date: "4 Juli 2026",
     title: "Melayani dengan Sehat: Menjaga Hati agar Tidak Burnout",
@@ -466,5 +484,87 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Pelayanan", "Burnout", "Pemulihan", "Kepemimpinan"],
+  },
+  "arti-sabat-pekerja-modern": {
+    slug: "arti-sabat-pekerja-modern",
+    category: "Renungan",
+    readTime: "6 menit",
+    date: "7 Agustus 2026",
+    title: "Arti Sabat bagi Pekerja Modern: Belajar Berhenti untuk Pulih",
+    subtitle:
+      "Sabat bukan sekadar tidak bekerja, melainkan memberi ruang bagi jiwa untuk kembali berpusat pada Tuhan di tengah ritme hidup yang cepat.",
+    author: {
+      name: "Tim Pastoral Glory Ministry",
+      role: "Redaksi Renungan",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Budaya kerja modern sering memuja produktivitas tanpa henti. Akibatnya, banyak orang percaya mengalami kelelahan batin dan kehilangan kepekaan rohani. Prinsip sabat mengundang kita berhenti sejenak untuk dipulihkan.",
+      },
+      {
+        type: "heading",
+        text: "Praktik Sabat yang Bisa Dimulai Minggu Ini",
+      },
+      {
+        type: "list",
+        items: [
+          "Tetapkan satu blok waktu khusus tanpa pekerjaan dan notifikasi.",
+          "Gunakan waktu itu untuk doa, firman, dan syukur keluarga.",
+          "Lakukan aktivitas pemulihan yang menenangkan hati.",
+          "Evaluasi ritme hidup dan serahkan beban kepada Tuhan.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Datanglah kepada-Ku, semua yang letih lesu dan berbeban berat, Aku akan memberi kelegaan kepadamu. - Matius 11:28",
+      },
+      {
+        type: "paragraph",
+        text: "Sabat membantu kita mengingat bahwa identitas kita bukan ditentukan oleh performa, melainkan oleh kasih Allah. Dari hati yang dipulihkan, kita kembali bekerja dan melayani dengan kekuatan yang baru.",
+      },
+    ],
+    tags: ["Sabat", "Renungan", "Pemulihan", "Iman"],
+  },
+  "membangun-mezbah-keluarga-harian": {
+    slug: "membangun-mezbah-keluarga-harian",
+    category: "Komunitas",
+    readTime: "7 menit",
+    date: "7 Agustus 2026",
+    title: "Membangun Mezbah Keluarga Harian di Tengah Jadwal Padat",
+    subtitle:
+      "Mezbah keluarga menjadi tempat orang tua dan anak bertumbuh bersama dalam firman, doa, dan relasi yang sehat.",
+    author: {
+      name: "Tim Pemuridan Glory Ministry",
+      role: "Family Discipleship",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Banyak keluarga Kristen rindu beribadah bersama, namun kesibukan membuat momen itu sulit dijaga. Kabar baiknya, mezbah keluarga tidak harus rumit. Yang terpenting adalah konsistensi dan hati yang terbuka.",
+      },
+      {
+        type: "heading",
+        text: "Format Sederhana 10-15 Menit",
+      },
+      {
+        type: "list",
+        items: [
+          "Baca satu bagian firman yang singkat dan mudah dipahami.",
+          "Ajak setiap anggota keluarga berbagi satu pelajaran utama.",
+          "Berdoa bergantian untuk kebutuhan keluarga dan orang lain.",
+          "Tutup dengan ucapan syukur atas hal kecil hari itu.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Keluarga yang berdoa bersama sedang membangun fondasi iman lintas generasi.",
+      },
+      {
+        type: "paragraph",
+        text: "Mulailah dari ritme yang realistis, misalnya tiga kali seminggu, lalu tingkatkan perlahan. Dalam jangka panjang, mezbah keluarga menjadi ruang aman untuk membentuk karakter, kasih, dan kepekaan rohani anak-anak.",
+      },
+    ],
+    tags: ["Mezbah Keluarga", "Pemuridan", "Doa", "Komunitas"],
   },
 };

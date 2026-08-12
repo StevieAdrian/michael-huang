@@ -65,6 +65,24 @@ export const lawFirmArticles: Article[] = [
     category: "Korporat",
     slug: "due-diligence-hukum-akuisisi-perusahaan",
   },
+  {
+    id: "8",
+    title: "Strategi Hukum Penagihan Piutang Korporasi Tanpa Merusak Relasi Bisnis",
+    excerpt:
+      "Piutang macet tidak selalu harus berakhir di pengadilan. Simak tahapan penagihan legal yang tegas namun tetap menjaga hubungan komersial.",
+    date: "7 Agustus 2026",
+    category: "Litigasi",
+    slug: "strategi-hukum-penagihan-piutang-korporasi",
+  },
+  {
+    id: "9",
+    title: "Kapan Perusahaan Perlu Legal Opinion Sebelum Teken Kontrak Investasi?",
+    excerpt:
+      "Legal opinion membantu manajemen membaca risiko tersembunyi sebelum kontrak investasi ditandatangani. Dokumen ini penting untuk keputusan yang lebih aman.",
+    date: "7 Agustus 2026",
+    category: "Korporat",
+    slug: "legal-opinion-kontrak-investasi",
+  },
 ];
 
 export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
@@ -470,5 +488,90 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Due Diligence", "Akuisisi", "M&A", "Korporat"],
+  },
+  "strategi-hukum-penagihan-piutang-korporasi": {
+    slug: "strategi-hukum-penagihan-piutang-korporasi",
+    category: "Litigasi",
+    readTime: "7 menit",
+    date: "7 Agustus 2026",
+    title:
+      "Strategi Hukum Penagihan Piutang Korporasi Tanpa Merusak Relasi Bisnis",
+    subtitle:
+      "Penagihan yang tepat menggabungkan ketegasan hukum dan pendekatan komersial. Tujuannya bukan hanya menagih, tetapi memulihkan arus kas dengan risiko sengketa minimal.",
+    author: {
+      name: "Tim Litigasi Michael, Antonius & Co",
+      role: "Dispute and Recovery Division",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Piutang macet menjadi masalah klasik dalam operasional perusahaan. Kesalahan paling umum adalah menunggu terlalu lama tanpa strategi formal, sehingga posisi tawar melemah dan kemungkinan pemulihan dana menurun.",
+      },
+      {
+        type: "heading",
+        text: "Tahapan Penagihan yang Direkomendasikan",
+      },
+      {
+        type: "list",
+        items: [
+          "Klasifikasi umur piutang dan nilai material sejak awal.",
+          "Kirim reminder komersial tertulis dengan batas waktu jelas.",
+          "Lanjutkan dengan somasi legal jika tidak ada itikad bayar.",
+          "Negosiasi skema restrukturisasi yang terdokumentasi resmi.",
+          "Tempuh gugatan atau arbitrase bila upaya damai gagal.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Penagihan efektif bukan yang paling keras, tetapi yang paling disiplin dan dapat dibuktikan secara hukum.",
+      },
+      {
+        type: "paragraph",
+        text: "Perusahaan sebaiknya menyiapkan SOP credit control dan template dokumen penagihan yang seragam. Dengan begitu, tindakan hukum dapat diambil lebih cepat dan konsisten tanpa mengganggu hubungan bisnis yang masih potensial dipertahankan.",
+      },
+    ],
+    tags: ["Piutang", "Somasi", "Litigasi", "Korporasi"],
+  },
+  "legal-opinion-kontrak-investasi": {
+    slug: "legal-opinion-kontrak-investasi",
+    category: "Korporat",
+    readTime: "6 menit",
+    date: "7 Agustus 2026",
+    title:
+      "Kapan Perusahaan Perlu Legal Opinion Sebelum Teken Kontrak Investasi?",
+    subtitle:
+      "Legal opinion memberi pandangan hukum independen atas struktur transaksi, kewajiban para pihak, dan risiko klausul kritikal sebelum penandatanganan.",
+    author: {
+      name: "Tim Legal Michael, Antonius & Co",
+      role: "Corporate Advisory Division",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Dalam transaksi investasi, tekanan waktu sering membuat perusahaan melewati tahap review hukum mendalam. Padahal satu klausul yang keliru dapat menimbulkan dampak jangka panjang terhadap kepemilikan, kontrol manajemen, dan kewajiban finansial.",
+      },
+      {
+        type: "heading",
+        text: "Situasi yang Wajib Didampingi Legal Opinion",
+      },
+      {
+        type: "list",
+        items: [
+          "Ada klausul hak veto, anti-dilution, atau liquidation preference yang kompleks.",
+          "Transaksi melibatkan investor lintas yurisdiksi.",
+          "Struktur pembiayaan mengandung jaminan aset material.",
+          "Perusahaan berada pada putaran pendanaan yang menentukan kontrol pemegang saham.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Legal opinion bukan penghambat transaksi, melainkan alat untuk memastikan keputusan bisnis dibuat dengan visibilitas risiko yang utuh.",
+      },
+      {
+        type: "paragraph",
+        text: "Dengan legal opinion yang terstruktur, manajemen dapat bernegosiasi berdasarkan data hukum yang jelas. Hasilnya, kontrak investasi menjadi lebih seimbang, terlindungi, dan lebih mudah dieksekusi di tahap implementasi.",
+      },
+    ],
+    tags: ["Legal Opinion", "Investasi", "Korporat", "Kontrak"],
   }
 };

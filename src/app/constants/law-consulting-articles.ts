@@ -65,6 +65,24 @@ export const lawConsultingArticles: Article[] = [
     category: "Compliance",
     slug: "retainer-legal-perusahaan-efisien",
   },
+  {
+    id: "8",
+    title: "Legal Health Check Triwulanan: Checklist Kepatuhan untuk Perusahaan Tumbuh",
+    excerpt:
+      "Perusahaan yang berkembang cepat butuh audit hukum berkala. Simak checklist legal health check triwulanan agar risiko compliance terkendali.",
+    date: "7 Agustus 2026",
+    category: "Compliance",
+    slug: "legal-health-check-triwulan",
+  },
+  {
+    id: "9",
+    title: "Mitigasi Sengketa Ketenagakerjaan Lewat SOP HR yang Tepat",
+    excerpt:
+      "Banyak sengketa kerja terjadi karena prosedur internal yang tidak konsisten. SOP HR yang kuat membantu perusahaan lebih aman secara hukum.",
+    date: "7 Agustus 2026",
+    category: "Kontrak",
+    slug: "mitigasi-sengketa-kerja-sop-hr",
+  },
 ];
 
 export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
@@ -385,5 +403,88 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Retainer Legal", "Compliance", "Kontrak", "Corporate Advisory"],
+  },
+  "legal-health-check-triwulan": {
+    slug: "legal-health-check-triwulan",
+    category: "Compliance",
+    readTime: "7 menit",
+    date: "7 Agustus 2026",
+    title:
+      "Legal Health Check Triwulanan: Checklist Kepatuhan untuk Perusahaan Tumbuh",
+    subtitle:
+      "Pertumbuhan bisnis yang cepat harus diikuti tata kelola legal yang disiplin. Health check berkala membantu mendeteksi risiko sebelum berubah menjadi sengketa.",
+    author: {
+      name: "Tim Regulatory Advisory",
+      role: "Corporate Compliance Counsel",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Seiring ekspansi bisnis, dokumen legal, pola kerja, dan kewajiban regulasi ikut bertambah kompleks. Tanpa review berkala, celah kepatuhan sering tidak terlihat hingga muncul pemeriksaan atau klaim dari pihak ketiga.",
+      },
+      {
+        type: "heading",
+        text: "Area Utama dalam Legal Health Check",
+      },
+      {
+        type: "list",
+        items: [
+          "Validitas perizinan usaha dan kesesuaian kegiatan operasional.",
+          "Kelengkapan kontrak komersial dan lampiran addendum terbaru.",
+          "Kepatuhan ketenagakerjaan dan dokumentasi hubungan kerja.",
+          "Kebijakan privasi, perlindungan data, dan keamanan informasi.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Perusahaan sehat secara hukum bukan yang tanpa masalah, melainkan yang cepat menemukan dan memperbaiki risiko.",
+      },
+      {
+        type: "paragraph",
+        text: "Jadwalkan legal health check minimal tiap triwulan dengan output tindakan prioritas. Pendekatan ini membuat manajemen memiliki peta risiko yang jelas untuk mendukung keputusan bisnis yang lebih aman.",
+      },
+    ],
+    tags: ["Compliance", "Audit Hukum", "Perizinan", "Corporate"],
+  },
+  "mitigasi-sengketa-kerja-sop-hr": {
+    slug: "mitigasi-sengketa-kerja-sop-hr",
+    category: "Kontrak",
+    readTime: "6 menit",
+    date: "7 Agustus 2026",
+    title: "Mitigasi Sengketa Ketenagakerjaan Lewat SOP HR yang Tepat",
+    subtitle:
+      "SOP HR yang konsisten melindungi perusahaan dan karyawan sekaligus. Prosedur yang jelas mengurangi potensi perselisihan hubungan industrial.",
+    author: {
+      name: "Tim Konsultasi Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Employment Advisory",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Sengketa ketenagakerjaan sering berawal dari proses internal yang tidak terdokumentasi dengan baik, seperti evaluasi kinerja, tindakan disiplin, atau pemutusan hubungan kerja. Ketika prosedur tidak konsisten, risiko gugatan meningkat.",
+      },
+      {
+        type: "heading",
+        text: "SOP HR yang Wajib Diperkuat",
+      },
+      {
+        type: "list",
+        items: [
+          "Proses onboarding dan kontrak kerja sesuai jenis hubungan kerja.",
+          "Mekanisme evaluasi kinerja yang terukur dan terdokumentasi.",
+          "Prosedur penegakan disiplin bertahap dan adil.",
+          "Alur PHK yang patuh regulasi, termasuk hak kompensasi pekerja.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Dokumen HR yang rapi adalah pertahanan hukum pertama saat perusahaan menghadapi perselisihan kerja.",
+      },
+      {
+        type: "paragraph",
+        text: "Lakukan pelatihan rutin untuk tim HR dan pimpinan unit agar implementasi SOP berjalan seragam. Kombinasi kebijakan yang jelas dan komunikasi yang baik akan menurunkan konflik secara signifikan.",
+      },
+    ],
+    tags: ["Ketenagakerjaan", "SOP HR", "Sengketa Kerja", "Compliance"],
   },
 };

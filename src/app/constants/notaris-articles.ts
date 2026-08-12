@@ -65,6 +65,24 @@ export const notarisArticles: Article[] = [
     category: "Edukasi",
     slug: "checklist-legalisasi-dokumen-luar-negeri",
   },
+  {
+    id: "8",
+    title: "Akta Hibah vs Wasiat: Mana yang Tepat untuk Perencanaan Aset Keluarga?",
+    excerpt:
+      "Dua instrumen ini sering disamakan, padahal konsekuensi hukumnya berbeda. Pahami kapan sebaiknya menggunakan akta hibah dan kapan memilih wasiat notariil.",
+    date: "7 Agustus 2026",
+    category: "Panduan",
+    slug: "akta-hibah-vs-wasiat",
+  },
+  {
+    id: "9",
+    title: "Syarat Akta Kuasa Menjual yang Aman dari Sengketa",
+    excerpt:
+      "Kuasa menjual sering dipakai dalam transaksi properti, tetapi redaksi yang lemah bisa menimbulkan konflik serius. Simak elemen wajibnya.",
+    date: "7 Agustus 2026",
+    category: "Edukasi",
+    slug: "syarat-akta-kuasa-menjual",
+  },
 ];
 
 export const notarisArticleDetails: Record<string, ArticleDetail> = {
@@ -504,5 +522,88 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Legalisasi Dokumen", "Apostille", "Notaris", "Studi Luar Negeri"],
+  },
+  "akta-hibah-vs-wasiat": {
+    slug: "akta-hibah-vs-wasiat",
+    category: "Panduan",
+    readTime: "7 menit",
+    date: "7 Agustus 2026",
+    title:
+      "Akta Hibah vs Wasiat: Mana yang Tepat untuk Perencanaan Aset Keluarga?",
+    subtitle:
+      "Pemindahan aset keluarga perlu dipilih dengan instrumen hukum yang tepat agar tidak menimbulkan sengketa antar ahli waris di kemudian hari.",
+    author: {
+      name: "Kantor Notaris Dr. Michael, S.H., S.T., M.Kn.",
+      role: "Family and Estate Planning Desk",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Dalam praktik, banyak keluarga bingung memilih hibah atau wasiat untuk perencanaan aset. Perbedaan waktu berlakunya, cara pencabutan, dan implikasi waris membuat keduanya tidak bisa dipertukarkan begitu saja.",
+      },
+      {
+        type: "heading",
+        text: "Perbedaan Inti Hibah dan Wasiat",
+      },
+      {
+        type: "list",
+        items: [
+          "Hibah berlaku saat pemberi masih hidup; wasiat berlaku setelah pemberi meninggal.",
+          "Hibah umumnya lebih sulit ditarik kembali; wasiat dapat diubah selama pewasiat masih cakap hukum.",
+          "Objek hibah berpindah lebih cepat, sedangkan wasiat mengikuti proses pelaksanaan waris.",
+          "Keduanya tetap perlu memperhatikan hak mutlak ahli waris sesuai ketentuan hukum.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Perencanaan aset yang baik bukan sekadar membagi harta, tetapi memastikan keluarga tetap terlindungi secara adil dan sah.",
+      },
+      {
+        type: "paragraph",
+        text: "Konsultasi dengan notaris membantu menentukan instrumen yang paling sesuai dengan struktur keluarga, jenis aset, dan tujuan jangka panjang. Dengan dokumen yang tepat, potensi konflik waris dapat ditekan sejak awal.",
+      },
+    ],
+    tags: ["Hibah", "Wasiat", "Notaris", "Perencanaan Waris"],
+  },
+  "syarat-akta-kuasa-menjual": {
+    slug: "syarat-akta-kuasa-menjual",
+    category: "Edukasi",
+    readTime: "6 menit",
+    date: "7 Agustus 2026",
+    title: "Syarat Akta Kuasa Menjual yang Aman dari Sengketa",
+    subtitle:
+      "Akta kuasa menjual harus disusun secara presisi agar kewenangan penerima kuasa tidak melampaui batas dan tetap melindungi pemberi kuasa.",
+    author: {
+      name: "Kantor Notaris Dr. Michael, S.H., S.T., M.Kn.",
+      role: "Document Drafting Desk",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Kuasa menjual sering digunakan ketika pemilik aset tidak dapat hadir langsung dalam proses transaksi. Namun dokumen yang tidak rinci dapat menimbulkan sengketa, termasuk penjualan tanpa persetujuan yang memadai atau harga jual yang tidak wajar.",
+      },
+      {
+        type: "heading",
+        text: "Elemen Wajib dalam Akta Kuasa Menjual",
+      },
+      {
+        type: "list",
+        items: [
+          "Identitas lengkap para pihak dan kapasitas hukumnya.",
+          "Deskripsi objek yang dikuasakan secara spesifik.",
+          "Batas kewenangan penerima kuasa, termasuk rentang harga atau syarat transaksi.",
+          "Masa berlaku kuasa dan kondisi berakhirnya kuasa.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Kuasa yang jelas melindungi kedua pihak: pemberi kuasa tetap aman, penerima kuasa dapat bertindak tanpa ragu.",
+      },
+      {
+        type: "paragraph",
+        text: "Untuk transaksi bernilai besar, akta kuasa menjual sebaiknya selalu ditinjau notaris sebelum dipakai. Redaksi yang presisi akan meminimalkan celah interpretasi dan memberi kekuatan pembuktian yang lebih baik.",
+      },
+    ],
+    tags: ["Kuasa Menjual", "Notaris", "Akta", "Properti"],
   },
 };

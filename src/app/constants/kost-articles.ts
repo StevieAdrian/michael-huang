@@ -65,6 +65,24 @@ export const kostArticles: Article[] = [
     category: "Gaya Hidup",
     slug: "etika-tinggal-di-kost-bersama",
   },
+  {
+    id: "8",
+    title: "Cara Memilih Teman Sekamar yang Cocok untuk Produktivitas dan Privasi",
+    excerpt:
+      "Salah pilih teman sekamar bisa bikin stres harian. Pelajari indikator kecocokan agar tinggal bersama tetap nyaman dan saling menghargai.",
+    date: "7 Agustus 2026",
+    category: "Tips",
+    slug: "memilih-teman-sekamar-cocok",
+  },
+  {
+    id: "9",
+    title: "Tips Menjaga Kamar Kost Tetap Kering dan Anti Lembap",
+    excerpt:
+      "Kamar lembap memicu bau dan jamur yang mengganggu kesehatan. Ikuti langkah sederhana ini untuk menjaga kamar tetap segar sepanjang musim.",
+    date: "7 Agustus 2026",
+    category: "Panduan",
+    slug: "kamar-kost-anti-lembap",
+  },
 ];
 
 export const kostArticleDetails: Record<string, ArticleDetail> = {
@@ -420,5 +438,88 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Etika Kost", "Komunitas", "Gaya Hidup", "Hunian"],
+  },
+  "memilih-teman-sekamar-cocok": {
+    slug: "memilih-teman-sekamar-cocok",
+    category: "Tips",
+    readTime: "6 menit",
+    date: "7 Agustus 2026",
+    title:
+      "Cara Memilih Teman Sekamar yang Cocok untuk Produktivitas dan Privasi",
+    subtitle:
+      "Kecocokan gaya hidup adalah faktor utama saat berbagi kamar. Komunikasi ekspektasi sejak awal dapat mencegah konflik jangka panjang.",
+    author: {
+      name: "Tim Operasional Kost",
+      role: "Resident Experience",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Berbagi kamar dapat menghemat biaya, namun juga menuntut penyesuaian ritme hidup. Banyak konflik terjadi bukan karena niat buruk, melainkan karena ekspektasi yang tidak pernah dibicarakan sejak awal.",
+      },
+      {
+        type: "heading",
+        text: "Hal yang Perlu Dicocokkan Sebelum Tinggal Bersama",
+      },
+      {
+        type: "list",
+        items: [
+          "Jadwal harian: jam tidur, jam bangun, dan aktivitas malam.",
+          "Standar kebersihan kamar dan pembagian tugas ringan.",
+          "Kebijakan tamu, penggunaan barang bersama, dan privasi.",
+          "Kebiasaan kerja atau belajar agar tidak saling mengganggu.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Teman sekamar terbaik bukan yang paling mirip, tetapi yang paling bisa saling menghormati batas.",
+      },
+      {
+        type: "paragraph",
+        text: "Sebelum memutuskan, lakukan obrolan singkat tentang rutinitas dan aturan dasar. Kesepakatan sederhana di awal akan membuat kehidupan kost lebih tenang, produktif, dan minim drama.",
+      },
+    ],
+    tags: ["Teman Sekamar", "Kost", "Tips Hunian", "Produktivitas"],
+  },
+  "kamar-kost-anti-lembap": {
+    slug: "kamar-kost-anti-lembap",
+    category: "Panduan",
+    readTime: "5 menit",
+    date: "7 Agustus 2026",
+    title: "Tips Menjaga Kamar Kost Tetap Kering dan Anti Lembap",
+    subtitle:
+      "Kelembapan berlebih membuat kamar tidak nyaman dan berisiko bagi kesehatan. Perawatan rutin kecil bisa memberi dampak besar.",
+    author: {
+      name: "Tim Hunian Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Resident Care",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Kamar kost yang lembap umumnya ditandai bau apek, dinding berjamur, dan kasur terasa dingin. Kondisi ini bukan cuma mengganggu kenyamanan, tetapi juga dapat memicu alergi dan gangguan pernapasan.",
+      },
+      {
+        type: "heading",
+        text: "Langkah Sederhana Mengurangi Lembap",
+      },
+      {
+        type: "list",
+        items: [
+          "Buka ventilasi secara rutin agar sirkulasi udara tetap berjalan.",
+          "Jangan menumpuk pakaian basah di dalam kamar.",
+          "Gunakan penyerap lembap di area sudut kamar dan lemari.",
+          "Bersihkan titik jamur sejak awal sebelum menyebar.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Kamar yang sehat dimulai dari udara yang sehat.",
+      },
+      {
+        type: "paragraph",
+        text: "Lakukan pengecekan mingguan pada area rawan lembap seperti bawah kasur, belakang lemari, dan sudut dinding. Konsistensi perawatan kecil jauh lebih efektif daripada perbaikan besar saat masalah sudah parah.",
+      },
+    ],
+    tags: ["Kamar Kost", "Anti Lembap", "Kebersihan", "Hunian Sehat"],
   },
 };
