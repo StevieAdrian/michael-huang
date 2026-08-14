@@ -70,7 +70,10 @@ export const seoConfig = {
     "Balik Nama Sertifikat",
     "Akta Jual Beli Tanah",
     "Christian Ministry",
-    "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Podcast"
+    "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Podcast",
+    "MH Clinic",
+    "Klinik Kecantikan Jakarta Barat",
+    "Klinik Estetika Jakarta Barat"
   ] as const,
 
   // Verification codes

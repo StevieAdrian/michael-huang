@@ -14,6 +14,7 @@ export const navItems = [
   { name: "Gereja", path: "/glory-ministry-church" },
   { name: "Musik", path: "/musik-production-michael" },
   { name: "Podcast", path: "/podcast-michael" },
+  { name: "MH Clinic", path: "/mh-clinic" },
 ];
 
 export const mainNavItems = navItems.slice(1);

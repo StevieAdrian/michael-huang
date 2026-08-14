@@ -102,6 +102,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/mh-clinic`,
+      lastModified: new Date("2026-08-14"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
   ];
 
   const articleRoutes = articleSections.flatMap(({ base, articles }) => [

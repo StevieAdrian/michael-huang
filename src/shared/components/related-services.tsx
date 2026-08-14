@@ -14,6 +14,7 @@ const allServices = [
   { label: "Gereja", href: "/glory-ministry-church" },
   { label: "Music Production", href: "/musik-production-michael" },
   { label: "Podcast", href: "/podcast-michael" },
+  { label: "MH Clinic", href: "/mh-clinic" },
 ];
 
 export function RelatedServices({ currentPath }: { currentPath: string }) {

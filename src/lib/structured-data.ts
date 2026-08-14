@@ -614,6 +614,22 @@ export function generateServiceListSchema() {
           areaServed: "Indonesia",
           serviceType: "Franchise"
         }
+      },
+      {
+        "@type": "ListItem",
+        position: 8,
+        item: {
+          "@type": "Service",
+          "@id": `${seoConfig.siteUrl}/mh-clinic#service`,
+          name: "MH Clinic Beauty & Estetika (Opening Soon)",
+          description: "Premium beauty clinic providing skin treatments, laser therapy, and anti-aging solutions.",
+          provider: {
+            "@type": "BeautySalon",
+            name: "MH Clinic"
+          },
+          areaServed: "Jakarta",
+          serviceType: "Beauty and Esthetics"
+        }
       }
     ]
   };
@@ -670,6 +686,37 @@ export function generateMusicGroupSchema() {
     name: "Glory Worship",
     url: `${seoConfig.siteUrl}/musik-production-michael`,
     description: "Layanan pujian dan penyembahan dari Glory Ministry Church.",
+  };
+}
+
+export function generateClinicSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "@id": `${seoConfig.siteUrl}/mh-clinic#clinic`,
+    "name": "MH Clinic - Klinik Kecantikan Jakarta",
+    "description": "Klinik kecantikan premium dari Dr. Michael di Jakarta Barat yang segera hadir (Opening Soon). Menyediakan layanan perawatan kulit, estetika, anti-aging, dan perawatan kecantikan modern.",
+    "url": `${seoConfig.siteUrl}/mh-clinic`,
+    "telephone": "+62-821-2385-595",
+    "priceRange": "$$$",
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=1200",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur",
+      "addressLocality": "Jakarta Barat",
+      "addressRegion": "DKI Jakarta",
+      "postalCode": "11730",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -6.13891866018095,
+      "longitude": 106.73066707400585
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Jakarta"
+    }
   };
 }
 

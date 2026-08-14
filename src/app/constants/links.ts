@@ -16,6 +16,7 @@ export const PPAT_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, say
 export const NOTARIS_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konsultasi layanan Notaris`;
 export const CHURCH_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin konfirmasi Perpuluhan`;
 export const FRANCHISE_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya tertarik dengan peluang kemitraan Franchise Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.`;
+export const CLINIC_WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=Halo, saya ingin bertanya tentang layanan kecantikan MH Clinic`;
 export const EMAIL_ADDRESS = "contact@michaelhuang.id";
 export const EMAIL_CARE = "contact@michaelhuang.id";
 

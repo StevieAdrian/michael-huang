@@ -8,6 +8,7 @@ import {
   BookOpen,
   Mic2,
   Mic,
+  Sparkles,
 } from "lucide-react";
 
 export const services = [
@@ -100,5 +101,15 @@ export const services = [
     color: "from-teal-900/50 to-slate-900/50",
     border: "group-hover:border-teal-500/50",
     tag: "Konten",
+  },
+  {
+    title: "MH Clinic",
+    description:
+      "Klinik kecantikan premium yang segera hadir. Perawatan kulit dan estetika modern berstandar tinggi.",
+    icon: Sparkles,
+    href: "/mh-clinic",
+    color: "from-pink-900/50 to-slate-900/50",
+    border: "group-hover:border-pink-500/50",
+    tag: "Kecantikan",
   },
 ];
