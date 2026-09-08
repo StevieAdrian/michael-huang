@@ -20,13 +20,26 @@ interface ArticleCardsProps {
   limit?: number;
 }
 
+const MONTHS_ID: Record<string, number> = {
+  Januari: 0, Februari: 1, Maret: 2, April: 3,
+  Mei: 4, Juni: 5, Juli: 6, Agustus: 7,
+  September: 8, Oktober: 9, November: 10, Desember: 11,
+};
+
+function parseIdDate(dateStr: string): Date {
+  const [day, month, year] = dateStr.split(" ");
+  return new Date(Number(year), MONTHS_ID[month] ?? 0, Number(day));
+}
+
 export function ArticleCards({
   articles,
   basePath,
   title = "Artikel & Wawasan",
   limit = 3,
 }: ArticleCardsProps) {
-  const displayedArticles = articles.slice(0, limit);
+  const displayedArticles = [...articles]
+    .sort((a, b) => parseIdDate(b.date).getTime() - parseIdDate(a.date).getTime())
+    .slice(0, limit);
 
   return (
     <section className="py-12 md:py-20 bg-background">
