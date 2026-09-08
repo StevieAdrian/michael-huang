@@ -83,6 +83,24 @@ export const lawFirmArticles: Article[] = [
     category: "Korporat",
     slug: "legal-opinion-kontrak-investasi",
   },
+  {
+    id: "10",
+    title: "Struktur Kepemilikan Saham yang Aman: Panduan untuk Pendiri Bisnis",
+    excerpt:
+      "Komposisi saham yang tidak terencana bisa menjadi akar konflik di masa depan. Pelajari strategi legal untuk menyusun struktur kepemilikan yang adil dan terlindungi.",
+    date: "8 September 2026",
+    category: "Korporat",
+    slug: "struktur-kepemilikan-saham-pendiri",
+  },
+  {
+    id: "11",
+    title: "Pelanggaran Merek Dagang: Tanda, Risiko, dan Cara Menuntutnya",
+    excerpt:
+      "Merek adalah aset strategis yang sering diremehkan. Ketika merek Anda ditiru, ada jalur hukum yang tegas tersedia — asalkan merek sudah terdaftar.",
+    date: "8 September 2026",
+    category: "HAKI",
+    slug: "pelanggaran-merek-dagang-tuntutan",
+  },
 ];
 
 export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
@@ -573,5 +591,125 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Legal Opinion", "Investasi", "Korporat", "Kontrak"],
-  }
+  },
+  "struktur-kepemilikan-saham-pendiri": {
+    slug: "struktur-kepemilikan-saham-pendiri",
+    category: "Korporat",
+    readTime: "8 menit",
+    date: "8 September 2026",
+    title: "Struktur Kepemilikan Saham yang Aman: Panduan untuk Pendiri Bisnis",
+    subtitle:
+      "Bagi pendiri bisnis, struktur kepemilikan saham yang salah bisa mengancam kendali perusahaan. Perencanaan legal sejak awal adalah kunci keamanan jangka panjang.",
+    author: {
+      name: "Tim Legal Michael, Antonius & Co",
+      role: "Corporate Law Division",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Ketika bisnis berkembang dan mengundang investor atau mitra baru, struktur kepemilikan saham yang tidak terancang dengan baik bisa menjadi bom waktu. Banyak konflik pendiri (founder dispute) bermula dari ambiguitas kepemilikan, hak suara yang tidak seimbang, atau absennya mekanisme exit yang jelas.",
+      },
+      {
+        type: "heading",
+        text: "Mengapa Struktur Saham Harus Dirancang Sejak Awal?",
+      },
+      {
+        type: "paragraph",
+        text: "Komposisi saham menentukan siapa yang berhak mengambil keputusan strategis, siapa yang menerima dividen, dan siapa yang bisa melakukan exit di masa mendatang. Tanpa dokumen yang tepat, perselisihan antar pendiri bisa memakan waktu dan biaya litigasi yang besar.",
+      },
+      {
+        type: "heading",
+        text: "Instrumen Legal yang Wajib Disiapkan",
+      },
+      {
+        type: "list",
+        items: [
+          "Shareholders Agreement (SHA): Mengatur hak dan kewajiban pemegang saham, mekanisme voting, dan klausul anti-dilusi.",
+          "Vesting Schedule: Klausul yang memastikan saham pendiri diperoleh secara bertahap sebagai insentif komitmen jangka panjang.",
+          "Right of First Refusal (ROFR): Memberi hak kepada pemegang saham lama untuk membeli saham yang akan dijual sebelum ditawarkan ke pihak luar.",
+          "Drag-Along dan Tag-Along Rights: Melindungi pemegang saham minoritas dalam proses akuisisi.",
+          "Deadlock Resolution Clause: Mekanisme penyelesaian jika pendiri tidak mencapai kesepakatan dalam keputusan kritis.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Struktur saham yang jelas bukan hanya soal keadilan — ini tentang menjaga keutuhan bisnis dari dalam ketika tekanan dari luar semakin besar.",
+      },
+      {
+        type: "heading",
+        text: "Pola Kepemilikan yang Umum Digunakan Startup",
+      },
+      {
+        type: "paragraph",
+        text: "Di tahap awal, banyak startup menerapkan komposisi 50:50 antar pendiri — yang sering bermasalah saat terjadi deadlock. Pola yang lebih direkomendasikan adalah kepemilikan mayoritas oleh CEO sebesar 51% atau lebih, dengan saham selebihnya dibagi secara proporsional sesuai kontribusi dan dilindungi dengan SHA yang terstruktur.",
+      },
+      {
+        type: "paragraph",
+        text: "Dengan bantuan konsultan hukum korporat, Anda dapat menyusun struktur kepemilikan yang tidak hanya adil hari ini, tetapi juga kokoh menghadapi perubahan di masa mendatang — termasuk masuknya investor institusional, IPO, atau proses akuisisi.",
+      },
+    ],
+    tags: ["Saham", "Korporat", "Pendiri", "Startup"],
+  },
+  "pelanggaran-merek-dagang-tuntutan": {
+    slug: "pelanggaran-merek-dagang-tuntutan",
+    category: "HAKI",
+    readTime: "7 menit",
+    date: "8 September 2026",
+    title: "Pelanggaran Merek Dagang: Tanda, Risiko, dan Cara Menuntutnya",
+    subtitle:
+      "Pemalsuan atau peniruan merek dagang tidak hanya merugikan secara finansial, tetapi juga merusak reputasi brand yang sudah dibangun bertahun-tahun.",
+    author: {
+      name: "Tim Legal Michael, Antonius & Co",
+      role: "Intellectual Property Division",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Merek dagang yang kuat adalah aset intangible paling berharga dalam bisnis modern. Namun, semakin terkenal sebuah merek, semakin tinggi pula risiko peniruan dan pemalsuan. Pelanggaran merek bisa terjadi dalam berbagai bentuk — mulai dari penggunaan nama yang mirip, logo serupa, hingga pembajakan domain digital.",
+      },
+      {
+        type: "heading",
+        text: "Tanda-Tanda Merek Anda Dilanggar",
+      },
+      {
+        type: "list",
+        items: [
+          "Produk atau jasa kompetitor menggunakan nama/logo yang menyerupai merek Anda secara signifikan.",
+          "Ada pendaftaran merek baru di DJKI (Direktorat Jenderal Kekayaan Intelektual) yang serupa dengan merek terdaftar Anda.",
+          "Domain internet atau akun media sosial menggunakan identitas merek Anda tanpa izin.",
+          "Konsumen dilaporkan kebingungan membedakan produk Anda dengan produk pihak lain.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Jalur Hukum yang Tersedia",
+      },
+      {
+        type: "list",
+        items: [
+          "Keberatan dan pembatalan merek: Dapat diajukan ke DJKI jika ada merek yang baru didaftarkan menyerupai merek Anda.",
+          "Somasi Cease and Desist: Peringatan legal pertama agar pihak pelanggar menghentikan penggunaan merek.",
+          "Gugatan perdata: Menuntut ganti kerugian materiil dan immateriil atas pelanggaran merek di Pengadilan Niaga.",
+          "Laporan pidana: Pelanggaran merek yang disengaja dapat dipidanakan berdasarkan UU No. 20 Tahun 2016 tentang Merek dan Indikasi Geografis.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Pendaftaran merek bukan biaya — ini adalah investasi perlindungan yang nilainya jauh melampaui biaya pendaftarannya sendiri.",
+      },
+      {
+        type: "heading",
+        text: "Langkah Preventif yang Dianjurkan",
+      },
+      {
+        type: "paragraph",
+        text: "Sebelum meluncurkan produk atau brand baru, lakukan clearance search di database DJKI untuk memastikan merek Anda belum digunakan pihak lain. Segera daftarkan merek Anda di seluruh kelas barang/jasa yang relevan. Semakin cepat merek terdaftar, semakin kuat perlindungan hukumnya.",
+      },
+      {
+        type: "paragraph",
+        text: "Jika merek Anda sudah dilanggar, dokumentasikan setiap bukti pelanggaran dan konsultasikan segera dengan tim HKI kami. Langkah cepat sangat menentukan hasil penegakan hak merek Anda.",
+      },
+    ],
+    tags: ["Merek Dagang", "HAKI", "Kekayaan Intelektual", "Litigasi"],
+  },
 };

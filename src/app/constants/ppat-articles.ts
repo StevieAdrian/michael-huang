@@ -83,6 +83,24 @@ export const ppatArticles: Article[] = [
     category: "Edukasi",
     slug: "cek-zona-tata-ruang-tanah",
   },
+  {
+    id: "10",
+    title: "Konversi Girik Menjadi Sertifikat: Prosedur dan Risiko yang Perlu Diketahui",
+    excerpt:
+      "Tanah dengan bukti kepemilikan Girik belum terlindungi secara penuh secara hukum. Pelajari langkah konversi ke sertifikat resmi melalui PPAT dan BPN.",
+    date: "8 September 2026",
+    category: "Panduan",
+    slug: "konversi-girik-sertifikat-ppat",
+  },
+  {
+    id: "11",
+    title: "Perpanjangan dan Peningkatan HGB Menjadi SHM: Panduan Lengkap",
+    excerpt:
+      "Hak Guna Bangunan memiliki batas waktu dan perlu diperpanjang atau ditingkatkan ke Sertifikat Hak Milik. Ketahui prosedur, biaya, dan persyaratannya.",
+    date: "8 September 2026",
+    category: "Panduan",
+    slug: "perpanjangan-peningkatan-hgb-shm",
+  },
 ];
 
 export const ppatArticleDetails: Record<string, ArticleDetail> = {
@@ -488,5 +506,123 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Zonasi", "Tata Ruang", "PPAT", "Properti"],
+  },
+  "konversi-girik-sertifikat-ppat": {
+    slug: "konversi-girik-sertifikat-ppat",
+    category: "Panduan",
+    readTime: "8 menit",
+    date: "8 September 2026",
+    title: "Konversi Girik Menjadi Sertifikat: Prosedur dan Risiko yang Perlu Diketahui",
+    subtitle:
+      "Girik bukan sertifikat tanah dan tidak memberikan perlindungan hukum penuh. Konversi ke sertifikat resmi adalah langkah yang wajib dilakukan sesegera mungkin.",
+    author: {
+      name: "Tim PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Konsultan Pertanahan",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Girik (atau Petok D/Letter C) adalah bukti pembayaran pajak tanah dari era sebelum diberlakukannya UUPA (Undang-Undang Pokok Agraria) tahun 1960. Meskipun sering disebut sebagai 'surat tanah', girik bukanlah bukti kepemilikan tanah yang sah di mata hukum modern. Tanpa konversi ke sertifikat resmi, tanah girik sangat rentan terhadap sengketa dan sulit dijual, diwariskan, atau dijadikan agunan.",
+      },
+      {
+        type: "heading",
+        text: "Risiko Kepemilikan Tanah Girik",
+      },
+      {
+        type: "list",
+        items: [
+          "Tidak dapat digunakan sebagai jaminan kredit bank.",
+          "Rawan sengketa karena tidak tercatat di BPN (Badan Pertanahan Nasional).",
+          "Bisa diklaim oleh pihak lain karena tidak ada bukti kepemilikan formal.",
+          "Proses jual beli tidak dapat dilakukan melalui AJB di hadapan PPAT.",
+          "Risiko tanah diklaim sebagai tanah negara jika tidak segera dikonversikan.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Prosedur Konversi Girik ke Sertifikat",
+      },
+      {
+        type: "list",
+        items: [
+          "Kumpulkan bukti kepemilikan historis: girik asli, riwayat jual beli sebelumnya, dan surat keterangan riwayat tanah dari kelurahan.",
+          "Pastikan tanah tidak dalam sengketa dan tidak tumpang tindih dengan hak pihak lain.",
+          "Lakukan pengukuran tanah oleh petugas BPN untuk penerbitan Peta Bidang Tanah.",
+          "Ajukan permohonan pendaftaran tanah pertama kali ke Kantor Pertanahan setempat.",
+          "Ikuti proses pengumuman selama 60 hari untuk memberi kesempatan pihak lain mengajukan keberatan.",
+          "Setelah masa pengumuman selesai tanpa keberatan, sertifikat diterbitkan atas nama pemohon.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Konversi girik ke sertifikat bukan hanya formalitas — ini adalah perlindungan nyata atas tanah warisan keluarga Anda.",
+      },
+      {
+        type: "paragraph",
+        text: "Proses konversi girik memerlukan waktu dan pemahaman prosedur yang tepat. PPAT dapat membantu mempersiapkan dokumen, berkoordinasi dengan BPN, dan memastikan proses berjalan tanpa hambatan hukum. Jangan tunda langkah ini — semakin lama ditunda, semakin kompleks proses penelusuran riwayat tanahnya.",
+      },
+    ],
+    tags: ["Girik", "Sertifikat", "BPN", "PPAT"],
+  },
+  "perpanjangan-peningkatan-hgb-shm": {
+    slug: "perpanjangan-peningkatan-hgb-shm",
+    category: "Panduan",
+    readTime: "7 menit",
+    date: "8 September 2026",
+    title: "Perpanjangan dan Peningkatan HGB Menjadi SHM: Panduan Lengkap",
+    subtitle:
+      "Banyak pemilik properti tidak mengetahui bahwa HGB mereka akan kedaluwarsa. Pahami batas waktu, prosedur perpanjangan, dan cara meningkatkannya ke Sertifikat Hak Milik.",
+    author: {
+      name: "Tim PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Konsultan Pertanahan",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Hak Guna Bangunan (HGB) adalah hak untuk mendirikan dan memiliki bangunan di atas tanah yang bukan miliknya sendiri, dengan jangka waktu tertentu. HGB umumnya diberikan untuk masa 30 tahun dan dapat diperpanjang hingga 20 tahun. Namun, banyak pemilik properti tidak sadar bahwa HGB mereka mendekati masa berakhir, yang bisa berdampak serius pada status kepemilikan.",
+      },
+      {
+        type: "heading",
+        text: "Perbedaan HGB dan SHM",
+      },
+      {
+        type: "paragraph",
+        text: "Sertifikat Hak Milik (SHM) adalah bukti kepemilikan tanah tertinggi dan paling kuat yang diakui oleh hukum Indonesia, berlaku tanpa batas waktu. HGB bersifat sementara dan hanya memberikan hak atas bangunan, bukan tanahnya. Dalam transaksi properti, SHM memiliki nilai jual lebih tinggi dan lebih mudah dijadikan agunan di bank.",
+      },
+      {
+        type: "heading",
+        text: "Kapan Sebaiknya Mengajukan Perpanjangan HGB?",
+      },
+      {
+        type: "list",
+        items: [
+          "Idealnya 2 tahun sebelum masa HGB berakhir untuk menghindari kedaruratan administrasi.",
+          "Pastikan semua kewajiban PBB (Pajak Bumi dan Bangunan) sudah lunas sebelum mengajukan permohonan.",
+          "Persiapkan dokumen identitas pemilik, sertifikat asli HGB, dan IMB/PBG bangunan di atasnya.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Prosedur Peningkatan HGB Menjadi SHM",
+      },
+      {
+        type: "list",
+        items: [
+          "Pastikan status tanah di bawah HGB adalah Tanah Negara atau Tanah Hak Pengelolaan yang dapat ditingkatkan.",
+          "Ajukan permohonan peningkatan hak ke Kantor Pertanahan setempat.",
+          "Bayar Bea Perolehan Hak atas Tanah dan Bangunan (BPHTB) sesuai nilai transaksi.",
+          "Proses penerbitan SHM baru biasanya memakan waktu 30–90 hari kerja.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Meningkatkan HGB ke SHM adalah investasi satu kali yang memberikan ketenangan pikiran seumur hidup atas aset properti Anda.",
+      },
+      {
+        type: "paragraph",
+        text: "PPAT dapat memfasilitasi seluruh proses perpanjangan maupun peningkatan hak ini dengan efisien. Jika properti Anda masih berstatus HGB, segera periksa tanggal jatuh temponya dan rencanakan langkah hukum yang tepat bersama tim kami.",
+      },
+    ],
+    tags: ["HGB", "SHM", "Sertifikat", "PPAT"],
   },
 };
