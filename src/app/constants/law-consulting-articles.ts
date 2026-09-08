@@ -83,6 +83,24 @@ export const lawConsultingArticles: Article[] = [
     category: "Kontrak",
     slug: "mitigasi-sengketa-kerja-sop-hr",
   },
+  {
+    id: "10",
+    title: "ESG Compliance: Kewajiban Hukum dan Peluang Bisnis bagi Perusahaan Indonesia",
+    excerpt:
+      "Tuntutan ESG kini bukan sekadar tren, melainkan persyaratan dari investor dan regulator. Pelajari kerangka hukum dan strategi implementasinya di Indonesia.",
+    date: "8 September 2026",
+    category: "Compliance",
+    slug: "esg-compliance-hukum-perusahaan-indonesia",
+  },
+  {
+    id: "11",
+    title: "NDA yang Efektif: Panduan Menyusun Perjanjian Kerahasiaan yang Benar-Benar Melindungi",
+    excerpt:
+      "Tidak semua NDA memberikan perlindungan yang cukup. Ketahui klausul apa yang membuat NDA benar-benar mengikat dan dapat ditegakkan di pengadilan.",
+    date: "8 September 2026",
+    category: "Kontrak",
+    slug: "nda-efektif-perjanjian-kerahasiaan",
+  },
 ];
 
 export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
@@ -486,5 +504,125 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Ketenagakerjaan", "SOP HR", "Sengketa Kerja", "Compliance"],
+  },
+  "esg-compliance-hukum-perusahaan-indonesia": {
+    slug: "esg-compliance-hukum-perusahaan-indonesia",
+    category: "Compliance",
+    readTime: "8 menit",
+    date: "8 September 2026",
+    title: "ESG Compliance: Kewajiban Hukum dan Peluang Bisnis bagi Perusahaan Indonesia",
+    subtitle:
+      "Kerangka ESG (Environmental, Social, Governance) kini masuk dalam radar regulator dan investor. Perusahaan yang proaktif akan memiliki keunggulan kompetitif yang nyata.",
+    author: {
+      name: "Tim Konsultasi Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Corporate Legal Advisor",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Environmental, Social, and Governance (ESG) telah berkembang dari sekadar konsep keberlanjutan menjadi persyaratan regulasi dan investasi yang konkret. Di Indonesia, sejumlah regulasi OJK dan Kementerian Lingkungan Hidup mulai mengintegrasikan standar ESG ke dalam kewajiban pelaporan perusahaan, terutama yang terdaftar di bursa atau beroperasi di sektor ekstraktif.",
+      },
+      {
+        type: "heading",
+        text: "Dasar Hukum ESG di Indonesia",
+      },
+      {
+        type: "list",
+        items: [
+          "POJK No. 51/POJK.03/2017 tentang Penerapan Keuangan Berkelanjutan bagi Lembaga Jasa Keuangan.",
+          "Peraturan OJK tentang kewajiban pelaporan sustainability (laporan keberlanjutan) bagi perusahaan terbuka.",
+          "UU No. 32 Tahun 2009 tentang Perlindungan dan Pengelolaan Lingkungan Hidup dan turunannya.",
+          "Komitmen Indonesia dalam Paris Agreement yang tercermin dalam regulasi sektor energi dan industri.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Area ESG yang Perlu Diprioritaskan",
+      },
+      {
+        type: "list",
+        items: [
+          "Environmental: Kepatuhan AMDAL, pengelolaan limbah B3, pengukuran dan pelaporan emisi karbon.",
+          "Social: Kebijakan ketenagakerjaan inklusif, K3 (Keselamatan dan Kesehatan Kerja), keterlibatan komunitas sekitar.",
+          "Governance: Transparansi laporan keuangan, kebijakan anti-korupsi, struktur dewan yang independen.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "ESG bukan beban biaya. Perusahaan yang menerapkan ESG dengan serius terbukti memiliki akses modal yang lebih luas dan risiko reputasi yang lebih rendah.",
+      },
+      {
+        type: "heading",
+        text: "Strategi Implementasi yang Realistis",
+      },
+      {
+        type: "paragraph",
+        text: "Mulailah dengan gap analysis terhadap standar ESG yang relevan bagi industri Anda. Identifikasi area risiko tertinggi, susun roadmap kepatuhan bertahap, dan bangun sistem pelaporan internal yang terstandarisasi. Konsultasikan dengan penasihat hukum untuk memastikan setiap langkah sesuai regulasi yang berlaku.",
+      },
+      {
+        type: "paragraph",
+        text: "Perusahaan yang memanfaatkan ESG sebagai diferensiasi kompetitif — bukan sekadar kewajiban — akan lebih mudah menarik investor institusional, mitra strategis, dan talenta terbaik. Tim kami siap membantu penyusunan kebijakan, review dokumen ESG, dan penyesuaian terhadap regulasi terbaru.",
+      },
+    ],
+    tags: ["ESG", "Compliance", "Keberlanjutan", "Investasi"],
+  },
+  "nda-efektif-perjanjian-kerahasiaan": {
+    slug: "nda-efektif-perjanjian-kerahasiaan",
+    category: "Kontrak",
+    readTime: "7 menit",
+    date: "8 September 2026",
+    title: "NDA yang Efektif: Panduan Menyusun Perjanjian Kerahasiaan yang Benar-Benar Melindungi",
+    subtitle:
+      "NDA yang buruk memberikan rasa aman palsu. Pelajari elemen-elemen yang membuat perjanjian kerahasiaan benar-benar dapat ditegakkan di hadapan hukum.",
+    author: {
+      name: "Tim Konsultasi Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Corporate Legal Advisor",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Non-Disclosure Agreement (NDA) atau Perjanjian Kerahasiaan adalah salah satu kontrak paling sering digunakan dalam dunia bisnis — mulai dari diskusi pra-investasi, kerja sama teknologi, hingga perekrutan karyawan kunci. Namun, banyak NDA yang beredar hanya merupakan dokumen boilerplate yang tidak cukup kuat secara hukum untuk ditegakkan.",
+      },
+      {
+        type: "heading",
+        text: "Elemen Wajib dalam NDA yang Efektif",
+      },
+      {
+        type: "list",
+        items: [
+          "Definisi 'Informasi Rahasia' yang spesifik dan terukur: hindari definisi terlalu luas atau terlalu sempit.",
+          "Kewajiban penerima informasi: apa yang boleh dan tidak boleh dilakukan dengan informasi tersebut.",
+          "Pengecualian yang sah: informasi publik, informasi yang sudah diketahui sebelumnya, atau yang diperoleh secara independen.",
+          "Jangka waktu kerahasiaan: berapa lama kewajiban berlaku setelah perjanjian berakhir.",
+          "Sanksi pelanggaran: ganti rugi, injunctive relief, dan mekanisme penyelesaian sengketa.",
+          "Pilihan hukum (governing law) dan forum penyelesaian sengketa yang jelas.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "NDA Unilateral vs Bilateral",
+      },
+      {
+        type: "paragraph",
+        text: "NDA unilateral hanya mengikat satu pihak sebagai penerima informasi, cocok saat hanya satu pihak yang mengungkap informasi sensitif. NDA bilateral mengikat kedua belah pihak secara timbal balik, lebih tepat untuk diskusi bisnis yang saling melibatkan pertukaran informasi rahasia. Pilihan jenis NDA harus disesuaikan dengan konteks transaksi.",
+      },
+      {
+        type: "quote",
+        text: "NDA terbaik adalah yang tidak pernah perlu disengketakan — karena ruang lingkupnya jelas sejak awal dan kedua pihak memahami kewajiban mereka.",
+      },
+      {
+        type: "heading",
+        text: "Kapan NDA Tidak Cukup?",
+      },
+      {
+        type: "paragraph",
+        text: "NDA tidak dapat melindungi informasi yang sudah menjadi rahasia umum atau yang dikecualikan oleh hukum. Untuk perlindungan yang lebih komprehensif terhadap kekayaan intelektual, tambahkan pendaftaran HKI (merek, paten, hak cipta) sebagai lapisan perlindungan tambahan yang tidak bergantung pada kontrak.",
+      },
+      {
+        type: "paragraph",
+        text: "Sebelum menandatangani atau mendistribusikan NDA, konsultasikan draftnya dengan tim hukum kami. Satu kali review profesional bisa menghindarkan Anda dari celah hukum yang berpotensi sangat merugikan.",
+      },
+    ],
+    tags: ["NDA", "Kontrak", "Kerahasiaan", "Kekayaan Intelektual"],
   },
 };
