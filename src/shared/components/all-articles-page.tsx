@@ -28,6 +28,17 @@ interface AllArticlesPageProps {
   sectionLabel: string;
 }
 
+const MONTHS_ID: Record<string, number> = {
+  Januari: 0, Februari: 1, Maret: 2, April: 3,
+  Mei: 4, Juni: 5, Juli: 6, Agustus: 7,
+  September: 8, Oktober: 9, November: 10, Desember: 11,
+};
+
+function parseIdDate(dateStr: string): Date {
+  const [day, month, year] = dateStr.split(" ");
+  return new Date(Number(year), MONTHS_ID[month] ?? 0, Number(day));
+}
+
 export function AllArticlesPage({
   articles,
   basePath,
@@ -37,6 +48,9 @@ export function AllArticlesPage({
   backLabel,
   sectionLabel,
 }: AllArticlesPageProps) {
+  const sortedArticles = [...articles].sort(
+    (a, b) => parseIdDate(b.date).getTime() - parseIdDate(a.date).getTime()
+  );
   return (
     <div className="pb-24 pt-24 md:pt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,7 +94,7 @@ export function AllArticlesPage({
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-          {articles.map((article, index) => (
+          {sortedArticles.map((article, index) => (
             <motion.div
               key={article.id}
               initial={{ opacity: 0, y: 20 }}
