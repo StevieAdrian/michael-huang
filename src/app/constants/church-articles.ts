@@ -83,6 +83,24 @@ export const churchArticles: Article[] = [
     category: "Komunitas",
     slug: "membangun-mezbah-keluarga-harian",
   },
+  {
+    id: "10",
+    title: "Kekuatan Pengampunan: Mengapa Memaafkan adalah Tanda Iman yang Kuat",
+    excerpt:
+      "Pengampunan bukan tanda kelemahan, melainkan cerminan kasih Allah yang telah kita terima. Pelajari mengapa mengampuni adalah salah satu tindakan iman terkuat.",
+    date: "8 September 2026",
+    category: "Renungan",
+    slug: "kekuatan-pengampunan-tanda-iman",
+  },
+  {
+    id: "11",
+    title: "Pemuridan Generasi Muda: Mendampingi Anak dan Remaja Bertumbuh dalam Iman",
+    excerpt:
+      "Generasi muda adalah masa depan gereja. Pahami pendekatan pemuridan yang relevan, kontekstual, dan berdampak jangka panjang untuk anak dan remaja.",
+    date: "8 September 2026",
+    category: "Komunitas",
+    slug: "pemuridan-generasi-muda-iman",
+  },
 ];
 
 export const churchArticleDetails: Record<string, ArticleDetail> = {
@@ -566,5 +584,124 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Mezbah Keluarga", "Pemuridan", "Doa", "Komunitas"],
+  },
+  "kekuatan-pengampunan-tanda-iman": {
+    slug: "kekuatan-pengampunan-tanda-iman",
+    category: "Renungan",
+    readTime: "7 menit",
+    date: "8 September 2026",
+    title: "Kekuatan Pengampunan: Mengapa Memaafkan adalah Tanda Iman yang Kuat",
+    subtitle:
+      "Pengampunan adalah salah satu perintah yang paling sulit sekaligus paling membebaskan. Ketika kita mengampuni, kita tidak hanya melepaskan orang lain — kita juga melepaskan diri sendiri.",
+    author: {
+      name: "Tim Redaksi Glory Ministry Church",
+      role: "Pastoral Team",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Dalam perjalanan iman, salah satu ujian terberat yang dihadapi setiap orang percaya adalah pengampunan. Luka yang dalam, pengkhianatan, atau ketidakadilan bisa membuat hati mengeras dan menutup diri. Namun Yesus dengan jelas mengajarkan bahwa pengampunan bukan pilihan — melainkan fondasi dari kehidupan iman yang sejati.",
+      },
+      {
+        type: "heading",
+        text: "Pengampunan Bukan Berarti Menyetujui Kesalahan",
+      },
+      {
+        type: "paragraph",
+        text: "Banyak orang enggan mengampuni karena mengira itu berarti membenarkan perbuatan yang menyakiti mereka. Padahal pengampunan adalah keputusan untuk melepaskan beban kepahitan dari hati kita sendiri — bukan pernyataan bahwa tindakan yang menyakiti kita itu benar. Mengampuni adalah tindakan yang lebih membebaskan si pemberi daripada si penerima.",
+      },
+      {
+        type: "heading",
+        text: "Apa yang Alkitab Katakan tentang Pengampunan?",
+      },
+      {
+        type: "list",
+        items: [
+          "Matius 6:14-15: \"Karena jikalau kamu mengampuni kesalahan orang, Bapamu yang di sorga akan mengampuni kamu juga.\"",
+          "Efesus 4:32: \"Hendaklah kamu ramah seorang terhadap yang lain, penuh kasih mesra dan saling mengampuni, sebagaimana Allah di dalam Kristus telah mengampuni kamu.\"",
+          "Kolose 3:13: \"Sabarlah kamu seorang terhadap yang lain, dan ampunilah seorang akan yang lain apabila yang seorang menaruh dendam terhadap yang lain.\"",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Pengampunan tidak mengubah masa lalu, tetapi membuka jalan menuju masa depan yang lebih terang.",
+      },
+      {
+        type: "heading",
+        text: "Langkah Praktis Menuju Pengampunan",
+      },
+      {
+        type: "list",
+        items: [
+          "Akui rasa sakit itu nyata: jangan memendam atau menyangkal luka yang ada.",
+          "Bawa kepada Tuhan dalam doa: minta kekuatan untuk mengampuni, bukan mengandalkan kekuatan sendiri.",
+          "Pilih pengampunan setiap hari: pengampunan sering kali adalah proses, bukan keputusan sekali.",
+          "Cari dukungan pastoral atau konseling jika luka terlalu berat ditanggung sendiri.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Pengampunan adalah tanda iman yang paling nyata karena mencerminkan kasih Allah yang tidak bersyarat. Semakin kita merenungkan betapa kita telah diampuni, semakin kita dimampukan untuk mengampuni orang lain.",
+      },
+    ],
+    tags: ["Pengampunan", "Renungan", "Iman", "Pemulihan"],
+  },
+  "pemuridan-generasi-muda-iman": {
+    slug: "pemuridan-generasi-muda-iman",
+    category: "Komunitas",
+    readTime: "8 menit",
+    date: "8 September 2026",
+    title: "Pemuridan Generasi Muda: Mendampingi Anak dan Remaja Bertumbuh dalam Iman",
+    subtitle:
+      "Generasi muda menghadapi tekanan zaman yang berbeda. Gereja dan keluarga dipanggil bersama-sama untuk mendampingi mereka dengan pendekatan yang relevan dan penuh kasih.",
+    author: {
+      name: "Tim Redaksi Glory Ministry Church",
+      role: "Youth and Family Ministry",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Generasi muda hari ini tumbuh di tengah arus informasi digital yang tak henti mengalir, tekanan sosial yang kompleks, dan krisis identitas yang nyata. Gereja dipanggil untuk hadir bukan hanya sebagai tempat ibadah mingguan, tetapi sebagai komunitas yang benar-benar mendampingi pertumbuhan iman anak dan remaja secara menyeluruh.",
+      },
+      {
+        type: "heading",
+        text: "Mengapa Pemuridan Generasi Muda Mendesak?",
+      },
+      {
+        type: "paragraph",
+        text: "Penelitian menunjukkan bahwa iman yang dibangun pada masa kanak-kanak dan remaja memiliki dampak yang jauh lebih langgeng dibanding iman yang ditemukan di usia dewasa. Fondasi rohani yang kuat di usia muda menjadi pelindung dari berbagai godaan dan krisis yang akan dihadapi di fase kehidupan selanjutnya.",
+      },
+      {
+        type: "heading",
+        text: "Prinsip Pemuridan Generasi Muda yang Efektif",
+      },
+      {
+        type: "list",
+        items: [
+          "Relasional sebelum institusional: anak dan remaja bertumbuh ketika merasa dikenal, bukan sekadar diajar.",
+          "Kontekstual dan relevan: sampaikan kebenaran Firman dalam bahasa dan konteks kehidupan mereka sehari-hari.",
+          "Libatkan orang tua: pemuridan yang paling kuat terjadi di rumah, bukan hanya di gereja.",
+          "Beri ruang untuk bertanya: jangan takut dengan pertanyaan kritis — itu tanda iman yang sedang bergulat secara sehat.",
+          "Model kehidupan, bukan hanya pengajaran: keteladanan pembimbing lebih kuat dari seribu khotbah.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Pemuridan terbaik terjadi bukan di atas panggung, melainkan di meja makan, di perjalanan, dan dalam momen-momen sehari-hari bersama.",
+      },
+      {
+        type: "heading",
+        text: "Peran Gereja dan Keluarga yang Saling Melengkapi",
+      },
+      {
+        type: "paragraph",
+        text: "Gereja tidak bisa menggantikan keluarga, dan keluarga tidak bisa sepenuhnya menggantikan komunitas gereja. Keduanya dirancang Tuhan untuk bekerja bersama. Program pembinaan remaja di gereja akan lebih berdampak ketika orang tua turut aktif terlibat, berdoa bersama, dan memperkuat nilai-nilai yang diajarkan di rumah.",
+      },
+      {
+        type: "paragraph",
+        text: "Glory Ministry Church membuka pendampingan bagi orang tua yang ingin membangun pemuridan yang lebih kuat bersama anak-anak mereka. Bergabunglah dalam komunitas kami dan mulailah perjalanan ini bersama.",
+      },
+    ],
+    tags: ["Pemuridan", "Remaja", "Komunitas", "Keluarga"],
   },
 };

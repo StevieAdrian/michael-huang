@@ -83,6 +83,24 @@ export const musicArticles: Article[] = [
     category: "Distribusi",
     slug: "monetisasi-musisi-independen-streaming",
   },
+  {
+    id: "10",
+    title: "Panduan Soundproofing Studio Rumahan yang Efektif dan Terjangkau",
+    excerpt:
+      "Rekaman di rumah sering terganggu suara luar. Pelajari solusi akustik dan soundproofing praktis yang tidak perlu biaya besar untuk hasil yang lebih profesional.",
+    date: "8 September 2026",
+    category: "Studio",
+    slug: "soundproofing-studio-rumahan",
+  },
+  {
+    id: "11",
+    title: "Kolaborasi Musisi di Era Digital: Cara Kerja Bareng Jarak Jauh",
+    excerpt:
+      "Internet membuka peluang kolaborasi tanpa batas geografis. Simak alat, platform, dan workflow terbaik untuk mengerjakan proyek musik bersama secara remote.",
+    date: "8 September 2026",
+    category: "Studio",
+    slug: "kolaborasi-musisi-jarak-jauh",
+  },
 ];
 
 export const musicArticleDetails: Record<string, ArticleDetail> = {
@@ -504,6 +522,123 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Monetisasi", "Musisi Independen", "Streaming", "Distribusi"],
+  },
+  "soundproofing-studio-rumahan": {
+    slug: "soundproofing-studio-rumahan",
+    category: "Studio",
+    readTime: "7 menit",
+    date: "8 September 2026",
+    title: "Panduan Soundproofing Studio Rumahan yang Efektif dan Terjangkau",
+    subtitle:
+      "Ruangan yang tidak akustik bisa merusak kualitas rekaman terbaik sekalipun. Pelajari solusi soundproofing dan treatment akustik yang realistis untuk home studio.",
+    author: {
+      name: "Tim Produksi Michael Musik Production",
+      role: "Audio Engineer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Salah satu tantangan terbesar musisi yang merekam di rumah adalah akustik ruangan yang buruk. Suara luar, dengung dinding, dan pantulan frekuensi rendah bisa merusak kejernihan rekaman meski menggunakan mikrofon seharga jutaan rupiah. Kabar baiknya, ada banyak solusi terjangkau yang bisa diterapkan tanpa harus merenovasi rumah.",
+      },
+      {
+        type: "heading",
+        text: "Perbedaan Soundproofing dan Acoustic Treatment",
+      },
+      {
+        type: "paragraph",
+        text: "Soundproofing bertujuan mencegah suara masuk atau keluar ruangan, sementara acoustic treatment mengontrol bagaimana suara berperilaku di dalam ruangan. Untuk home studio, acoustic treatment biasanya lebih prioritas dan lebih terjangkau dibanding soundproofing penuh.",
+      },
+      {
+        type: "heading",
+        text: "Solusi Acoustic Treatment yang Terjangkau",
+      },
+      {
+        type: "list",
+        items: [
+          "Rockwool atau foam panel: bahan penyerap suara yang efektif, bisa dibeli di toko bangunan dengan harga terjangkau.",
+          "Bass trap di sudut ruangan: sudut adalah area penumpukan frekuensi rendah — pasang bass trap untuk meminimalkan efek ini.",
+          "Diffuser DIY: panel kayu dengan pola tidak beraturan membantu menyebarkan gelombang suara agar lebih natural.",
+          "Karpet tebal dan furnitur berlapis kain: membantu menyerap mid dan high frequency secara signifikan.",
+          "Gorden tebal di jendela: solusi cepat dan murah untuk mengurangi refleksi dan kebocoran suara.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Ruangan terbaik untuk merekam adalah ruangan yang terdengar paling natural — bukan yang paling sunyi.",
+      },
+      {
+        type: "heading",
+        text: "Tips Memilih Posisi Rekaman",
+      },
+      {
+        type: "paragraph",
+        text: "Posisikan kursi mixing dan mikrofon rekaman setidaknya 60 cm dari dinding terdekat untuk meminimalkan pantulan langsung. Hindari sudut ruangan dan jendela tanpa treatment. Jika memungkinkan, rekam vokal di dalam lemari pakaian yang penuh — hasilnya sering lebih bersih dari studio yang tidak di-treat dengan benar.",
+      },
+      {
+        type: "paragraph",
+        text: "Investasi pada acoustic treatment yang baik akan terasa langsung pada kualitas rekaman Anda. Mulai dari area yang paling kritis: dinding di belakang monitor, samping kanan-kiri posisi mix, dan plafon di atas titik dengarin.",
+      },
+    ],
+    tags: ["Studio", "Soundproofing", "Akustik", "Home Studio"],
+  },
+  "kolaborasi-musisi-jarak-jauh": {
+    slug: "kolaborasi-musisi-jarak-jauh",
+    category: "Studio",
+    readTime: "6 menit",
+    date: "8 September 2026",
+    title: "Kolaborasi Musisi di Era Digital: Cara Kerja Bareng Jarak Jauh",
+    subtitle:
+      "Kolaborasi musik lintas kota bahkan lintas negara kini lebih mudah dari sebelumnya. Dengan workflow dan alat yang tepat, jarak bukan lagi hambatan kreativitas.",
+    author: {
+      name: "Tim Produksi Michael Musik Production",
+      role: "Audio Engineer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Pandemi mengajarkan industri musik bahwa kolaborasi tidak harus terjadi dalam satu ruangan. Kini, musisi dari Jakarta dan produser dari Bandung, atau bahkan dari dua negara berbeda, bisa mengerjakan satu proyek secara real-time dengan kualitas yang tidak kalah dari sesi studio langsung.",
+      },
+      {
+        type: "heading",
+        text: "Platform dan Alat Kolaborasi Remote Terbaik",
+      },
+      {
+        type: "list",
+        items: [
+          "Splice: platform berbagi stem dan file proyek DAW secara cloud, mendukung banyak format populer.",
+          "Bandlab: DAW berbasis browser gratis dengan fitur kolaborasi real-time yang cocok untuk pemula.",
+          "Audiomovers Listento: streaming audio berkualitas tinggi untuk session real-time dengan latensi minimal.",
+          "Dropbox atau Google Drive: untuk berbagi file stem, bounce, dan referensi secara cepat dan terorganisir.",
+          "Notion (app musik): untuk kolaborasi pada partitur dan notasi musik secara real-time.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Workflow Remote Session yang Efisien",
+      },
+      {
+        type: "list",
+        items: [
+          "Tentukan DAW utama yang digunakan bersama sejak awal untuk menghindari masalah kompatibilitas.",
+          "Buat folder struktur proyek yang konsisten: stems, bounce, reference, mix, master.",
+          "Gunakan naming convention yang jelas pada setiap file agar tidak ada kebingungan versi.",
+          "Jadwalkan sesi review bersama via video call setiap beberapa iterasi agar arah kreatif tetap selaras.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Kolaborasi terbaik bukan yang paling lancar teknisnya, tapi yang paling jelas komunikasi kreatifnya.",
+      },
+      {
+        type: "heading",
+        text: "Hal yang Perlu Disepakati di Awal",
+      },
+      {
+        type: "paragraph",
+        text: "Sebelum memulai proyek kolaborasi, sepakati pembagian kredit lagu, hak kepemilikan rekaman (master rights), persentase royalti, dan rencana distribusi. Ketidakjelasan di awal sering menjadi sumber konflik setelah lagu sukses. Jika perlu, tuangkan dalam perjanjian tertulis yang ditandatangani kedua belah pihak.",
+      },
+    ],
+    tags: ["Kolaborasi", "Remote", "Studio", "Produksi Musik"],
   },
 };
 
