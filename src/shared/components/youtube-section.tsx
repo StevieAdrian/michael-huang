@@ -93,10 +93,15 @@ export function YoutubeSection({
                         }}
                         className="w-full h-full relative block cursor-pointer group/btn"
                       >
-                        {video.thumbnail ? (
+                        {video.thumbnail || videoId ? (
                           <img
-                            src={video.thumbnail}
+                            src={video.thumbnail || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                             alt={video.title || "YouTube video thumbnail"}
+                            onError={(e) => {
+                              if (videoId) {
+                                e.currentTarget.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+                              }
+                            }}
                             className="w-full h-full object-cover group-hover/btn:scale-105 transition-transform duration-500"
                           />
                         ) : (

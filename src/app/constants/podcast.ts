@@ -18,6 +18,13 @@ export interface PodcastPlatform {
 
 export const podcastEpisodes: PodcastEpisode[] = [
   {
+    number: "EP 25",
+    title: "IN THIS ECONOMY — Bersama CEO PT Bangun Manusia Baru?",
+    guest: "CEO PT Bangun Manusia Baru",
+    duration: "1j 05m",
+    desc: "Obrolan mendalam tentang strategi bisnis, kepemimpinan, dan tantangan ekonomi saat ini di Indonesia.",
+  },
+  {
     number: "EP 24",
     title: "Bisnis dan Iman: Menemukan Keseimbangan",
     guest: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
@@ -75,9 +82,11 @@ export const podcastPlatforms: PodcastPlatform[] = [
 
 export const podcastYoutubeVideos: YoutubeVideoItem[] = [
   {
-    title: "EP 24 — Bisnis & Iman: Menemukan Keseimbangan",
+    title: "IN THIS ECONOMY — Bersama CEO PT Bangun Manusia Baru?",
     description:
-      "Full episode terbaru bersama Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.. Jujur, mendalam, dan menginspirasi.",
+      "Full episode podcast bersama CEO PT Bangun Manusia Baru, membahas strategi bisnis, kepemimpinan, dan tantangan ekonomi saat ini.",
+    thumbnail: "https://img.youtube.com/vi/ohcZq1sDBBE/hqdefault.jpg",
+    url: "https://youtu.be/ohcZq1sDBBE",
   },
   {
     title: "EP 23 — Hukum untuk Pengusaha Muda",
