@@ -101,6 +101,24 @@ export const lawConsultingArticles: Article[] = [
     category: "Kontrak",
     slug: "nda-efektif-perjanjian-kerahasiaan",
   },
+  {
+    id: "12",
+    title: "Memahami Perizinan Usaha Melalui OSS: Panduan untuk Pelaku Bisnis",
+    excerpt:
+      "Sistem OSS menyederhanakan perizinan usaha di Indonesia. Pahami alur, kategori risiko, dan dokumen yang dibutuhkan agar bisnis Anda legal.",
+    date: "10 September 2026",
+    category: "Perizinan",
+    slug: "perizinan-usaha-oss-panduan",
+  },
+  {
+    id: "13",
+    title: "Compliance Perusahaan: Mengapa Kepatuhan Hukum Itu Investasi",
+    excerpt:
+      "Kepatuhan hukum bukan beban, melainkan perlindungan. Pelajari bagaimana program compliance menjaga bisnis dari sanksi dan risiko reputasi.",
+    date: "12 September 2026",
+    category: "Korporat",
+    slug: "compliance-perusahaan-kepatuhan-hukum",
+  },
 ];
 
 export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
@@ -624,5 +642,129 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["NDA", "Kontrak", "Kerahasiaan", "Kekayaan Intelektual"],
+  },
+  "perizinan-usaha-oss-panduan": {
+    slug: "perizinan-usaha-oss-panduan",
+    category: "Perizinan",
+    readTime: "7 menit",
+    date: "10 September 2026",
+    title: "Memahami Perizinan Usaha Melalui OSS: Panduan untuk Pelaku Bisnis",
+    subtitle:
+      "Sistem Online Single Submission (OSS) mengintegrasikan perizinan berusaha di Indonesia. Memahami alurnya membantu bisnis Anda beroperasi secara legal.",
+    author: {
+      name: "Tim Konsultasi Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Business Licensing Advisor",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Sejak diberlakukannya sistem Online Single Submission (OSS) berbasis risiko, proses perizinan usaha di Indonesia menjadi lebih terintegrasi. Namun banyak pelaku usaha masih bingung dengan alur dan kategori perizinan yang berlaku bagi bidang usaha mereka.",
+      },
+      {
+        type: "heading",
+        text: "Apa Itu OSS Berbasis Risiko?",
+      },
+      {
+        type: "paragraph",
+        text: "OSS adalah sistem perizinan berusaha terintegrasi secara elektronik yang dikelola pemerintah. Pendekatan berbasis risiko mengklasifikasikan usaha menjadi beberapa tingkat risiko yang menentukan jenis perizinan yang dibutuhkan.",
+      },
+      {
+        type: "heading",
+        text: "Kategori Tingkat Risiko",
+      },
+      {
+        type: "list",
+        items: [
+          "Risiko Rendah — cukup memiliki Nomor Induk Berusaha (NIB) sebagai legalitas.",
+          "Risiko Menengah Rendah — memerlukan NIB dan Sertifikat Standar (pernyataan mandiri).",
+          "Risiko Menengah Tinggi — memerlukan NIB dan Sertifikat Standar terverifikasi.",
+          "Risiko Tinggi — memerlukan NIB dan Izin yang diverifikasi oleh kementerian/lembaga terkait.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Menentukan tingkat risiko usaha dengan benar adalah kunci agar perizinan tidak terhambat dan bisnis Anda terhindar dari sanksi administratif.",
+      },
+      {
+        type: "heading",
+        text: "Dokumen yang Umumnya Dibutuhkan",
+      },
+      {
+        type: "list",
+        items: [
+          "Data perusahaan (akta pendirian dan pengesahan badan hukum).",
+          "KBLI (Klasifikasi Baku Lapangan Usaha Indonesia) yang sesuai kegiatan usaha.",
+          "NPWP perusahaan dan data penanggung jawab.",
+          "Dokumen lingkungan jika dipersyaratkan sesuai jenis usaha.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Kesalahan memilih KBLI atau tingkat risiko dapat menghambat operasional dan menimbulkan masalah hukum. Tim kami siap membantu memetakan kebutuhan perizinan bisnis Anda melalui OSS secara tepat dan efisien.",
+      },
+    ],
+    tags: ["OSS", "Perizinan", "NIB", "Legalitas Usaha"],
+  },
+  "compliance-perusahaan-kepatuhan-hukum": {
+    slug: "compliance-perusahaan-kepatuhan-hukum",
+    category: "Korporat",
+    readTime: "6 menit",
+    date: "12 September 2026",
+    title: "Compliance Perusahaan: Mengapa Kepatuhan Hukum Itu Investasi",
+    subtitle:
+      "Program kepatuhan hukum yang baik melindungi perusahaan dari sanksi, kerugian finansial, dan kerusakan reputasi. Ini adalah investasi, bukan beban.",
+    author: {
+      name: "Tim Konsultasi Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Corporate Legal Advisor",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Banyak perusahaan memandang kepatuhan hukum (compliance) sebagai beban administratif yang menambah biaya. Padahal, program compliance yang matang justru melindungi perusahaan dari risiko sanksi, gugatan, dan kerusakan reputasi yang nilainya jauh lebih besar.",
+      },
+      {
+        type: "heading",
+        text: "Apa Itu Compliance?",
+      },
+      {
+        type: "paragraph",
+        text: "Compliance adalah upaya perusahaan untuk mematuhi seluruh peraturan perundang-undangan, standar industri, dan kebijakan internal yang berlaku. Ini mencakup aspek perpajakan, ketenagakerjaan, lingkungan, perlindungan data, hingga anti-korupsi.",
+      },
+      {
+        type: "heading",
+        text: "Manfaat Program Compliance",
+      },
+      {
+        type: "list",
+        items: [
+          "Menghindari sanksi administratif, denda, hingga pencabutan izin usaha.",
+          "Melindungi perusahaan dari gugatan hukum dan tuntutan pidana.",
+          "Meningkatkan kepercayaan investor, mitra, dan konsumen.",
+          "Menjaga reputasi dan keberlanjutan bisnis dalam jangka panjang.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Biaya mematuhi hukum selalu lebih murah daripada biaya melanggarnya — baik secara finansial maupun reputasi.",
+      },
+      {
+        type: "heading",
+        text: "Langkah Membangun Compliance",
+      },
+      {
+        type: "list",
+        items: [
+          "Lakukan audit kepatuhan untuk memetakan risiko hukum perusahaan.",
+          "Susun kebijakan dan prosedur internal yang jelas.",
+          "Berikan pelatihan rutin kepada karyawan.",
+          "Lakukan monitoring dan evaluasi berkala.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Membangun program compliance yang efektif memerlukan pemahaman hukum yang mendalam dan terus diperbarui. Tim konsultasi hukum kami siap membantu merancang dan mengevaluasi program kepatuhan perusahaan Anda.",
+      },
+    ],
+    tags: ["Compliance", "Kepatuhan Hukum", "Korporat", "Manajemen Risiko"],
   },
 };

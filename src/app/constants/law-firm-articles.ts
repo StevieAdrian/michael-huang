@@ -101,6 +101,24 @@ export const lawFirmArticles: Article[] = [
     category: "HAKI",
     slug: "pelanggaran-merek-dagang-tuntutan",
   },
+  {
+    id: "12",
+    title: "Strategi Penyelesaian Sengketa: Litigasi vs Arbitrase",
+    excerpt:
+      "Ketika sengketa bisnis tak terhindarkan, memilih jalur penyelesaian yang tepat sangat menentukan. Pahami perbedaan litigasi pengadilan dan arbitrase.",
+    date: "10 September 2026",
+    category: "Litigasi",
+    slug: "litigasi-vs-arbitrase-sengketa",
+  },
+  {
+    id: "13",
+    title: "Memahami Kontrak Kerja: Hak dan Kewajiban Pengusaha serta Pekerja",
+    excerpt:
+      "Kontrak kerja yang disusun baik melindungi kedua belah pihak. Simak klausul penting yang wajib ada agar hubungan kerja aman secara hukum.",
+    date: "12 September 2026",
+    category: "Ketenagakerjaan",
+    slug: "kontrak-kerja-hak-kewajiban",
+  },
 ];
 
 export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
@@ -711,5 +729,129 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Merek Dagang", "HAKI", "Kekayaan Intelektual", "Litigasi"],
+  },
+  "litigasi-vs-arbitrase-sengketa": {
+    slug: "litigasi-vs-arbitrase-sengketa",
+    category: "Litigasi",
+    readTime: "7 menit",
+    date: "10 September 2026",
+    title: "Strategi Penyelesaian Sengketa: Litigasi vs Arbitrase",
+    subtitle:
+      "Setiap mekanisme penyelesaian sengketa memiliki kelebihan dan kekurangan. Memilih jalur yang tepat dapat menghemat waktu, biaya, dan menjaga reputasi bisnis.",
+    author: {
+      name: "Tim Legal Michael, Antonius & Co",
+      role: "Dispute Resolution Division",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Ketika negosiasi gagal dan sengketa bisnis tidak terhindarkan, para pihak dihadapkan pada pilihan: menyelesaikan sengketa melalui pengadilan (litigasi) atau melalui arbitrase. Keduanya memiliki karakteristik, prosedur, dan konsekuensi yang berbeda.",
+      },
+      {
+        type: "heading",
+        text: "Litigasi Melalui Pengadilan",
+      },
+      {
+        type: "list",
+        items: [
+          "Proses bersifat terbuka untuk umum, sehingga kurang menjaga kerahasiaan bisnis.",
+          "Putusan dapat diajukan banding dan kasasi, memperpanjang waktu penyelesaian.",
+          "Biaya relatif lebih terjangkau dibanding arbitrase internasional.",
+          "Hakim ditunjuk oleh pengadilan, para pihak tidak dapat memilih.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Arbitrase",
+      },
+      {
+        type: "list",
+        items: [
+          "Proses bersifat tertutup dan rahasia, menjaga reputasi bisnis para pihak.",
+          "Putusan arbitrase bersifat final dan mengikat, tidak dapat dibanding.",
+          "Para pihak dapat memilih arbiter yang ahli di bidang sengketa.",
+          "Umumnya lebih cepat, namun biaya cenderung lebih tinggi.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Pilihan antara litigasi dan arbitrase sebaiknya sudah ditentukan sejak penyusunan kontrak melalui klausul penyelesaian sengketa yang jelas.",
+      },
+      {
+        type: "heading",
+        text: "Mana yang Tepat untuk Anda?",
+      },
+      {
+        type: "paragraph",
+        text: "Pemilihan jalur bergantung pada sifat sengketa, nilai transaksi, kebutuhan kerahasiaan, dan kecepatan penyelesaian yang diinginkan. Untuk sengketa komersial bernilai besar yang mengutamakan kerahasiaan, arbitrase sering lebih sesuai. Sementara untuk sengketa yang memerlukan upaya hukum berjenjang, litigasi bisa menjadi pilihan.",
+      },
+      {
+        type: "paragraph",
+        text: "Tim litigasi kami siap membantu menganalisis sengketa Anda dan merekomendasikan strategi penyelesaian yang paling menguntungkan. Konsultasikan kasus Anda sedini mungkin.",
+      },
+    ],
+    tags: ["Litigasi", "Arbitrase", "Sengketa", "Penyelesaian Hukum"],
+  },
+  "kontrak-kerja-hak-kewajiban": {
+    slug: "kontrak-kerja-hak-kewajiban",
+    category: "Ketenagakerjaan",
+    readTime: "6 menit",
+    date: "12 September 2026",
+    title: "Memahami Kontrak Kerja: Hak dan Kewajiban Pengusaha serta Pekerja",
+    subtitle:
+      "Kontrak kerja yang jelas melindungi kedua belah pihak dari sengketa. Pahami klausul wajib dan ketentuan hukum ketenagakerjaan yang berlaku.",
+    author: {
+      name: "Tim Legal Michael, Antonius & Co",
+      role: "Employment Law Division",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Kontrak kerja adalah dasar hubungan hukum antara pengusaha dan pekerja. Dokumen ini mengatur hak dan kewajiban kedua pihak serta menjadi acuan utama ketika terjadi perselisihan. Kontrak kerja yang disusun dengan baik melindungi perusahaan sekaligus memberi kepastian bagi pekerja.",
+      },
+      {
+        type: "heading",
+        text: "Jenis Kontrak Kerja",
+      },
+      {
+        type: "list",
+        items: [
+          "Perjanjian Kerja Waktu Tertentu (PKWT) — untuk pekerjaan yang bersifat sementara atau musiman.",
+          "Perjanjian Kerja Waktu Tidak Tertentu (PKWTT) — untuk hubungan kerja tetap.",
+          "Masing-masing memiliki ketentuan berbeda terkait masa percobaan, pesangon, dan pengakhiran hubungan kerja.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Klausul Wajib dalam Kontrak Kerja",
+      },
+      {
+        type: "list",
+        items: [
+          "Identitas lengkap para pihak dan jabatan pekerja.",
+          "Besaran upah, tunjangan, dan mekanisme pembayarannya.",
+          "Hak cuti, jam kerja, dan ketentuan lembur.",
+          "Jangka waktu kontrak dan ketentuan perpanjangan.",
+          "Hak dan kewajiban masing-masing pihak serta ketentuan pengakhiran.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Kontrak kerja yang tidak sesuai UU Ketenagakerjaan dapat batal demi hukum dan merugikan pengusaha dalam perselisihan hubungan industrial.",
+      },
+      {
+        type: "heading",
+        text: "Pentingnya Review Hukum",
+      },
+      {
+        type: "paragraph",
+        text: "Setiap kontrak kerja sebaiknya ditinjau agar sesuai dengan UU Ketenagakerjaan dan peraturan turunannya, termasuk ketentuan dalam UU Cipta Kerja. Review profesional memastikan kontrak Anda sah, adil, dan terhindar dari potensi gugatan.",
+      },
+      {
+        type: "paragraph",
+        text: "Tim hukum ketenagakerjaan kami siap membantu menyusun atau meninjau kontrak kerja perusahaan Anda. Hubungi kami untuk konsultasi lebih lanjut.",
+      },
+    ],
+    tags: ["Kontrak Kerja", "Ketenagakerjaan", "Hubungan Industrial", "Hukum Bisnis"],
   },
 };
