@@ -101,6 +101,24 @@ export const ppatArticles: Article[] = [
     category: "Panduan",
     slug: "perpanjangan-peningkatan-hgb-shm",
   },
+  {
+    id: "12",
+    title: "Memahami Pajak dalam Transaksi Jual Beli Tanah: BPHTB dan PPh",
+    excerpt:
+      "Setiap transaksi properti memiliki kewajiban pajak bagi penjual dan pembeli. Pahami cara menghitung BPHTB dan PPh agar transaksi berjalan lancar.",
+    date: "10 September 2026",
+    category: "Panduan",
+    slug: "pajak-jual-beli-tanah-bphtb-pph",
+  },
+  {
+    id: "13",
+    title: "ROYA: Prosedur Penghapusan Hak Tanggungan Setelah Lunas KPR",
+    excerpt:
+      "Setelah kredit lunas, sertifikat Anda masih tercatat dibebani hak tanggungan. Pahami prosedur ROYA untuk membersihkan status sertifikat di BPN.",
+    date: "12 September 2026",
+    category: "Edukasi",
+    slug: "roya-penghapusan-hak-tanggungan",
+  },
 ];
 
 export const ppatArticleDetails: Record<string, ArticleDetail> = {
@@ -624,5 +642,120 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["HGB", "SHM", "Sertifikat", "PPAT"],
+  },
+  "pajak-jual-beli-tanah-bphtb-pph": {
+    slug: "pajak-jual-beli-tanah-bphtb-pph",
+    category: "Panduan",
+    readTime: "7 menit",
+    date: "10 September 2026",
+    title: "Memahami Pajak dalam Transaksi Jual Beli Tanah: BPHTB dan PPh",
+    subtitle:
+      "Pajak adalah bagian tak terpisahkan dari transaksi properti. Memahami kewajiban pajak sejak awal membantu Anda menghindari denda dan hambatan proses balik nama.",
+    author: {
+      name: "Tim PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Konsultan Pertanahan",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Dalam transaksi jual beli tanah dan bangunan, selain harga tanah itu sendiri, terdapat dua kewajiban pajak utama yang harus dipenuhi: Pajak Penghasilan (PPh) bagi penjual dan Bea Perolehan Hak atas Tanah dan Bangunan (BPHTB) bagi pembeli. Keduanya wajib dibayar sebelum PPAT menandatangani akta jual beli.",
+      },
+      {
+        type: "heading",
+        text: "PPh Final untuk Penjual",
+      },
+      {
+        type: "paragraph",
+        text: "Penjual dikenakan PPh final sebesar 2,5% dari nilai transaksi (nilai bruto pengalihan hak). Pajak ini wajib dibayar dan disetorkan sebelum akta ditandatangani, dibuktikan dengan validasi dari kantor pajak.",
+      },
+      {
+        type: "heading",
+        text: "BPHTB untuk Pembeli",
+      },
+      {
+        type: "list",
+        items: [
+          "BPHTB dihitung sebesar 5% dari nilai transaksi dikurangi Nilai Perolehan Objek Pajak Tidak Kena Pajak (NPOPTKP).",
+          "Besaran NPOPTKP berbeda-beda tiap daerah, umumnya berkisar Rp60 juta hingga Rp80 juta.",
+          "Rumus: BPHTB = 5% x (Nilai Transaksi - NPOPTKP).",
+          "BPHTB wajib dibayar dan divalidasi sebelum akta jual beli ditandatangani PPAT.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Jangan pernah menandatangani akta jual beli sebelum kewajiban pajak diselesaikan — PPAT dilarang memproses akta tanpa bukti pelunasan pajak.",
+      },
+      {
+        type: "heading",
+        text: "Peran PPAT dalam Validasi Pajak",
+      },
+      {
+        type: "paragraph",
+        text: "PPAT berperan memastikan kedua pajak telah dibayar dan divalidasi sebelum menandatangani akta. Setelah akta jadi, PPAT juga membantu proses pendaftaran peralihan hak ke Kantor Pertanahan. Dengan pemahaman pajak yang jelas, transaksi properti Anda akan berjalan lancar dan terhindar dari sanksi.",
+      },
+      {
+        type: "paragraph",
+        text: "Konsultasikan perhitungan pajak transaksi properti Anda dengan tim PPAT kami agar Anda memperoleh estimasi biaya yang akurat sejak awal.",
+      },
+    ],
+    tags: ["Pajak", "BPHTB", "PPh", "Jual Beli Tanah"],
+  },
+  "roya-penghapusan-hak-tanggungan": {
+    slug: "roya-penghapusan-hak-tanggungan",
+    category: "Edukasi",
+    readTime: "6 menit",
+    date: "12 September 2026",
+    title: "ROYA: Prosedur Penghapusan Hak Tanggungan Setelah Lunas KPR",
+    subtitle:
+      "Melunasi KPR bukan akhir dari urusan sertifikat. Proses ROYA diperlukan agar status hak tanggungan terhapus dan sertifikat Anda kembali bersih.",
+    author: {
+      name: "Tim PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Konsultan Pertanahan",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Banyak orang mengira urusan sertifikat selesai begitu kredit pemilikan rumah (KPR) lunas. Padahal, selama proses ROYA belum dilakukan, sertifikat tanah Anda masih tercatat dibebani hak tanggungan di kantor pertanahan. Ini bisa menghambat transaksi di kemudian hari.",
+      },
+      {
+        type: "heading",
+        text: "Apa Itu ROYA?",
+      },
+      {
+        type: "paragraph",
+        text: "ROYA adalah proses pencoretan atau penghapusan catatan hak tanggungan pada buku tanah dan sertifikat di Kantor Pertanahan. Proses ini dilakukan setelah utang yang dijamin dengan hak tanggungan telah lunas, sehingga sertifikat kembali bersih dari beban.",
+      },
+      {
+        type: "heading",
+        text: "Dokumen yang Diperlukan untuk ROYA",
+      },
+      {
+        type: "list",
+        items: [
+          "Sertifikat tanah asli yang dibebani hak tanggungan.",
+          "Surat Roya atau surat keterangan lunas dari bank/kreditur.",
+          "Sertifikat Hak Tanggungan asli.",
+          "Fotokopi identitas pemohon (KTP dan KK).",
+          "Surat permohonan ROYA kepada Kantor Pertanahan.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Jangan tunda proses ROYA setelah KPR lunas — sertifikat yang masih berstatus terbebani akan menyulitkan ketika hendak dijual atau diagunkan kembali.",
+      },
+      {
+        type: "heading",
+        text: "Prosedur dan Waktu Pengurusan",
+      },
+      {
+        type: "paragraph",
+        text: "Setelah dokumen lengkap, permohonan diajukan ke Kantor Pertanahan setempat. Petugas akan mencoret catatan hak tanggungan pada buku tanah dan sertifikat. Proses ini umumnya memakan waktu beberapa hari kerja dengan biaya yang relatif terjangkau sesuai ketentuan PNBP.",
+      },
+      {
+        type: "paragraph",
+        text: "Jika Anda baru saja melunasi KPR, segera urus ROYA agar status sertifikat Anda bersih. Tim PPAT kami siap membantu mengurus proses ROYA secara efisien dan sesuai prosedur BPN.",
+      },
+    ],
+    tags: ["ROYA", "Hak Tanggungan", "KPR", "Sertifikat"],
   },
 };

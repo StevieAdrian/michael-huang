@@ -101,6 +101,24 @@ export const notarisArticles: Article[] = [
     category: "Bisnis",
     slug: "akta-rups-notaris-fungsi",
   },
+  {
+    id: "12",
+    title: "Peran Notaris dalam Pembuatan Akta Jaminan Fidusia",
+    excerpt:
+      "Jaminan fidusia atas benda bergerak wajib dibuat dengan akta notaris dan didaftarkan secara elektronik. Pahami prosedur dan manfaat perlindungannya.",
+    date: "10 September 2026",
+    category: "Bisnis",
+    slug: "akta-jaminan-fidusia-notaris",
+  },
+  {
+    id: "13",
+    title: "Cara Memilih Notaris yang Tepat dan Terpercaya",
+    excerpt:
+      "Tidak semua notaris sama. Simak kriteria penting dalam memilih notaris agar dokumen hukum Anda aman, sah, dan bebas dari risiko di kemudian hari.",
+    date: "12 September 2026",
+    category: "Edukasi",
+    slug: "cara-memilih-notaris-tepat",
+  },
 ];
 
 export const notarisArticleDetails: Record<string, ArticleDetail> = {
@@ -739,5 +757,125 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["RUPS", "Notaris", "PT", "Akta Bisnis"],
+  },
+  "akta-jaminan-fidusia-notaris": {
+    slug: "akta-jaminan-fidusia-notaris",
+    category: "Bisnis",
+    readTime: "7 menit",
+    date: "10 September 2026",
+    title: "Peran Notaris dalam Pembuatan Akta Jaminan Fidusia",
+    subtitle:
+      "Fidusia memungkinkan debitur tetap menguasai barang jaminan sambil memberi kepastian hukum bagi kreditur. Akta notaris adalah syarat sahnya.",
+    author: {
+      name: "Kantor Notaris Dr. Michael, S.H., S.T., M.Kn.",
+      role: "Corporate Legal Division",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Jaminan fidusia adalah pengalihan hak kepemilikan suatu benda atas dasar kepercayaan, dengan ketentuan benda tersebut tetap berada dalam penguasaan pemilik asli (debitur). Instrumen ini banyak digunakan dalam pembiayaan kendaraan, mesin produksi, hingga persediaan barang dagangan.",
+      },
+      {
+        type: "heading",
+        text: "Dasar Hukum Jaminan Fidusia",
+      },
+      {
+        type: "paragraph",
+        text: "Jaminan fidusia diatur dalam UU No. 42 Tahun 1999 tentang Jaminan Fidusia. Undang-undang ini mewajibkan pembebanan fidusia dibuat dengan akta notaris dan didaftarkan ke Kantor Pendaftaran Fidusia agar menimbulkan hak kebendaan yang kuat bagi kreditur.",
+      },
+      {
+        type: "heading",
+        text: "Mengapa Harus dengan Akta Notaris?",
+      },
+      {
+        type: "list",
+        items: [
+          "Akta notaris memberikan kepastian hukum atas objek jaminan dan nilai penjaminan.",
+          "Sertifikat fidusia yang diterbitkan memiliki kekuatan eksekutorial setara putusan pengadilan yang berkekuatan hukum tetap.",
+          "Melindungi kreditur dari risiko pengalihan objek jaminan oleh debitur tanpa izin.",
+          "Memberikan hak preferen (didahulukan) bagi kreditur apabila debitur wanprestasi.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Tanpa pendaftaran fidusia yang sah, kreditur kehilangan hak eksekutorial dan hanya menjadi kreditur konkuren biasa saat terjadi sengketa.",
+      },
+      {
+        type: "heading",
+        text: "Prosedur Pembuatan dan Pendaftaran",
+      },
+      {
+        type: "list",
+        items: [
+          "Para pihak menghadap notaris untuk membuat akta jaminan fidusia.",
+          "Notaris menyusun akta yang memuat identitas pihak, uraian objek, dan nilai penjaminan.",
+          "Pendaftaran dilakukan secara elektronik melalui sistem fidusia online Kemenkumham.",
+          "Sertifikat jaminan fidusia terbit dan menjadi bukti hak kebendaan kreditur.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Jika Anda adalah pelaku usaha pembiayaan atau pemberi pinjaman, pastikan setiap jaminan fidusia dibuat dan didaftarkan dengan benar. Konsultasikan kebutuhan Anda dengan kantor notaris kami untuk perlindungan hukum yang optimal.",
+      },
+    ],
+    tags: ["Fidusia", "Jaminan", "Notaris", "Pembiayaan"],
+  },
+  "cara-memilih-notaris-tepat": {
+    slug: "cara-memilih-notaris-tepat",
+    category: "Edukasi",
+    readTime: "6 menit",
+    date: "12 September 2026",
+    title: "Cara Memilih Notaris yang Tepat dan Terpercaya",
+    subtitle:
+      "Memilih notaris yang kompeten adalah langkah awal melindungi kepentingan hukum Anda. Kenali kriteria yang perlu diperhatikan sebelum menandatangani akta.",
+    author: {
+      name: "Kantor Notaris Dr. Michael, S.H., S.T., M.Kn.",
+      role: "Tim Redaksi Notaris",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Notaris memegang peran krusial dalam melegalkan dokumen penting, mulai dari pendirian perusahaan hingga transaksi aset bernilai besar. Kesalahan memilih notaris dapat berujung pada akta yang cacat hukum, sengketa berkepanjangan, bahkan kerugian finansial. Karena itu, pemilihan notaris tidak boleh dilakukan sembarangan.",
+      },
+      {
+        type: "heading",
+        text: "Pastikan Notaris Memiliki Legalitas yang Sah",
+      },
+      {
+        type: "paragraph",
+        text: "Notaris yang sah harus telah diangkat dan disumpah oleh Kementerian Hukum dan HAM serta terdaftar sebagai anggota Ikatan Notaris Indonesia (INI). Pastikan notaris memiliki wilayah kerja (wilayah jabatan) yang sesuai dengan lokasi tempat akta dibuat.",
+      },
+      {
+        type: "heading",
+        text: "Kriteria Notaris yang Baik",
+      },
+      {
+        type: "list",
+        items: [
+          "Memiliki kantor yang jelas dan mudah dihubungi untuk keperluan konsultasi.",
+          "Transparan dalam menjelaskan biaya, prosedur, dan konsekuensi hukum setiap akta.",
+          "Berpengalaman di bidang yang Anda butuhkan, misalnya korporasi, properti, atau waris.",
+          "Teliti dalam memeriksa kelengkapan dan keabsahan dokumen para pihak.",
+          "Menjaga kerahasiaan isi akta sesuai kewajiban jabatannya.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Notaris yang baik bukan hanya mencatat kehendak para pihak, tetapi juga memberi nasihat hukum agar akta terhindar dari risiko di kemudian hari.",
+      },
+      {
+        type: "heading",
+        text: "Hal yang Perlu Diwaspadai",
+      },
+      {
+        type: "paragraph",
+        text: "Waspadai notaris yang menawarkan biaya jauh di bawah kewajaran, enggan menjelaskan isi akta, atau meminta Anda menandatangani dokumen kosong. Praktik semacam ini berpotensi merugikan dan melanggar kode etik jabatan notaris.",
+      },
+      {
+        type: "paragraph",
+        text: "Dengan memilih notaris yang tepat, Anda memperoleh kepastian hukum dan ketenangan pikiran. Hubungi kantor kami untuk konsultasi mengenai kebutuhan dokumen hukum Anda secara profesional dan terpercaya.",
+      },
+    ],
+    tags: ["Notaris", "Tips Hukum", "Legalitas", "Edukasi"],
   },
 };

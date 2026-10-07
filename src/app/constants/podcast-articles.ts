@@ -83,6 +83,24 @@ export const podcastArticles: Article[] = [
     category: "Panduan",
     slug: "konsistensi-rilis-podcast-mingguan",
   },
+  {
+    id: "12",
+    title: "Teknik Wawancara Podcast yang Menghidupkan Percakapan",
+    excerpt:
+      "Wawancara yang baik membuat tamu nyaman dan percakapan mengalir. Pelajari teknik bertanya dan mendengarkan yang membuat episode lebih menarik.",
+    date: "10 September 2026",
+    category: "Produksi",
+    slug: "teknik-wawancara-podcast",
+  },
+  {
+    id: "13",
+    title: "Strategi Promosi Podcast agar Menjangkau Pendengar Baru",
+    excerpt:
+      "Konten bagus saja tidak cukup; podcast perlu dipromosikan. Simak strategi distribusi dan pemasaran untuk memperluas jangkauan pendengar Anda.",
+    date: "12 September 2026",
+    category: "Pemasaran",
+    slug: "strategi-promosi-podcast",
+  },
 ];
 
 export const podcastArticleDetails: Record<string, ArticleDetail> = {
@@ -463,5 +481,129 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Podcast", "Konsistensi", "Workflow", "Produksi"],
+  },
+  "teknik-wawancara-podcast": {
+    slug: "teknik-wawancara-podcast",
+    category: "Produksi",
+    readTime: "6 menit",
+    date: "10 September 2026",
+    title: "Teknik Wawancara Podcast yang Menghidupkan Percakapan",
+    subtitle:
+      "Episode wawancara yang menarik lahir dari persiapan matang dan kemampuan mendengarkan. Pelajari teknik agar percakapan terasa alami dan berbobot.",
+    author: {
+      name: "Tim Podcast Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Podcast Producer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Format wawancara adalah salah satu yang paling populer dalam dunia podcast. Namun wawancara yang membosankan dapat membuat pendengar berhenti di tengah episode. Kunci wawancara yang menghidupkan percakapan terletak pada persiapan, teknik bertanya, dan kemampuan mendengarkan secara aktif.",
+      },
+      {
+        type: "heading",
+        text: "Persiapan Sebelum Wawancara",
+      },
+      {
+        type: "list",
+        items: [
+          "Riset latar belakang dan karya narasumber secara mendalam.",
+          "Siapkan daftar pertanyaan, namun jangan terpaku padanya.",
+          "Tentukan tujuan dan benang merah percakapan.",
+          "Pastikan kualitas audio kedua pihak baik sebelum mulai merekam.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Teknik Bertanya yang Efektif",
+      },
+      {
+        type: "list",
+        items: [
+          "Gunakan pertanyaan terbuka yang mengundang cerita, bukan jawaban ya/tidak.",
+          "Ajukan pertanyaan lanjutan berdasarkan jawaban narasumber.",
+          "Hindari pertanyaan yang terlalu panjang atau berlapis.",
+          "Beri ruang bagi narasumber untuk berpikir dan menjawab.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Pewawancara terbaik lebih banyak mendengarkan daripada berbicara — percakapan terbaik lahir dari rasa ingin tahu yang tulus.",
+      },
+      {
+        type: "heading",
+        text: "Mendengarkan Secara Aktif",
+      },
+      {
+        type: "paragraph",
+        text: "Banyak pewawancara sibuk memikirkan pertanyaan berikutnya sehingga melewatkan momen menarik dari jawaban narasumber. Dengan mendengarkan aktif, Anda dapat menangkap peluang untuk menggali lebih dalam dan menciptakan momen percakapan yang berkesan bagi pendengar.",
+      },
+      {
+        type: "paragraph",
+        text: "Dengan latihan dan persiapan, kemampuan wawancara Anda akan terus berkembang. Tim produksi kami siap membantu Anda menghasilkan episode wawancara yang berkualitas dari segi konten maupun teknis.",
+      },
+    ],
+    tags: ["Wawancara", "Podcast", "Produksi", "Konten"],
+  },
+  "strategi-promosi-podcast": {
+    slug: "strategi-promosi-podcast",
+    category: "Pemasaran",
+    readTime: "6 menit",
+    date: "12 September 2026",
+    title: "Strategi Promosi Podcast agar Menjangkau Pendengar Baru",
+    subtitle:
+      "Podcast hebat tidak akan berkembang tanpa promosi. Strategi distribusi dan pemasaran yang tepat membantu karya Anda menjangkau audiens yang lebih luas.",
+    author: {
+      name: "Tim Podcast Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Podcast Producer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Memproduksi podcast berkualitas hanyalah separuh dari pekerjaan. Agar karya Anda didengar, dibutuhkan strategi promosi yang konsisten. Banyak podcaster berbakat gagal berkembang karena mengabaikan aspek pemasaran.",
+      },
+      {
+        type: "heading",
+        text: "Manfaatkan Media Sosial",
+      },
+      {
+        type: "list",
+        items: [
+          "Buat potongan audio atau video pendek (audiogram) sebagai teaser episode.",
+          "Bagikan kutipan menarik dari episode dalam bentuk visual.",
+          "Gunakan platform yang sesuai dengan audiens target Anda.",
+          "Dorong interaksi dengan mengajukan pertanyaan kepada pengikut.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Optimalkan Penemuan (Discoverability)",
+      },
+      {
+        type: "list",
+        items: [
+          "Tulis judul dan deskripsi episode yang jelas dan mengandung kata kunci.",
+          "Distribusikan podcast ke berbagai platform populer.",
+          "Buat halaman atau website khusus untuk podcast Anda.",
+          "Konsisten dengan branding, logo, dan nama acara.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Promosi yang baik bukan sekadar menyebarkan tautan, melainkan membangun komunitas yang menantikan setiap episode baru.",
+      },
+      {
+        type: "heading",
+        text: "Kolaborasi dan Jaringan",
+      },
+      {
+        type: "paragraph",
+        text: "Berkolaborasi dengan podcaster lain atau mengundang narasumber yang memiliki audiens sendiri dapat memperluas jangkauan secara signifikan. Cross-promotion antar podcast adalah salah satu strategi paling efektif untuk mendapatkan pendengar baru yang relevan.",
+      },
+      {
+        type: "paragraph",
+        text: "Dengan strategi promosi yang terencana dan konsisten, podcast Anda berpeluang bertumbuh lebih cepat. Tim kami siap membantu merancang strategi konten dan distribusi yang sesuai dengan tujuan Anda.",
+      },
+    ],
+    tags: ["Promosi", "Pemasaran", "Podcast", "Pertumbuhan"],
   },
 };

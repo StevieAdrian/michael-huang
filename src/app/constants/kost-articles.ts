@@ -101,6 +101,24 @@ export const kostArticles: Article[] = [
     category: "Keuangan",
     slug: "negosiasi-harga-sewa-kost",
   },
+  {
+    id: "12",
+    title: "Checklist Barang Penting Saat Pindah ke Kost Baru",
+    excerpt:
+      "Pindah kost tanpa persiapan bisa merepotkan. Simak daftar barang esensial yang wajib disiapkan agar hidup di kost baru langsung nyaman.",
+    date: "10 September 2026",
+    category: "Tips",
+    slug: "checklist-barang-pindah-kost",
+  },
+  {
+    id: "13",
+    title: "Hak dan Kewajiban Penghuni Kost yang Perlu Diketahui",
+    excerpt:
+      "Tinggal di kost memiliki aturan main yang mengikat kedua pihak. Pahami hak dan kewajiban Anda sebagai penghuni agar terhindar dari konflik.",
+    date: "12 September 2026",
+    category: "Panduan",
+    slug: "hak-kewajiban-penghuni-kost",
+  },
 ];
 
 export const kostArticleDetails: Record<string, ArticleDetail> = {
@@ -656,5 +674,135 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Negosiasi", "Harga Sewa", "Keuangan", "Tips Kost"],
+  },
+  "checklist-barang-pindah-kost": {
+    slug: "checklist-barang-pindah-kost",
+    category: "Tips",
+    readTime: "6 menit",
+    date: "10 September 2026",
+    title: "Checklist Barang Penting Saat Pindah ke Kost Baru",
+    subtitle:
+      "Persiapan yang matang membuat transisi ke kost baru lebih lancar. Daftar barang esensial ini membantu Anda langsung merasa nyaman di hunian baru.",
+    author: {
+      name: "Tim Hunian Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Property Advisor",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Pindah ke kost baru adalah momen yang menyenangkan sekaligus merepotkan jika tidak dipersiapkan dengan baik. Membawa terlalu banyak barang membuat repot, sementara kekurangan barang penting bisa mengganggu kenyamanan di hari-hari pertama.",
+      },
+      {
+        type: "heading",
+        text: "Perlengkapan Tidur dan Kamar",
+      },
+      {
+        type: "list",
+        items: [
+          "Sprei, bantal, guling, dan selimut.",
+          "Lampu tidur atau lampu belajar jika pencahayaan kurang.",
+          "Gantungan baju dan organizer penyimpanan.",
+          "Jam dinding atau jam alarm.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Peralatan Mandi dan Kebersihan",
+      },
+      {
+        type: "list",
+        items: [
+          "Perlengkapan mandi pribadi dan handuk.",
+          "Alat kebersihan seperti sapu, pel, dan tempat sampah.",
+          "Deterjen dan perlengkapan mencuci.",
+          "Ember dan gayung jika diperlukan.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Siapkan barang kebutuhan hari pertama dalam satu tas terpisah agar tidak perlu membongkar semua kardus saat baru tiba.",
+      },
+      {
+        type: "heading",
+        text: "Perlengkapan Dapur dan Elektronik",
+      },
+      {
+        type: "list",
+        items: [
+          "Peralatan makan dasar seperti piring, gelas, dan sendok.",
+          "Pemanas air atau dispenser mini jika memasak terbatas.",
+          "Charger, kabel ekstensi (terminal), dan perlengkapan elektronik.",
+          "Kotak P3K berisi obat-obatan dasar.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Dengan checklist ini, kepindahan Anda ke kost baru akan jauh lebih terorganisir. Pilih kost yang sudah menyediakan fasilitas dasar agar Anda tidak perlu membeli terlalu banyak barang sendiri.",
+      },
+    ],
+    tags: ["Pindah Kost", "Checklist", "Tips", "Hunian"],
+  },
+  "hak-kewajiban-penghuni-kost": {
+    slug: "hak-kewajiban-penghuni-kost",
+    category: "Panduan",
+    readTime: "6 menit",
+    date: "12 September 2026",
+    title: "Hak dan Kewajiban Penghuni Kost yang Perlu Diketahui",
+    subtitle:
+      "Hubungan antara penghuni dan pemilik kost diatur oleh hak dan kewajiban kedua pihak. Memahaminya mencegah kesalahpahaman dan konflik.",
+    author: {
+      name: "Tim Hunian Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Property Advisor",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Tinggal di kost berarti berbagi lingkungan dengan penghuni lain dan tunduk pada aturan yang ditetapkan pemilik. Memahami hak dan kewajiban sejak awal membantu menjaga hubungan baik dan kenyamanan bersama selama masa tinggal.",
+      },
+      {
+        type: "heading",
+        text: "Hak Penghuni Kost",
+      },
+      {
+        type: "list",
+        items: [
+          "Mendapatkan kamar dan fasilitas sesuai yang dijanjikan saat sewa.",
+          "Memperoleh keamanan dan privasi selama tinggal.",
+          "Mendapat perbaikan atas kerusakan fasilitas yang bukan karena kelalaian penghuni.",
+          "Memperoleh informasi yang jelas tentang aturan dan biaya tambahan.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Kewajiban Penghuni Kost",
+      },
+      {
+        type: "list",
+        items: [
+          "Membayar sewa tepat waktu sesuai kesepakatan.",
+          "Menjaga kebersihan dan ketertiban lingkungan kost.",
+          "Menghormati privasi dan kenyamanan penghuni lain.",
+          "Mematuhi aturan kost, termasuk jam malam dan ketentuan tamu.",
+          "Merawat fasilitas dan melaporkan kerusakan dengan segera.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Hubungan yang harmonis antara penghuni dan pemilik kost dibangun dari komunikasi terbuka dan saling menghormati hak masing-masing.",
+      },
+      {
+        type: "heading",
+        text: "Pentingnya Perjanjian Tertulis",
+      },
+      {
+        type: "paragraph",
+        text: "Sebaiknya hak dan kewajiban dituangkan dalam perjanjian sewa tertulis. Dokumen ini melindungi kedua pihak jika terjadi perselisihan, misalnya terkait uang jaminan (deposit), kerusakan fasilitas, atau pengembalian sewa.",
+      },
+      {
+        type: "paragraph",
+        text: "Sebelum menyewa, bacalah aturan kost dengan teliti dan tanyakan hal yang belum jelas. Pilih kost yang transparan dan profesional agar masa tinggal Anda nyaman dan bebas konflik.",
+      },
+    ],
+    tags: ["Hak Penghuni", "Kewajiban", "Aturan Kost", "Panduan"],
   },
 };

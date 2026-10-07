@@ -101,6 +101,24 @@ export const churchArticles: Article[] = [
     category: "Komunitas",
     slug: "pemuridan-generasi-muda-iman",
   },
+  {
+    id: "12",
+    title: "Pentingnya Doa dalam Kehidupan Sehari-hari Orang Percaya",
+    excerpt:
+      "Doa bukan sekadar ritual, melainkan nafas kehidupan rohani. Pelajari bagaimana membangun kehidupan doa yang konsisten dan bermakna.",
+    date: "10 September 2026",
+    category: "Iman",
+    slug: "pentingnya-doa-kehidupan-sehari-hari",
+  },
+  {
+    id: "13",
+    title: "Melayani dalam Gereja: Menemukan Panggilan dan Karunia Anda",
+    excerpt:
+      "Setiap orang percaya dipanggil untuk melayani sesuai karunia yang Tuhan berikan. Temukan cara mengenali dan mengembangkan karunia pelayanan Anda.",
+    date: "12 September 2026",
+    category: "Pelayanan",
+    slug: "melayani-gereja-panggilan-karunia",
+  },
 ];
 
 export const churchArticleDetails: Record<string, ArticleDetail> = {
@@ -703,5 +721,120 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Pemuridan", "Remaja", "Komunitas", "Keluarga"],
+  },
+  "pentingnya-doa-kehidupan-sehari-hari": {
+    slug: "pentingnya-doa-kehidupan-sehari-hari",
+    category: "Iman",
+    readTime: "6 menit",
+    date: "10 September 2026",
+    title: "Pentingnya Doa dalam Kehidupan Sehari-hari Orang Percaya",
+    subtitle:
+      "Doa adalah sarana komunikasi dengan Tuhan yang memperkuat iman dan menghadirkan damai sejahtera di tengah kesibukan hidup.",
+    author: {
+      name: "Tim Pastoral Glory Ministry",
+      role: "Redaksi Gereja",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Doa adalah salah satu praktik iman yang paling mendasar namun sering terabaikan dalam kesibukan sehari-hari. Padahal, melalui doa seorang percaya membangun hubungan yang intim dengan Tuhan dan menemukan kekuatan untuk menghadapi tantangan hidup.",
+      },
+      {
+        type: "heading",
+        text: "Mengapa Doa Itu Penting?",
+      },
+      {
+        type: "paragraph",
+        text: "Doa bukan sekadar menyampaikan permohonan, tetapi juga wujud penyerahan diri dan pengakuan akan ketergantungan kita kepada Tuhan. Yesus sendiri memberikan teladan dengan sering menyendiri untuk berdoa, menunjukkan betapa pentingnya doa dalam kehidupan rohani.",
+      },
+      {
+        type: "heading",
+        text: "Membangun Kehidupan Doa yang Konsisten",
+      },
+      {
+        type: "list",
+        items: [
+          "Tetapkan waktu khusus setiap hari untuk berdoa, misalnya pagi atau malam hari.",
+          "Mulailah dengan ucapan syukur sebelum menyampaikan permohonan.",
+          "Gunakan firman Tuhan sebagai dasar dan panduan doa.",
+          "Jangan terpaku pada kata-kata indah — berdoalah dengan jujur dari hati.",
+          "Luangkan waktu untuk diam dan mendengarkan tuntunan Tuhan.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Doa yang konsisten bukan tentang panjangnya kata, melainkan tentang ketulusan hati yang terus mencari wajah Tuhan.",
+      },
+      {
+        type: "heading",
+        text: "Doa di Tengah Kesibukan",
+      },
+      {
+        type: "paragraph",
+        text: "Hidup modern sering membuat kita merasa tidak punya waktu untuk berdoa. Namun doa tidak harus selalu panjang. Doa singkat di sela aktivitas, ucapan syukur sebelum makan, atau permohonan di tengah perjalanan tetap bermakna. Yang terpenting adalah menjadikan doa sebagai bagian alami dari keseharian.",
+      },
+      {
+        type: "paragraph",
+        text: "Glory Ministry Church mengundang Anda untuk bertumbuh dalam kehidupan doa bersama komunitas. Bergabunglah dalam persekutuan doa kami dan rasakan kekuatan doa yang mengubahkan.",
+      },
+    ],
+    tags: ["Doa", "Iman", "Kehidupan Rohani", "Pertumbuhan"],
+  },
+  "melayani-gereja-panggilan-karunia": {
+    slug: "melayani-gereja-panggilan-karunia",
+    category: "Pelayanan",
+    readTime: "6 menit",
+    date: "12 September 2026",
+    title: "Melayani dalam Gereja: Menemukan Panggilan dan Karunia Anda",
+    subtitle:
+      "Setiap orang percaya memiliki karunia unik yang dapat digunakan untuk membangun tubuh Kristus. Mengenali karunia adalah langkah awal melayani dengan sukacita.",
+    author: {
+      name: "Tim Pastoral Glory Ministry",
+      role: "Redaksi Gereja",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Pelayanan dalam gereja bukan hanya tanggung jawab pendeta atau pengurus, melainkan panggilan bagi setiap orang percaya. Alkitab mengajarkan bahwa setiap orang menerima karunia dari Roh Kudus untuk digunakan membangun gereja dan memuliakan Tuhan.",
+      },
+      {
+        type: "heading",
+        text: "Memahami Karunia Rohani",
+      },
+      {
+        type: "paragraph",
+        text: "Karunia rohani adalah kemampuan khusus yang diberikan Tuhan kepada setiap orang percaya. Ada yang dikaruniai mengajar, melayani, memberi, memimpin, atau menunjukkan belas kasihan. Tidak ada karunia yang lebih tinggi dari yang lain — semuanya penting dan saling melengkapi.",
+      },
+      {
+        type: "heading",
+        text: "Cara Menemukan Karunia Anda",
+      },
+      {
+        type: "list",
+        items: [
+          "Perhatikan hal-hal yang Anda nikmati dan lakukan dengan sukacita.",
+          "Minta masukan dari pemimpin rohani dan rekan sepelayanan.",
+          "Cobalah berbagai bidang pelayanan untuk menemukan yang paling sesuai.",
+          "Berdoa memohon tuntunan Tuhan untuk mengenali panggilan Anda.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Ketika Anda melayani sesuai karunia yang Tuhan berikan, pelayanan tidak lagi terasa sebagai beban, melainkan sumber sukacita.",
+      },
+      {
+        type: "heading",
+        text: "Melayani dengan Hati yang Benar",
+      },
+      {
+        type: "paragraph",
+        text: "Pelayanan sejati lahir dari kasih kepada Tuhan dan sesama, bukan dari keinginan dipuji atau diakui. Melayani dengan rendah hati dan kesetiaan, sekecil apa pun perannya, memiliki nilai yang besar di hadapan Tuhan.",
+      },
+      {
+        type: "paragraph",
+        text: "Glory Ministry Church membuka berbagai kesempatan pelayanan bagi Anda yang ingin bertumbuh dan melayani. Temukan karunia Anda dan bergabunglah dalam pelayanan bersama kami.",
+      },
+    ],
+    tags: ["Pelayanan", "Karunia Rohani", "Panggilan", "Gereja"],
   },
 };
