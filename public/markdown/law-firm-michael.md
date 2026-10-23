@@ -43,6 +43,6 @@ A Jakarta-based law firm established in 2010 providing elite legal representatio
 
 ## Contact
 
-- Phone: +62 821 2385 595
+- Phone: +62 811 8889 6097
 - Email: contact@michaelhuang.id
 - Location: Jakarta, Indonesia

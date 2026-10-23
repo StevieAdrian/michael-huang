@@ -13,7 +13,7 @@ Your homepage now includes 6 comprehensive JSON-LD schemas that tell AI models a
 - Business name: Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.
 - 5.0-star rating with 691 reviews
 - Full address with coordinates (-6.138918, 106.730667)
-- Phone: +62-821-2385-595
+- Phone: +62-811-8889-6097
 - Email: contact@michaelhuang.id
 - Price range: $$
 - Founder: Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.

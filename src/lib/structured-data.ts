@@ -125,7 +125,7 @@ export function generateComprehensiveBusinessSchema() {
     alternateName: "Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Building",
     description: "Integrated business ecosystem providing legal services (Law Firm, Notaris, PPAT, Legal Consulting), premium boarding house, authentic Indonesian restaurant, church ministry, music production, and franchise opportunities in Jakarta.",
     url: seoConfig.siteUrl,
-    telephone: "+62-821-2385-595",
+    telephone: "+62-811-8889-6097",
     email: "contact@michaelhuang.id",
     priceRange: "$$",
     image: seoConfig.organization.logo,
@@ -220,7 +220,7 @@ export function generateAttorneySchema() {
     name: "Michael, Antonius & Co Law Firm",
     description: "Professional law firm providing corporate litigation, legal advisory, and business dispute resolution services in Jakarta.",
     url: `${seoConfig.siteUrl}/law-firm-michael`,
-    telephone: "+62-821-2385-595",
+    telephone: "+62-811-8889-6097",
     email: "contact@michaelhuang.id",
     priceRange: "$$",
     address: {
@@ -256,7 +256,7 @@ export function generateNotarySchema() {
     alternateName: ["Notaris Jakarta Barat Dr. Michael", "Michael Notaris & PPAT"],
     description: "Licensed Notaris dan PPAT resmi di Jakarta Barat (Cengkareng / Taman Palem). Melayani pembuatan akta autentik, pendirian PT/CV/PMA, Akta Jual Beli (AJB) properti, waris, hibah, RUPS, dan legalisasi dokumen.",
     url: `${seoConfig.siteUrl}/notaris-michael`,
-    telephone: "+62-821-2385-595",
+    telephone: "+62-811-8889-6097",
     email: "contact@michaelhuang.id",
     priceRange: "$$",
     image: seoConfig.organization.logo,
@@ -349,7 +349,7 @@ export function generateRestaurantSchema() {
     name: "Warteg Gemini",
     description: "Authentic Indonesian local cuisine (warteg) with premium ingredients and modern presentation. Catering services available.",
     url: `${seoConfig.siteUrl}/warteg-gemini`,
-    telephone: "+62-821-2385-595",
+    telephone: "+62-811-8889-6097",
     email: "contact@michaelhuang.id",
     priceRange: "$",
     servesCuisine: "Indonesian",
@@ -385,7 +385,7 @@ export function generateLegalServiceSchema(metadata: {
     description: metadata.description,
     url: metadata.url,
     priceRange: "$$",
-    telephone: "+62-821-2385-595",
+    telephone: "+62-811-8889-6097",
     email: "contact@michaelhuang.id",
     address: {
       "@type": "PostalAddress",
@@ -480,7 +480,7 @@ export function generateHomepageFAQSchema() {
     },
     {
       q: "Bagaimana cara bergabung dengan franchise Warteg Gemini?",
-      a: "Hubungi kami via WhatsApp di +62 821 2385 595 untuk informasi peluang kemitraan franchise. Kami menyediakan sistem bisnis teruji, training operasional, dan dokumentasi legal lengkap sesuai regulasi waralaba Indonesia."
+      a: "Hubungi kami via WhatsApp di +62 811 8889 6097 untuk informasi peluang kemitraan franchise. Kami menyediakan sistem bisnis teruji, training operasional, dan dokumentasi legal lengkap sesuai regulasi waralaba Indonesia."
     },
     {
       q: "Apakah Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. adalah Notaris dan PPAT resmi?",
@@ -488,7 +488,7 @@ export function generateHomepageFAQSchema() {
     },
     {
       q: "Dimana lokasi kantor Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.?",
-      a: "Kantor pusat kami berlokasi di Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Building, Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur, Jakarta Barat 11730. Hubungi +62 821 2385 595 untuk jadwal konsultasi."
+      a: "Kantor pusat kami berlokasi di Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Building, Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur, Jakarta Barat 11730. Hubungi +62 811 8889 6097 untuk jadwal konsultasi."
     }
   ];
 
@@ -697,7 +697,7 @@ export function generateClinicSchema() {
     "name": "MH Clinic - Klinik Kecantikan Jakarta",
     "description": "Klinik kecantikan premium dari Dr. Michael di Jakarta Barat yang segera hadir (Opening Soon). Menyediakan layanan perawatan kulit, estetika, anti-aging, dan perawatan kecantikan modern.",
     "url": `${seoConfig.siteUrl}/mh-clinic`,
-    "telephone": "+62-821-2385-595",
+    "telephone": "+62-811-8889-6097",
     "priceRange": "$$$",
     "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=1200",
     "address": {

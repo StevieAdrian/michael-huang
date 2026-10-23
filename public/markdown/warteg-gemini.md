@@ -36,5 +36,5 @@ Regular Menu available
 
 ## Contact
 
-**WhatsApp:** +62 821 2385 595  
+**WhatsApp:** +62 811 8889 6097  
 **Email:** contact@michaelhuang.id

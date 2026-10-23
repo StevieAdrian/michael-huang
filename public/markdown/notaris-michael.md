@@ -58,7 +58,7 @@ Akta autentik memiliki kekuatan pembuktian sempurna di hadapan hukum.
 Hubungi kami untuk konsultasi awal secara gratis. Tim notaris kami siap membantu Anda memahami proses dan dokumen yang diperlukan.
 
 **Kontak:**
-- +62 821 2385 595
+- +62 811 8889 6097
 - contact@michaelhuang.id
 - Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Building - Ruko Mutiara Taman Palem Blok C8 No 23-26, Cengkareng Timur, Jakarta Barat 11730
 

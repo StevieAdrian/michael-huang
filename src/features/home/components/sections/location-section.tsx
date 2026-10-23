@@ -55,7 +55,7 @@ export function LocationSection() {
                     rel="noreferrer"
                     className="text-muted-foreground text-sm mt-0.5 hover:text-gold transition-colors"
                   >
-                    +62 821 2385 595
+                    +62 811 8889 6097
                   </a>
                 </div>
               </div>

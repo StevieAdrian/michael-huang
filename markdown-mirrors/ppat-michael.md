@@ -38,7 +38,7 @@ Kami menangani seluruh transaksi hak atas tanah dan satuan rumah susun
 
 Konsultasi gratis untuk mengetahui dokumen yang perlu Anda siapkan dan estimasi biaya layanan kami.
 
-- **Telepon:** +628212385595
+- **Telepon:** +6281188896097
 - **Email:** contact@michaelhuang.id
 - **Alamat:** Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D. Building - Ruko Mutiara Taman Palem Blok C8 No 23-26 Cengkareng Timur Cengkareng Jakarta Barat, 11730 Jl Outer Ring Road
 - **Jam Operasional:** Senin-Jumat, 08:00-17:00 WIB

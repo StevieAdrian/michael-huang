@@ -138,7 +138,7 @@ export function KostClientPage() {
                   <Phone className="w-5 h-5 text-gold shrink-0" />
                   <div>
                     <p className="text-xs text-muted-foreground">Hubungi pengelola</p>
-                    <p className="font-semibold text-sm">+62 812 3456 7890</p>
+                    <p className="font-semibold text-sm">+62 811 8889 6097</p>
                   </div>
                 </div> */}
               </motion.div>
