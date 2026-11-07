@@ -95,7 +95,13 @@ export function Gallery({ images, title, subtitle }: GalleryProps) {
           )}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          className={
+            normalizedImages.length === 1
+              ? "max-w-3xl mx-auto"
+              : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          }
+        >
           {normalizedImages.map((image, index) => (
             <motion.div
               key={index}
@@ -180,18 +186,22 @@ export function Gallery({ images, title, subtitle }: GalleryProps) {
               </div>
 
               {/* Navigation */}
-              <button
-                onClick={prevImage}
-                className="absolute left-6 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white rounded-full transition-all z-[110]"
-              >
-                <ChevronLeft className="w-8 h-8" />
-              </button>
-              <button
-                onClick={nextImage}
-                className="absolute right-6 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white rounded-full transition-all z-[110]"
-              >
-                <ChevronRight className="w-8 h-8" />
-              </button>
+              {normalizedImages.length > 1 && (
+                <>
+                  <button
+                    onClick={prevImage}
+                    className="absolute left-6 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white rounded-full transition-all z-[110]"
+                  >
+                    <ChevronLeft className="w-8 h-8" />
+                  </button>
+                  <button
+                    onClick={nextImage}
+                    className="absolute right-6 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white rounded-full transition-all z-[110]"
+                  >
+                    <ChevronRight className="w-8 h-8" />
+                  </button>
+                </>
+              )}
 
               {/* Image Container */}
               <div className="relative w-full h-full overflow-hidden flex items-center justify-center">

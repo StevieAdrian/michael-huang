@@ -87,26 +87,6 @@ export const musicGalleryImages = [
     url: "/images/music-studio-session.jpg",
     title: "Sesi Rekaman Vokal & Audio Monitoring di MH Studio",
   },
-  {
-    url: "/images/musik-prod.jpeg",
-    title: "Peralatan Produksi & Instrumen Musik Profesional",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=1200",
-    title: "Mixing Console & Digital Audio Workstation",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=1200",
-    title: "Ruang Rekaman Akustik Kedap Suara",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=1200",
-    title: "Koleksi Instrumen Gitar & Setup Studio",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1200",
-    title: "Penggarapan Aransemen & Musik Produksi",
-  },
 ];
 
 
