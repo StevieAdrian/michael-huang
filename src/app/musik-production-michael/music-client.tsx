@@ -6,11 +6,14 @@ import { Star, ArrowRight } from "lucide-react";
 import { PageHero } from "@/features/home/components/page-hero";
 import { YoutubeSection } from "@/shared/components/youtube-section";
 import { ArticleCards } from "@/shared/components/article-cards";
+import { Gallery } from "@/shared/components/gallery";
+import { MusicVideoSection } from "./music-video-section";
 import {
   musicHero,
   musicServices,
   musicTestimonials,
   musicYoutubeVideos,
+  musicGalleryImages,
 } from "@/app/constants/music";
 import { musicArticles } from "@/app/constants/music-articles";
 import {
@@ -61,6 +64,16 @@ export function MusicClientPage() {
           </div>
         </div>
       </section>
+
+      {/* Video Dokumentasi Produksi Musik */}
+      <MusicVideoSection />
+
+      {/* Galeri Studio Musik */}
+      <Gallery
+        images={musicGalleryImages}
+        title="Galeri Studio Musik"
+        subtitle="Suasana ruang rekaman, ruang kontrol akustik, instrumen, dan momen sesi produksi kami."
+      />
 
       <YoutubeSection
         title="Konten Studio di YouTube"
