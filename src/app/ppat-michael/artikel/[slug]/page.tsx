@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PPATArticleClientPage } from "./article-client";
-import { ppatArticleDetails, ppatArticles } from "@/app/constants/ppat-articles";
+import { ppatArticleDetails, ppatArticles } from "@/app/constants/articles/ppat";
 import { seoConfig } from "@/config/seo-config";
 import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 

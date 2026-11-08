@@ -17,7 +17,7 @@ import {
   kostPlaces,
   kostTestimonials,
 } from "@/app/constants/kost";
-import { kostArticles } from "@/app/constants/kost-articles";
+import { kostArticles } from "@/app/constants/articles/kost";
 
 export function KostClientPage() {
   return (

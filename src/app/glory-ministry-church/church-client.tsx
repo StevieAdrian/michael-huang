@@ -42,7 +42,7 @@ import {
 } from "@/app/constants/church";
 import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
 import { churchReviews } from "@/app/constants/church";
-import { churchArticles } from "@/app/constants/church-articles";
+import { churchArticles } from "@/app/constants/articles/gereja";
 
 interface ChurchClientPageProps {
   initialTitheData?: ChurchTitheMonth[];

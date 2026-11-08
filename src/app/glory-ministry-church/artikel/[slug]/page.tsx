@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ChurchArticleClientPage } from "./article-client";
-import { churchArticleDetails, churchArticles } from "@/app/constants/church-articles";
+import { churchArticleDetails, churchArticles } from "@/app/constants/articles/gereja";
 import { seoConfig } from "@/config/seo-config";
 import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 

@@ -18,7 +18,7 @@ import {
 } from "@/app/constants/law-consulting";
 import { googleReviews } from "@/features/home/constants/reviews";
 import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
-import { lawConsultingArticles } from "@/app/constants/law-consulting-articles";
+import { lawConsultingArticles } from "@/app/constants/articles/law-consulting";
 import { LAW_CONSULTING_WHATSAPP_URL } from "@/app/constants/links";
 import { Gallery } from "@/shared/components/gallery";
 

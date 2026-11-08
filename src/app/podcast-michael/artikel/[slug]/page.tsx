@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PodcastArticleClientPage } from "./article-client";
-import { podcastArticleDetails, podcastArticles } from "@/app/constants/podcast-articles";
+import { podcastArticleDetails, podcastArticles } from "@/app/constants/articles/podcast";
 import { seoConfig } from "@/config/seo-config";
 import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 

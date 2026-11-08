@@ -12,7 +12,7 @@ import {
   musicTestimonials,
   musicYoutubeVideos,
 } from "@/app/constants/music";
-import { musicArticles } from "@/app/constants/music-articles";
+import { musicArticles } from "@/app/constants/articles/musik";
 import {
   MUSIC_BOOKING_WHATSAPP_URL,
   YOUTUBE_CHANNEL_URL,

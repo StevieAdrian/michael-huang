@@ -6,14 +6,14 @@
 import { MetadataRoute } from "next";
 import { seoConfig } from "@/config/seo-config";
 import { latestDate, parseIndoDate } from "@/app/utils/parse-date";
-import { churchArticles } from "@/app/constants/church-articles";
-import { kostArticles } from "@/app/constants/kost-articles";
-import { lawConsultingArticles } from "@/app/constants/law-consulting-articles";
-import { lawFirmArticles } from "@/app/constants/law-firm-articles";
-import { musicArticles } from "@/app/constants/music-articles";
-import { notarisArticles } from "@/app/constants/notaris-articles";
-import { podcastArticles } from "@/app/constants/podcast-articles";
-import { ppatArticles } from "@/app/constants/ppat-articles";
+import { churchArticles } from "@/app/constants/articles/gereja";
+import { kostArticles } from "@/app/constants/articles/kost";
+import { lawConsultingArticles } from "@/app/constants/articles/law-consulting";
+import { lawFirmArticles } from "@/app/constants/articles/law-firm";
+import { musicArticles } from "@/app/constants/articles/musik";
+import { notarisArticles } from "@/app/constants/articles/notaris";
+import { podcastArticles } from "@/app/constants/articles/podcast";
+import { ppatArticles } from "@/app/constants/articles/ppat";
 
 const articleSections = [
   { base: "/notaris-michael", articles: notarisArticles },

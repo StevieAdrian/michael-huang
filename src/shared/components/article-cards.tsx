@@ -3,15 +3,9 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, Tag } from "lucide-react";
+import type { Article } from "@/shared/types/article";
 
-export interface Article {
-  id: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  category: string;
-  slug: string;
-}
+export type { Article } from "@/shared/types/article";
 
 interface ArticleCardsProps {
   articles: Article[];

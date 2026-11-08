@@ -8,6 +8,15 @@ export type ArticleContentBlock =
       items: string[];
     };
 
+export interface Article {
+  id: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  category: string;
+  slug: string;
+}
+
 export interface ArticleDetail {
   slug: string;
   category: string;
@@ -21,4 +30,13 @@ export interface ArticleDetail {
   };
   content: ArticleContentBlock[];
   tags: string[];
+}
+
+export interface ArticleRecord extends Article {
+  readTime: string;
+  subtitle: string;
+  author: ArticleDetail["author"];
+  content: ArticleContentBlock[];
+  tags: string[];
+  detailOverrides?: Partial<Pick<ArticleDetail, "title" | "slug" | "category" | "date">>;
 }

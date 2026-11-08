@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { KostArticleClientPage } from "./article-client";
-import { kostArticleDetails, kostArticles } from "@/app/constants/kost-articles";
+import { kostArticleDetails, kostArticles } from "@/app/constants/articles/kost";
 import { seoConfig } from "@/config/seo-config";
 import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 

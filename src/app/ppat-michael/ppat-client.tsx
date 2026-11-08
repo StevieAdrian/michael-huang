@@ -15,7 +15,7 @@ import {
 } from "@/app/constants/ppat";
 import { googleReviews } from "@/features/home/constants/reviews";
 import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
-import { ppatArticles } from "@/app/constants/ppat-articles";
+import { ppatArticles } from "@/app/constants/articles/ppat";
 import { PPAT_WHATSAPP_URL } from "@/app/constants/links";
 import { Gallery } from "@/shared/components/gallery";
 

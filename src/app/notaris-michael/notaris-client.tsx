@@ -13,7 +13,7 @@ import {
   notarisGalleryImages,
   notarisFaqs,
 } from "@/app/constants/notaris";
-import { notarisArticles } from "@/app/constants/notaris-articles";
+import { notarisArticles } from "@/app/constants/articles/notaris";
 import { googleReviews } from "@/features/home/constants/reviews";
 import { NOTARIS_WHATSAPP_URL, WHATSAPP_PHONE } from "@/app/constants/links";
 

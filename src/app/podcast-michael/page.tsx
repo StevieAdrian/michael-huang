@@ -8,7 +8,7 @@ import {
   podcastPlatforms,
   podcastYoutubeVideos,
 } from "@/app/constants/podcast";
-import { podcastArticles } from "@/app/constants/podcast-articles";
+import { podcastArticles } from "@/app/constants/articles/podcast";
 import { generateOGMetadata, seoConfig } from "@/config/seo-config";
 import { generatePodcastSchema , generateBreadcrumbSchema } from "@/lib/structured-data";
 import { StructuredData } from "@/shared/components/StructuredData";

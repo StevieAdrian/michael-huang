@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { AllArticlesPage } from "@/shared/components/all-articles-page";
-import { lawFirmArticles } from "@/app/constants/law-firm-articles";
+import { lawFirmArticles } from "@/app/constants/articles/law-firm";
 import { seoConfig } from "@/config/seo-config";
 
 export const metadata: Metadata = {

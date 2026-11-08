@@ -4,7 +4,7 @@ import { NotarisArticleClientPage } from "./article-client";
 import {
   notarisArticleDetails,
   notarisArticles,
-} from "@/app/constants/notaris-articles";
+} from "@/app/constants/articles/notaris";
 import { seoConfig } from "@/config/seo-config";
 import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 

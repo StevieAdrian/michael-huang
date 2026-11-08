@@ -25,7 +25,7 @@ import {
   lawFirmTestimonials,
   lawFirmMapEmbedUrl,
 } from "@/app/constants/law-firm";
-import { lawFirmArticles } from "@/app/constants/law-firm-articles";
+import { lawFirmArticles } from "@/app/constants/articles/law-firm";
 import { googleReviews } from "@/features/home/constants/reviews";
 import { TestimonialCarousel } from "@/shared/components/testimonial-carousel";
 import { LAW_FIRM_FORM_WHATSAPP_URL, WHATSAPP_PHONE } from "@/app/constants/links";

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { MusicArticleClientPage } from "./article-client";
-import { musicArticleDetails, musicArticles } from "@/app/constants/music-articles";
+import { musicArticleDetails, musicArticles } from "@/app/constants/articles/musik";
 import { seoConfig } from "@/config/seo-config";
 import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 

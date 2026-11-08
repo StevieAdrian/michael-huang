@@ -4,7 +4,7 @@ import { LawConsultingArticleClientPage } from "./article-client";
 import {
   lawConsultingArticleDetails,
   lawConsultingArticles,
-} from "@/app/constants/law-consulting-articles";
+} from "@/app/constants/articles/law-consulting";
 import { seoConfig } from "@/config/seo-config";
 import { ArticleStructuredData } from "@/shared/components/article-structured-data";
 
