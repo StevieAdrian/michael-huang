@@ -106,7 +106,7 @@ export const lawConsultingArticles: Article[] = [
     title: "Memahami Perizinan Usaha Melalui OSS: Panduan untuk Pelaku Bisnis",
     excerpt:
       "Sistem OSS menyederhanakan perizinan usaha di Indonesia. Pahami alur, kategori risiko, dan dokumen yang dibutuhkan agar bisnis Anda legal.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Perizinan",
     slug: "perizinan-usaha-oss-panduan",
   },
@@ -115,7 +115,7 @@ export const lawConsultingArticles: Article[] = [
     title: "Compliance Perusahaan: Mengapa Kepatuhan Hukum Itu Investasi",
     excerpt:
       "Kepatuhan hukum bukan beban, melainkan perlindungan. Pelajari bagaimana program compliance menjaga bisnis dari sanksi dan risiko reputasi.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Korporat",
     slug: "compliance-perusahaan-kepatuhan-hukum",
   },
@@ -665,7 +665,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "perizinan-usaha-oss-panduan",
     category: "Perizinan",
     readTime: "7 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Memahami Perizinan Usaha Melalui OSS: Panduan untuk Pelaku Bisnis",
     subtitle:
       "Sistem Online Single Submission (OSS) mengintegrasikan perizinan berusaha di Indonesia. Memahami alurnya membantu bisnis Anda beroperasi secara legal.",
@@ -727,7 +727,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "compliance-perusahaan-kepatuhan-hukum",
     category: "Korporat",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "Compliance Perusahaan: Mengapa Kepatuhan Hukum Itu Investasi",
     subtitle:
       "Program kepatuhan hukum yang baik melindungi perusahaan dari sanksi, kerugian finansial, dan kerusakan reputasi. Ini adalah investasi, bukan beban.",

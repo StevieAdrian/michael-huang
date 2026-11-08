@@ -106,7 +106,7 @@ export const lawFirmArticles: Article[] = [
     title: "Strategi Penyelesaian Sengketa: Litigasi vs Arbitrase",
     excerpt:
       "Ketika sengketa bisnis tak terhindarkan, memilih jalur penyelesaian yang tepat sangat menentukan. Pahami perbedaan litigasi pengadilan dan arbitrase.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Litigasi",
     slug: "litigasi-vs-arbitrase-sengketa",
   },
@@ -115,7 +115,7 @@ export const lawFirmArticles: Article[] = [
     title: "Memahami Kontrak Kerja: Hak dan Kewajiban Pengusaha serta Pekerja",
     excerpt:
       "Kontrak kerja yang disusun baik melindungi kedua belah pihak. Simak klausul penting yang wajib ada agar hubungan kerja aman secara hukum.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Ketenagakerjaan",
     slug: "kontrak-kerja-hak-kewajiban",
   },
@@ -752,7 +752,7 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     slug: "litigasi-vs-arbitrase-sengketa",
     category: "Litigasi",
     readTime: "7 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Strategi Penyelesaian Sengketa: Litigasi vs Arbitrase",
     subtitle:
       "Setiap mekanisme penyelesaian sengketa memiliki kelebihan dan kekurangan. Memilih jalur yang tepat dapat menghemat waktu, biaya, dan menjaga reputasi bisnis.",
@@ -814,7 +814,7 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     slug: "kontrak-kerja-hak-kewajiban",
     category: "Ketenagakerjaan",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "Memahami Kontrak Kerja: Hak dan Kewajiban Pengusaha serta Pekerja",
     subtitle:
       "Kontrak kerja yang jelas melindungi kedua belah pihak dari sengketa. Pahami klausul wajib dan ketentuan hukum ketenagakerjaan yang berlaku.",

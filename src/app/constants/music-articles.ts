@@ -106,7 +106,7 @@ export const musicArticles: Article[] = [
     title: "Memahami Royalti Musik: Dari Streaming Hingga Performing Rights",
     excerpt:
       "Royalti adalah sumber pendapatan utama musisi di era digital. Kenali jenis-jenis royalti dan cara mengelolanya agar karya Anda tetap menghasilkan.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Bisnis Musik",
     slug: "memahami-royalti-musik",
   },
@@ -115,7 +115,7 @@ export const musicArticles: Article[] = [
     title: "Tips Membangun Home Studio dengan Budget Terbatas",
     excerpt:
       "Tak perlu biaya besar untuk mulai memproduksi musik berkualitas. Simak panduan menyusun home studio fungsional dengan anggaran yang efisien.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Studio",
     slug: "membangun-home-studio-budget",
   },
@@ -680,7 +680,7 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
     slug: "memahami-royalti-musik",
     category: "Bisnis Musik",
     readTime: "7 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Memahami Royalti Musik: Dari Streaming Hingga Performing Rights",
     subtitle:
       "Di era digital, royalti menjadi tulang punggung pendapatan musisi. Memahami jenis dan sumbernya membantu Anda memaksimalkan penghasilan dari karya.",
@@ -742,7 +742,7 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
     slug: "membangun-home-studio-budget",
     category: "Studio",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "Tips Membangun Home Studio dengan Budget Terbatas",
     subtitle:
       "Kualitas produksi tidak selalu soal peralatan mahal. Dengan perencanaan cermat, Anda bisa membangun home studio fungsional tanpa menguras kantong.",

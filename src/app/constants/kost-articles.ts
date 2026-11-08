@@ -697,7 +697,7 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
     slug: "checklist-barang-pindah-kost",
     category: "Tips",
     readTime: "6 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Checklist Barang Penting Saat Pindah ke Kost Baru",
     subtitle:
       "Persiapan yang matang membuat transisi ke kost baru lebih lancar. Daftar barang esensial ini membantu Anda langsung merasa nyaman di hunian baru.",
@@ -764,7 +764,7 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
     slug: "hak-kewajiban-penghuni-kost",
     category: "Panduan",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "Hak dan Kewajiban Penghuni Kost yang Perlu Diketahui",
     subtitle:
       "Hubungan antara penghuni dan pemilik kost diatur oleh hak dan kewajiban kedua pihak. Memahaminya mencegah kesalahpahaman dan konflik.",

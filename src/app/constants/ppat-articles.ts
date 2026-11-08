@@ -106,7 +106,7 @@ export const ppatArticles: Article[] = [
     title: "Memahami Pajak dalam Transaksi Jual Beli Tanah: BPHTB dan PPh",
     excerpt:
       "Setiap transaksi properti memiliki kewajiban pajak bagi penjual dan pembeli. Pahami cara menghitung BPHTB dan PPh agar transaksi berjalan lancar.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Panduan",
     slug: "pajak-jual-beli-tanah-bphtb-pph",
   },
@@ -115,7 +115,7 @@ export const ppatArticles: Article[] = [
     title: "ROYA: Prosedur Penghapusan Hak Tanggungan Setelah Lunas KPR",
     excerpt:
       "Setelah kredit lunas, sertifikat Anda masih tercatat dibebani hak tanggungan. Pahami prosedur ROYA untuk membersihkan status sertifikat di BPN.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Edukasi",
     slug: "roya-penghapusan-hak-tanggungan",
   },
@@ -665,7 +665,7 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
     slug: "pajak-jual-beli-tanah-bphtb-pph",
     category: "Panduan",
     readTime: "7 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Memahami Pajak dalam Transaksi Jual Beli Tanah: BPHTB dan PPh",
     subtitle:
       "Pajak adalah bagian tak terpisahkan dari transaksi properti. Memahami kewajiban pajak sejak awal membantu Anda menghindari denda dan hambatan proses balik nama.",
@@ -722,7 +722,7 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
     slug: "roya-penghapusan-hak-tanggungan",
     category: "Edukasi",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "ROYA: Prosedur Penghapusan Hak Tanggungan Setelah Lunas KPR",
     subtitle:
       "Melunasi KPR bukan akhir dari urusan sertifikat. Proses ROYA diperlukan agar status hak tanggungan terhapus dan sertifikat Anda kembali bersih.",

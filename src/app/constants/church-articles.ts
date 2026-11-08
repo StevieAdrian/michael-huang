@@ -106,7 +106,7 @@ export const churchArticles: Article[] = [
     title: "Pentingnya Doa dalam Kehidupan Sehari-hari Orang Percaya",
     excerpt:
       "Doa bukan sekadar ritual, melainkan nafas kehidupan rohani. Pelajari bagaimana membangun kehidupan doa yang konsisten dan bermakna.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Iman",
     slug: "pentingnya-doa-kehidupan-sehari-hari",
   },
@@ -115,7 +115,7 @@ export const churchArticles: Article[] = [
     title: "Melayani dalam Gereja: Menemukan Panggilan dan Karunia Anda",
     excerpt:
       "Setiap orang percaya dipanggil untuk melayani sesuai karunia yang Tuhan berikan. Temukan cara mengenali dan mengembangkan karunia pelayanan Anda.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Pelayanan",
     slug: "melayani-gereja-panggilan-karunia",
   },
@@ -744,7 +744,7 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
     slug: "pentingnya-doa-kehidupan-sehari-hari",
     category: "Iman",
     readTime: "6 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Pentingnya Doa dalam Kehidupan Sehari-hari Orang Percaya",
     subtitle:
       "Doa adalah sarana komunikasi dengan Tuhan yang memperkuat iman dan menghadirkan damai sejahtera di tengah kesibukan hidup.",
@@ -802,7 +802,7 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
     slug: "melayani-gereja-panggilan-karunia",
     category: "Pelayanan",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "Melayani dalam Gereja: Menemukan Panggilan dan Karunia Anda",
     subtitle:
       "Setiap orang percaya memiliki karunia unik yang dapat digunakan untuk membangun tubuh Kristus. Mengenali karunia adalah langkah awal melayani dengan sukacita.",

@@ -106,7 +106,7 @@ export const notarisArticles: Article[] = [
     title: "Peran Notaris dalam Pembuatan Akta Jaminan Fidusia",
     excerpt:
       "Jaminan fidusia atas benda bergerak wajib dibuat dengan akta notaris dan didaftarkan secara elektronik. Pahami prosedur dan manfaat perlindungannya.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Bisnis",
     slug: "akta-jaminan-fidusia-notaris",
   },
@@ -115,7 +115,7 @@ export const notarisArticles: Article[] = [
     title: "Cara Memilih Notaris yang Tepat dan Terpercaya",
     excerpt:
       "Tidak semua notaris sama. Simak kriteria penting dalam memilih notaris agar dokumen hukum Anda aman, sah, dan bebas dari risiko di kemudian hari.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Edukasi",
     slug: "cara-memilih-notaris-tepat",
   },
@@ -780,7 +780,7 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
     slug: "akta-jaminan-fidusia-notaris",
     category: "Bisnis",
     readTime: "7 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Peran Notaris dalam Pembuatan Akta Jaminan Fidusia",
     subtitle:
       "Fidusia memungkinkan debitur tetap menguasai barang jaminan sambil memberi kepastian hukum bagi kreditur. Akta notaris adalah syarat sahnya.",
@@ -842,7 +842,7 @@ export const notarisArticleDetails: Record<string, ArticleDetail> = {
     slug: "cara-memilih-notaris-tepat",
     category: "Edukasi",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "Cara Memilih Notaris yang Tepat dan Terpercaya",
     subtitle:
       "Memilih notaris yang kompeten adalah langkah awal melindungi kepentingan hukum Anda. Kenali kriteria yang perlu diperhatikan sebelum menandatangani akta.",
