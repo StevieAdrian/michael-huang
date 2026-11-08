@@ -119,6 +119,24 @@ export const churchArticles: Article[] = [
     category: "Pelayanan",
     slug: "melayani-gereja-panggilan-karunia",
   },
+  {
+    id: "14",
+    title: "Mengelola Kecemasan dengan Iman, Doa, dan Dukungan Komunitas",
+    excerpt:
+      "Iman dapat menguatkan kita saat menghadapi kecemasan. Kenali langkah rohani dan dukungan sehari-hari yang dapat menolong dalam proses pemulihan.",
+    date: "14 November 2026",
+    category: "Iman",
+    slug: "mengelola-kecemasan-iman-komunitas",
+  },
+  {
+    id: "15",
+    title: "Membangun Komunitas Gereja yang Ramah bagi Pendatang Baru",
+    excerpt:
+      "Sambutan sederhana, perhatian yang tulus, dan tindak lanjut yang menghormati pilihan dapat membantu orang baru merasa diterima di gereja.",
+    date: "16 November 2026",
+    category: "Komunitas",
+    slug: "komunitas-gereja-ramah-pendatang-baru",
+  },
 ];
 
 export const churchArticleDetails: Record<string, ArticleDetail> = {
@@ -836,5 +854,103 @@ export const churchArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Pelayanan", "Karunia Rohani", "Panggilan", "Gereja"],
+  },
+  "mengelola-kecemasan-iman-komunitas": {
+    slug: "mengelola-kecemasan-iman-komunitas",
+    category: "Iman",
+    readTime: "7 menit",
+    date: "14 November 2026",
+    title: "Mengelola Kecemasan dengan Iman, Doa, dan Dukungan Komunitas",
+    subtitle:
+      "Kecemasan dapat terasa berat. Praktik iman, hubungan yang suportif, dan bantuan profesional dapat berjalan bersama dalam merawat kesejahteraan diri.",
+    author: {
+      name: "Tim Pastoral Glory Ministry",
+      role: "Pastoral Care",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Setiap orang dapat mengalami rasa cemas ketika menghadapi tekanan, perubahan, atau ketidakpastian. Mengalami kecemasan bukan tanda bahwa iman seseorang kurang. Kita dapat membawa pergumulan itu kepada Tuhan sekaligus mencari pertolongan yang tepat.",
+      },
+      {
+        type: "heading",
+        text: "Langkah Kecil untuk Menenangkan Diri",
+      },
+      {
+        type: "list",
+        items: [
+          "Ambil jeda dan atur napas dengan perlahan sambil menyadari keadaan saat ini.",
+          "Ceritakan pergumulan kepada orang tepercaya tanpa merasa harus segera menemukan jawaban.",
+          "Jaga kebutuhan dasar seperti istirahat, makan, dan rutinitas yang menolong.",
+          "Gunakan doa, pembacaan firman, atau jurnal sebagai ruang refleksi yang menenangkan.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Iman dan Bantuan Profesional Dapat Berjalan Bersama",
+      },
+      {
+        type: "paragraph",
+        text: "Jika kecemasan berlangsung lama, mengganggu aktivitas sehari-hari, atau terasa semakin berat, pertimbangkan berbicara dengan tenaga kesehatan mental yang kompeten. Pemimpin rohani dapat mendampingi secara pastoral, tetapi tidak menggantikan penanganan profesional ketika dibutuhkan.",
+      },
+      {
+        type: "quote",
+        text: "Meminta pertolongan adalah langkah berani untuk merawat hidup yang Tuhan percayakan kepada kita.",
+      },
+      {
+        type: "paragraph",
+        text: "Komunitas gereja dapat hadir dengan mendengarkan, berdoa bersama, dan membantu menghubungkan seseorang dengan dukungan yang sesuai tanpa menghakimi. Glory Ministry Church mendorong siapa pun yang sedang bergumul untuk mencari pendampingan yang aman dan penuh kasih.",
+      },
+    ],
+    tags: ["Iman", "Kesehatan Mental", "Doa", "Dukungan Komunitas"],
+  },
+  "komunitas-gereja-ramah-pendatang-baru": {
+    slug: "komunitas-gereja-ramah-pendatang-baru",
+    category: "Komunitas",
+    readTime: "6 menit",
+    date: "16 November 2026",
+    title: "Membangun Komunitas Gereja yang Ramah bagi Pendatang Baru",
+    subtitle:
+      "Rasa diterima tumbuh melalui perhatian yang konsisten, informasi yang jelas, dan ruang bagi setiap orang untuk mengenal komunitas dengan nyaman.",
+    author: {
+      name: "Tim Redaksi Glory Ministry Church",
+      role: "Community Ministry",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Datang ke gereja untuk pertama kali dapat terasa canggung karena seseorang belum mengenal tempat, tata ibadah, maupun orang-orang di dalamnya. Sikap ramah membantu mengurangi kecanggungan tanpa membuat pendatang baru merasa menjadi pusat perhatian.",
+      },
+      {
+        type: "heading",
+        text: "Sambut dengan Hangat dan Tidak Memaksa",
+      },
+      {
+        type: "list",
+        items: [
+          "Sapa dengan ramah dan tawarkan bantuan praktis tentang lokasi atau alur ibadah.",
+          "Perkenalkan diri dan tanyakan nama dengan sopan, tanpa mendesak informasi pribadi.",
+          "Jelaskan kegiatan serta pilihan untuk ikut, tanpa menganggap mereka harus langsung berkomitmen.",
+          "Hormati kenyamanan dan keputusan setiap orang setelah ibadah selesai.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Bangun Tindak Lanjut yang Menghormati Privasi",
+      },
+      {
+        type: "paragraph",
+        text: "Jika seseorang bersedia dihubungi, lakukan tindak lanjut yang singkat dan personal. Sampaikan informasi kelompok kecil atau kegiatan yang sesuai, dan beri ruang bagi mereka untuk memilih apakah ingin bergabung.",
+      },
+      {
+        type: "quote",
+        text: "Keramahan yang tulus terlihat dari perhatian yang memberi ruang, bukan dari tekanan untuk segera menjadi bagian.",
+      },
+      {
+        type: "paragraph",
+        text: "Komunitas yang sehat melatih seluruh jemaat untuk saling mengenal, menjaga batas pribadi, dan menemani orang baru secara konsisten. Langkah sederhana ini menolong gereja menjadi tempat bertumbuh yang aman bagi banyak orang.",
+      },
+    ],
+    tags: ["Komunitas Gereja", "Keramahan", "Pelayanan", "Persekutuan"],
   },
 };

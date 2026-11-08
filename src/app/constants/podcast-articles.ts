@@ -101,6 +101,24 @@ export const podcastArticles: Article[] = [
     category: "Pemasaran",
     slug: "strategi-promosi-podcast",
   },
+  {
+    id: "14",
+    title: "Menulis Judul dan Deskripsi Episode Podcast yang Mudah Ditemukan",
+    excerpt:
+      "Judul yang jelas membantu calon pendengar memahami manfaat episode. Pelajari cara menyusun judul, deskripsi, dan kata kunci tanpa membuatnya terasa seperti clickbait.",
+    date: "14 November 2026",
+    category: "Pemasaran",
+    slug: "judul-deskripsi-episode-podcast",
+  },
+  {
+    id: "15",
+    title: "Monetisasi Podcast: Menyiapkan Kerja Sama Sponsor yang Sehat",
+    excerpt:
+      "Kerja sama sponsor yang baik selaras dengan audiens dan menjaga kepercayaan pendengar. Kenali metrik, format iklan, dan hal yang perlu disepakati.",
+    date: "16 November 2026",
+    category: "Bisnis",
+    slug: "monetisasi-podcast-kerja-sama-sponsor",
+  },
 ];
 
 export const podcastArticleDetails: Record<string, ArticleDetail> = {
@@ -605,5 +623,107 @@ export const podcastArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Promosi", "Pemasaran", "Podcast", "Pertumbuhan"],
+  },
+  "judul-deskripsi-episode-podcast": {
+    slug: "judul-deskripsi-episode-podcast",
+    category: "Pemasaran",
+    readTime: "6 menit",
+    date: "14 November 2026",
+    title: "Menulis Judul dan Deskripsi Episode Podcast yang Mudah Ditemukan",
+    subtitle:
+      "Judul dan deskripsi yang informatif membuat episode lebih mudah dipahami, dicari, dan dipilih oleh pendengar yang tepat.",
+    author: {
+      name: "Tim Podcast Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Podcast Producer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Sebelum menekan tombol play, calon pendengar biasanya melihat judul dan deskripsi episode. Keduanya perlu menjelaskan topik serta alasan episode itu layak didengar, tanpa menjanjikan sesuatu yang tidak dibahas.",
+      },
+      {
+        type: "heading",
+        text: "Mulai dari Pertanyaan Pendengar",
+      },
+      {
+        type: "paragraph",
+        text: "Tentukan satu kebutuhan atau pertanyaan utama yang dijawab episode. Tempatkan topik penting di bagian awal judul, gunakan kata-kata yang biasa dipakai audiens, dan hindari istilah internal yang hanya dipahami tim produksi.",
+      },
+      {
+        type: "list",
+        items: [
+          "Buat judul spesifik dan mudah dibaca di layar ponsel.",
+          "Sebutkan nama tamu jika relevan dengan daya tarik episode.",
+          "Hindari judul sensasional yang tidak sesuai isi percakapan.",
+          "Gunakan pola judul yang konsisten agar identitas acara mudah dikenali.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Tulis Deskripsi yang Berguna",
+      },
+      {
+        type: "paragraph",
+        text: "Dalam beberapa kalimat, ringkas pokok pembahasan, sebutkan narasumber, dan jelaskan hal yang akan dibawa pulang pendengar. Tambahkan tautan atau catatan pendukung bila diperlukan, lalu periksa kembali nama dan informasi sebelum episode diterbitkan.",
+      },
+      {
+        type: "quote",
+        text: "Metadata yang baik membantu pendengar menemukan isi yang tepat dan membantu kreator menyampaikan janji episode dengan jujur.",
+      },
+      {
+        type: "paragraph",
+        text: "Sesudah rilis, amati episode mana yang paling banyak ditemukan dan diselesaikan. Gunakan pola yang berhasil sebagai bahan belajar, bukan alasan untuk mengulang judul yang sama. Tim produksi kami dapat membantu merancang kemasan konten yang sesuai karakter podcast Anda.",
+      },
+    ],
+    tags: ["Podcast", "Judul Episode", "Deskripsi", "Pemasaran Konten"],
+  },
+  "monetisasi-podcast-kerja-sama-sponsor": {
+    slug: "monetisasi-podcast-kerja-sama-sponsor",
+    category: "Bisnis",
+    readTime: "7 menit",
+    date: "16 November 2026",
+    title: "Monetisasi Podcast: Menyiapkan Kerja Sama Sponsor yang Sehat",
+    subtitle:
+      "Sponsor dapat mendukung keberlanjutan podcast ketika produk, cara penyampaian, dan kesepakatannya cocok dengan kebutuhan pendengar.",
+    author: {
+      name: "Tim Podcast Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Podcast Producer",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Monetisasi bukan hanya soal jumlah unduhan. Bagi sponsor, kecocokan audiens dan kepercayaan yang dibangun kreator juga bernilai. Karena itu, persiapan kerja sama dimulai dengan memahami pendengar dan tujuan acara.",
+      },
+      {
+        type: "heading",
+        text: "Siapkan Gambaran Audiens dan Performa",
+      },
+      {
+        type: "list",
+        items: [
+          "Jelaskan tema acara, profil pendengar, dan jadwal rilis.",
+          "Bagikan data performa yang tersedia secara jujur dan konsisten.",
+          "Tunjukkan contoh episode serta cara Anda berinteraksi dengan audiens.",
+          "Tentukan kategori produk yang memang relevan bagi pendengar.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Sepakati Format dan Batas Editorial",
+      },
+      {
+        type: "paragraph",
+        text: "Diskusikan apakah sponsor mendapat penyebutan singkat, segmen khusus, atau episode kolaborasi. Sepakati jumlah penayangan, jadwal, materi yang disediakan, proses persetujuan, kompensasi, dan cara menangani perubahan jadwal secara tertulis.",
+      },
+      {
+        type: "quote",
+        text: "Kerja sama terbaik memberi nilai bagi sponsor sekaligus menjaga alasan pendengar mempercayai podcast Anda.",
+      },
+      {
+        type: "paragraph",
+        text: "Sampaikan hubungan komersial dengan transparan dan jaga agar rekomendasi tetap sesuai pengalaman serta kebijakan acara. Evaluasi hasil setelah kampanye selesai, lalu gunakan pembelajaran itu untuk menyusun kerja sama berikutnya. Tim kami dapat membantu menyiapkan format sponsor yang terasa alami bagi program Anda.",
+      },
+    ],
+    tags: ["Monetisasi", "Sponsor", "Podcast", "Bisnis Kreatif"],
   },
 };
