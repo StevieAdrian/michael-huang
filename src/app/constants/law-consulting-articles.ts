@@ -106,7 +106,7 @@ export const lawConsultingArticles: Article[] = [
     title: "Memahami Perizinan Usaha Melalui OSS: Panduan untuk Pelaku Bisnis",
     excerpt:
       "Sistem OSS menyederhanakan perizinan usaha di Indonesia. Pahami alur, kategori risiko, dan dokumen yang dibutuhkan agar bisnis Anda legal.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Perizinan",
     slug: "perizinan-usaha-oss-panduan",
   },
@@ -115,9 +115,27 @@ export const lawConsultingArticles: Article[] = [
     title: "Compliance Perusahaan: Mengapa Kepatuhan Hukum Itu Investasi",
     excerpt:
       "Kepatuhan hukum bukan beban, melainkan perlindungan. Pelajari bagaimana program compliance menjaga bisnis dari sanksi dan risiko reputasi.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Korporat",
     slug: "compliance-perusahaan-kepatuhan-hukum",
+  },
+  {
+    id: "14",
+    title: "Review Kontrak Vendor: Poin Penting Sebelum Menandatangani",
+    excerpt:
+      "Pahami ruang lingkup pekerjaan, pembayaran, tanggung jawab, dan pengakhiran agar kerja sama dengan vendor memiliki dasar yang jelas.",
+    date: "14 November 2026",
+    category: "Kontrak Bisnis",
+    slug: "review-kontrak-vendor",
+  },
+  {
+    id: "15",
+    title: "Menyusun Kebijakan Privasi untuk Layanan Digital",
+    excerpt:
+      "Kebijakan privasi yang jelas menjelaskan data apa yang dikumpulkan, tujuan pemrosesan, dan pilihan yang tersedia bagi pengguna.",
+    date: "16 November 2026",
+    category: "Kepatuhan",
+    slug: "kebijakan-privasi-layanan-digital",
   },
 ];
 
@@ -647,7 +665,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "perizinan-usaha-oss-panduan",
     category: "Perizinan",
     readTime: "7 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Memahami Perizinan Usaha Melalui OSS: Panduan untuk Pelaku Bisnis",
     subtitle:
       "Sistem Online Single Submission (OSS) mengintegrasikan perizinan berusaha di Indonesia. Memahami alurnya membantu bisnis Anda beroperasi secara legal.",
@@ -709,7 +727,7 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
     slug: "compliance-perusahaan-kepatuhan-hukum",
     category: "Korporat",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "Compliance Perusahaan: Mengapa Kepatuhan Hukum Itu Investasi",
     subtitle:
       "Program kepatuhan hukum yang baik melindungi perusahaan dari sanksi, kerugian finansial, dan kerusakan reputasi. Ini adalah investasi, bukan beban.",
@@ -766,5 +784,105 @@ export const lawConsultingArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Compliance", "Kepatuhan Hukum", "Korporat", "Manajemen Risiko"],
+  },
+  "review-kontrak-vendor": {
+    slug: "review-kontrak-vendor",
+    category: "Kontrak Bisnis",
+    readTime: "7 menit",
+    date: "14 November 2026",
+    title: "Review Kontrak Vendor: Poin Penting Sebelum Menandatangani",
+    subtitle:
+      "Pemeriksaan kontrak membantu perusahaan memahami pekerjaan yang dijanjikan, biaya, risiko, dan proses jika kebutuhan kerja sama berubah.",
+    author: {
+      name: "Tim Konsultasi Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Corporate Legal Consultant",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Kerja sama dengan vendor dapat mencakup pengadaan barang, teknologi, jasa profesional, atau dukungan operasional. Sebelum menandatangani, pastikan naskah kontrak benar-benar mencerminkan pembicaraan dan kebutuhan bisnis Anda.",
+      },
+      {
+        type: "heading",
+        text: "Bagian yang Perlu Ditinjau",
+      },
+      {
+        type: "list",
+        items: [
+          "Identitas para pihak, ruang lingkup pekerjaan, dan hasil yang harus diserahkan.",
+          "Harga, pajak, jadwal pembayaran, serta biaya tambahan yang mungkin timbul.",
+          "Jadwal kerja, standar penerimaan hasil, dan proses untuk meminta perbaikan.",
+          "Tanggung jawab jika terjadi keterlambatan, kehilangan, atau pelanggaran kewajiban.",
+          "Masa berlaku, perubahan ruang lingkup, penghentian kerja sama, dan penyelesaian perselisihan.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Cocokkan Kontrak dengan Operasional",
+      },
+      {
+        type: "paragraph",
+        text: "Libatkan tim yang akan menggunakan layanan vendor agar kewajiban dalam kontrak dapat dijalankan. Periksa juga lampiran, standar layanan, dan dokumen yang dirujuk karena semuanya dapat memengaruhi ruang lingkup kesepakatan.",
+      },
+      {
+        type: "quote",
+        text: "Kontrak yang mudah dipahami membantu tim mengetahui apa yang harus dikerjakan dan siapa yang bertanggung jawab.",
+      },
+      {
+        type: "paragraph",
+        text: "Jika ada ketentuan yang tidak jelas atau berdampak besar, minta penjelasan tertulis dan pertimbangkan review hukum sebelum menyetujui. Tim konsultasi kami dapat membantu perusahaan meninjau kontrak sesuai konteks transaksinya.",
+      },
+    ],
+    tags: ["Kontrak Vendor", "Review Kontrak", "Bisnis", "Manajemen Risiko"],
+  },
+  "kebijakan-privasi-layanan-digital": {
+    slug: "kebijakan-privasi-layanan-digital",
+    category: "Kepatuhan",
+    readTime: "7 menit",
+    date: "16 November 2026",
+    title: "Menyusun Kebijakan Privasi untuk Layanan Digital",
+    subtitle:
+      "Kebijakan privasi yang mudah dipahami membantu pengguna mengetahui bagaimana informasi mereka dikelola dan bagaimana mereka dapat menghubungi penyedia layanan.",
+    author: {
+      name: "Tim Konsultasi Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Data and Technology Practice",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Layanan digital dapat mengumpulkan informasi melalui pendaftaran akun, transaksi, formulir, atau penggunaan fitur. Kebijakan privasi sebaiknya menjelaskan praktik yang benar-benar dilakukan oleh layanan, dengan bahasa yang jelas bagi pengguna.",
+      },
+      {
+        type: "heading",
+        text: "Jelaskan Praktik Pengelolaan Data",
+      },
+      {
+        type: "list",
+        items: [
+          "Jenis informasi yang dikumpulkan dan sumber perolehannya.",
+          "Tujuan penggunaan informasi untuk setiap fitur atau proses utama.",
+          "Pihak yang menerima atau memproses data untuk mendukung layanan.",
+          "Masa penyimpanan dan cara pengguna mengajukan permintaan terkait datanya.",
+          "Kontak yang dapat dihubungi untuk pertanyaan privasi atau keamanan.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Pastikan Isi Sesuai dengan Praktik Nyata",
+      },
+      {
+        type: "paragraph",
+        text: "Tinjau alur data bersama tim produk, teknologi, pemasaran, dan operasional. Periksa formulir, cookie, analitik, serta integrasi pihak ketiga agar penjelasan di kebijakan tidak berbeda dari cara layanan bekerja.",
+      },
+      {
+        type: "quote",
+        text: "Keterbukaan yang konsisten membantu pengguna membuat keputusan dengan pemahaman yang lebih baik.",
+      },
+      {
+        type: "paragraph",
+        text: "Kewajiban privasi dapat bergantung pada jenis data, tujuan pemrosesan, dan aturan yang berlaku. Minta review profesional sebelum publikasi, dan perbarui kebijakan ketika praktik layanan berubah.",
+      },
+    ],
+    tags: ["Privasi", "Data Pribadi", "Layanan Digital", "Kepatuhan"],
   },
 };

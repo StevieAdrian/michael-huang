@@ -106,7 +106,7 @@ export const lawFirmArticles: Article[] = [
     title: "Strategi Penyelesaian Sengketa: Litigasi vs Arbitrase",
     excerpt:
       "Ketika sengketa bisnis tak terhindarkan, memilih jalur penyelesaian yang tepat sangat menentukan. Pahami perbedaan litigasi pengadilan dan arbitrase.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Litigasi",
     slug: "litigasi-vs-arbitrase-sengketa",
   },
@@ -115,9 +115,27 @@ export const lawFirmArticles: Article[] = [
     title: "Memahami Kontrak Kerja: Hak dan Kewajiban Pengusaha serta Pekerja",
     excerpt:
       "Kontrak kerja yang disusun baik melindungi kedua belah pihak. Simak klausul penting yang wajib ada agar hubungan kerja aman secara hukum.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Ketenagakerjaan",
     slug: "kontrak-kerja-hak-kewajiban",
+  },
+  {
+    id: "14",
+    title: "Somasi dalam Sengketa Perdata: Tujuan dan Hal yang Perlu Disiapkan",
+    excerpt:
+      "Somasi dapat menjadi langkah komunikasi formal sebelum sengketa berlanjut. Pahami isi, bukti pendukung, dan cara penyampaiannya sesuai konteks perkara.",
+    date: "14 November 2026",
+    category: "Litigasi",
+    slug: "somasi-sengketa-perdata",
+  },
+  {
+    id: "15",
+    title: "Mengumpulkan Bukti untuk Sengketa Bisnis: Panduan Praktis",
+    excerpt:
+      "Dokumen transaksi, korespondensi, dan kronologi yang tertata membantu tim hukum memahami persoalan dan menilai pilihan penyelesaian.",
+    date: "16 November 2026",
+    category: "Panduan Hukum",
+    slug: "mengumpulkan-bukti-sengketa-bisnis",
   },
 ];
 
@@ -734,7 +752,7 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     slug: "litigasi-vs-arbitrase-sengketa",
     category: "Litigasi",
     readTime: "7 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Strategi Penyelesaian Sengketa: Litigasi vs Arbitrase",
     subtitle:
       "Setiap mekanisme penyelesaian sengketa memiliki kelebihan dan kekurangan. Memilih jalur yang tepat dapat menghemat waktu, biaya, dan menjaga reputasi bisnis.",
@@ -796,7 +814,7 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
     slug: "kontrak-kerja-hak-kewajiban",
     category: "Ketenagakerjaan",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "Memahami Kontrak Kerja: Hak dan Kewajiban Pengusaha serta Pekerja",
     subtitle:
       "Kontrak kerja yang jelas melindungi kedua belah pihak dari sengketa. Pahami klausul wajib dan ketentuan hukum ketenagakerjaan yang berlaku.",
@@ -853,5 +871,105 @@ export const lawFirmArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Kontrak Kerja", "Ketenagakerjaan", "Hubungan Industrial", "Hukum Bisnis"],
+  },
+  "somasi-sengketa-perdata": {
+    slug: "somasi-sengketa-perdata",
+    category: "Litigasi",
+    readTime: "7 menit",
+    date: "14 November 2026",
+    title: "Somasi dalam Sengketa Perdata: Tujuan dan Hal yang Perlu Disiapkan",
+    subtitle:
+      "Somasi merupakan komunikasi formal yang dapat digunakan untuk menyampaikan tuntutan atau meminta pemenuhan kewajiban, dengan isi yang disesuaikan pada perkara.",
+    author: {
+      name: "Tim Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Litigation Team",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Dalam hubungan perdata, salah satu pihak dapat mengirimkan somasi untuk menjelaskan kewajiban yang dinilai belum dipenuhi dan meminta penyelesaian. Dampak serta kebutuhan somasi bergantung pada hubungan hukum, isi perjanjian, dan keadaan perkara.",
+      },
+      {
+        type: "heading",
+        text: "Susun Informasi secara Terukur",
+      },
+      {
+        type: "list",
+        items: [
+          "Identitas para pihak dan hubungan hukum yang menjadi dasar tuntutan.",
+          "Kronologi singkat beserta tanggal kejadian yang dapat diverifikasi.",
+          "Kewajiban yang diminta untuk dipenuhi dan dasar dokumennya.",
+          "Batas waktu serta cara menanggapi yang wajar sesuai konteks.",
+          "Salinan dokumen pendukung yang relevan dan tersimpan dengan baik.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Pilih Cara Penyampaian dan Simpan Catatan",
+      },
+      {
+        type: "paragraph",
+        text: "Gunakan cara penyampaian yang memungkinkan Anda menunjukkan kapan dan ke mana pemberitahuan dikirim. Simpan salinan surat, bukti pengiriman, serta balasan yang diterima. Hindari bahasa yang mengancam atau pernyataan yang belum didukung dokumen.",
+      },
+      {
+        type: "quote",
+        text: "Komunikasi yang jelas dan terdokumentasi dapat membuka ruang penyelesaian sekaligus membantu semua pihak memahami posisi masing-masing.",
+      },
+      {
+        type: "paragraph",
+        text: "Somasi bukan jaminan sengketa selesai atau hasil perkara tertentu. Sebelum mengirimnya, mintalah penilaian hukum agar tuntutan dan langkah berikutnya sesuai fakta serta perjanjian yang berlaku.",
+      },
+    ],
+    tags: ["Somasi", "Sengketa Perdata", "Litigasi", "Penyelesaian Sengketa"],
+  },
+  "mengumpulkan-bukti-sengketa-bisnis": {
+    slug: "mengumpulkan-bukti-sengketa-bisnis",
+    category: "Panduan Hukum",
+    readTime: "6 menit",
+    date: "16 November 2026",
+    title: "Mengumpulkan Bukti untuk Sengketa Bisnis: Panduan Praktis",
+    subtitle:
+      "Catatan yang tersusun rapi membantu Anda menceritakan kronologi secara konsisten dan memudahkan penasihat hukum menilai dokumen yang relevan.",
+    author: {
+      name: "Tim Hukum Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Dispute Resolution Team",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Ketika masalah bisnis muncul, dokumen sering tersimpan di banyak tempat dan percakapan tersebar di berbagai kanal. Pengumpulan bukti sejak awal membantu menjaga konteks dan mengurangi risiko kehilangan informasi penting.",
+      },
+      {
+        type: "heading",
+        text: "Buat Kronologi dan Inventaris Dokumen",
+      },
+      {
+        type: "list",
+        items: [
+          "Catat peristiwa secara berurutan dengan tanggal, pihak, dan tindakan yang terjadi.",
+          "Kumpulkan kontrak, perubahan perjanjian, faktur, bukti bayar, dan dokumen pengiriman.",
+          "Simpan email dan pesan dalam bentuk yang mempertahankan tanggal serta pengirimnya.",
+          "Catat nama orang yang mengetahui kejadian dan hal yang mereka saksikan langsung.",
+          "Pisahkan fakta yang terdokumentasi dari dugaan atau kesimpulan pribadi.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Jaga Keaslian dan Akses Dokumen",
+      },
+      {
+        type: "paragraph",
+        text: "Pertahankan berkas asli dan jangan mengubah isi dokumen atau pesan. Buat salinan cadangan dengan akses terbatas, lalu catat asal setiap berkas. Jika bukti berbentuk digital, tanyakan kepada penasihat hukum cara menyimpannya agar konteks dan informasinya tetap terjaga.",
+      },
+      {
+        type: "quote",
+        text: "Kronologi yang rapi membantu penasihat hukum melihat hubungan antara dokumen, kewajiban, dan kerugian yang dipersoalkan.",
+      },
+      {
+        type: "paragraph",
+        text: "Tidak setiap dokumen otomatis relevan atau dapat digunakan dengan cara yang sama. Tinjau bahan bersama penasihat hukum sebelum menghubungi pihak lawan atau mengambil langkah formal agar strategi sesuai fakta dan tujuan bisnis Anda.",
+      },
+    ],
+    tags: ["Bukti Hukum", "Sengketa Bisnis", "Dokumen", "Litigasi"],
   },
 };

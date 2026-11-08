@@ -106,7 +106,7 @@ export const musicArticles: Article[] = [
     title: "Memahami Royalti Musik: Dari Streaming Hingga Performing Rights",
     excerpt:
       "Royalti adalah sumber pendapatan utama musisi di era digital. Kenali jenis-jenis royalti dan cara mengelolanya agar karya Anda tetap menghasilkan.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Bisnis Musik",
     slug: "memahami-royalti-musik",
   },
@@ -115,9 +115,27 @@ export const musicArticles: Article[] = [
     title: "Tips Membangun Home Studio dengan Budget Terbatas",
     excerpt:
       "Tak perlu biaya besar untuk mulai memproduksi musik berkualitas. Simak panduan menyusun home studio fungsional dengan anggaran yang efisien.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Studio",
     slug: "membangun-home-studio-budget",
+  },
+  {
+    id: "14",
+    title: "Checklist Merilis Lagu ke Platform Digital",
+    excerpt:
+      "Persiapan metadata, sampul, hak cipta, dan jadwal rilis membantu distribusi lagu berjalan lebih rapi dan mengurangi koreksi setelah tayang.",
+    date: "14 November 2026",
+    category: "Distribusi",
+    slug: "checklist-rilis-lagu-digital",
+  },
+  {
+    id: "15",
+    title: "Membuat Split Sheet: Menyepakati Pembagian Hak dan Royalti Musik",
+    excerpt:
+      "Catatan pembagian kontribusi sejak awal membantu penulis lagu, produser, dan kolaborator memiliki pemahaman yang sama tentang karya.",
+    date: "16 November 2026",
+    category: "Bisnis Musik",
+    slug: "split-sheet-pembagian-hak-royalti",
   },
 ];
 
@@ -662,7 +680,7 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
     slug: "memahami-royalti-musik",
     category: "Bisnis Musik",
     readTime: "7 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Memahami Royalti Musik: Dari Streaming Hingga Performing Rights",
     subtitle:
       "Di era digital, royalti menjadi tulang punggung pendapatan musisi. Memahami jenis dan sumbernya membantu Anda memaksimalkan penghasilan dari karya.",
@@ -724,7 +742,7 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
     slug: "membangun-home-studio-budget",
     category: "Studio",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "Tips Membangun Home Studio dengan Budget Terbatas",
     subtitle:
       "Kualitas produksi tidak selalu soal peralatan mahal. Dengan perencanaan cermat, Anda bisa membangun home studio fungsional tanpa menguras kantong.",
@@ -782,6 +800,105 @@ export const musicArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Home Studio", "Produksi Musik", "Peralatan", "Tips"],
+  },
+  "checklist-rilis-lagu-digital": {
+    slug: "checklist-rilis-lagu-digital",
+    category: "Distribusi",
+    readTime: "6 menit",
+    date: "14 November 2026",
+    title: "Checklist Merilis Lagu ke Platform Digital",
+    subtitle:
+      "Rilis yang tertata dimulai jauh sebelum tanggal tayang: pastikan berkas audio, informasi karya, materi visual, dan jadwal promosi siap.",
+    author: {
+      name: "Tim Musik Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Music Production Team",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Distribusi digital membuat musisi independen dapat menjangkau pendengar lintas wilayah. Agar prosesnya lancar, siapkan kebutuhan teknis dan administrasi sebelum mengirim lagu ke distributor pilihan Anda.",
+      },
+      {
+        type: "heading",
+        text: "Siapkan Audio dan Informasi Karya",
+      },
+      {
+        type: "list",
+        items: [
+          "Pastikan master final sudah diperiksa melalui beberapa perangkat dengar.",
+          "Periksa ejaan judul, nama artis, penulis, produser, dan kontributor.",
+          "Pastikan hak atas rekaman dan komposisi telah dibicarakan dengan pihak terkait.",
+          "Tentukan versi lagu, bahasa, tanggal rilis, dan label jika ada.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Periksa Sampul dan Jadwal",
+      },
+      {
+        type: "paragraph",
+        text: "Ikuti spesifikasi sampul dan format berkas yang diminta distributor serta platform tujuan. Beri waktu untuk proses pemeriksaan, siapkan tautan pra-simpan jika tersedia, dan rencanakan konten promosi yang dapat dibagikan sebelum maupun setelah lagu rilis.",
+      },
+      {
+        type: "quote",
+        text: "Detail kecil seperti ejaan nama dan kredit kontributor ikut menentukan pengalaman pendengar serta keterlacakan karya.",
+      },
+      {
+        type: "paragraph",
+        text: "Setelah lagu tayang, cek halaman artis dan informasi lagu di tiap platform. Simpan berkas master, sampul, dan bukti persetujuan di satu tempat agar mudah digunakan untuk kebutuhan berikutnya. Tim produksi kami siap membantu menyiapkan lagu dan materi rilis secara terstruktur.",
+      },
+    ],
+    tags: ["Distribusi Musik", "Rilis Lagu", "Metadata", "Musisi Independen"],
+  },
+  "split-sheet-pembagian-hak-royalti": {
+    slug: "split-sheet-pembagian-hak-royalti",
+    category: "Bisnis Musik",
+    readTime: "7 menit",
+    date: "16 November 2026",
+    title: "Membuat Split Sheet: Menyepakati Pembagian Hak dan Royalti Musik",
+    subtitle:
+      "Split sheet mencatat siapa yang berkontribusi pada sebuah lagu dan kesepakatan pembagiannya, sehingga semua pihak memiliki acuan yang sama.",
+    author: {
+      name: "Tim Musik Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Music Production Team",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Sebuah lagu dapat melibatkan penulis lirik, komposer, produser, dan kolaborator lain. Jika pembagian kontribusi hanya dibicarakan lisan, ingatan para pihak bisa berbeda ketika lagu mulai dipakai atau menghasilkan pendapatan.",
+      },
+      {
+        type: "heading",
+        text: "Informasi yang Perlu Dicatat",
+      },
+      {
+        type: "list",
+        items: [
+          "Judul sementara atau final dan tanggal pencatatan.",
+          "Nama lengkap serta kontak setiap kontributor.",
+          "Peran dan kontribusi masing-masing terhadap komposisi atau rekaman.",
+          "Persentase pembagian yang telah disepakati dan hak yang dicakup.",
+          "Persetujuan para pihak serta cara memperbarui catatan bila ada perubahan.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Bicarakan Sebelum Lagu Dirilis",
+      },
+      {
+        type: "paragraph",
+        text: "Bedakan kepemilikan komposisi dari kepemilikan rekaman master, karena pihak dan kesepakatannya dapat berbeda. Jangan menganggap kontribusi otomatis memberi persentase tertentu; bahas ruang lingkupnya bersama dan tuliskan hasilnya dalam dokumen yang dapat dipahami semua pihak.",
+      },
+      {
+        type: "quote",
+        text: "Kesepakatan yang dibicarakan dengan terbuka sejak awal membantu kolaborasi tetap sehat ketika karya berkembang.",
+      },
+      {
+        type: "paragraph",
+        text: "Simpan salinan yang dapat diakses seluruh kontributor dan minta nasihat profesional jika ada ketidakjelasan hak atau penggunaan. Split sheet adalah catatan kesepakatan; pastikan bentuk dokumennya sesuai dengan kebutuhan dan aturan yang berlaku.",
+      },
+    ],
+    tags: ["Split Sheet", "Hak Cipta Musik", "Royalti", "Kolaborasi Musisi"],
   },
 };
 

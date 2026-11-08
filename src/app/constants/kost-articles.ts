@@ -106,7 +106,7 @@ export const kostArticles: Article[] = [
     title: "Checklist Barang Penting Saat Pindah ke Kost Baru",
     excerpt:
       "Pindah kost tanpa persiapan bisa merepotkan. Simak daftar barang esensial yang wajib disiapkan agar hidup di kost baru langsung nyaman.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Tips",
     slug: "checklist-barang-pindah-kost",
   },
@@ -115,9 +115,27 @@ export const kostArticles: Article[] = [
     title: "Hak dan Kewajiban Penghuni Kost yang Perlu Diketahui",
     excerpt:
       "Tinggal di kost memiliki aturan main yang mengikat kedua pihak. Pahami hak dan kewajiban Anda sebagai penghuni agar terhindar dari konflik.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Panduan",
     slug: "hak-kewajiban-penghuni-kost",
+  },
+  {
+    id: "14",
+    title: "Cara Memilih Kost yang Aman dan Nyaman Sebelum Menyewa",
+    excerpt:
+      "Kunjungan langsung dan pemeriksaan detail membantu calon penghuni menilai keamanan, fasilitas, akses, serta aturan kost sebelum membayar.",
+    date: "14 November 2026",
+    category: "Panduan",
+    slug: "memilih-kost-aman-nyaman",
+  },
+  {
+    id: "15",
+    title: "Deposit Kost: Hal yang Perlu Disepakati Sebelum Membayar",
+    excerpt:
+      "Pahami tujuan deposit, kondisi pengembaliannya, dan bukti pembayaran agar pemilik serta penghuni memiliki kesepahaman sejak awal.",
+    date: "16 November 2026",
+    category: "Tips",
+    slug: "deposit-kost-kesepakatan-pembayaran",
   },
 ];
 
@@ -679,7 +697,7 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
     slug: "checklist-barang-pindah-kost",
     category: "Tips",
     readTime: "6 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Checklist Barang Penting Saat Pindah ke Kost Baru",
     subtitle:
       "Persiapan yang matang membuat transisi ke kost baru lebih lancar. Daftar barang esensial ini membantu Anda langsung merasa nyaman di hunian baru.",
@@ -746,7 +764,7 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
     slug: "hak-kewajiban-penghuni-kost",
     category: "Panduan",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "Hak dan Kewajiban Penghuni Kost yang Perlu Diketahui",
     subtitle:
       "Hubungan antara penghuni dan pemilik kost diatur oleh hak dan kewajiban kedua pihak. Memahaminya mencegah kesalahpahaman dan konflik.",
@@ -804,5 +822,104 @@ export const kostArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["Hak Penghuni", "Kewajiban", "Aturan Kost", "Panduan"],
+  },
+  "memilih-kost-aman-nyaman": {
+    slug: "memilih-kost-aman-nyaman",
+    category: "Panduan",
+    readTime: "6 menit",
+    date: "14 November 2026",
+    title: "Cara Memilih Kost yang Aman dan Nyaman Sebelum Menyewa",
+    subtitle:
+      "Pertimbangkan kebutuhan harian, keamanan lingkungan, kondisi kamar, dan kejelasan aturan sebelum memutuskan tempat tinggal.",
+    author: {
+      name: "Tim Kost Gemini Koolkost",
+      role: "Residential Living Guide",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Memilih kost berarti memilih lingkungan untuk beristirahat dan menjalani rutinitas. Foto dan harga dapat menjadi awal pencarian, tetapi kunjungan langsung membantu Anda memeriksa kondisi sebenarnya dan menilai apakah tempat itu sesuai kebutuhan.",
+      },
+      {
+        type: "heading",
+        text: "Periksa Lokasi dan Keamanan",
+      },
+      {
+        type: "list",
+        items: [
+          "Coba rute menuju kampus atau tempat kerja pada jam yang biasa Anda tempuh.",
+          "Perhatikan pencahayaan, akses masuk, kunci kamar, dan prosedur menerima tamu.",
+          "Tanyakan siapa yang dapat dihubungi jika ada keadaan darurat atau kerusakan.",
+          "Amati kebersihan area bersama dan kondisi lingkungan sekitar.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Cek Kamar, Fasilitas, dan Aturan",
+      },
+      {
+        type: "paragraph",
+        text: "Uji fungsi air, listrik, ventilasi, jaringan internet, dan fasilitas yang termasuk dalam harga. Tanyakan biaya tambahan, aturan penggunaan area bersama, jam bertamu, serta cara melaporkan perbaikan. Minta seluruh ketentuan penting dijelaskan sebelum menyetujui sewa.",
+      },
+      {
+        type: "quote",
+        text: "Kost yang sesuai adalah tempat yang kebutuhan, biaya, dan aturannya dapat Anda pahami sejak awal.",
+      },
+      {
+        type: "paragraph",
+        text: "Catat kondisi kamar saat mulai menempati dan simpan komunikasi penting dengan pengelola. Pemeriksaan sederhana sebelum pindah membantu Anda membuat keputusan dengan lebih tenang dan menjaga hubungan yang baik selama tinggal.",
+      },
+    ],
+    tags: ["Memilih Kost", "Keamanan", "Hunian", "Panduan"],
+  },
+  "deposit-kost-kesepakatan-pembayaran": {
+    slug: "deposit-kost-kesepakatan-pembayaran",
+    category: "Tips",
+    readTime: "6 menit",
+    date: "16 November 2026",
+    title: "Deposit Kost: Hal yang Perlu Disepakati Sebelum Membayar",
+    subtitle:
+      "Kesepakatan tertulis tentang deposit membantu pemilik dan penghuni memahami jumlah, tujuan, serta proses pengembaliannya.",
+    author: {
+      name: "Tim Kost Gemini Koolkost",
+      role: "Residential Living Guide",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Sebagian pengelola meminta uang jaminan ketika penghuni mulai menyewa. Kebijakan deposit dapat berbeda di setiap tempat, sehingga calon penghuni sebaiknya meminta penjelasan yang rinci sebelum melakukan pembayaran.",
+      },
+      {
+        type: "heading",
+        text: "Pastikan Rinciannya Jelas",
+      },
+      {
+        type: "list",
+        items: [
+          "Berapa jumlah deposit dan kapan pembayaran dilakukan.",
+          "Untuk keperluan apa deposit dapat digunakan menurut kesepakatan.",
+          "Kondisi yang dapat mengurangi jumlah pengembalian, termasuk cara menghitungnya.",
+          "Kapan dan bagaimana deposit dikembalikan setelah masa sewa berakhir.",
+          "Dokumen atau bukti pembayaran yang diterima penghuni.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Simpan Bukti dan Catat Kondisi Kamar",
+      },
+      {
+        type: "paragraph",
+        text: "Bayar melalui cara yang dapat dibuktikan dan simpan kuitansi atau konfirmasi transfer. Saat masuk, dokumentasikan kondisi kamar dan fasilitas bersama pengelola agar catatan awal dapat digunakan jika muncul pertanyaan ketika masa sewa selesai.",
+      },
+      {
+        type: "quote",
+        text: "Aturan deposit yang transparan mengurangi salah paham dan membantu kedua pihak menutup masa sewa dengan baik.",
+      },
+      {
+        type: "paragraph",
+        text: "Mintalah agar kesepakatan deposit tercantum dalam perjanjian atau konfirmasi tertulis. Jika ada bagian yang belum jelas, bicarakan sebelum membayar sehingga Anda dapat mempertimbangkan pilihan dengan informasi yang cukup.",
+      },
+    ],
+    tags: ["Deposit Kost", "Pembayaran", "Perjanjian Sewa", "Penghuni Kost"],
   },
 };

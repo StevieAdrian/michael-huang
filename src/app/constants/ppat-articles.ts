@@ -106,7 +106,7 @@ export const ppatArticles: Article[] = [
     title: "Memahami Pajak dalam Transaksi Jual Beli Tanah: BPHTB dan PPh",
     excerpt:
       "Setiap transaksi properti memiliki kewajiban pajak bagi penjual dan pembeli. Pahami cara menghitung BPHTB dan PPh agar transaksi berjalan lancar.",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     category: "Panduan",
     slug: "pajak-jual-beli-tanah-bphtb-pph",
   },
@@ -115,9 +115,27 @@ export const ppatArticles: Article[] = [
     title: "ROYA: Prosedur Penghapusan Hak Tanggungan Setelah Lunas KPR",
     excerpt:
       "Setelah kredit lunas, sertifikat Anda masih tercatat dibebani hak tanggungan. Pahami prosedur ROYA untuk membersihkan status sertifikat di BPN.",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     category: "Edukasi",
     slug: "roya-penghapusan-hak-tanggungan",
+  },
+  {
+    id: "14",
+    title: "Mengurus Sertifikat Tanah Hilang: Prosedur Penerbitan Sertifikat Pengganti",
+    excerpt:
+      "Sertifikat tanah hilang bukan berarti kehilangan hak atas tanah. Pahami prosedur resmi penerbitan sertifikat pengganti melalui BPN.",
+    date: "14 November 2026",
+    category: "Panduan",
+    slug: "sertifikat-tanah-hilang-pengganti",
+  },
+  {
+    id: "15",
+    title: "Perbedaan SHM, HGB, dan HGU: Panduan Memilih Hak atas Tanah",
+    excerpt:
+      "Setiap jenis hak atas tanah memiliki karakteristik dan batasan berbeda. Kenali perbedaan SHM, HGB, dan HGU sebelum membeli atau berinvestasi tanah.",
+    date: "16 November 2026",
+    category: "Edukasi",
+    slug: "perbedaan-shm-hgb-hgu",
   },
 ];
 
@@ -647,7 +665,7 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
     slug: "pajak-jual-beli-tanah-bphtb-pph",
     category: "Panduan",
     readTime: "7 menit",
-    date: "10 September 2026",
+    date: "10 Oktober 2026",
     title: "Memahami Pajak dalam Transaksi Jual Beli Tanah: BPHTB dan PPh",
     subtitle:
       "Pajak adalah bagian tak terpisahkan dari transaksi properti. Memahami kewajiban pajak sejak awal membantu Anda menghindari denda dan hambatan proses balik nama.",
@@ -704,7 +722,7 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
     slug: "roya-penghapusan-hak-tanggungan",
     category: "Edukasi",
     readTime: "6 menit",
-    date: "12 September 2026",
+    date: "12 Oktober 2026",
     title: "ROYA: Prosedur Penghapusan Hak Tanggungan Setelah Lunas KPR",
     subtitle:
       "Melunasi KPR bukan akhir dari urusan sertifikat. Proses ROYA diperlukan agar status hak tanggungan terhapus dan sertifikat Anda kembali bersih.",
@@ -757,5 +775,126 @@ export const ppatArticleDetails: Record<string, ArticleDetail> = {
       },
     ],
     tags: ["ROYA", "Hak Tanggungan", "KPR", "Sertifikat"],
+  },
+  "sertifikat-tanah-hilang-pengganti": {
+    slug: "sertifikat-tanah-hilang-pengganti",
+    category: "Panduan",
+    readTime: "6 menit",
+    date: "14 November 2026",
+    title: "Mengurus Sertifikat Tanah Hilang: Prosedur Penerbitan Sertifikat Pengganti",
+    subtitle:
+      "Kehilangan sertifikat tanah tidak menghilangkan hak Anda. Negara menyediakan mekanisme penerbitan sertifikat pengganti yang sah melalui BPN.",
+    author: {
+      name: "Tim PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Konsultan Pertanahan",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Sertifikat tanah adalah dokumen bukti kepemilikan yang sangat penting. Ketika sertifikat hilang karena bencana, kelalaian, atau pencurian, pemilik sering panik mengira kehilangan hak atas tanahnya. Padahal, data kepemilikan tetap tercatat di Kantor Pertanahan dan sertifikat pengganti dapat diterbitkan.",
+      },
+      {
+        type: "heading",
+        text: "Langkah Awal Saat Sertifikat Hilang",
+      },
+      {
+        type: "list",
+        items: [
+          "Buat laporan kehilangan ke kepolisian untuk memperoleh surat keterangan kehilangan.",
+          "Siapkan identitas pemilik dan dokumen pendukung kepemilikan yang masih ada.",
+          "Ajukan permohonan penerbitan sertifikat pengganti ke Kantor Pertanahan setempat.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Proses di Kantor Pertanahan",
+      },
+      {
+        type: "list",
+        items: [
+          "BPN akan memeriksa data buku tanah untuk memastikan kepemilikan.",
+          "Dilakukan pengumuman di media untuk memberi kesempatan sanggahan pihak lain.",
+          "Jika tidak ada sanggahan dalam jangka waktu tertentu, sertifikat pengganti diterbitkan.",
+          "Sertifikat lama dinyatakan tidak berlaku secara hukum.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Hak atas tanah melekat pada data yuridis di BPN, bukan semata pada fisik sertifikat — sehingga sertifikat yang hilang tetap dapat dipulihkan.",
+      },
+      {
+        type: "heading",
+        text: "Pentingnya Menyimpan Dokumen dengan Baik",
+      },
+      {
+        type: "paragraph",
+        text: "Meskipun sertifikat pengganti dapat diterbitkan, prosesnya memerlukan waktu dan biaya. Karena itu, simpanlah sertifikat di tempat aman dan pertimbangkan membuat salinan serta mencatat nomor hak atas tanah Anda sebagai cadangan informasi.",
+      },
+      {
+        type: "paragraph",
+        text: "Jika sertifikat Anda hilang, tim PPAT kami dapat membantu mengurus penerbitan sertifikat pengganti agar prosesnya berjalan lancar dan sesuai ketentuan.",
+      },
+    ],
+    tags: ["Sertifikat Hilang", "BPN", "Sertifikat Pengganti", "PPAT"],
+  },
+  "perbedaan-shm-hgb-hgu": {
+    slug: "perbedaan-shm-hgb-hgu",
+    category: "Edukasi",
+    readTime: "7 menit",
+    date: "16 November 2026",
+    title: "Perbedaan SHM, HGB, dan HGU: Panduan Memilih Hak atas Tanah",
+    subtitle:
+      "Memahami jenis hak atas tanah membantu Anda membuat keputusan tepat saat membeli properti atau berinvestasi di sektor pertanahan.",
+    author: {
+      name: "Tim PPAT Dr. Michael, S.H., S.T., M.Kn., M.Th., Ph.D.",
+      role: "Konsultan Pertanahan",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "Dalam dunia pertanahan, dikenal beberapa jenis hak atas tanah yang masing-masing memiliki karakteristik, jangka waktu, dan peruntukan berbeda. Tiga yang paling umum adalah Sertifikat Hak Milik (SHM), Hak Guna Bangunan (HGB), dan Hak Guna Usaha (HGU).",
+      },
+      {
+        type: "heading",
+        text: "Sertifikat Hak Milik (SHM)",
+      },
+      {
+        type: "paragraph",
+        text: "SHM adalah hak kepemilikan tertinggi dan terkuat atas tanah. Berlaku tanpa batas waktu, dapat diwariskan, dijual, dan dijadikan jaminan. SHM hanya dapat dimiliki oleh Warga Negara Indonesia.",
+      },
+      {
+        type: "heading",
+        text: "Hak Guna Bangunan (HGB)",
+      },
+      {
+        type: "paragraph",
+        text: "HGB memberikan hak untuk mendirikan dan memiliki bangunan di atas tanah yang bukan miliknya sendiri, dengan jangka waktu terbatas (umumnya hingga 30 tahun dan dapat diperpanjang). HGB banyak dipakai pada properti komersial dan perumahan yang dikembangkan developer.",
+      },
+      {
+        type: "heading",
+        text: "Hak Guna Usaha (HGU)",
+      },
+      {
+        type: "paragraph",
+        text: "HGU adalah hak untuk mengusahakan tanah negara untuk keperluan pertanian, perkebunan, perikanan, atau peternakan dalam skala besar, dengan jangka waktu tertentu yang dapat diperpanjang.",
+      },
+      {
+        type: "quote",
+        text: "Memahami jenis hak atas tanah sejak awal mencegah kesalahan investasi dan membantu Anda merencanakan langkah hukum yang tepat.",
+      },
+      {
+        type: "list",
+        items: [
+          "SHM — kepemilikan penuh, tanpa batas waktu, hanya untuk WNI.",
+          "HGB — hak membangun, berjangka waktu, cocok untuk properti komersial.",
+          "HGU — hak usaha atas tanah skala besar untuk sektor agraris.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Sebelum membeli properti atau tanah, pastikan Anda memahami jenis haknya dan konsekuensinya. Tim PPAT kami siap membantu memeriksa status hak dan memberikan rekomendasi yang sesuai kebutuhan Anda.",
+      },
+    ],
+    tags: ["SHM", "HGB", "HGU", "Hak atas Tanah"],
   },
 };
